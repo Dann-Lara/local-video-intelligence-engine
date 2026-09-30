@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-video-intelligence/schemas/semantic_qc.schema.json",
+  "title": "Semantic QC",
+  "description": "Segundo LLM pass (secciones 33-34). Gemma reevalua el clip ya renderizado y responde a las cinco preguntas de la seccion 33 (sentido, contexto, payoff, cierre, hook). El veredicto y el score los decide el modelo; el umbral de aprobacion y el sanitize en software los aplica la capa de QC (src/quality/qc.py), no el prompt.",
+  "type": "object",
+  "required": ["approved", "score", "problems", "recommendations", "answers"],
+  "additionalProperties": false,
+  "properties": {
+    "approved": {
+      "type": "boolean",
+      "description": "false => el clip se descarta o vuelve a una etapa anterior (seccion 34). El software puede forzar a false si score < minimum_semantic_score aunque el modelo lo apruebe."
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Puntuacion global de la Evaluacion Semantica. La escala 0-100 la fija el software; el modelo la propone."
+    },
+    "answers": {
+      "type": "object",
+      "description": "Las cinco preguntas de la seccion 33, respondidas una a una. Cada una con veredicto y, si aplica, justificacion.",
+      "required": ["makes_sense", "understands_standalone", "has_payoff", "ends_complete", "hook_works"],
+      "additionalProperties": false,
+      "properties": {
+        "makes_sense": { "$ref": "#/$defs/answer" },
+        "understands_standalone": { "$ref": "#/$defs/answer" },
+        "has_payoff": { "$ref": "#/$defs/answer" },
+        "ends_complete": { "$ref": "#/$defs/answer" },
+        "hook_works": { "$ref": "#/$defs/answer" }
+      }
+    },
+    "problems": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Problemas concretos que impiden aprobar. Vacio si el clip esta bien."
+    },
+    "recommendations": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Sugerencias de mejora, aunque el clip se apruebe."
+    }
+  },
+  "$defs": {
+    "answer": {
+      "type": "object",
+      "required": ["ok", "reason"],
+      "additionalProperties": false,
+      "properties": {
+        "ok": { "type": "boolean" },
+        "reason": {
+          "type": "string",
+          "description": "Por que si o por que no, en una frase. Se puede vacio si ok=true."
+        }
+      }
+    }
+  }
+}

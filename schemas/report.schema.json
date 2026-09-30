@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-video-intelligence/schemas/report.schema.json",
+  "title": "Report",
+  "description": "report.json de un job (blueprint seccion 56). Los diez primeros campos son los que pide la seccion; `clips` es un añadido con el detalle por clip, porque un agregado no dice QUE clip fallo ni por que.",
+  "type": "object",
+  "required": [
+    "job_id",
+    "source",
+    "duration",
+    "candidates_found",
+    "candidates_approved",
+    "clips_rendered",
+    "clips_rejected",
+    "average_score",
+    "processing_time_seconds",
+    "errors"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "job_id": { "type": "string", "minLength": 1 },
+    "source": {
+      "type": ["string", "null"],
+      "description": "Ruta del video de origen. null si no se pudo determinar."
+    },
+    "duration": {
+      "type": ["number", "null"],
+      "minimum": 0.0,
+      "description": "Duracion del video de origen, en segundos."
+    },
+    "candidates_found": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Candidatos que pasaron el saneamiento en software y entraron al ranking."
+    },
+    "candidates_approved": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Candidatos que el ranking aprobo para editar."
+    },
+    "clips_rendered": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Clips que pasaron el QC y se pueden publicar."
+    },
+    "clips_rejected": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Clips que no pasaron el QC."
+    },
+    "average_score": {
+      "type": ["number", "null"],
+      "minimum": 0.0,
+      "description": "Media del score de SELECCION de los clips. null si no hay ninguno con score."
+    },
+    "processing_time_seconds": {
+      "type": "number",
+      "minimum": 0.0,
+      "description": "Tiempo de la etapa de QC + SEO + report."
+    },
+    "errors": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Errores de la etapa. Un QC fallido aparece aqui, no como fallo del job."
+    },
+    "clips": {
+      "type": "array",
+      "description": "Detalle por clip: que paso, con que score y con que problemas.",
+      "items": {
+        "type": "object",
+        "required": ["clip_id", "passed"],
+        "additionalProperties": false,
+        "properties": {
+          "clip_id": { "type": "string", "minLength": 1 },
+          "passed": { "type": "boolean" },
+          "selection_score": { "type": ["number", "null"] },
+          "semantic_score": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+          "problems": { "type": "array", "items": { "type": "string" } },
+          "record_path": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

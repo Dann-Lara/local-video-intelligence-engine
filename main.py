@@ -232,7 +232,6 @@ def jobs_resume(job_id: str) -> None:
 
 STAGE_ROADMAP = {
     "process": ("Sprint 3 en adelante (todas las etapas)", "src/orchestration/pipeline.py"),
-    "report": ("Sprint 7 (QC + SEO)", "src/quality/report.py"),
     "performance sync": ("Sprint 8 (adaptadores de plataforma)", "src/performance/sync.py"),
 }
 
@@ -974,12 +973,326 @@ def _run_render(
     return payload
 
 
+def _run_report(
+    job_id: str,
+    config: dict[str, Any],
+    repo: db_module.JobRepository,
+    *,
+    as_json: bool,
+    skip_llm: bool = False,
+    overwrite: bool = False,
+) -> dict[str, Any]:
+    """QUALITY_CONTROL + GENERATING_SEO + report.json (secciones 33-35, 56).
+
+    Para cada clip renderizado:
+    1. QC tecnico (media + subtitulos) con FFprobe, sin IA.
+    2. Segundo LLM pass (evaluacion semantica) sobre el transcript del clip.
+    3. SEO engine: metadata independiente por plataforma.
+    4. clip_record.json del clip (seccion 37).
+
+    Y al final el report.json del job (seccion 56).
+
+    Un fallo de IA en un clip NO tumba el job: ese clip se registra como
+    fallido con su motivo y se sigue con los demas. Perder el QC semantico de
+    tres clips por un cuarto caido no es un informe, es un pipeline parado.
+    `skip_llm` hace las comprobaciones tecnicas sin llamar al modelo.
+    """
+    from src.quality import qc as qc_module
+    from src.quality import report as report_module
+    from src.quality import seo as seo_module
+    from src.quality import semantic as semantic_module
+    from src.media import workspace as workspace_module
+    from src.subtitles import cues as cues_module
+
+    logger = _setup_logging(config)
+    job = repo.get_job(job_id)
+    if job is None:
+        typer.secho(f"Job desconocido: {job_id}", fg=typer.colors.RED, err=True)
+        raise typer.Exit(EXIT_ERROR)
+
+    video = repo.get_video(job["video_id"])
+    if video is None:
+        typer.secho(f"El job {job_id} no tiene video asociado.", fg=typer.colors.RED, err=True)
+        raise typer.Exit(EXIT_ERROR)
+
+    work = workspace_module.Workspace(
+        root=config_module.resolve_path(config, "work_root")
+        / workspace_module.safe_stem(Path(video["path"]).stem)
+    )
+    plan_paths = sorted(work.edit_plans.glob("edit_plan_*.json"))
+    if not plan_paths:
+        typer.secho(
+            f"No hay edit_plan.json en {work.edit_plans}. Ejecuta antes 'render'.",
+            fg=typer.colors.RED,
+            err=True,
+        )
+        raise typer.Exit(EXIT_ERROR)
+
+    transcript = artifacts_module.read_or_none(work.transcript, schema_name="transcript")
+    normalized = artifacts_module.read_or_none(
+        work.normalized_transcript, schema_name="normalized_transcript"
+    )
+    candidate_set = artifacts_module.read_or_none(
+        work.clip_candidates, schema_name="candidate_set"
+    )
+    paragraphs = list((normalized or {}).get("paragraphs", []) or [])
+
+    candidates_by_id = {
+        c.get("candidate_id"): c
+        for c in ((candidate_set or {}).get("candidates", []) or [])
+        if isinstance(c, dict)
+    }
+
+    quality_cfg = dict(config.get("quality", {}) or {})
+    do_semantic = bool(quality_cfg.get("semantic_qc", True)) and not skip_llm
+    do_seo = not skip_llm
+
+    with logs.log_context(job_id=job_id, stage=JobState.QUALITY_CONTROL.value):
+        repo.enter_stage(job_id, JobState.QUALITY_CONTROL)
+        run_id = repo.start_stage(job_id, JobState.QUALITY_CONTROL)
+        started = time.monotonic()
+        errors: list[str] = []
+        record_results: list[report_module.ClipRecordResult] = []
+        seo_client: semantic_module.LMStudioClient | None = None
+        if do_semantic or do_seo:
+            seo_client = semantic_module.client_from_config(config)
+
+        for plan_path in plan_paths:
+            plan = artifacts_module.read_json(plan_path, schema_name="edit_plan")
+            clip_id = str(plan["clip_id"])
+            render_path = work.renders / f"{clip_id}.mp4"
+            source = plan.get("source", {}) or {}
+            start = float(source.get("start", 0.0))
+            end = float(source.get("end", 0.0))
+            expected_duration = float(source.get("duration") or (end - start))
+
+            # Los cues se recalculan con la MISMA logica que el render, para
+            # que el QC valide los subtitulos que realmente se quemaron.
+            cues: list[dict[str, Any]] = []
+            sub_cfg = dict(plan.get("subtitles") or {})
+            if sub_cfg.get("enabled", False) and transcript:
+                try:
+                    built = cues_module.build_cues(
+                        transcript,
+                        clip_start=start,
+                        clip_end=end,
+                        max_words_per_line=int(sub_cfg.get("max_words_per_line", 4)),
+                        max_lines=int(sub_cfg.get("max_lines", 2)),
+                        max_chars_per_line=int(sub_cfg.get("max_chars_per_line", 22)),
+                        min_duration_ms=int(sub_cfg.get("min_duration_ms", 800)),
+                        max_duration_ms=int(sub_cfg.get("max_duration_ms", 4000)),
+                    )
+                    cues = [cue.to_dict() for cue in built]
+                except Exception as exc:  # noqa: BLE001 - un fallo aqui no tumba el job
+                    errors.append(f"{clip_id}: no se pudieron reconstruir los cues: {exc}")
+                    logger.warning(
+                        "qc_cues_unavailable",
+                        extra={"clip_id": clip_id, "error_detail": str(exc)[:300]},
+                    )
+
+            clip_qc = qc_module.run_clip_qc(
+                render_path,
+                cues,
+                clip_id=clip_id,
+                expected_duration=expected_duration,
+                config=config,
+            )
+
+            # Segundo LLM pass: evaluacion semantica (secciones 33-34).
+            if do_semantic and paragraphs:
+                try:
+                    verdict = semantic_module.run_semantic_qc(
+                        clip_id=clip_id,
+                        paragraphs=paragraphs,
+                        start=start,
+                        end=end,
+                        clip_metadata=_clip_metadata_for_llm(plan, candidates_by_id.get(clip_id)),
+                        edit_information={
+                            "clip_id": clip_id,
+                            "source_start": start,
+                            "source_end": end,
+                            "duration": expected_duration,
+                            "crop_mode": (plan.get("crop", {}) or {}).get("mode"),
+                            "subtitles": bool(
+                                (plan.get("subtitles", {}) or {}).get("enabled", False)
+                            ),
+                        },
+                        config=config,
+                        cache_dir=work.root / "qc",
+                        client=seo_client,
+                        overwrite=overwrite,
+                    )
+                    clip_qc.semantic = {
+                        "approved": verdict.approved,
+                        "score": verdict.score,
+                        "problems": verdict.to_dict()["problems"],
+                        "recommendations": verdict.to_dict()["recommendations"],
+                        "model": verdict.body.get("model"),
+                        "prompt_version": verdict.body.get("prompt_version"),
+                    }
+                except (
+                    semantic_module.SemanticError,
+                    artifacts_module.ArtifactError,
+                ) as exc:
+                    errors.append(f"{clip_id}: QC semantico fallo: {exc}")
+                    logger.warning(
+                        "semantic_qc_failed",
+                        extra={"clip_id": clip_id, "error_detail": str(exc)[:300]},
+                    )
+
+            # SEO engine: metadata por plataforma (seccion 35).
+            metadata: dict[str, Any] | None = None
+            if do_seo and paragraphs and clip_qc.passed:
+                try:
+                    seo_result = seo_module.run_seo(
+                        clip_id=clip_id,
+                        paragraphs=paragraphs,
+                        start=start,
+                        end=end,
+                        clip_metadata=_clip_metadata_for_llm(plan, candidates_by_id.get(clip_id)),
+                        config=config,
+                        cache_dir=work.root / "qc",
+                        client=seo_client,
+                        overwrite=overwrite,
+                    )
+                    report_module.write_metadata_files(
+                        seo_result, work.root / "metadata" / clip_id
+                    )
+                    metadata = seo_result.files()
+                except (seo_module.SEOError, artifacts_module.ArtifactError) as exc:
+                    errors.append(f"{clip_id}: SEO fallo: {exc}")
+                    logger.warning(
+                        "seo_failed", extra={"clip_id": clip_id, "error_detail": str(exc)[:300]}
+                    )
+
+            record = report_module.build_clip_record(
+                clip_id=clip_id,
+                job_id=job_id,
+                plan=plan,
+                candidate=candidates_by_id.get(clip_id, {}),
+                qc=clip_qc.to_record_qc(config),
+                metadata=metadata,
+                source_sha256=str(video.get("sha256") or ""),
+            )
+            record_path = work.root / "clip_records" / f"{clip_id}.json"
+            result = report_module.ClipRecordResult(clip_id=clip_id, record=record)
+            try:
+                report_module.write_clip_record(result, record_path)
+            except artifacts_module.ArtifactError as exc:
+                errors.append(f"{clip_id}: clip_record invalido: {exc}")
+            record_results.append(result)
+
+            repo.record_artifact(
+                job_id,
+                JobState.QUALITY_CONTROL,
+                f"clip_record:{clip_id}",
+                str(record_path),
+            )
+
+        processing = time.monotonic() - started
+
+        summary = report_module.build_report(
+            job_id=job_id,
+            source=str(video.get("path") or "") or None,
+            duration=float(video.get("duration")) if video.get("duration") else None,
+            candidate_set=candidate_set,
+            clip_records=record_results,
+            processing_time_seconds=processing,
+            errors=errors,
+        )
+        reports_root = config_module.resolve_path(config, "reports_root")
+        report_path = reports_root / f"report_{job_id}.json"
+        report_module.write_report(summary, report_path)
+
+    # Un QC fallido en algunos clips no es un fallo del JOB: el job se completo,
+    # lo que paso es que algunos clips no se publican. Solo se marca FAILED si
+    # no paso NINGUN clip, que si es un fallo real del pipeline.
+    if summary.clips_rendered == 0 and record_results:
+        repo.finish_stage(
+            run_id,
+            state=JobState.FAILED.value,
+            error_kind="qc_all_clips_failed",
+            error_detail="ningun clip paso el QC",
+        )
+        repo.transition(
+            job_id,
+            JobState.FAILED,
+            error_kind="qc_all_clips_failed",
+            error_message="ningun clip paso el QC",
+        )
+    else:
+        repo.finish_stage(run_id, state=JobState.COMPLETED.value, duration_ms=int(processing * 1000))
+        # El flujo de la seccion 49 obliga a pasar por GENERATING_SEO antes de
+        # COMPLETED, y `enter_stage` ni retrocede ni salta etapas. Este comando
+        # es dueno de las dos etapas (QC y SEO), asi que se avanza por GENERATING_SEO
+        # siempre, tambien con --skip-llm: ahi la etapa se ejecuto en modo
+        # diagnostico, pero el estado del job tiene que reflejar las dos.
+        repo.enter_stage(job_id, JobState.GENERATING_SEO)
+        repo.enter_stage(job_id, JobState.COMPLETED)
+
+    logger.info(
+        "report_completed",
+        extra={
+            "clips": len(record_results),
+            "passed": summary.clips_rendered,
+            "rejected": summary.clips_rejected,
+            "errors": len(summary.errors),
+        },
+    )
+
+    payload = {
+        "job_id": job_id,
+        "report": summary.to_dict(),
+        "report_path": str(report_path),
+        "next_state": (
+            JobState.FAILED.value
+            if summary.clips_rendered == 0 and record_results
+            else JobState.COMPLETED.value
+        ),
+    }
+
+    if not as_json:
+        typer.secho(summary.summary(), fg=typer.colors.GREEN)
+        typer.echo(f"\nreport        {report_path}")
+
+    # Si ningun clip paso el QC el job quedo en FAILED, y el proceso tambien tiene
+    # que salir con error: un script que encadena `render` + `report` no puede
+    # darse por ENTERADO de un exit 0 cuando no hay nada publicable.
+    if summary.clips_rendered == 0 and record_results:
+        typer.secho("Ningun clip paso el QC.", fg=typer.colors.RED, err=True)
+        raise typer.Exit(EXIT_ERROR)
+
+    return payload
+
+
+def _clip_metadata_for_llm(
+    plan: dict[str, Any], candidate: dict[str, Any] | None
+) -> dict[str, Any]:
+    """Metadata de un clip que se le pasa al modelo (QC semantico y SEO).
+
+    Solo datos que el modelo puede usar para evaluar o describir el clip. Se
+    serializa como JSON en el prompt, asi que solo puede contener tipos simples.
+    """
+    candidate = candidate or {}
+    content = candidate.get("content", {}) or {}
+    hook = (plan.get("hook") or candidate.get("hook") or {})
+    return {
+        "clip_id": plan.get("clip_id"),
+        "topic": content.get("topic"),
+        "summary": content.get("summary"),
+        "content_type": content.get("content_type"),
+        "hook_text": hook.get("text"),
+        "hook_type": hook.get("type"),
+        "hook_origin": hook.get("origin"),
+        "value_provided": candidate.get("value_provided"),
+    }
+
+
 @app.command()
 def process(video: str = typer.Argument(..., help="Ruta del video de entrada")) -> None:
     """Modo completo: VIDEO -> WHISPER -> GEMMA -> CANDIDATES -> RENDER -> QC -> SEO."""
     del video
     _not_ready("process")
-
 
 @app.command()
 def analyze(
@@ -1137,10 +1450,32 @@ def render(
 
 
 @app.command()
-def report(job_id: str = typer.Argument(..., help="Job a reportar")) -> None:
-    """Informe de QC y metadatos SEO."""
-    del job_id
-    _not_ready("report")
+def report(
+    job_id: str = typer.Argument(..., help="Job a reportar"),
+    as_json: bool = typer.Option(False, "--json", help="Salida en JSON"),
+    skip_llm: bool = typer.Option(
+        False, "--skip-llm", help="Solo QC tecnico, sin llamar a Gemma (QC semantico ni SEO)"
+    ),
+    overwrite: bool = typer.Option(
+        False, "--overwrite", help="Vuelve a pedir el QC semantico y el SEO aunque esten cacheados"
+    ),
+) -> None:
+    """QUALITY_CONTROL + SEO + report.json (secciones 33-35 y 56).
+
+    Valida cada clip ya renderizado (media y subtitulos con FFprobe, narrativa
+    con el segundo LLM pass), escribe la metadata por plataforma y cierra con el
+    clip_record de cada clip y el report.json del job.
+
+    Con `--skip-llm` hace solo las comprobaciones tecnicas: util para ver si el
+    problema es del render o del modelo.
+    """
+    config = _load_config()
+    repo = _open_repo(config)
+    payload = _run_report(
+        job_id, config, repo, as_json=as_json, skip_llm=skip_llm, overwrite=overwrite
+    )
+    if as_json:
+        typer.echo(json.dumps(payload, ensure_ascii=False, indent=2, default=str))
 
 
 @performance_app.command("sync")

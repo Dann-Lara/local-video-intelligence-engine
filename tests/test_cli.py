@@ -73,16 +73,16 @@ def test_help_lists_every_command_of_section_65():
     "argv",
     [
         ["process", "input/video.mp4"],
-        ["report", "job_001"],
         ["performance", "sync"],
     ],
 )
 def test_pipeline_commands_signal_not_implemented(argv):
     """Codigo 2: el comando existe pero su etapa viene en un sprint posterior.
 
-    `analyze`, `candidates` y `render` ya no estan en la lista: la ingesta
-    (Sprint 2), el Candidate Engine (Sprint 5) y el render (Sprint 6) estan
-    implementados y devuelven 0 o 1 segun el resultado, nunca 2.
+    `analyze`, `candidates`, `render` y `report` ya no estan en la lista: la
+    ingesta (Sprint 2), el Candidate Engine (Sprint 5), el render (Sprint 6) y el
+    QC + SEO + report (Sprint 7) estan implementados y devuelven 0 o 1 segun el
+    resultado, nunca 2.
     """
     result = runner.invoke(cli.app, argv)
     assert result.exit_code == cli.EXIT_NOT_IMPLEMENTED
@@ -993,3 +993,226 @@ def test_env_override_routes_logs_to_the_isolated_path(isolated_env):
     assert events[0]["message"] == "evento desde la CLI"
     assert events[0]["job_id"] == "job_test"
     assert events[0]["stage"] == "cli"
+
+
+# --- report: E2E de QC + clip_record + report.json (secciones 33, 37, 56) --
+
+
+def _normalized_document(source: Path) -> dict:
+    """Parrafos en la ventana del clip: el QC semantico los lee de aqui."""
+    return {
+        "schema_version": "1.0",
+        "derived_from": {
+            "file": str(source),
+            "sha256": "d" * 64,
+            "schema_version": "1.0",
+        },
+        "language": "es",
+        "duration": 3.0,
+        "paragraphs": [
+            {"id": 0, "start": 0.2, "end": 1.4, "text": "el motor funciona muy bien"},
+            {"id": 1, "start": 1.5, "end": 2.9, "text": "y el equipo esta listo"},
+        ],
+        "full_text": "el motor funciona muy bien y el equipo esta listo",
+    }
+
+
+def _candidate_set_document(job_id: str, source: Path) -> dict:
+    """candidate_set valido, construido por el camino real del generador.
+
+    No se escribe a mano porque el schema de `candidate` tiene una decena de
+    campos obligatorios (hook, progression, signatures, generated_by...) y un
+    fixture manual se queda desincronizado en cuanto el schema cambia.
+    """
+    from src.analysis import candidates as candidates_module
+    from test_candidates import BODY_CANDIDATE
+    from test_schemas import NORMALIZED_TRANSCRIPT
+
+    candidato = candidates_module._process_candidate(
+        dict(BODY_CANDIDATE),
+        index=0,
+        block_id="w2",
+        duration=3.0,
+        paragraphs=NORMALIZED_TRANSCRIPT["paragraphs"],
+        full_text="el motor funciona muy bien y el equipo esta listo",
+        video_file=str(source),
+        video_sha256="f" * 64,
+        job_id=job_id,
+        model_run={
+            "provider": "lmstudio",
+            "model": "gemma-fake",
+            "prompt_version": "1.0",
+            "temperature": 0.1,
+        },
+        blocks_min=1.0,
+        blocks_max=90.0,
+        drops=[],
+    )
+    assert candidato is not None
+    # El plan de este fixture es cand_001; se renombra el id para que el QC,
+    # el clip_record y el report hablen del mismo clip.
+    candidato["candidate_id"] = "cand_001"
+    return {
+        "schema_version": "1.0",
+        "job_id": job_id,
+        "source": {"file": str(source), "sha256": "f" * 64, "duration": 3.0},
+        "candidates": [candidato],
+        "selection": {
+            "minimum_score": 60.0,
+            "max_temporal_overlap": 0.3,
+            "selected": ["cand_001"],
+        },
+    }
+
+
+@pytest.fixture
+def rendered_job(isolated_env, portrait_video, tmp_path, monkeypatch):
+    """Job en RENDERING con un clip YA renderizado de verdad, para el QC.
+
+    El render se hace con `ffmpeg_libass` y no con Remotion: el QC tecnico no
+    sabe que renderer se uso, y asi el E2E no depende de Node ni de la GPU.
+    """
+    from src.core import config as config_module
+    from src.media import ffmpeg as ffmpeg_module
+    from src.media import workspace as workspace_module
+
+    if ffmpeg_module.which("ffmpeg") is None:
+        pytest.skip("FFmpeg no esta en PATH; se omite el E2E de report")
+
+    work_root = tmp_path / "work_report"
+    monkeypatch.setenv("LVI_PATHS__WORK_ROOT", work_root.as_posix())
+    monkeypatch.setenv("LVI_PATHS__REPORTS_ROOT", (tmp_path / "reports").as_posix())
+    monkeypatch.setenv("LVI_SUBTITLES__RENDERER", "ffmpeg_libass")
+
+    config = config_module.load()
+    repo = db_module.JobRepository(db_module.open_database(config))
+    video_id = repo.register_video(path=str(portrait_video), sha256="f" * 64)
+    job = repo.create_job(video_id)
+    for stage in db_module.PIPELINE_ORDER[1:]:
+        if stage == JobState.RENDERING:
+            break
+        run_id = repo.start_stage(job["id"], stage)
+        repo.finish_stage(run_id)
+        repo.transition(job["id"], stage)
+
+    work = workspace_module.Workspace(
+        root=work_root / workspace_module.safe_stem(portrait_video.stem)
+    ).create()
+    artifacts.write_json(work.transcript, _transcript_document(), schema_name="transcript")
+    artifacts.write_json(
+        work.normalized_transcript,
+        _normalized_document(portrait_video),
+        schema_name="normalized_transcript",
+    )
+    artifacts.write_json(
+        work.clip_candidates,
+        _candidate_set_document(job["id"], portrait_video),
+        schema_name="candidate_set",
+    )
+    artifacts.write_json(
+        work.edit_plans / "edit_plan_cand_001.json",
+        _edit_plan_document(portrait_video),
+        schema_name="edit_plan",
+    )
+
+    render = runner.invoke(cli.app, ["render", job["id"]])
+    assert render.exit_code == 0, render.output
+    assert (work.renders / "cand_001.mp4").is_file()
+    return job["id"], work
+
+
+def test_report_escribe_clip_record_y_report_json(rendered_job, isolated_env, tmp_path):
+    """`report --skip-llm` cierra el pipeline sin llamar al LLM."""
+    job_id, work = rendered_job
+
+    result = runner.invoke(cli.app, ["report", job_id, "--skip-llm"])
+
+    assert result.exit_code == 0, result.output
+    assert "report" in result.output
+
+    record = json.loads((work.root / "clip_records" / "cand_001.json").read_text(encoding="utf-8"))
+    assert record["clip_id"] == "cand_001"
+    assert record["qc"]["passed"] is True
+    assert record["qc"]["subtitles_ok"] is True
+
+    # El score sale del candidato real, no de un numero fijo en el test: si la
+    # normalizacion de la seleccion cambia, este test sigue siendo cierto.
+    candidatos = json.loads(work.clip_candidates.read_text(encoding="utf-8"))["candidates"]
+    esperado = candidatos[0]["score"]["total"]
+    assert record["selection"]["score"] == esperado
+    # Sin LLM no hay veredicto semantico ni metadata, y el record lo refleja
+    # en vez de inventarlos.
+    assert record["qc"]["semantic"] is None
+    assert "metadata" not in record
+
+    reports = sorted((tmp_path / "reports").glob("report_*.json"))
+    assert reports, "no se escribio report.json"
+    informe = json.loads(reports[0].read_text(encoding="utf-8"))
+    assert informe["job_id"] == job_id
+    assert informe["candidates_found"] == 1
+    assert informe["candidates_approved"] == 1
+    assert informe["clips_rendered"] == 1
+    assert informe["clips_rejected"] == 0
+    assert informe["average_score"] == esperado
+    assert informe["errors"] == []
+    assert informe["clips"][0]["passed"] is True
+
+
+def test_report_cierra_el_job_en_completed(rendered_job):
+    job_id, _work = rendered_job
+    assert runner.invoke(cli.app, ["report", job_id, "--skip-llm"]).exit_code == 0
+
+    from src.core import config as config_module
+
+    config = config_module.load()
+    repo = db_module.JobRepository(db_module.open_database(config))
+    assert repo.get_job(job_id)["state"] == JobState.COMPLETED.value
+
+
+def test_report_es_idempotente(rendered_job):
+    """Repetir el comando no duplica artefactos ni rompe el estado."""
+    job_id, work = rendered_job
+    assert runner.invoke(cli.app, ["report", job_id, "--skip-llm"]).exit_code == 0
+
+    segundo = runner.invoke(cli.app, ["report", job_id, "--skip-llm"])
+    assert segundo.exit_code == 0, segundo.output
+
+    records = sorted((work.root / "clip_records").glob("*.json"))
+    assert len(records) == 1
+    assert "QC fallido" not in segundo.output
+
+
+def test_report_detecta_un_render_roto(rendered_job):
+    """Un MP4 que no se puede leer es un QC fallido, no un jobtumbao."""
+    job_id, work = rendered_job
+    (work.renders / "cand_001.mp4").write_bytes(b"esto no es un mp4")
+
+    result = runner.invoke(cli.app, ["report", job_id, "--skip-llm"])
+
+    assert result.exit_code != 0, "un clip que no pasa QC no puede cerrar el job"
+    record = json.loads((work.root / "clip_records" / "cand_001.json").read_text(encoding="utf-8"))
+    assert record["qc"]["passed"] is False
+    assert record["qc"]["problems"]
+
+
+def test_report_sin_edit_plans_dice_que_ejecute_render(rendered_job):
+    job_id, work = rendered_job
+    for plan in work.edit_plans.glob("edit_plan_*.json"):
+        plan.unlink()
+
+    result = runner.invoke(cli.app, ["report", job_id, "--skip-llm"])
+    assert result.exit_code != 0
+    assert "render" in result.output
+
+
+def test_report_json_sale_por_stdout(rendered_job):
+    """Con `--json` la salida es parseable, para scripting."""
+    job_id, _work = rendered_job
+    result = runner.invoke(cli.app, ["report", job_id, "--skip-llm", "--json"])
+    assert result.exit_code == 0, result.output
+    payload = json.loads(result.stdout)
+    informe = payload["report"]
+    assert informe["clips_rendered"] == 1
+    assert informe["job_id"] == job_id
+    assert payload["next_state"] == JobState.COMPLETED.value
+    assert payload["report_path"].endswith(".json")

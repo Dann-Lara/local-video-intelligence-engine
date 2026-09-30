@@ -29,6 +29,10 @@ SCHEMA_FILES = {
     "edit_plan": "edit_plan.schema.json",
     "clip_record": "clip_record.schema.json",
     "performance_snapshot": "performance_snapshot.schema.json",
+    "semantic_qc": "semantic_qc.schema.json",
+    "seo_metadata": "seo_metadata.schema.json",
+    "platform_metadata": "platform_metadata.schema.json",
+    "report": "report.schema.json",
 }
 
 

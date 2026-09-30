@@ -206,6 +206,74 @@ PERFORMANCE_SNAPSHOT = {
     "derived_metrics_version": "1.0",
 }
 
+# --- Sprint 7: QC semantico, SEO y report ---------------------------------
+
+SEMANTIC_QC = {
+    "approved": True,
+    "score": 85.0,
+    "answers": {
+        "makes_sense": {"ok": True, "reason": ""},
+        "understands_standalone": {"ok": True, "reason": ""},
+        "has_payoff": {"ok": True, "reason": ""},
+        "ends_complete": {"ok": True, "reason": ""},
+        "hook_works": {"ok": True, "reason": ""},
+    },
+    "problems": [],
+    "recommendations": [],
+}
+
+
+def _platform_body() -> dict:
+    return {
+        "title": "Escape Attempt: Preparing for a Police Pursuit",
+        "description": "A group is preparing an escape with months of planning.",
+        "hashtags": ["escape_attempt", "police_chase"],
+        "keywords": ["prison break", "police chase"],
+        "hook": "We got intel",
+        "category": "true_crime",
+    }
+
+
+SEO_METADATA = {
+    "platforms": {
+        "youtube": _platform_body(),
+        "tiktok": _platform_body(),
+        "instagram": _platform_body(),
+        "generic": _platform_body(),
+    },
+    "category": "true_crime",
+}
+
+PLATFORM_METADATA = {
+    "schema_version": "1.0",
+    "clip_id": "clip_001",
+    "platform": "youtube",
+    **_platform_body(),
+}
+
+REPORT = {
+    "job_id": "job_001",
+    "source": "input/video_001.mp4",
+    "duration": 1228.0,
+    "candidates_found": 4,
+    "candidates_approved": 2,
+    "clips_rendered": 2,
+    "clips_rejected": 1,
+    "average_score": 77.5,
+    "processing_time_seconds": 42.2,
+    "errors": [],
+    "clips": [
+        {
+            "clip_id": "clip_001",
+            "passed": True,
+            "selection_score": 80.0,
+            "semantic_score": 85.0,
+            "problems": [],
+            "record_path": "work/clip_records/clip_001.json",
+        }
+    ],
+}
+
 CLIP_RECORD = {
     "schema_version": "1.0",
     "clip_id": "clip_001",
@@ -285,6 +353,10 @@ VALID_INSTANCES = {
     "edit_plan": EDIT_PLAN,
     "clip_record": CLIP_RECORD,
     "performance_snapshot": PERFORMANCE_SNAPSHOT,
+    "semantic_qc": SEMANTIC_QC,
+    "seo_metadata": SEO_METADATA,
+    "platform_metadata": PLATFORM_METADATA,
+    "report": REPORT,
 }
 
 

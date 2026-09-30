@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-video-intelligence/schemas/seo_metadata.schema.json",
+  "title": "SEO Metadata",
+  "description": "Metadata de publicacion POR PLATAFORMA (seccion 35). Cada clip produce su propia metadata independiente; no se comparte una descripcion generica entre clips. El objeto raíz es el cuerpo que emite Gemma; el software lo envuelve con job_id/clip_id y lo reparte en metadata/<plataforma>.json.",
+  "type": "object",
+  "required": ["platforms"],
+  "additionalProperties": false,
+  "properties": {
+    "platforms": {
+      "type": "object",
+      "description": "Una entrada por plataforma. Las cuatro son obligatorias: se generan siempre, aunque el texto sea corto, para que la estructura del directorio sea estable.",
+      "required": ["youtube", "tiktok", "instagram", "generic"],
+      "additionalProperties": false,
+      "properties": {
+        "youtube": { "$ref": "#/$defs/platform" },
+        "tiktok": { "$ref": "#/$defs/platform" },
+        "instagram": { "$ref": "#/$defs/platform" },
+        "generic": { "$ref": "#/$defs/platform" }
+      }
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Categoria de contenido compartida (p.ej. 'true_crime', 'motivacion', 'tecnologia'). Se decide UNA vez para las cuatro plataformas."
+    }
+  },
+  "$defs": {
+    "platform": {
+      "type": "object",
+      "required": ["title", "description", "hashtags", "keywords", "hook", "category"],
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Titulo de la publicacion. YouTube admite ~100 caracteres; TikTok ~150 pero se corta en pantalla; el titulo corto y con gancho funciona en todas."
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Descripcion de la publicacion, en el idioma del video, sin alucinaciones: solo lo que el clip muestra o dice."
+        },
+        "hashtags": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[A-Za-z0-9_]+$" },
+          "minItems": 1,
+          "description": "Hashtags SIN el '#'. Se adaptan a la plataforma."
+        },
+        "keywords": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "Terminos de busqueda, sin '#'. Mas largos y especificos que los hashtags."
+        },
+        "hook": {
+          "type": "string",
+          "minLength": 1,
+          "description": "La frase de apertura del clip, la que engancha. Literal si es del audio."
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Categoria de contenido. Se copia de la raiz para que cada fichero metadata sea autonomo."
+        }
+      }
+    }
+  }
+}

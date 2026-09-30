@@ -21,6 +21,7 @@ Uso:
 from __future__ import annotations
 
 import json
+import shutil
 import sys
 import tempfile
 from pathlib import Path
@@ -82,18 +83,41 @@ def build_source(destination: Path) -> None:
     )
 
 
-def render(remotion_dir: Path, output: Path, props_path: Path) -> None:
-    ffmpeg.run(
-        [
-            ffmpeg.require("npx"),
-            "remotion", "render",
-            COMPOSITION,
-            str(output),
-            f"--props={props_path}",
-        ],
-        cwd=remotion_dir,
-        timeout=1800,
+def render(remotion_dir: Path, output: Path, props_path: Path, public_dir: Path) -> None:
+    """Invoca el render por la MISMA funcion que usa `main.py render`.
+
+    Antes este script escribia su propio argv con `npx remotion render`, y se
+    quedo obsoleto en cuanto el pipeline real anadio `--public-dir`,
+    `--browser-executable` y `--color-space bt709`: los tres son obligatorios
+    (el master se sirve por HTTP, sin Chrome local Remotion intenta descargar el
+    suyo, y sin `--color-space` el resultado sale `yuvj420p`). Reutilizar
+    `build_remotion_args` hace que el smoke test se rompa si el render cambia,
+    en vez de dar verde con una invocacion que ya no representa nada.
+    """
+    from src.media import render as render_module
+
+    node = shutil.which("node")
+    if node is None:
+        raise SmokeFailure("node no esta en PATH (Remotion lo necesita)")
+
+    browser = render_module.resolve_browser_executable()
+    if browser is None:
+        raise SmokeFailure(
+            "no se encontro un Chrome/Edge local: Remotion intentaria descargar el suyo"
+        )
+
+    argv = render_module.build_remotion_args(
+        node,
+        render_module.remotion_entry(remotion_dir),
+        component_id=COMPOSITION,
+        props_path=props_path,
+        output_path=output,
+        public_dir=public_dir,
+        browser_executable=browser,
+        crf=20,
+        loglevel="error",
     )
+    ffmpeg.run(argv, cwd=remotion_dir, timeout=1800)
 
 
 def gray_frame(video: Path, seconds: float) -> np.ndarray:
@@ -219,7 +243,7 @@ def main() -> int:
             build_source(public_copy)
 
             print(f"2/3 renderizando composicion {COMPOSITION}...")
-            render(remotion_dir, output, props_path)
+            render(remotion_dir, output, props_path, public_dir)
             if not output.exists():
                 raise SmokeFailure("remotion no produjo archivo de salida")
 

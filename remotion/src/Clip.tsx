@@ -66,16 +66,20 @@ export const Clip: FC<ClipProps> = ({
   accentColor = "#FFD400",
 }) => {
   const frame = useCurrentFrame();
-  const { fps, durationInFrames } = useVideoConfig();
+  const { fps } = useVideoConfig();
   const seconds = frame / fps;
 
   const cue = activeCue(subtitles, seconds);
 
-  // El titulo entra en los primeros 0.4s y se retira en los ultimos 0.6s.
+  // El titulo es un cartel de apertura, no un rotulo permanente: entra rapido,
+  // aguanta unos segundos y se va. Antes se quedaba en pantalla TODO el clip
+  // (la opacidad solo caia en los ultimos 0.6s), lo que en un clip de 38s
+  // tapaba el borde superior durante 38s y competia con los subtitulos.
+  const TITLE_HOLD_FRAMES = Math.round(fps * 2.5);
   const titleEnter = spring({ frame, fps, config: { damping: 200 }, durationInFrames: 12 });
   const titleExit = interpolate(
     frame,
-    [durationInFrames - 18, durationInFrames - 6],
+    [TITLE_HOLD_FRAMES, TITLE_HOLD_FRAMES + 15],
     [1, 0],
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
   );

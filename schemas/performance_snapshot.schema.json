@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-video-intelligence/schemas/performance_snapshot.schema.json",
+  "title": "Performance Snapshot",
+  "description": "Medicion puntual de como funciono un clip publicado (secciones 38-41). Se guardan METRICAS CRUDAS y DERIVADAS; nunca se eliminan las originales porque las formulas pueden cambiar.",
+  "type": "object",
+  "required": ["platform", "captured_at", "metrics"],
+  "additionalProperties": false,
+  "properties": {
+    "platform": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador estable del adaptador, p.ej. 'youtube_shorts' (seccion 43)."
+    },
+    "publication_id": { "type": ["string", "null"] },
+    "remote_id": {
+      "type": ["string", "null"],
+      "description": "ID del video en la plataforma, si existe."
+    },
+    "captured_at": { "type": "string", "format": "date-time" },
+    "age_hours": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "description": "Horas desde la publicacion. Puntos de referencia: 1, 6, 24, 48, 72, 168, 672."
+    },
+    "metrics": {
+      "type": "object",
+      "description": "Solo lo disponible. Usar null para 'no proporcionado por la plataforma'; NUNCA 0 como sustituto de unknown (seccion 38).",
+      "properties": {
+        "exposure": {
+          "type": "object",
+          "additionalProperties": { "type": ["integer", "number", "null"] },
+          "properties": {
+            "views": { "type": ["integer", "null"], "minimum": 0 },
+            "shown_in_feed": { "type": ["integer", "null"], "minimum": 0 },
+            "unique_viewers": { "type": ["integer", "null"], "minimum": 0 }
+          }
+        },
+        "retention": {
+          "type": "object",
+          "additionalProperties": { "type": ["integer", "number", "null"] },
+          "properties": {
+            "average_view_duration_seconds": { "type": ["number", "null"], "minimum": 0 },
+            "average_percentage_viewed": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+            "completion_rate": { "type": ["number", "null"], "minimum": 0, "maximum": 100 }
+          }
+        },
+        "engagement": {
+          "type": "object",
+          "additionalProperties": { "type": ["integer", "number", "null"] },
+          "properties": {
+            "likes": { "type": ["integer", "null"], "minimum": 0 },
+            "comments": { "type": ["integer", "null"], "minimum": 0 },
+            "shares": { "type": ["integer", "null"], "minimum": 0 },
+            "saves": { "type": ["integer", "null"], "minimum": 0 }
+          }
+        },
+        "conversion": {
+          "type": "object",
+          "additionalProperties": { "type": ["integer", "number", "null"] },
+          "properties": {
+            "followers_gained": { "type": ["integer", "null"], "minimum": 0 },
+            "subscribers_gained": { "type": ["integer", "null"], "minimum": 0 },
+            "profile_visits": { "type": ["integer", "null"], "minimum": 0 }
+          }
+        },
+        "distribution": {
+          "type": "object",
+          "additionalProperties": { "type": ["string", "number", "null"] },
+          "properties": {
+            "traffic_source": { "type": ["string", "null"] },
+            "audience_source": { "type": ["string", "null"] }
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "metric_names": {
+      "type": ["object", "null"],
+      "description": "Seccion 42: el nombre EXACTO de la metrica segun la documentacion de la plataforma, para survives cambios de nomenclatura.",
+      "additionalProperties": { "type": "string" }
+    },
+    "metric_definitions_at_capture": {
+      "type": ["object", "null"],
+      "description": "Version de la semantica de cada metrica al momento de capturar. YouTube cambio la forma de contar vistas publicas de Shorts; hay que preservar el contexto.",
+      "additionalProperties": { "type": "string" }
+    },
+    "derived_metrics": {
+      "type": "object",
+      "description": "Seccion 40: rates calculadas. Derivadas, recalculables, jamas sustituyen a las raw.",
+      "properties": {
+        "like_rate": { "type": ["number", "null"] },
+        "comment_rate": { "type": ["number", "null"] },
+        "share_rate": { "type": ["number", "null"] },
+        "save_rate": { "type": ["number", "null"] },
+        "engagement_rate": { "type": ["number", "null"] },
+        "subscriber_conversion_rate": { "type": ["number", "null"] },
+        "follower_conversion_rate": { "type": ["number", "null"] }
+      },
+      "additionalProperties": { "type": ["number", "null"] }
+    },
+    "derived_metrics_version": {
+      "type": ["string", "null"],
+      "description": "Version de las formulas usadas. Si cambia, se pueden recalcular sin perder las raw."
+    },
+    "fetch_error": {
+      "type": ["string", "null"],
+      "description": "Seccion 58: error recuperable durante la obtencion. Se registra, no se oculta."
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-video-intelligence/schemas/content_map.schema.json",
+  "title": "Content Map",
+  "description": "Representacion estructurada del contenido, producida por Gemma a partir del transcript normalizado (seccion 17). Toda afirmacion debe poder rastrearse hasta un rango del transcript.",
+  "type": "object",
+  "required": ["schema_version", "language", "duration", "generated_by"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0" },
+    "job_id": { "type": ["string", "null"] },
+    "language": { "type": "string" },
+    "duration": { "type": "number", "minimum": 0.0 },
+    "generated_by": { "$ref": "#/$defs/model_run" },
+    "global_summary": { "type": ["string", "null"] },
+    "topics": { "type": "array", "items": { "$ref": "#/$defs/topic" } },
+    "entities": { "type": "array", "items": { "$ref": "#/$defs/entity" } },
+    "claims": { "type": "array", "items": { "$ref": "#/$defs/claim" } },
+    "stories": { "type": "array", "items": { "$ref": "#/$defs/moment" } },
+    "questions": { "type": "array", "items": { "$ref": "#/$defs/moment" } },
+    "answers": { "type": "array", "items": { "$ref": "#/$defs/moment" } },
+    "conflicts": { "type": "array", "items": { "$ref": "#/$defs/moment" } },
+    "revelations": { "type": "array", "items": { "$ref": "#/$defs/moment" } },
+    "surprising_points": { "type": "array", "items": { "$ref": "#/$defs/moment" } },
+    "emotional_moments": { "type": "array", "items": { "$ref": "#/$defs/moment" } },
+    "humorous_moments": { "type": "array", "items": { "$ref": "#/$defs/moment" } },
+    "actionable_points": { "type": "array", "items": { "$ref": "#/$defs/moment" } },
+    "strong_statements": { "type": "array", "items": { "$ref": "#/$defs/moment" } },
+    "potential_hooks": { "type": "array", "items": { "$ref": "#/$defs/hook" } },
+    "memorable_phrases": { "type": "array", "items": { "$ref": "#/$defs/moment" } },
+    "conclusions": { "type": "array", "items": { "$ref": "#/$defs/moment" } },
+    "calls_to_action": { "type": "array", "items": { "$ref": "#/$defs/moment" } },
+    "topic_changes": { "type": "array", "items": { "$ref": "#/$defs/moment" } }
+  },
+  "$defs": {
+    "time_range": {
+      "type": "object",
+      "required": ["start", "end"],
+      "additionalProperties": false,
+      "properties": {
+        "start": { "type": "number", "minimum": 0.0 },
+        "end": { "type": "number", "minimum": 0.0 }
+      }
+    },
+    "model_run": {
+      "type": "object",
+      "required": ["provider", "model", "prompt_version", "temperature"],
+      "additionalProperties": false,
+      "properties": {
+        "provider": { "type": "string" },
+        "model": { "type": "string" },
+        "prompt_version": { "type": "string" },
+        "temperature": { "type": "number" },
+        "max_tokens": { "type": ["integer", "null"] },
+        "seed": { "type": ["integer", "null"] },
+        "input_sha256": { "type": ["string", "null"] },
+        "latency_seconds": { "type": ["number", "null"] }
+      }
+    },
+    "quote": {
+      "type": "object",
+      "description": "Cita textual del audio. No puede ser parafraseada (seccion 26).",
+      "required": ["text", "time"],
+      "additionalProperties": false,
+      "properties": {
+        "text": { "type": "string", "minLength": 1 },
+        "time": { "$ref": "#/$defs/time_range" }
+      }
+    },
+    "moment": {
+      "type": "object",
+      "description": "Evento con ubicacion temporal y justificacion. La IA explica; el software ejecuta.",
+      "required": ["summary", "time", "reason"],
+      "additionalProperties": false,
+      "properties": {
+        "summary": { "type": "string", "minLength": 1 },
+        "time": { "$ref": "#/$defs/time_range" },
+        "reason": { "type": "string", "minLength": 1 },
+        "quotes": { "type": "array", "items": { "$ref": "#/$defs/quote" } },
+        "confidence": { "type": ["number", "null"], "minimum": 0.0, "maximum": 1.0 },
+        "insufficient_context": {
+          "type": "boolean",
+          "default": false,
+          "description": "true cuando la IA no puede determinarlo. No inventar (seccion 62)."
+        }
+      }
+    },
+    "topic": {
+      "type": "object",
+      "required": ["label", "time", "signature"],
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string", "minLength": 1 },
+        "time": { "$ref": "#/$defs/time_range" },
+        "signature": {
+          "type": "string",
+          "minLength": 1,
+          "description": "topic_signature: tema normalizado para calcular diversidad (seccion 22)."
+        },
+        "summary": { "type": ["string", "null"] },
+        "keywords": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "entity": {
+      "type": "object",
+      "required": ["name", "type", "time"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "enum": ["person", "organization", "place", "product", "concept", "other", "unknown"] },
+        "time": { "$ref": "#/$defs/time_range" },
+        "mentions": { "type": "integer", "minimum": 1, "default": 1 }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "description": "Afirmacion verificable. Si no aparece en el transcript, confidence 0 e insufficient_context true.",
+      "required": ["statement", "time", "verifiable"],
+      "additionalProperties": false,
+      "properties": {
+        "statement": { "type": "string", "minLength": 1 },
+        "time": { "$ref": "#/$defs/time_range" },
+        "verifiable": { "type": "boolean" },
+        "evidence": { "type": "array", "items": { "$ref": "#/$defs/quote" } },
+        "confidence": { "type": ["number", "null"], "minimum": 0.0, "maximum": 1.0 },
+        "insufficient_context": { "type": "boolean", "default": false }
+      }
+    },
+    "hook": {
+      "type": "object",
+      "required": ["type", "text", "origin", "time"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "question",
+            "contrarian_statement",
+            "surprising_fact",
+            "bold_claim",
+            "conflict",
+            "curiosity_gap",
+            "emotional_statement",
+            "story_opening",
+            "unexpected_reveal",
+            "unknown"
+          ]
+        },
+        "text": { "type": "string", "minLength": 1 },
+        "origin": {
+          "type": "string",
+          "enum": ["original", "generated"],
+          "description": "Seccion 25: ORIGINAL_HOOK es texto pronunciado en el audio. GENERATED_HOOK lo escribio la IA."
+        },
+        "time": { "$ref": "#/$defs/time_range" },
+        "requires_generated_hook": {
+          "type": "boolean",
+          "default": false,
+          "description": "Seccion 26: true cuando el clip necesita una frase que no existe en el audio. Debe quedar registrado."
+        },
+        "reason": { "type": ["string", "null"] },
+        "integrity_note": {
+          "type": ["string", "null"],
+          "description": "Anotacion del validador cuando degrada un hook a GENERATED_HOOK (seccion 26)."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-video-intelligence/schemas/candidate_set.schema.json",
+  "title": "Candidate Set",
+  "description": "Conjunto de candidatos de un job (secciones 18-26): descubrimiento por bloque de nivel 2 + seleccion de ranking. Salida de GENERATING_CANDIDATES y RANKING.",
+  "type": "object",
+  "required": ["schema_version", "job_id", "source", "candidates"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0" },
+    "job_id": { "type": "string", "minLength": 1 },
+    "source": {
+      "type": "object",
+      "description": "Video de entrada del que salen los candidatos.",
+      "required": ["file", "sha256", "duration"],
+      "additionalProperties": false,
+      "properties": {
+        "file": { "type": "string" },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "duration": { "type": "number", "exclusiveMinimum": 0.0 }
+      }
+    },
+    "block_count": { "type": "integer", "minimum": 0 },
+    "content_map_sha256": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" },
+    "normalized_transcript_sha256": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" },
+    "candidates": { "type": "array", "items": { "$ref": "candidate.schema.json" } },
+    "selection": {
+      "type": "object",
+      "description": "Resultado de RANKING (secciones 20-23): quien se selecciona y por que no el resto.",
+      "required": ["minimum_score", "max_temporal_overlap", "selected"],
+      "additionalProperties": false,
+      "properties": {
+        "minimum_score": { "type": "number" },
+        "max_temporal_overlap": { "type": "number" },
+        "diversity_threshold": { "type": ["number", "null"] },
+        "target_minimum": { "type": ["integer", "null"], "minimum": 0 },
+        "target_maximum": { "type": ["integer", "null"], "minimum": 0 },
+        "selected": { "type": "array", "items": { "type": "string" } },
+        "dropped": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["candidate_id", "reason"],
+            "additionalProperties": false,
+            "properties": {
+              "candidate_id": { "type": "string" },
+              "reason": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  }
+}

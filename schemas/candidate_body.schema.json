@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-video-intelligence/schemas/candidate_body.schema.json",
+  "title": "Candidate Body",
+  "description": "Lo que Gemma emite por bloque de nivel 2 (secciones 18-24): lista de candidatos a clip SIN el envoltorio que firma el software (schema_version, candidate_id, job_id, source.file/sha256, generated_by). El resto de campos y el score se sanean y completan en la capa de generacion (seccion 20: los maximos y el total se fuerzan en software, no se delegan al LLM).",
+  "type": "object",
+  "required": ["candidates"],
+  "additionalProperties": false,
+  "properties": {
+    "candidates": { "type": "array", "items": { "$ref": "#/$defs/candidate" } }
+  },
+  "$defs": {
+    "candidate": {
+      "type": "object",
+      "required": ["source", "content", "hook", "score"],
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "type": "object",
+          "required": ["start", "end"],
+          "additionalProperties": false,
+          "properties": {
+            "start": { "type": "number", "minimum": 0.0 },
+            "end": { "type": "number", "exclusiveMinimum": 0.0 },
+            "boundary_reason": {
+              "type": ["string", "null"],
+              "description": "Por que empieza y termina aqui (seccion 19)."
+            }
+          }
+        },
+        "original_window": {
+          "type": "object",
+          "description": "Ventana tal como la detecto el modelo, antes de context expansion (seccion 24).",
+          "additionalProperties": false,
+          "properties": {
+            "start": { "type": "number", "minimum": 0.0 },
+            "end": { "type": "number" },
+            "duration": { "type": "number" }
+          }
+        },
+        "expansion": {
+          "type": "object",
+          "description": "Registra si la ventana fue expandida y por que (seccion 24).",
+          "additionalProperties": false,
+          "properties": {
+            "expanded": { "type": "boolean" },
+            "pre_context_seconds": { "type": ["number", "null"], "minimum": 0.0 },
+            "post_context_seconds": { "type": ["number", "null"], "minimum": 0.0 },
+            "reason": { "type": ["string", "null"] },
+            "rescored": { "type": "boolean" }
+          }
+        },
+        "content": {
+          "type": "object",
+          "required": ["topic", "reason"],
+          "additionalProperties": false,
+          "properties": {
+            "topic": { "type": "string", "minLength": 1 },
+            "summary": { "type": ["string", "null"] },
+            "reason": { "type": "string", "minLength": 1 },
+            "content_type": {
+              "type": "string",
+              "enum": [
+                "explanation",
+                "story",
+                "anecdote",
+                "opinion",
+                "tutorial",
+                "list",
+                "reaction",
+                "interview",
+                "unknown"
+              ]
+            },
+            "transcript_excerpt": { "type": "string" }
+          }
+        },
+        "hook": { "$ref": "content_map.schema.json#/$defs/hook" },
+        "value_provided": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["information", "emotion", "surprise", "entertainment", "conflict", "curiosity", "utility"]
+          }
+        },
+        "progression": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "pattern": {
+              "type": "string",
+              "enum": ["setup_payoff", "question_answer", "claim_conclusion", "none"]
+            },
+            "beats": { "type": "array", "items": { "type": "string" } },
+            "has_payoff": { "type": "boolean" },
+            "ends_complete": { "type": "boolean" }
+          }
+        },
+        "score": { "$ref": "#/$defs/score" },
+        "signatures": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "topic_signature": { "type": "string" },
+            "semantic_signature": { "type": "string" },
+            "embedding": {
+              "type": ["array", "null"],
+              "items": { "type": "number" }
+            }
+          }
+        }
+      }
+    },
+    "score": {
+      "type": "object",
+      "description": "Seccion 20: mismas cotas por dimension que candidate.schema.json. El total y la escala son opcionales de facto: se fuerzan en la capa de software.",
+      "required": ["hook", "curiosity", "value", "emotion", "narrative", "payoff", "shareability", "standalone", "visual"],
+      "additionalProperties": false,
+      "properties": {
+        "hook": { "type": "number", "minimum": 0, "maximum": 20 },
+        "curiosity": { "type": "number", "minimum": 0, "maximum": 15 },
+        "value": { "type": "number", "minimum": 0, "maximum": 15 },
+        "emotion": { "type": "number", "minimum": 0, "maximum": 10 },
+        "narrative": { "type": "number", "minimum": 0, "maximum": 10 },
+        "payoff": { "type": "number", "minimum": 0, "maximum": 10 },
+        "shareability": { "type": "number", "minimum": 0, "maximum": 10 },
+        "standalone": { "type": "number", "minimum": 0, "maximum": 5 },
+        "visual": { "type": "number", "minimum": 0, "maximum": 5 },
+        "confidence": {
+          "type": ["number", "null"],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Confianza de la IA en su propio score."
+        }
+      }
+    }
+  }
+}

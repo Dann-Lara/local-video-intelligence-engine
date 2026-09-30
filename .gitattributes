@@ -1,0 +1,20 @@
+# Normaliza finales de linea: en el repo siempre LF, en el disco de Windows
+# CRLF. Sin esto, cada clone en Linux arrastra cambios de todo el repo.
+* text=auto eol=lf
+
+# Binarios que no deben tocar los fines de linea
+*.mp4 binary
+*.wav binary
+*.png binary
+*.jpg binary
+*.db binary
+
+# Fija LF tambien en Windows para los ficheros que tools leen byte a byte
+# (ASS, JSON de props): las rutas y los codigos ASS no deben depender de CRLF.
+*.ass text eol=lf
+*.py text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf

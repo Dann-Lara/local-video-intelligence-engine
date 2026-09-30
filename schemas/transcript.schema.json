@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-video-intelligence/schemas/transcript.schema.json",
+  "title": "Transcript",
+  "description": "Salida cruda e inmutable de Whisper. Nunca se modifica ni se sobrescribe. Los timestamps son absolutos respecto al inicio del video fuente.",
+  "type": "object",
+  "required": ["schema_version", "language", "duration", "segments"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0" },
+    "job_id": { "type": ["string", "null"] },
+    "source": {
+      "type": "object",
+      "required": ["audio_file", "sha256"],
+      "additionalProperties": false,
+      "properties": {
+        "audio_file": { "type": "string" },
+        "audio_sample_rate": { "type": "integer" },
+        "audio_channels": { "type": "integer" },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "language": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 8,
+      "description": "ISO 639-1 detectado, o 'unknown' si la deteccion falla (seccion 62)."
+    },
+    "language_probability": {
+      "type": ["number", "null"],
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "duration": { "type": "number", "minimum": 0.0 },
+    "generator": {
+      "type": "object",
+      "required": ["provider", "model", "parameters"],
+      "additionalProperties": false,
+      "properties": {
+        "provider": { "type": "string", "enum": ["faster_whisper", "openai_whisper"] },
+        "model": { "type": "string" },
+        "parameters": { "type": "object" }
+      }
+    },
+    "segments": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/segment" }
+    }
+  },
+  "$defs": {
+    "word": {
+      "type": "object",
+      "description": "Timestamp por palabra. Opcional: solo si el backend lo soporta.",
+      "required": ["word", "start", "end"],
+      "additionalProperties": false,
+      "properties": {
+        "word": { "type": "string" },
+        "start": { "type": "number", "minimum": 0.0 },
+        "end": { "type": "number", "minimum": 0.0 },
+        "probability": {
+          "type": ["number", "null"],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Confianza. null si el backend no la expone; nunca 0 como sustituto de unknown (seccion 38)."
+        }
+      }
+    },
+    "segment": {
+      "type": "object",
+      "required": ["id", "start", "end", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "integer", "minimum": 0 },
+        "start": { "type": "number", "minimum": 0.0 },
+        "end": { "type": "number", "minimum": 0.0 },
+        "text": { "type": "string" },
+        "no_speech_prob": { "type": ["number", "null"], "minimum": 0.0, "maximum": 1.0 },
+        "words": { "type": "array", "items": { "$ref": "#/$defs/word" } }
+      }
+    }
+  }
+}

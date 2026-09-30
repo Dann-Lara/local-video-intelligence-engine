@@ -1,0 +1,49 @@
+# Secrets
+.env
+*.pem
+*.key
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Node / Remotion
+node_modules/
+.remotion/
+remotion/public/*
+!remotion/public/.gitkeep
+
+# Data directories (never version media or artifacts)
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+work/*
+!work/.gitkeep
+logs/*
+!logs/.gitkeep
+reports/*
+!reports/.gitkeep
+
+# Database
+database/*.db
+database/*.db-journal
+database/*.db-wal
+database/*.db-shm
+database/*.sqlite3
+
+# Test fixtures are generated, not committed (large binaries)
+tests/fixtures/*.mp4
+tests/fixtures/*.wav
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

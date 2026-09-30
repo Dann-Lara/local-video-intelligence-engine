@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-video-intelligence/schemas/normalized_transcript.schema.json",
+  "title": "Normalized Transcript",
+  "description": "Segunda representacion derivada del transcript (seccion 15). Se construye a partir de transcript.json y NUNCA lo modifica. Puede regenerarse sin perdida porque el original es inmutable.",
+  "type": "object",
+  "required": ["schema_version", "derived_from", "language", "duration", "paragraphs"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0" },
+    "job_id": { "type": ["string", "null"] },
+    "derived_from": {
+      "type": "object",
+      "required": ["file", "sha256", "schema_version"],
+      "additionalProperties": false,
+      "properties": {
+        "file": { "type": "string" },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "schema_version": { "type": "string" }
+      }
+    },
+    "language": { "type": "string" },
+    "duration": { "type": "number", "minimum": 0.0 },
+    "paragraphs": { "type": "array", "items": { "$ref": "#/$defs/paragraph" } },
+    "pauses": {
+      "type": "array",
+      "description": "Silencios entre segmentos (seccion 15, 'deteccion de pausas'). Un corte de clip cae mejor en una pausa que en mitad de una palabra, y saber donde respira el hablante evita frames vacios en la edicion. Solo se incluye si hay pausas por encima del umbral.",
+      "items": { "$ref": "#/$defs/pause" }
+    },
+    "context_windows": {
+      "type": "array",
+      "description": "Ventanas para el Context Window Engine jerarquico (seccion 16). Nivel 1: 30-120s. Nivel 2: 5-15 min. Nivel 3: resumen global del video completo.",
+      "items": { "$ref": "#/$defs/context_window" }
+    },
+    "full_text": {
+      "type": "string",
+      "description": "Texto completo concatenado, para busqueda y embeddings."
+    }
+  },
+  "$defs": {
+    "source_ref": {
+      "type": "object",
+      "description": "Referencia a los timestamps originales. Se conserva siempre para poder recortar exactamente.",
+      "required": ["start", "end"],
+      "additionalProperties": false,
+      "properties": {
+        "start": { "type": "number", "minimum": 0.0 },
+        "end": { "type": "number", "minimum": 0.0 },
+        "segment_ids": { "type": "array", "items": { "type": "integer", "minimum": 0 } }
+      }
+    },
+    "sentence": {
+      "type": "object",
+      "required": ["text", "start", "end"],
+      "additionalProperties": false,
+      "properties": {
+        "text": { "type": "string" },
+        "start": { "type": "number", "minimum": 0.0 },
+        "end": { "type": "number", "minimum": 0.0 },
+        "segment_ids": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0 },
+          "description": "Segmentos de transcript.json de los que sale esta frase. Permite recortar al segundo sin volver a buscar el texto en el original (seccion 14: la informacion temporal no se destruye)."
+        }
+      }
+    },
+    "paragraph": {
+      "type": "object",
+      "required": ["id", "text", "start", "end"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "integer", "minimum": 0 },
+        "text": { "type": "string", "minLength": 1 },
+        "start": { "type": "number", "minimum": 0.0 },
+        "end": { "type": "number", "minimum": 0.0 },
+        "sentences": { "type": "array", "items": { "$ref": "#/$defs/sentence" } },
+        "source": { "$ref": "#/$defs/source_ref" }
+      }
+    },
+    "pause": {
+      "type": "object",
+      "required": ["start", "end", "duration"],
+      "additionalProperties": false,
+      "properties": {
+        "start": { "type": "number", "minimum": 0.0 },
+        "end": { "type": "number", "minimum": 0.0 },
+        "duration": { "type": "number", "minimum": 0.0 }
+      }
+    },
+    "context_window": {
+      "type": "object",
+      "required": ["id", "level", "start", "end", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "level": { "type": "integer", "enum": [1, 2, 3] },
+        "start": { "type": "number", "minimum": 0.0 },
+        "end": { "type": "number", "minimum": 0.0 },
+        "text": { "type": "string" },
+        "parent_id": { "type": ["string", "null"] },
+        "child_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

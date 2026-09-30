@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-video-intelligence/schemas/hook_extraction.schema.json",
+  "title": "Hook Extraction",
+  "description": "Clasificacion de un hook sobre un segmento concreto (seccion 25, Skill 07). Deliberadamente pequeno: se usa en un bucle corto y frecuente, y sirve de sonda ligera para comprobar que el servidor responde con JSON estructurado.",
+  "type": "object",
+  "required": ["schema_version", "type", "origin", "text"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0" },
+    "type": {
+      "type": "string",
+      "enum": [
+        "question",
+        "contrarian_statement",
+        "surprising_fact",
+        "bold_claim",
+        "conflict",
+        "curiosity_gap",
+        "emotional_statement",
+        "story_opening",
+        "unexpected_reveal",
+        "none"
+      ]
+    },
+    "origin": {
+      "type": "string",
+      "enum": ["original", "generated"],
+      "description": "Seccion 25: 'original' solo si la frase fue literalmente pronunciada en el audio dentro del segmento."
+    },
+    "text": { "type": "string", "minLength": 1 },
+    "requires_generated_hook": { "type": "boolean", "default": false },
+    "time": {
+      "type": ["object", "null"],
+      "required": ["start", "end"],
+      "additionalProperties": false,
+      "properties": {
+        "start": { "type": "number", "minimum": 0.0 },
+        "end": { "type": "number", "exclusiveMinimum": 0.0 }
+      }
+    },
+    "reason": { "type": ["string", "null"] },
+    "integrity_note": {
+      "type": ["string", "null"],
+      "description": "Seccion 26: si el hook es generado, aquí va el aviso de que el creador no pronuncio esa frase."
+    }
+  }
+}

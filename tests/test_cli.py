@@ -69,19 +69,35 @@ def test_help_lists_every_command_of_section_65():
         assert command in result.stdout, f"falta el comando {command} (seccion 65)"
 
 
-@pytest.mark.parametrize("argv", [["performance", "sync"]])
-def test_pipeline_commands_signal_not_implemented(argv):
-    """Codigo 2: el comando existe pero su etapa viene en un sprint posterior.
+def test_no_command_is_left_waiting_for_a_sprint():
+    """Anadir un comando al registro sin implementarlo tiene que ser visible.
 
-    `performance sync` es el unico que queda: la ingesta (Sprint 2), el Candidate
-    Engine (Sprint 5), el render (Sprint 6), el QC + SEO + report (Sprint 7) y el
-    orquestador `process` estan implementados y devuelven 0 o 1 segun el
-    resultado, nunca 2.
+    El registro `STAGE_ROADMAP` guardaba los comandos cuya etapa venia en un
+    sprint posterior. Con el Sprint 8 quedo vacio, y con el, el mecanismo que
+    lo consumia. El dict se mantiene vacio a proposito, con este test, para que
+    reutilizarlo sin terminar la etapa se note en la suite.
     """
-    result = runner.invoke(cli.app, argv)
-    assert result.exit_code == cli.EXIT_NOT_IMPLEMENTED
-    assert "todavia no esta implementado" in result.output
-    assert "Sprint" in result.output, "debe decir en que sprint se implementa"
+    assert cli.STAGE_ROADMAP == {}, (
+        f"quedan comandos sin implementar: {sorted(cli.STAGE_ROADMAP)}"
+    )
+
+
+def test_every_command_returns_zero_or_one(isolated_env, tmp_path):
+    """Ningun comando devuelve otro codigo. Existia un 2 para "el comando esta
+    aqui pero su etapa viene en un sprint posterior"; con el Sprint 8 no queda
+    ninguno, asi que un 2 hoy solo puede significar un comando roto."""
+    results = []
+    for argv in (
+        ["doctor"],
+        ["jobs", "list"],
+        ["db", "init"],
+        ["performance", "--help"],
+        ["performance", "sync", "--platform", "tiktok"],
+    ):
+        result = runner.invoke(cli.app, argv)
+        results.append((argv, result.exit_code))
+    offenders = [argv for argv, code in results if code not in (cli.EXIT_OK, cli.EXIT_ERROR)]
+    assert not offenders, f"codigos de salida inesperados: {offenders}"
 
 
 def test_process_is_no_longer_a_stub(isolated_env, tmp_path):
@@ -121,9 +137,9 @@ def test_process_defaults_are_shared_with_the_stage_commands():
     assert flag_of("report") <= process_flags
 
 
-def test_only_performance_sync_remains_in_the_stage_roadmap():
+def test_the_stage_roadmap_got_emptied_on_sprint_8():
     """Guarda contra un comando nuevo que se quede en stub sin que se note."""
-    assert list(cli.STAGE_ROADMAP) == ["performance sync"]
+    assert cli.STAGE_ROADMAP == {}
 
 
 def test_render_is_no_longer_a_stub(isolated_env):
@@ -224,11 +240,14 @@ def test_ranking_keeps_the_warnings_of_the_generation_stage(
 
 
 def test_db_init_is_idempotent(isolated_env):
+    # La version no se escribe a mano: si sube, este test sigue valiendo.
+    expected = f"schema v{db_module.SCHEMA_VERSION}"
     first = runner.invoke(cli.app, ["db", "init"])
     assert first.exit_code == 0
-    assert "schema v1" in first.output
+    assert expected in first.output
     second = runner.invoke(cli.app, ["db", "init"])
     assert second.exit_code == 0
+    assert expected in second.output
 
 
 def test_db_path_points_at_the_isolated_database(isolated_env):

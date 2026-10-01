@@ -46,10 +46,17 @@ from src.core import config as config_module  # noqa: E402
 from src.core import db as db_module  # noqa: E402
 from src.core import logs  # noqa: E402
 from src.core.db import JobState  # noqa: E402
+from src.performance import (  # noqa: E402
+    DERIVED_METRICS_VERSION,
+    ProviderUnavailable,
+    build_provider,
+    compute_derived,
+)
+from src.performance.base import parse_timestamp  # noqa: E402
+from src.performance.sync import sync_publications, timeline  # noqa: E402
 
 EXIT_OK = 0
 EXIT_ERROR = 1
-EXIT_NOT_IMPLEMENTED = 2
 
 app = typer.Typer(
     add_completion=False,
@@ -229,20 +236,19 @@ def jobs_resume(job_id: str) -> None:
 
 
 # --- etapas del pipeline (secciones 65 y 66) ---
-
-STAGE_ROADMAP = {
-    "performance sync": ("Sprint 8 (adaptadores de plataforma)", "src/performance/sync.py"),
-}
-
-
-def _not_ready(command: str) -> None:
-    sprint, module = STAGE_ROADMAP[command]
-    typer.secho(
-        f"'{command}' todavia no esta implementado ({sprint}; modulo previsto: {module})",
-        fg=typer.colors.YELLOW,
-        err=True,
-    )
-    raise typer.Exit(EXIT_NOT_IMPLEMENTED)
+# Registro de comandos que existen pero cuya etapa todavia no esta
+# implementada, para responder con el sprint que les toca en vez de fallar con
+# un error de Python. Vacio desde el Sprint 8, que fue el ultimo comando que
+# quedaba (`performance sync`).
+#
+# El mecanismo que lo consumia (`_not_ready` y el codigo de salida 2) se borro
+# con el: no queda ningun comando sin implementar y el blueprint no define ese
+# codigo, asi que mantenerlo seria codigo muerto con su test.
+#
+# Este dict se queda vacio a proposito, con su test, para que anadir un comando
+# aqui sin implementarlo sea un fallo visible en la suite y no un comando que
+# devuelve 0 sin hacer nada.
+STAGE_ROADMAP: dict[str, tuple[str, str]] = {}
 
 
 def _run_ingest(
@@ -1577,10 +1583,324 @@ def report(
         typer.echo(json.dumps(payload, ensure_ascii=False, indent=2, default=str))
 
 
+@performance_app.command("publish")
+def performance_publish(
+    job_id: str = typer.Argument(..., help="Job al que pertenece el clip publicado."),
+    clip_id: str = typer.Option(..., "--clip-id", help="Clip de `clip_records` (id de candidato)."),
+    platform: str = typer.Option(..., "--platform", help="youtube_shorts, tiktok, instagram..."),
+    platform_clip_id: str = typer.Option(
+        ..., "--platform-clip-id", help="Id que la plataforma asigno. Es con el que se piden metricas."
+    ),
+    published_at: str = typer.Option(
+        ..., "--published-at", help="ISO 8601 de la subida. Define las ventanas de 1h/6h/24h."
+    ),
+    url: str | None = typer.Option(None, "--url"),
+    title: str | None = typer.Option(None, "--title"),
+    notes: str | None = typer.Option(None, "--notes"),
+) -> None:
+    """Registra que un clip ya esta publicado en una plataforma.
+
+    Es el eslabon que faltaba entre el clip local y la plataforma: sin esta
+    fila, `performance sync` no tiene nada que medir, porque las metricas se
+    piden por el id que dio la plataforma, no por el nuestro.
+    """
+    config = _load_config()
+    repo = _open_repo(config)
+    try:
+        parse_timestamp(published_at)
+    except ValueError as exc:
+        typer.secho(str(exc), fg=typer.colors.RED, err=True)
+        raise typer.Exit(EXIT_ERROR) from exc
+
+    record = repo.get_clip_record(job_id, clip_id)
+    if record is None:
+        typer.secho(
+            f"no hay clip '{clip_id}' en el job '{job_id}'. "
+            "Suele significar que aun no se ha ejecutado `report`.",
+            fg=typer.colors.RED,
+            err=True,
+        )
+        raise typer.Exit(EXIT_ERROR)
+
+    publication_id = repo.upsert_publication(
+        clip_record_id=str(record["id"]),
+        platform=platform,
+        platform_clip_id=platform_clip_id,
+        published_at=published_at,
+        url=url,
+        title=title,
+        notes=notes,
+    )
+    typer.secho(f"publicacion registrada: {publication_id}", fg=typer.colors.GREEN)
+    typer.echo(f"  clip      {record['id']}")
+    typer.echo(f"  plataforma {platform} / {platform_clip_id}")
+    typer.echo(f"  publicada  {published_at}")
+
+
+@performance_app.command("record")
+def performance_record(
+    job_id: str = typer.Argument(..., help="Job del clip."),
+    clip_id: str = typer.Option(..., "--clip-id"),
+    age_hours: int = typer.Option(
+        ..., "--age-hours", min=1, help="Punto de la escalera (seccion 41): 1, 6, 24, 48..."
+    ),
+    platform: str = typer.Option(..., "--platform"),
+    platform_clip_id: str = typer.Option(..., "--platform-clip-id"),
+    views: int | None = typer.Option(None, "--views"),
+    likes: int | None = typer.Option(None, "--likes"),
+    comments: int | None = typer.Option(None, "--comments"),
+    shares: int | None = typer.Option(None, "--shares"),
+    subscribers_gained: int | None = typer.Option(None, "--subscribers-gained"),
+    average_view_duration_seconds: float | None = typer.Option(
+        None, "--avg-view-duration"
+    ),
+    average_percentage_viewed: float | None = typer.Option(None, "--avg-view-percentage"),
+    completion_rate: float | None = typer.Option(None, "--completion-rate"),
+    traffic_source: str | None = typer.Option(None, "--traffic-source"),
+    audience_source: str | None = typer.Option(None, "--audience-source"),
+    as_json: bool = typer.Option(False, "--json"),
+) -> None:
+    """Guarda un snapshot leyendo las metricas del panel de la plataforma.
+
+    Es la via que funciona sin credenciales de ninguna API, y la unica
+    mientras no haya un canal con OAuth configurado. Las metricas que no se
+    pasen se quedan a NULL, que significa 'no medido' y nunca 0 (seccion 38).
+    """
+    config = _load_config()
+    repo = _open_repo(config)
+    record = repo.get_clip_record(job_id, clip_id)
+    if record is None:
+        typer.secho(f"no hay clip '{clip_id}' en el job '{job_id}'", fg=typer.colors.RED, err=True)
+        raise typer.Exit(EXIT_ERROR)
+
+    publication = repo.find_publication(platform, platform_clip_id)
+    if publication is None:
+        typer.secho(
+            f"'{platform_clip_id}' no esta registrado como publicacion. "
+            "Ejecuta antes `performance publish`.",
+            fg=typer.colors.RED,
+            err=True,
+        )
+        raise typer.Exit(EXIT_ERROR)
+
+    metrics = {
+        "views": views,
+        "likes": likes,
+        "comments": comments,
+        "shares": shares,
+        "subscribers_gained": subscribers_gained,
+        "average_view_duration_seconds": average_view_duration_seconds,
+        "average_percentage_viewed": average_percentage_viewed,
+        "completion_rate": completion_rate,
+        "traffic_source": traffic_source,
+        "audience_source": audience_source,
+    }
+    derived = compute_derived(metrics)
+    snapshot_id = repo.upsert_performance_snapshot(
+        clip_record_id=str(record["id"]),
+        platform=platform,
+        age_hours=age_hours,
+        captured_at=db_module.utc_now(),
+        publication_id=str(publication["id"]),
+        platform_clip_id=platform_clip_id,
+        metrics=metrics,
+        derived=derived,
+        metric_source="manual",
+        derived_metrics_version=DERIVED_METRICS_VERSION,
+        raw={"source": "manual", "entered_via": "performance record"},
+    )
+
+    if as_json:
+        typer.echo(
+            json.dumps(
+                {
+                    "snapshot_id": snapshot_id,
+                    "clip_record_id": record["id"],
+                    "platform": platform,
+                    "age_hours": age_hours,
+                    "metrics": metrics,
+                    "derived": derived,
+                    "derived_metrics_version": DERIVED_METRICS_VERSION,
+                },
+                ensure_ascii=False,
+                indent=2,
+                default=str,
+            )
+        )
+        return
+
+    typer.secho(f"snapshot guardado: {snapshot_id}", fg=typer.colors.GREEN)
+    _print_timeline(
+        repo,
+        str(record["id"]),
+        platform=platform,
+        publication_id=str(publication["id"]),
+    )
+
+
 @performance_app.command("sync")
-def performance_sync() -> None:
-    """Sincroniza metricas de las plataformas publicadas."""
-    _not_ready("performance sync")
+def performance_sync(
+    job_id: str | None = typer.Option(None, "--job", help="Limita a las publicaciones de este job."),
+    platform: str | None = typer.Option(None, "--platform"),
+    provider: str | None = typer.Option(
+        None, "--provider", help="youtube (default) o manual. Sin credenciales: manual."
+    ),
+    force: bool = typer.Option(
+        False, "--force", help="Vuelve a pedir los puntos ya registrados."
+    ),
+    as_json: bool = typer.Option(False, "--json"),
+) -> None:
+    """Mide las publicaciones y guarda un snapshot por punto de la escalera."""
+    config = _load_config()
+    repo = _open_repo(config)
+
+    chosen = provider or config_module.get(config, "performance.default_platform", "youtube_shorts")
+    youtube_config = {
+        "youtube_channel_id": config_module.get(config, "performance.youtube.channel_id", None),
+        "youtube_access_token": config_module.get(config, "performance.youtube.access_token", None),
+        "timeout_seconds": config_module.get(config, "performance.youtube.timeout_seconds", 30),
+    }
+    try:
+        adapter = build_provider(chosen, youtube_config)
+    except ProviderUnavailable as exc:
+        typer.secho(str(exc), fg=typer.colors.RED, err=True)
+        raise typer.Exit(EXIT_ERROR) from exc
+
+    typer.echo(f"adaptador: {adapter.describe()}")
+    summary = sync_publications(
+        repo,
+        adapter,
+        config=config,
+        job_id=job_id,
+        platform=platform,
+        force=force,
+    )
+
+    if as_json:
+        typer.echo(json.dumps(summary, ensure_ascii=False, indent=2, default=str))
+        return
+
+    typer.echo(
+        f"publicaciones: {summary['publications']} | "
+        f"snapshots escritos: {summary['snapshots_written']}"
+    )
+    if summary.get("ignored_wrong_platform"):
+        typer.echo(
+            f"  omitidas por plataforma no cubierta: {summary['ignored_wrong_platform']}"
+        )
+    typer.echo(
+        f"  omitidos por ya existir: {summary['skipped_already_recorded']} | "
+        f"por no tener edad: {summary['skipped_too_early']} | "
+        f"por no ser medibles: {summary['skipped_unsupported_age']}"
+    )
+    for entry in summary["written"]:
+        typer.echo(
+            f"  + {entry['platform']}/{entry['platform_clip_id']} @{entry['age_hours']}h"
+        )
+        for note in entry.get("notes") or []:
+            typer.echo(f"      nota: {note}")
+    for error in summary["errors"]:
+        typer.secho(f"  ! {error}", fg=typer.colors.YELLOW)
+
+    if summary["snapshots_written"] == 0 and not summary["errors"]:
+        typer.secho("No habia nada nuevo que medir.", fg=typer.colors.CYAN)
+
+
+@performance_app.command("show")
+def performance_show(
+    job_id: str = typer.Argument(..., help="Job del clip."),
+    clip_id: str = typer.Option(..., "--clip-id"),
+    platform: str | None = typer.Option(None, "--platform"),
+    publication_id: str | None = typer.Option(
+        None, "--publication-id", help="Limita a una publicacion concreta."
+    ),
+    as_json: bool = typer.Option(False, "--json"),
+) -> None:
+    """La escalera temporal de un clip: como evoluciono desde que se publico.
+
+    Si el clip se publico mas de una vez, sin `--publication-id` sale la union
+    de todas, separadas y etiquetadas por publicacion.
+    """
+    config = _load_config()
+    repo = _open_repo(config)
+    record = repo.get_clip_record(job_id, clip_id)
+    if record is None:
+        typer.secho(f"no hay clip '{clip_id}' en el job '{job_id}'", fg=typer.colors.RED, err=True)
+        raise typer.Exit(EXIT_ERROR)
+
+    if as_json:
+        typer.echo(
+            json.dumps(
+                timeline(
+                    repo, str(record["id"]), platform=platform, publication_id=publication_id
+                ),
+                ensure_ascii=False,
+                indent=2,
+                default=str,
+            )
+        )
+        return
+
+    _print_timeline(
+        repo, str(record["id"]), platform=platform, publication_id=publication_id
+    )
+
+
+def _print_timeline(
+    repo: db_module.JobRepository,
+    clip_record_id: str,
+    *,
+    platform: str | None = None,
+    publication_id: str | None = None,
+) -> None:
+    """Imprime la escalera temporal. `None` se muestra como `-`, no como 0.
+
+    Es la diferencia entre "no lo midieron" y "no tuvo nada", que en una tabla
+    de Rendimiento es justo la confusion que induce a conclusiones erroneas.
+    """
+    rows = timeline(repo, clip_record_id, platform=platform, publication_id=publication_id)
+    if not rows:
+        typer.secho(
+            "sin metricas. Registra la publicacion con `performance publish` "
+            "y despues mide con `performance sync` o `performance record`.",
+            fg=typer.colors.YELLOW,
+        )
+        return
+
+    def show(value: Any, fmt: str = "{}") -> str:
+        return "-" if value is None else fmt.format(value)
+
+    header = f"{'edad':>7} {'vistas':>9} {'likes':>7} {'com.':>6} {'likes%':>7} {'visto%':>8}  fuente"
+    # Si hay mas de una publicacion se repite el cabecero por cada una. Sin
+    # esto, las edades de dos ladders distintos salen seguidas y se leen como
+    # una sola con las metricas dando saltos.
+    distinct = {(row["publication_id"], row["platform_clip_id"]) for row in rows}
+    if len(distinct) > 1:
+        header = f"  publicacion{'':<20}{header}"
+
+    current: tuple[Any, Any] | None = None
+    typer.secho(header, fg=typer.colors.CYAN)
+    for row in rows:
+        identity = (row["publication_id"], row["platform_clip_id"])
+        prefix = ""
+        if len(distinct) > 1:
+            if identity != current:
+                current = identity
+                typer.secho(
+                    f"\n  {row['platform']}/{row['platform_clip_id']} ({row['publication_id']})",
+                    fg=typer.colors.CYAN,
+                )
+            prefix = "    "
+
+        typer.echo(
+            f"{prefix}{show(row['age_hours']):>7} "
+            f"{show(row['views']):>9} "
+            f"{show(row['likes']):>7} "
+            f"{show(row['comments']):>6} "
+            f"{show(None if row['like_rate'] is None else round(row['like_rate'] * 100, 2)):>7} "
+            f"{show(row['average_percentage_viewed']):>8}  "
+            f"{row['metric_source'] or '-'}"
+        )
 
 
 def main() -> None:

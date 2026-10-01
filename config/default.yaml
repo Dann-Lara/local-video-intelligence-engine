@@ -179,3 +179,24 @@ performance:
   default_platform: youtube_shorts
   snapshot_ages_hours: [1, 6, 24, 48, 72, 168, 672]
   derived_metrics_version: "1.0"
+  # Credenciales de YouTube Analytics API v2 (seccion 42).
+  #
+  # `access_token` NO se escribe aqui: es un token de OAuth con caducidad y
+  # este fichero va al control de versiones. Va por entorno, con DOBLE guion
+  # bajo entre niveles (el separador de la config, `__`):
+  #   LVI_PERFORMANCE__YOUTUBE__ACCESS_TOKEN
+  # Con un solo guion bajo NO funciona: se crea performance.youtube.access_token
+  # literal como clave nueva y el override pasa desapercibido.
+  # Se obtiene authorizing la cuenta con el scope yt-analytics.readonly.
+  #
+  # `channel_id` es opcional: si se deja a null la consulta usa
+  # `channel==MINE`, que es lo normal cuando el token es de la cuenta propia.
+  # Solo hace falta si hay varios canales y se quiere fijar uno.
+  #
+  # OJO: la granularidad de la API es el dia. Este adaptador declara
+  # minimum_age_hours=24 y `sync` se salta los puntos de 1h y 6h en vez de
+  # rellenarlos con un dato que en realidad mide 24 horas.
+  youtube:
+    channel_id: null
+    access_token: null
+    timeout_seconds: 30

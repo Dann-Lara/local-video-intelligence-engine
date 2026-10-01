@@ -231,7 +231,6 @@ def jobs_resume(job_id: str) -> None:
 # --- etapas del pipeline (secciones 65 y 66) ---
 
 STAGE_ROADMAP = {
-    "process": ("Sprint 3 en adelante (todas las etapas)", "src/orchestration/pipeline.py"),
     "performance sync": ("Sprint 8 (adaptadores de plataforma)", "src/performance/sync.py"),
 }
 
@@ -735,6 +734,11 @@ def _run_candidates(
         if not as_json:
             typer.secho(result.summary(), fg=typer.colors.GREEN)
             typer.echo(f"\nclip_candidates {work.clip_candidates}")
+            # Los descartes de GENERACION, uno a uno. El resumen de arriba solo
+            # dice cuantos fueron; sin esto no se puede saber si hay que tocar
+            # el prompt o el software, que es la pregunta que aparece siempre.
+            for reason in result.dropped_generation:
+                typer.secho(f"DESCARTE    {reason}", fg=typer.colors.YELLOW)
             typer.echo(f"\nSiguiente etapa: {JobState.RANKING.value} (seleccion, Sprint 5)")
 
     return payload
@@ -766,7 +770,13 @@ def _run_ranking(
         selection, warnings = ranking_module.select_candidates(set_doc, config)
         set_doc["selection"] = selection
         if warnings:
-            set_doc["warnings"] = warnings
+            # Se ANADE, no se sustituye: `_run_ranking` relee el set que escribio
+            # GENERATING_CANDIDATES y sus avisos ("N candidatos descartados en
+            # generacion") siguen siendo ciertos. Con `=` desaparecia el
+            # resumen y el artefacto se quedaba con el detalle en `drops` pero
+            # sin la cifra, que es justo lo que se lee primero.
+            previous = [w for w in set_doc.get("warnings", []) if w not in warnings]
+            set_doc["warnings"] = previous + list(warnings)
         info = artifacts_module.write_json(
             work.clip_candidates, set_doc, schema_name="candidate_set", overwrite=True
         )
@@ -1189,6 +1199,32 @@ def _run_report(
                 str(record_path),
             )
 
+            # Indice consultable del clip (seccion 37). El JSON de arriba es el
+            # registro completo; esta fila es lo que permite preguntar por SQL
+            # ("clips de este job que pasaron el QC") y lo que Sprint 8 usa
+            # como FK para colgarle las metricas de cada plataforma. Sin ella la
+            # tabla queda vacia y las metricas no tienen a que colgarse.
+            repo.upsert_clip_record(
+                job_id=job_id,
+                clip_id=clip_id,
+                candidate_id=record.get("candidate_id"),
+                start=float(source.get("start", 0.0)),
+                end=float(source.get("end", 0.0)),
+                duration=expected_duration,
+                score_total=(record.get("selection") or {}).get("score"),
+                hook_type=(record.get("content") or {}).get("hook_type"),
+                content_type=(record.get("content") or {}).get("content_type"),
+                topic=(record.get("content") or {}).get("topic"),
+                hook_origin=(record.get("content") or {}).get("hook_origin"),
+                requires_generated_hook=(record.get("content") or {}).get(
+                    "requires_generated_hook"
+                ),
+                record_path=str(record_path),
+                edit_plan_path=str(plan_path),
+                render_path=str(render_path) if render_path.is_file() else None,
+                qc_passed=bool(clip_qc.passed),
+            )
+
         processing = time.monotonic() - started
 
         summary = report_module.build_report(
@@ -1289,10 +1325,73 @@ def _clip_metadata_for_llm(
 
 
 @app.command()
-def process(video: str = typer.Argument(..., help="Ruta del video de entrada")) -> None:
-    """Modo completo: VIDEO -> WHISPER -> GEMMA -> CANDIDATES -> RENDER -> QC -> SEO."""
-    del video
-    _not_ready("process")
+def process(
+    video: str = typer.Argument(..., help="Ruta del video de entrada"),
+    as_json: bool = typer.Option(False, "--json", help="Salida en JSON"),
+    skip_llm: bool = typer.Option(
+        False, "--skip-llm", help="Solo QC tecnico al final: sin QC semantico ni SEO"
+    ),
+    overwrite: bool = typer.Option(
+        False, "--overwrite", help="Vuelve a pedir el QC semantico y el SEO aunque esten cacheados"
+    ),
+) -> None:
+    """VIDEO -> WHISPER -> GEMMA -> CANDIDATES -> RENDER -> QC -> SEO.
+
+    Es el atajo de las cuatro etapas sueltas (`analyze`, `candidates`, `render`,
+    `report`) para cuando se quiere el resultado y no el estado intermedio.
+    Cada etapa sigue siendo ejecutable por separado: aqui solo se encadenan.
+
+    Las etapas se llaman SIEMPRE, sin preguntar si ya hay artefacto: las de
+    analisis reutilizan su cache y las de render/QC son idempotentes, asi que
+    repetir el proceso no repaga al modelo ni regraba un mp4 que ya estaba
+    bien. Es el mismo criterio que usa `candidates` (seccion 51), y por el
+    mismo motivo: saltarse una etapa rompe la maquina de estados cuando un job
+    vuelve atras.
+
+    Con `--json` emite UN solo documento con el resumen de todas las etapas, no
+    uno por etapa.
+    """
+    config = _load_config()
+    repo, job_id, ingest_payload = _run_ingest(video, config, as_json=as_json)
+
+    source = Path(video)
+    if not source.is_absolute():
+        source = (config_module.project_root(config) / source).resolve()
+
+    stages: dict[str, Any] = {"ingest": ingest_payload}
+
+    for label, runner in (
+        ("transcription", _run_transcription),
+        ("content_map", _run_content_map),
+        ("candidates", _run_candidates),
+        ("ranking", _run_ranking),
+        ("edit_plans", _run_edit_plans),
+    ):
+        stages[label] = runner(source, config, repo, job_id=job_id, as_json=as_json)
+
+    # RENDERING y QUALITY_CONTROL se guiian por job_id, no por ruta.
+    stages["render"] = _run_render(job_id, config, repo, as_json=as_json)
+    stages["report"] = _run_report(
+        job_id, config, repo, as_json=as_json, skip_llm=skip_llm, overwrite=overwrite
+    )
+
+    if as_json:
+        typer.echo(
+            json.dumps(
+                {"job_id": job_id, **stages}, ensure_ascii=False, indent=2, default=str
+            )
+        )
+        return
+
+    report_payload = stages["report"]
+    typer.secho(f"\njob         {job_id}", fg=typer.colors.CYAN)
+    typer.secho(f"estado      {report_payload.get('state', 'desconocido')}", fg=typer.colors.CYAN)
+    for message in report_payload.get("warnings", []) or []:
+        typer.secho(f"AVISO       {message}", fg=typer.colors.YELLOW)
+    for message in report_payload.get("errors", []) or []:
+        typer.secho(f"ERROR       {message}", fg=typer.colors.RED)
+    typer.echo("\nClips listos en el workspace. Revisa el MP4 antes de publicar.")
+
 
 @app.command()
 def analyze(

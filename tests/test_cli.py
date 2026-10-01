@@ -69,25 +69,61 @@ def test_help_lists_every_command_of_section_65():
         assert command in result.stdout, f"falta el comando {command} (seccion 65)"
 
 
-@pytest.mark.parametrize(
-    "argv",
-    [
-        ["process", "input/video.mp4"],
-        ["performance", "sync"],
-    ],
-)
+@pytest.mark.parametrize("argv", [["performance", "sync"]])
 def test_pipeline_commands_signal_not_implemented(argv):
     """Codigo 2: el comando existe pero su etapa viene en un sprint posterior.
 
-    `analyze`, `candidates`, `render` y `report` ya no estan en la lista: la
-    ingesta (Sprint 2), el Candidate Engine (Sprint 5), el render (Sprint 6) y el
-    QC + SEO + report (Sprint 7) estan implementados y devuelven 0 o 1 segun el
+    `performance sync` es el unico que queda: la ingesta (Sprint 2), el Candidate
+    Engine (Sprint 5), el render (Sprint 6), el QC + SEO + report (Sprint 7) y el
+    orquestador `process` estan implementados y devuelven 0 o 1 segun el
     resultado, nunca 2.
     """
     result = runner.invoke(cli.app, argv)
     assert result.exit_code == cli.EXIT_NOT_IMPLEMENTED
     assert "todavia no esta implementado" in result.output
     assert "Sprint" in result.output, "debe decir en que sprint se implementa"
+
+
+def test_process_is_no_longer_a_stub(isolated_env, tmp_path):
+    """D5: `process` paso de stub a implementado.
+
+    Un fichero inexistente da 1 (error de ejecucion), no 2 (sprint pendiente): si
+    volviera a dar 2, el atajo de pipeline completo se habria perdido.
+    """
+    result = runner.invoke(cli.app, ["process", str(tmp_path / "no-existe.mp4")])
+    assert result.exit_code == cli.EXIT_ERROR
+    assert "no existe el fichero" in result.output
+    assert "todavia no esta implementado" not in result.output
+
+
+def test_process_help_lists_the_full_chain():
+    result = runner.invoke(cli.app, ["process", "--help"])
+    assert result.exit_code == 0
+    assert "WHISPER" in result.output
+    assert "RENDER" in result.output
+    assert "SEO" in result.output
+    for flag in ("--skip-llm", "--overwrite", "--json"):
+        assert flag in result.output
+
+
+def test_process_defaults_are_shared_with_the_stage_commands():
+    """`process` no puede tener un criterio distinto al de `report`.
+
+    Si `report` reintenta el QC semantico con `--overwrite` y `process` no, el
+    atajo "rehacerlo todo" no rehace el QC y el usuario no tiene forma de
+    descubrir por que.
+    """
+    def flag_of(command: str) -> set[str]:
+        out = runner.invoke(cli.app, [command, "--help"]).output
+        return {line.strip() for line in out.splitlines() if line.strip().startswith("--")}
+
+    process_flags = flag_of("process")
+    assert flag_of("report") <= process_flags
+
+
+def test_only_performance_sync_remains_in_the_stage_roadmap():
+    """Guarda contra un comando nuevo que se quede en stub sin que se note."""
+    assert list(cli.STAGE_ROADMAP) == ["performance sync"]
 
 
 def test_render_is_no_longer_a_stub(isolated_env):
@@ -122,6 +158,66 @@ def test_analyze_is_no_longer_a_stub(isolated_env, tmp_path):
     assert result.exit_code == cli.EXIT_ERROR
     assert "no existe el fichero" in result.output
     assert "todavia no esta implementado" not in result.output
+
+
+def test_ranking_keeps_the_warnings_of_the_generation_stage(
+    isolated_env, portrait_video, tmp_path, monkeypatch
+):
+    """El resumen de descartes de GENERATING_CANDIDATES no puede evaporarse.
+
+    `_run_ranking` relee el `clip_candidates.json` y lo reescribe con la
+    seleccion. Si asigna `warnings = warnings` en vez de a?adirlos, el aviso "N
+    candidatos descartados en generacion" desaparece y el artefacto se queda con
+    el detalle en `drops` pero sin la cifra, que es lo que se lee primero.
+    """
+    import json as _json
+
+    from src.core import artifacts as artifacts_module
+    from src.core import config as config_module
+
+    work = tmp_path / "work_warn"
+    monkeypatch.setenv("LVI_PATHS__WORK_ROOT", work.as_posix())
+    config = config_module.load()
+
+    repo = db_module.JobRepository(db_module.open_database(config))
+    video_id = repo.register_video(path=str(portrait_video), sha256="a" * 64)
+    job_id = repo.create_job(video_id)["id"]
+    # Se avanza hasta GENERATING_CANDIDATES: `_run_ranking` hace `enter_stage(RANKING)`.
+    for stage in db_module.PIPELINE_ORDER[1:]:
+        repo.transition(job_id, stage)
+        if stage == JobState.GENERATING_CANDIDATES:
+            break
+
+    # Se escribe a mano el set tal como lo deja GENERATING_CANDIDATES.
+    target = work / "portrait" / "clip_candidates.json"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    generation_warning = (
+        "1 candidatos descartados en generacion (fuera de rangos, cortes a media frase, etc.)"
+    )
+    artifacts_module.write_json(
+        target,
+        {
+            "schema_version": "1.0",
+            "job_id": job_id,
+            "source": {"file": str(portrait_video), "sha256": "a" * 64, "duration": 3.0},
+            "block_count": 1,
+            "content_map_sha256": "b" * 64,
+            "normalized_transcript_sha256": "c" * 64,
+            "candidates": [],
+            "warnings": [generation_warning],
+            "drops": ["candidate[0]: duracion 1.0s fuera de [15, 90] (seccion 23)"],
+        },
+        schema_name="candidate_set",
+        overwrite=True,
+    )
+
+    cli._run_ranking(portrait_video, config, repo, job_id=job_id, as_json=True)
+
+    after = _json.loads(target.read_text(encoding="utf-8"))
+    assert generation_warning in after["warnings"]
+    assert after["drops"], "el detalle de descartes tambien debe sobrevivir"
+    assert after["selection"]["selected"] == []
+    assert after["selection"]["dropped"] == []
 
 
 # --- db ---

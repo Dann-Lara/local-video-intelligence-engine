@@ -457,6 +457,122 @@ def test_model_run_stats_empty_database(repo):
     assert stats["total"] == 0
 
 
+# --- clip_records (seccion 37): el indice que necesita el Sprint 8 ---------
+
+
+def _job(repo, sha: str = "sha_a") -> str:
+    """Crea video + job. `jobs.video_id` tiene FK, asi que el video va primero."""
+    video_id = repo.register_video(path="videos/a.mp4", sha256=sha)
+    return repo.create_job(video_id)["id"]
+
+
+def test_clip_record_is_queryable(repo):
+    job_id = _job(repo)
+    repo.upsert_clip_record(
+        job_id=job_id, clip_id="cand_w1_0", candidate_id="cand_w1_0",
+        start=14.0, end=51.94, duration=37.94, score_total=77.0,
+        hook_type="question", content_type="unknown", topic="criminal activity",
+        hook_origin="original", requires_generated_hook=False,
+        record_path="work/clip_records/cand_w1_0.json",
+        edit_plan_path="work/edit_plans/edit_plan_cand_w1_0.json",
+        render_path="work/renders/cand_w1_0.mp4", qc_passed=True,
+    )
+    rows = repo.list_clip_records(job_id)
+    assert len(rows) == 1
+    row = rows[0]
+    assert row["job_id"] == job_id
+    assert row["candidate_id"] == "cand_w1_0"
+    assert row["score_total"] == 77.0
+    assert row["qc_passed"] == 1
+    assert row["requires_generated_hook"] == 0
+
+
+def test_clip_record_is_upserted_not_duplicated(repo):
+    """`report` se puede repetir: la segunda vez corrige, no duplica."""
+    job_id = _job(repo)
+    repo.upsert_clip_record(
+        job_id=job_id, clip_id="cand_w1_0", candidate_id="cand_w1_0",
+        start=14.0, end=51.94, duration=37.94, qc_passed=False,
+    )
+    repo.upsert_clip_record(
+        job_id=job_id, clip_id="cand_w1_0", candidate_id="cand_w1_0",
+        start=27.74, end=51.94, duration=24.2, qc_passed=True,
+    )
+    rows = repo.list_clip_records(job_id)
+    assert len(rows) == 1
+    # La segunda pasada manda, incluido el recorte de silencio inicial.
+    assert rows[0]["duration"] == 24.2
+    assert rows[0]["start"] == 27.74
+    assert rows[0]["qc_passed"] == 1
+
+
+def test_same_clip_id_in_two_jobs_does_not_collide(repo):
+    """Los ids de clip se derivan del bloque: `cand_w1_0` sale en todos los videos."""
+    first, second = _job(repo, "sha_a"), _job(repo, "sha_b")
+    for job_id, duration in ((first, 20.0), (second, 30.0)):
+        repo.upsert_clip_record(
+            job_id=job_id, clip_id="cand_w1_0", candidate_id="cand_w1_0",
+            start=0.0, end=duration, duration=duration, qc_passed=True,
+        )
+    assert len(repo.list_clip_records(first)) == 1
+    assert len(repo.list_clip_records(second)) == 1
+    assert len(repo.list_clip_records()) == 2
+    assert repo.list_clip_records(first)[0]["duration"] == 20.0
+    assert repo.list_clip_records(second)[0]["duration"] == 30.0
+
+
+def test_only_published_filters_out_the_qc_failures(repo):
+    job_id = _job(repo)
+    repo.upsert_clip_record(job_id=job_id, clip_id="bueno", candidate_id="bueno",
+                            start=0.0, end=20.0, duration=20.0, qc_passed=True)
+    repo.upsert_clip_record(job_id=job_id, clip_id="malo", candidate_id="malo",
+                            start=0.0, end=20.0, duration=20.0, qc_passed=False)
+    published = repo.list_clip_records(job_id, only_published=True)
+    assert [row["candidate_id"] for row in published] == ["bueno"]
+
+
+def test_get_clip_record_needs_the_job(repo):
+    """La clave es (job_id, clip_id): un id suelto seria ambiguo."""
+    job_id = _job(repo)
+    repo.upsert_clip_record(job_id=job_id, clip_id="cand_w1_0", candidate_id="cand_w1_0",
+                            start=0.0, end=20.0, duration=20.0, qc_passed=True)
+    assert repo.get_clip_record(job_id, "cand_w1_0")["candidate_id"] == "cand_w1_0"
+    assert repo.get_clip_record("otro_job", "cand_w1_0") is None
+    assert repo.get_clip_record(job_id, "no_existe") is None
+
+
+def test_performance_snapshot_can_reference_a_clip_record(repo):
+    """El motivo de existir de la tabla: Sprint 8 cuelga metricas de aqui."""
+    job_id = _job(repo)
+    repo.upsert_clip_record(job_id=job_id, clip_id="cand_w1_0", candidate_id="cand_w1_0",
+                            start=0.0, end=20.0, duration=20.0, qc_passed=True)
+    clip_pk = f"{job_id}::cand_w1_0"
+    with repo.db.transaction() as conn:
+        conn.execute(
+            """
+            INSERT INTO performance_snapshots
+                (id, clip_record_id, platform, captured_at, age_hours,
+                 views, likes, comments)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            ("snap_1", clip_pk, "youtube", "2026-09-30T00:00:00Z", 48, 1200, 85, 6),
+        )
+    row = repo.db.query_one(
+        "SELECT views FROM performance_snapshots WHERE clip_record_id = ?", (clip_pk,)
+    )
+    assert row["views"] == 1200
+
+
+def test_clip_record_requires_an_existing_job(repo):
+    """La FK protege de clips huerfanos colgando de jobs que no existen."""
+    import sqlite3
+
+    with pytest.raises(sqlite3.IntegrityError):
+        repo.upsert_clip_record(job_id="no_existe", clip_id="c", candidate_id="c",
+                                start=0.0, end=20.0, duration=20.0)
+    assert repo.list_clip_records("no_existe") == []
+
+
 # --- seccion 74: URL de base de datos ---
 
 

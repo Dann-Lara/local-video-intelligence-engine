@@ -90,6 +90,10 @@ clips:
   preferred_minimum: 20
   preferred_maximum: 60
   maximum: 90
+  # Silencio tolerado al PRINCIPIO del clip antes de anclar el corte a la
+  # primera voz. Mas que esto y el clip arranca en un hueco, que es lo que hacia
+  # que un clip de 38s passes el QC entero y fuera inservible.
+  max_leading_silence: 1.5
 
 # --- Seleccion (secciones 20, 21, 22) ---
 selection:

@@ -738,3 +738,120 @@ class JobRepository:
         if row is None:
             return {"total": 0, "succeeded": 0, "attempts": 0, "avg_attempts": 0.0}
         return {key: row[key] for key in row.keys()}
+
+    # --- clip_records (seccion 37): la fila que hace CONSULTABLE un clip ----
+
+    def upsert_clip_record(
+        self,
+        *,
+        job_id: str,
+        clip_id: str,
+        candidate_id: str | None,
+        start: float,
+        end: float,
+        duration: float,
+        score_total: float | None = None,
+        hook_type: str | None = None,
+        content_type: str | None = None,
+        topic: str | None = None,
+        hook_origin: str | None = None,
+        requires_generated_hook: bool | None = None,
+        record_path: str | None = None,
+        edit_plan_path: str | None = None,
+        render_path: str | None = None,
+        qc_passed: bool | None = None,
+    ) -> str:
+        """Guarda la fila de `clip_records` de un clip. Idempotente por
+        (job_id, clip_id).
+
+        El `clip_record.json` del workspace es el registro COMPLETO y legible;
+        esta tabla es el indice que permite consultar ("dame los clips de este
+        job que pasaron el QC", "cual fue el score de este clip") sin tener que
+        abrir y parsear un JSON por clip. Sprint 8 cuelga de aqui: la FK de
+        `performance_snapshots` apunta a esta tabla.
+
+        El id primary key es `job_id::clip_id` y no el `clip_id` a secas porque
+        los ids de clip se derivan del bloque y del indice (`cand_w2_0`) y se
+        repiten en cuanto se procesa otro video: como PK a secas, el segundo job
+        machacaria el clip del primero.
+
+        Es un UPSERT y no un INSERT porque `report` se puede repetir (es
+        idempotente por diseño) y porque un re-QC tiene que poder corregir la
+        fila anterior en vez de duplicar el clip o fallar por clave primaria.
+        """
+        primary = f"{job_id}::{clip_id}"
+        with self.db.transaction() as conn:
+            conn.execute(
+                """
+                INSERT INTO clip_records
+                    (id, job_id, candidate_id, start, end, duration, score_total,
+                     hook_type, content_type, topic, hook_origin,
+                     requires_generated_hook, record_path, edit_plan_path, render_path,
+                     qc_passed, created_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ON CONFLICT(id) DO UPDATE SET
+                    candidate_id          = excluded.candidate_id,
+                    start                 = excluded.start,
+                    end                   = excluded.end,
+                    duration              = excluded.duration,
+                    score_total           = excluded.score_total,
+                    hook_type             = excluded.hook_type,
+                    content_type          = excluded.content_type,
+                    topic                 = excluded.topic,
+                    hook_origin           = excluded.hook_origin,
+                    requires_generated_hook = excluded.requires_generated_hook,
+                    record_path           = excluded.record_path,
+                    edit_plan_path        = excluded.edit_plan_path,
+                    render_path           = excluded.render_path,
+                    qc_passed             = excluded.qc_passed
+                """,
+                (
+                    primary,
+                    job_id,
+                    candidate_id,
+                    float(start),
+                    float(end),
+                    float(duration),
+                    float(score_total) if score_total is not None else None,
+                    hook_type,
+                    content_type,
+                    topic,
+                    hook_origin,
+                    None if requires_generated_hook is None else int(requires_generated_hook),
+                    record_path,
+                    edit_plan_path,
+                    render_path,
+                    None if qc_passed is None else int(qc_passed),
+                    utc_now(),
+                ),
+            )
+        return primary
+
+    def list_clip_records(
+        self, job_id: str | None = None, *, only_published: bool = False
+    ) -> list[dict[str, Any]]:
+        """Los clip_records, del mas reciente al mas antiguo.
+
+        `only_published` filtra por los que pasaron el QC, que es lo que se
+        puede publicar: un clip con el QC fallido se puede revisar, pero no
+        subir.
+        """
+        clauses: list[str] = []
+        params: list[Any] = []
+        if job_id is not None:
+            clauses.append("job_id = ?")
+            params.append(job_id)
+        if only_published:
+            clauses.append("qc_passed = 1")
+        where = f" WHERE {' AND '.join(clauses)}" if clauses else ""
+        rows = self.db.query(
+            f"SELECT * FROM clip_records{where} ORDER BY created_at DESC, id",
+            params,
+        )
+        return [dict(row) for row in rows]
+
+    def get_clip_record(self, job_id: str, clip_id: str) -> dict[str, Any] | None:
+        row = self.db.query_one(
+            "SELECT * FROM clip_records WHERE id = ?", (f"{job_id}::{clip_id}",)
+        )
+        return dict(row) if row is not None else None

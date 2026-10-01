@@ -50,6 +50,7 @@
         }
       }
     },
-    "warnings": { "type": "array", "items": { "type": "string" } }
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "drops": { "type": "array", "items": { "type": "string" } }
   }
 }

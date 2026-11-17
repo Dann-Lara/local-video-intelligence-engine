@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "source_asset_id": "sha256-281a885b92a667ad0cf706b4b7218a9227fafe4cec94757047c4354c86b6fa13",
+  "source_path": "C:\\Users\\SPARTAN PC\\Documents\\dann´s projects\\clipping\\input\\Escape 100 Cops, Win $500,000 (2160p_30fps_AV1-128kbit_AAC-inglés).mp4",
+  "duration_seconds": 1228.382041,
+  "metadata": {
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97,
+    "video_codec": "av1",
+    "audio_codec": "aac",
+    "size_bytes": 1627212173,
+    "video_track_count": 1,
+    "audio_track_count": 1,
+    "has_audio": true,
+    "extension": "mp4"
+  },
+  "container": {
+    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+    "format_long_name": "QuickTime / MOV",
+    "bit_rate": 10597433,
+    "size_bytes": 1627212173
+  },
+  "streams": [
+    {
+      "index": 0,
+      "codec_type": "video",
+      "codec_name": "av1",
+      "width": 3840,
+      "height": 2160,
+      "avg_frame_rate": "30000/1001",
+      "sample_rate": null,
+      "channels": null,
+      "attached_pic": false
+    },
+    {
+      "index": 1,
+      "codec_type": "audio",
+      "codec_name": "aac",
+      "width": null,
+      "height": null,
+      "avg_frame_rate": "0/0",
+      "sample_rate": "44100",
+      "channels": 2,
+      "attached_pic": false
+    }
+  ],
+  "warnings": [],
+  "tool_versions": {
+    "ffprobe": "8.1.1-full_build-www.gyan.dev",
+    "python": "3.11.9"
+  }
+}

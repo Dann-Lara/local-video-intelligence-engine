@@ -1,0 +1,68 @@
+{
+  "source": {
+    "name": "¿2 TURBOS SON MEJORES QUE 1¿ (2160p_30fps_AV1-128kbit_AAC-español).mp4",
+    "path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\input\\¿2 TURBOS SON MEJORES QUE 1¿ (2160p_30fps_AV1-128kbit_AAC-español).mp4",
+    "bytes": 954138171,
+    "duration_seconds": 1586.340862,
+    "width": 3840,
+    "height": 2160,
+    "fps": "30/1",
+    "avg_fps": "30/1",
+    "video_codec": "av1",
+    "video_profile": "Main",
+    "pix_fmt": "yuv420p",
+    "audio_codec": "aac",
+    "audio_profile": "LC",
+    "audio_sample_rate": "44100",
+    "audio_channels": 2,
+    "audio_language_tag": "und",
+    "title_tag": "¿2 TURBOS SON MEJORES QUE 1?",
+    "sha256": "75DDAE1B7B1830FC96491D97B066E02150C51CD4420E5E535730DF6023EDB50C",
+    "known_project": false
+  },
+  "project_id": "a7ace6f1-43b8-4769-9b67-58693575c499",
+  "project_dir": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\projects\\a7ace6f1-43b8-4769-9b67-58693575c499",
+  "ingestion_created": true,
+  "prior_transcription": "reused",
+  "language": "es",
+  "model_size": "large-v3-turbo",
+  "device": "cuda",
+  "compute_type": "float16",
+  "inference_completed": true,
+  "duration_seconds": 1586.340862,
+  "segment_count": 959,
+  "word_count": 0,
+  "first_segments": [
+    {
+      "id": "seg_0001",
+      "start": 0.0,
+      "end": 2.12,
+      "text": "¿Estás pensando en meterle un sistema turbo a tu carro?"
+    },
+    {
+      "id": "seg_0002",
+      "start": 2.42,
+      "end": 5.22,
+      "text": "¿Pero un turbo? ¿Twin turbo? ¿Big turbo?"
+    },
+    {
+      "id": "seg_0003",
+      "start": 5.64,
+      "end": 8.82,
+      "text": "En este video vamos a ver cómo funcionan los diferentes tipos de sistema."
+    },
+    {
+      "id": "seg_0004",
+      "start": 9.32,
+      "end": 13.34,
+      "text": "Para eso vamos a utilizar este Toyota Supra, el cual trae un twin turbo de agencia."
+    },
+    {
+      "id": "seg_0005",
+      "start": 14.36,
+      "end": 16.42,
+      "text": "Sí, un experimento en un Supra, yo sé."
+    }
+  ],
+  "transcription_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\projects\\a7ace6f1-43b8-4769-9b67-58693575c499\\transcription\\transcription.json"
+}

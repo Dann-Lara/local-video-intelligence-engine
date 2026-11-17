@@ -1,0 +1,51 @@
+{
+  "cut": {
+    "requested_start_seconds": 73.0,
+    "requested_end_seconds": 134.0,
+    "actual_duration_seconds": 61.027633,
+    "duration_delta_seconds": 0.027633000000001573,
+    "cut_method": "frame_accurate_hybrid_decode_trim_reencode_video_audio_copy",
+    "input_seek_seconds": 63.0,
+    "output_seek_seconds": 10.0
+  },
+  "ffmpeg_command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-y",
+    "-ss",
+    "63.000000",
+    "-i",
+    "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\input\\Escape 100 Cops, Win $500,000 (2160p_30fps_AV1-128kbit_AAC-inglés).mp4",
+    "-ss",
+    "10.000000",
+    "-t",
+    "61.000000",
+    "-map",
+    "0:v:0",
+    "-map",
+    "0:a:0?",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "veryfast",
+    "-crf",
+    "14",
+    "-pix_fmt",
+    "yuv420p",
+    "-c:a",
+    "copy",
+    "-movflags",
+    "+faststart",
+    "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\verification\\rec_0002_verified_source.mp4"
+  ],
+  "alignment": {
+    "clip_zero_maps_to_source_seconds": 73.003537,
+    "delta_vs_requested_seconds": 0.0035369999999943502,
+    "global_ncc": 0.99992915,
+    "max_chunk_drift_seconds": 0.0
+  },
+  "ssim": {
+    "cut_frame0_vs_source_73_006270": 0.991508,
+    "cut_frame0_vs_keyframe_72_439033": 0.302908
+  }
+}

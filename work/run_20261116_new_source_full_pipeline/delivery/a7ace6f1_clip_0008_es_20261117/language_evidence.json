@@ -1,0 +1,190 @@
+{
+  "source_audio_language": "es",
+  "source_audio_language_source": "job",
+  "transcript_is_translation": false,
+  "canonical_language": "es",
+  "canonical_language_source": "job",
+  "transcript_language": "es",
+  "transcript_language_confidence": 0.8134,
+  "subtitle_language": "es",
+  "notification_language": "es",
+  "emphasis_language": "es",
+  "overlay_language": "es",
+  "seo_language": "es",
+  "overlay_language_decision": "auto_from_source_audio",
+  "notification_language_decision": "auto_from_source_audio",
+  "emphasis_language_decision": "auto_from_source_audio",
+  "seo_language_decision": "auto_from_source_audio",
+  "overlay_language_reason": "idioma del audio declarado y confirmado por la deteccion del fragmento",
+  "emphasis_language_reason": "enfasis literal de la transcripcion en el idioma del audio",
+  "seo_language_reason": "idioma del audio declarado y confirmado por la deteccion del fragmento",
+  "names": {
+    "source_audio": "Spanish",
+    "transcript": "Spanish",
+    "subtitle": "Spanish",
+    "notification": "Spanish",
+    "emphasis": "Spanish",
+    "overlay": "Spanish",
+    "seo": "Spanish"
+  },
+  "evidence": {
+    "segments": [
+      {
+        "segment_id": "seg_0783",
+        "start_seconds": 1278.78,
+        "end_seconds": 1280.78
+      },
+      {
+        "segment_id": "seg_0784",
+        "start_seconds": 1280.78,
+        "end_seconds": 1281.78
+      },
+      {
+        "segment_id": "seg_0785",
+        "start_seconds": 1281.78,
+        "end_seconds": 1283.78
+      },
+      {
+        "segment_id": "seg_0786",
+        "start_seconds": 1283.78,
+        "end_seconds": 1284.78
+      },
+      {
+        "segment_id": "seg_0787",
+        "start_seconds": 1284.78,
+        "end_seconds": 1286.78
+      },
+      {
+        "segment_id": "seg_0788",
+        "start_seconds": 1286.78,
+        "end_seconds": 1287.78
+      },
+      {
+        "segment_id": "seg_0789",
+        "start_seconds": 1287.78,
+        "end_seconds": 1288.78
+      },
+      {
+        "segment_id": "seg_0790",
+        "start_seconds": 1288.78,
+        "end_seconds": 1289.78
+      },
+      {
+        "segment_id": "seg_0791",
+        "start_seconds": 1289.78,
+        "end_seconds": 1290.78
+      },
+      {
+        "segment_id": "seg_0792",
+        "start_seconds": 1290.78,
+        "end_seconds": 1291.78
+      },
+      {
+        "segment_id": "seg_0793",
+        "start_seconds": 1291.78,
+        "end_seconds": 1292.78
+      },
+      {
+        "segment_id": "seg_0794",
+        "start_seconds": 1292.78,
+        "end_seconds": 1294.78
+      },
+      {
+        "segment_id": "seg_0795",
+        "start_seconds": 1294.78,
+        "end_seconds": 1296.78
+      },
+      {
+        "segment_id": "seg_0796",
+        "start_seconds": 1296.78,
+        "end_seconds": 1297.78
+      },
+      {
+        "segment_id": "seg_0797",
+        "start_seconds": 1297.78,
+        "end_seconds": 1300.78
+      },
+      {
+        "segment_id": "seg_0798",
+        "start_seconds": 1300.78,
+        "end_seconds": 1302.78
+      },
+      {
+        "segment_id": "seg_0799",
+        "start_seconds": 1302.78,
+        "end_seconds": 1304.78
+      },
+      {
+        "segment_id": "seg_0800",
+        "start_seconds": 1304.78,
+        "end_seconds": 1305.78
+      },
+      {
+        "segment_id": "seg_0801",
+        "start_seconds": 1305.78,
+        "end_seconds": 1306.78
+      },
+      {
+        "segment_id": "seg_0802",
+        "start_seconds": 1306.78,
+        "end_seconds": 1307.78
+      },
+      {
+        "segment_id": "seg_0803",
+        "start_seconds": 1308.78,
+        "end_seconds": 1310.78
+      },
+      {
+        "segment_id": "seg_0804",
+        "start_seconds": 1310.78,
+        "end_seconds": 1311.78
+      },
+      {
+        "segment_id": "seg_0805",
+        "start_seconds": 1311.78,
+        "end_seconds": 1312.78
+      }
+    ],
+    "declared_source_audio": "es",
+    "transcript": {
+      "language": "es",
+      "candidate_language": "es",
+      "confidence": 0.8134,
+      "decision": "auto",
+      "reason": "idioma predominante claro",
+      "tokens": 134,
+      "hits": {
+        "en": 0,
+        "es": 62,
+        "pt": 5,
+        "fr": 8,
+        "de": 0,
+        "it": 5
+      },
+      "top_hits": 62,
+      "coverage": 0.4627,
+      "runner_up": "fr",
+      "runner_up_hits": 8
+    },
+    "subtitles": {
+      "language": "es",
+      "candidate_language": "es",
+      "confidence": 0.8134,
+      "decision": "auto",
+      "reason": "idioma predominante claro",
+      "tokens": 134,
+      "hits": {
+        "en": 0,
+        "es": 62,
+        "pt": 5,
+        "fr": 8,
+        "de": 0,
+        "it": 5
+      },
+      "top_hits": 62,
+      "coverage": 0.4627,
+      "runner_up": "fr",
+      "runner_up_hits": 8
+    }
+  }
+}

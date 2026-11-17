@@ -1,0 +1,6749 @@
+{
+  "compute_type": "float16",
+  "created_at": "2026-11-17T20:09:04+00:00",
+  "device": "cuda",
+  "duration_seconds": 1586.340862,
+  "fingerprint": {
+    "audio_hash": "b38239f47f8f4f0fe61b90853e41d6ce81ece9957b762f80f37b5eef40da3328",
+    "beam_size": 5,
+    "compute_type": "float16",
+    "config_hash": "a446cd4322c1656b08447bb46180808c6c2eb7ede27dc69cdcf9027fcf0abf18",
+    "cpu_threads": 0,
+    "device": "cuda",
+    "device_index": 0,
+    "download_root": null,
+    "duration_seconds": 1586.340862,
+    "engine": "faster-whisper",
+    "fingerprint_version": "1.0",
+    "language": null,
+    "local_files_only": true,
+    "model_size_or_path": "large-v3-turbo",
+    "num_workers": 1,
+    "project_id": "a7ace6f1-43b8-4769-9b67-58693575c499",
+    "result_schema_version": "1.1",
+    "service_version": "1.0",
+    "source_asset_id": "sha256-75ddae1b7b1830fc96491d97b066e02150c51cd4420e5e535730df6023edb50c",
+    "vad_filter": false
+  },
+  "inference_completed": true,
+  "language": "es",
+  "model_size": "large-v3-turbo",
+  "project_id": "a7ace6f1-43b8-4769-9b67-58693575c499",
+  "segments": [
+    {
+      "end_seconds": 2.12,
+      "segment_id": "seg_0001",
+      "start_seconds": 0.0,
+      "text": "¿Estás pensando en meterle un sistema turbo a tu carro?",
+      "words": []
+    },
+    {
+      "end_seconds": 5.22,
+      "segment_id": "seg_0002",
+      "start_seconds": 2.42,
+      "text": "¿Pero un turbo? ¿Twin turbo? ¿Big turbo?",
+      "words": []
+    },
+    {
+      "end_seconds": 8.82,
+      "segment_id": "seg_0003",
+      "start_seconds": 5.64,
+      "text": "En este video vamos a ver cómo funcionan los diferentes tipos de sistema.",
+      "words": []
+    },
+    {
+      "end_seconds": 13.34,
+      "segment_id": "seg_0004",
+      "start_seconds": 9.32,
+      "text": "Para eso vamos a utilizar este Toyota Supra, el cual trae un twin turbo de agencia.",
+      "words": []
+    },
+    {
+      "end_seconds": 16.42,
+      "segment_id": "seg_0005",
+      "start_seconds": 14.36,
+      "text": "Sí, un experimento en un Supra, yo sé.",
+      "words": []
+    },
+    {
+      "end_seconds": 17.98,
+      "segment_id": "seg_0006",
+      "start_seconds": 17.44,
+      "text": "Esto es...",
+      "words": []
+    },
+    {
+      "end_seconds": 23.12,
+      "segment_id": "seg_0007",
+      "start_seconds": 17.98,
+      "text": "¡Eso es Adrián! ¡Y yo soy un turbo!",
+      "words": []
+    },
+    {
+      "end_seconds": 25.18,
+      "segment_id": "seg_0008",
+      "start_seconds": 23.46,
+      "text": "Yo soy Adrián y esto es Nocturna.",
+      "words": []
+    },
+    {
+      "end_seconds": 41.14,
+      "segment_id": "seg_0009",
+      "start_seconds": 30.0,
+      "text": "Originalmente estos motores traen como 280 caballos, así que yo estoy esperando unos 250 más o menos a las llantas.",
+      "words": []
+    },
+    {
+      "end_seconds": 46.58,
+      "segment_id": "seg_0010",
+      "start_seconds": 41.28,
+      "text": "Entonces, antes de hacer cualquier modificación o cualquier experimento, hay que ver cuántos caballos trae actualmente.",
+      "words": []
+    },
+    {
+      "end_seconds": 47.8,
+      "segment_id": "seg_0011",
+      "start_seconds": 46.78,
+      "text": "Así que, ¡vamos a ello!",
+      "words": []
+    },
+    {
+      "end_seconds": 53.14,
+      "segment_id": "seg_0012",
+      "start_seconds": 48.42,
+      "text": "La cuarta generación del Toyota Supra fue producido en el año 1993.",
+      "words": []
+    },
+    {
+      "end_seconds": 59.82,
+      "segment_id": "seg_0013",
+      "start_seconds": 53.72,
+      "text": "La versión legendaria salió con el 2JZ GTE Twin Turbo, pero el sistema secuencial únicamente salió en la versión japonesa.",
+      "words": []
+    },
+    {
+      "end_seconds": 63.88,
+      "segment_id": "seg_0014",
+      "start_seconds": 59.82,
+      "text": "Vamos a ver qué tal se desempeña un motor después de 33 años de ese formado original.",
+      "words": []
+    },
+    {
+      "end_seconds": 80.44,
+      "segment_id": "seg_0015",
+      "start_seconds": 78.46000000000001,
+      "text": "Bueno, aquí al parecer tuvimos un problema.",
+      "words": []
+    },
+    {
+      "end_seconds": 92.75999999999999,
+      "segment_id": "seg_0016",
+      "start_seconds": 80.44,
+      "text": "Alrededor de las 6.000 revoluciones, puede ser por configuración, puede ser una falla que traiga actualmente, pero nos entregó, vamos a ver, 290 caballos, nada mal.",
+      "words": []
+    },
+    {
+      "end_seconds": 94.5,
+      "segment_id": "seg_0017",
+      "start_seconds": 93.42,
+      "text": "Está alto para hacer stock.",
+      "words": []
+    },
+    {
+      "end_seconds": 98.97999999999999,
+      "segment_id": "seg_0018",
+      "start_seconds": 98.1,
+      "text": "Arden los ojos.",
+      "words": []
+    },
+    {
+      "end_seconds": 105.56,
+      "segment_id": "seg_0019",
+      "start_seconds": 98.98,
+      "text": "A desarmarlo.",
+      "words": []
+    },
+    {
+      "end_seconds": 111.0,
+      "segment_id": "seg_0020",
+      "start_seconds": 106.2,
+      "text": "Para instalar nuestro sistema single turbo, primero tenemos que desarmar todo el sistema de Twin Turbo original.",
+      "words": []
+    },
+    {
+      "end_seconds": 121.62,
+      "segment_id": "seg_0021",
+      "start_seconds": 111.22,
+      "text": "Para ellos tenemos que desarmar el downpipe original, el intercooler, el sistema secuencial, 200 mangueras de vacío, el enfriamiento original del turbo y, por último, los dos turbos originales que trae nuestro Toyota Supra.",
+      "words": []
+    },
+    {
+      "end_seconds": 123.68,
+      "segment_id": "seg_0022",
+      "start_seconds": 121.62,
+      "text": "Oh, está pesadísimo, güey.",
+      "words": []
+    },
+    {
+      "end_seconds": 132.66,
+      "segment_id": "seg_0023",
+      "start_seconds": 125.62,
+      "text": "Aquí tenemos las piezas que quitamos del sistema Twin Turbo, el cual es el sistema original y de este lado tenemos el single turbo.",
+      "words": []
+    },
+    {
+      "end_seconds": 136.72,
+      "segment_id": "seg_0024",
+      "start_seconds": 132.78,
+      "text": "Para poder entender cómo funciona un turbo, es necesario dar un paso para atrás.",
+      "words": []
+    },
+    {
+      "end_seconds": 146.72,
+      "segment_id": "seg_0025",
+      "start_seconds": 136.72,
+      "text": "El funcionamiento del motor se divide en cuatro fases.",
+      "words": []
+    },
+    {
+      "end_seconds": 149.62,
+      "segment_id": "seg_0026",
+      "start_seconds": 147.28,
+      "text": "Admisión, que es donde entra la mezcla de aire y combustible.",
+      "words": []
+    },
+    {
+      "end_seconds": 152.24,
+      "segment_id": "seg_0027",
+      "start_seconds": 150.32,
+      "text": "Compresión, que es donde se comprime esa mezcla.",
+      "words": []
+    },
+    {
+      "end_seconds": 154.92,
+      "segment_id": "seg_0028",
+      "start_seconds": 153.16,
+      "text": "Combustión, que es donde la mezcla explota.",
+      "words": []
+    },
+    {
+      "end_seconds": 158.38,
+      "segment_id": "seg_0029",
+      "start_seconds": 155.52,
+      "text": "Y escape, que es donde salen los gases resultados de la combustión.",
+      "words": []
+    },
+    {
+      "end_seconds": 160.8,
+      "segment_id": "seg_0030",
+      "start_seconds": 158.96,
+      "text": "Pero, ¿qué pasa con esos gases? ¿Hacia dónde van?",
+      "words": []
+    },
+    {
+      "end_seconds": 165.86,
+      "segment_id": "seg_0031",
+      "start_seconds": 161.42,
+      "text": "Esos gases viajan hacia el turbo y para que se entienda cómo funciona un turbo, lo partí a la mitad.",
+      "words": []
+    },
+    {
+      "end_seconds": 170.04000000000002,
+      "segment_id": "seg_0032",
+      "start_seconds": 165.86,
+      "text": "El turbo se divide en dos partes, el lado caliente y el lado frío.",
+      "words": []
+    },
+    {
+      "end_seconds": 176.86,
+      "segment_id": "seg_0033",
+      "start_seconds": 170.14000000000001,
+      "text": "Cuando los gases del motor salen por el escape, entran por esta parte de aquí, el cual recorre este caminito,",
+      "words": []
+    },
+    {
+      "end_seconds": 181.04000000000002,
+      "segment_id": "seg_0034",
+      "start_seconds": 177.38000000000002,
+      "text": "generando la fuerza suficiente para mover la turbina, que es esta de aquí.",
+      "words": []
+    },
+    {
+      "end_seconds": 184.92000000000002,
+      "segment_id": "seg_0035",
+      "start_seconds": 181.18,
+      "text": "Y la turbina está conectada por un eje hacia el compresor, que es este de aquí.",
+      "words": []
+    },
+    {
+      "end_seconds": 190.68,
+      "segment_id": "seg_0036",
+      "start_seconds": 185.26000000000002,
+      "text": "Si se fijan cómo gira, esto hace que succione el aire y lo pase por esta carcasa.",
+      "words": []
+    },
+    {
+      "end_seconds": 196.24,
+      "segment_id": "seg_0037",
+      "start_seconds": 190.68,
+      "text": "Esta carcasa tiene aquí este camino, sale por este lado y lo manda a la admisión, generando la presión suficiente.",
+      "words": []
+    },
+    {
+      "end_seconds": 200.94,
+      "segment_id": "seg_0038",
+      "start_seconds": 196.62,
+      "text": "Por otro lado, el sistema Twin Turbo es precisamente lo mismo, pero es el doble de cosas.",
+      "words": []
+    },
+    {
+      "end_seconds": 205.32,
+      "segment_id": "seg_0039",
+      "start_seconds": 201.36,
+      "text": "Tenemos dos turbos, dos manifolds, dos downpipes, tenemos dos líneas de aceite.",
+      "words": []
+    },
+    {
+      "end_seconds": 207.42000000000002,
+      "segment_id": "seg_0040",
+      "start_seconds": 205.56,
+      "text": "No manches, ya podemos dejar de arrastrar tantas cosas.",
+      "words": []
+    },
+    {
+      "end_seconds": 209.18,
+      "segment_id": "seg_0041",
+      "start_seconds": 207.68,
+      "text": "Discúlpame, carnal, te juro que ya es la última.",
+      "words": []
+    },
+    {
+      "end_seconds": 210.58,
+      "segment_id": "seg_0042",
+      "start_seconds": 209.60000000000002,
+      "text": "Ya es la última, chavos.",
+      "words": []
+    },
+    {
+      "end_seconds": 217.28,
+      "segment_id": "seg_0043",
+      "start_seconds": 210.58,
+      "text": "Como les comentaba, el sistema Twin Turbo es el doble de cosas.",
+      "words": []
+    },
+    {
+      "end_seconds": 221.3,
+      "segment_id": "seg_0044",
+      "start_seconds": 217.48000000000002,
+      "text": "Tienes dos turbos, dos conectores, dos líneas de aceite, dos downpipes.",
+      "words": []
+    },
+    {
+      "end_seconds": 228.10000000000002,
+      "segment_id": "seg_0045",
+      "start_seconds": 221.44,
+      "text": "Este de aquí precisamente es un sistema Twin Turbo secuencial, lo que significa que primero funciona uno y luego funciona el otro.",
+      "words": []
+    },
+    {
+      "end_seconds": 234.48000000000002,
+      "segment_id": "seg_0046",
+      "start_seconds": 228.22000000000003,
+      "text": "Cuando este empieza a funcionar, empieza a comprimir, llega a su presión ideal y luego esta válvula de aquí, que si puedes acercarte para que se vea,",
+      "words": []
+    },
+    {
+      "end_seconds": 239.78,
+      "segment_id": "seg_0047",
+      "start_seconds": 234.48000000000002,
+      "text": "esa es una válvula, aquí adentro tiene una mariposa que restringe el flujo y no deja que este funcione.",
+      "words": []
+    },
+    {
+      "end_seconds": 246.56,
+      "segment_id": "seg_0048",
+      "start_seconds": 239.78,
+      "text": "Cuando este alcanza la presión, esta se abre, de esta manera, y ya le permite el flujo, lo que empieza a funcionar.",
+      "words": []
+    },
+    {
+      "end_seconds": 250.92000000000002,
+      "segment_id": "seg_0049",
+      "start_seconds": 246.66,
+      "text": "Llegando así a tener los dos turbos funcionando, pero primero uno y luego los dos.",
+      "words": []
+    },
+    {
+      "end_seconds": 270.78000000000003,
+      "segment_id": "seg_0050",
+      "start_seconds": 269.78000000000003,
+      "text": "¡Vale!",
+      "words": []
+    },
+    {
+      "end_seconds": 273.1,
+      "segment_id": "seg_0051",
+      "start_seconds": 270.78000000000003,
+      "text": "We were the losing kind",
+      "words": []
+    },
+    {
+      "end_seconds": 276.66,
+      "segment_id": "seg_0052",
+      "start_seconds": 273.1,
+      "text": "Time goes slow",
+      "words": []
+    },
+    {
+      "end_seconds": 280.34000000000003,
+      "segment_id": "seg_0053",
+      "start_seconds": 276.66,
+      "text": "When you're a fall through the night",
+      "words": []
+    },
+    {
+      "end_seconds": 283.8,
+      "segment_id": "seg_0054",
+      "start_seconds": 280.34000000000003,
+      "text": "Through darkness we'll go",
+      "words": []
+    },
+    {
+      "end_seconds": 286.78000000000003,
+      "segment_id": "seg_0055",
+      "start_seconds": 283.8,
+      "text": "To breathe the morning light",
+      "words": []
+    },
+    {
+      "end_seconds": 314.98,
+      "segment_id": "seg_0056",
+      "start_seconds": 286.78000000000003,
+      "text": "Gasolina",
+      "words": []
+    },
+    {
+      "end_seconds": 318.78000000000003,
+      "segment_id": "seg_0057",
+      "start_seconds": 316.78000000000003,
+      "text": "Gas!",
+      "words": []
+    },
+    {
+      "end_seconds": 339.78000000000003,
+      "segment_id": "seg_0058",
+      "start_seconds": 329.78000000000003,
+      "text": "¿Dólar?",
+      "words": []
+    },
+    {
+      "end_seconds": 341.78000000000003,
+      "segment_id": "seg_0059",
+      "start_seconds": 339.78000000000003,
+      "text": "¿Tarjeta?",
+      "words": []
+    },
+    {
+      "end_seconds": 342.78000000000003,
+      "segment_id": "seg_0060",
+      "start_seconds": 341.78000000000003,
+      "text": "¿Card?",
+      "words": []
+    },
+    {
+      "end_seconds": 343.78000000000003,
+      "segment_id": "seg_0061",
+      "start_seconds": 342.78000000000003,
+      "text": "Sí",
+      "words": []
+    },
+    {
+      "end_seconds": 361.78000000000003,
+      "segment_id": "seg_0062",
+      "start_seconds": 346.78000000000003,
+      "text": "Sí, puedo esperar",
+      "words": []
+    },
+    {
+      "end_seconds": 366.78000000000003,
+      "segment_id": "seg_0063",
+      "start_seconds": 361.78000000000003,
+      "text": "Aquí tengo otra",
+      "words": []
+    },
+    {
+      "end_seconds": 368.78000000000003,
+      "segment_id": "seg_0064",
+      "start_seconds": 366.78000000000003,
+      "text": "¿Me socias, por favor?",
+      "words": []
+    },
+    {
+      "end_seconds": 370.78000000000003,
+      "segment_id": "seg_0065",
+      "start_seconds": 368.78000000000003,
+      "text": "Sí, por supuesto",
+      "words": []
+    },
+    {
+      "end_seconds": 371.78000000000003,
+      "segment_id": "seg_0066",
+      "start_seconds": 370.78000000000003,
+      "text": "¿Puedo tomar tu tiempo?",
+      "words": []
+    },
+    {
+      "end_seconds": 372.78000000000003,
+      "segment_id": "seg_0067",
+      "start_seconds": 371.78000000000003,
+      "text": "Aquí está",
+      "words": []
+    },
+    {
+      "end_seconds": 373.78000000000003,
+      "segment_id": "seg_0068",
+      "start_seconds": 372.78000000000003,
+      "text": "Gracias",
+      "words": []
+    },
+    {
+      "end_seconds": 377.78000000000003,
+      "segment_id": "seg_0069",
+      "start_seconds": 376.78000000000003,
+      "text": "Ah, sí, esa también",
+      "words": []
+    },
+    {
+      "end_seconds": 378.78000000000003,
+      "segment_id": "seg_0070",
+      "start_seconds": 377.78000000000003,
+      "text": "Broma",
+      "words": []
+    },
+    {
+      "end_seconds": 384.78000000000003,
+      "segment_id": "seg_0071",
+      "start_seconds": 382.78000000000003,
+      "text": "Llame al banco emisor",
+      "words": []
+    },
+    {
+      "end_seconds": 394.78000000000003,
+      "segment_id": "seg_0072",
+      "start_seconds": 384.78000000000003,
+      "text": "Tengo esta",
+      "words": []
+    },
+    {
+      "end_seconds": 395.78000000000003,
+      "segment_id": "seg_0073",
+      "start_seconds": 394.78000000000003,
+      "text": "Tengo esta",
+      "words": []
+    },
+    {
+      "end_seconds": 396.78000000000003,
+      "segment_id": "seg_0074",
+      "start_seconds": 395.78000000000003,
+      "text": "Tengo esta",
+      "words": []
+    },
+    {
+      "end_seconds": 397.78000000000003,
+      "segment_id": "seg_0075",
+      "start_seconds": 396.78000000000003,
+      "text": "Esta",
+      "words": []
+    },
+    {
+      "end_seconds": 407.78000000000003,
+      "segment_id": "seg_0076",
+      "start_seconds": 397.78000000000003,
+      "text": "Tengo esta",
+      "words": []
+    },
+    {
+      "end_seconds": 408.78000000000003,
+      "segment_id": "seg_0077",
+      "start_seconds": 407.78000000000003,
+      "text": "Tengo esta",
+      "words": []
+    },
+    {
+      "end_seconds": 409.78000000000003,
+      "segment_id": "seg_0078",
+      "start_seconds": 408.78000000000003,
+      "text": "Tengo esta",
+      "words": []
+    },
+    {
+      "end_seconds": 410.78000000000003,
+      "segment_id": "seg_0079",
+      "start_seconds": 409.78000000000003,
+      "text": "Esta",
+      "words": []
+    },
+    {
+      "end_seconds": 411.78000000000003,
+      "segment_id": "seg_0080",
+      "start_seconds": 410.78000000000003,
+      "text": "Esta",
+      "words": []
+    },
+    {
+      "end_seconds": 412.78000000000003,
+      "segment_id": "seg_0081",
+      "start_seconds": 411.78000000000003,
+      "text": "Ya no tengo más",
+      "words": []
+    },
+    {
+      "end_seconds": 413.78000000000003,
+      "segment_id": "seg_0082",
+      "start_seconds": 412.78000000000003,
+      "text": "¡Oigan!",
+      "words": []
+    },
+    {
+      "end_seconds": 418.78000000000003,
+      "segment_id": "seg_0083",
+      "start_seconds": 417.78000000000003,
+      "text": "¿Lo conoces?",
+      "words": []
+    },
+    {
+      "end_seconds": 419.78000000000003,
+      "segment_id": "seg_0084",
+      "start_seconds": 418.78000000000003,
+      "text": "Ni idea",
+      "words": []
+    },
+    {
+      "end_seconds": 420.78000000000003,
+      "segment_id": "seg_0085",
+      "start_seconds": 419.78000000000003,
+      "text": "¿Hablas español?",
+      "words": []
+    },
+    {
+      "end_seconds": 422.78000000000003,
+      "segment_id": "seg_0086",
+      "start_seconds": 420.78000000000003,
+      "text": "Soy de Chimalhuacán",
+      "words": []
+    },
+    {
+      "end_seconds": 425.78000000000003,
+      "segment_id": "seg_0087",
+      "start_seconds": 422.78000000000003,
+      "text": "¿Por qué no usan Revolut?",
+      "words": []
+    },
+    {
+      "end_seconds": 427.78000000000003,
+      "segment_id": "seg_0088",
+      "start_seconds": 426.78000000000003,
+      "text": "Revolut",
+      "words": []
+    },
+    {
+      "end_seconds": 428.78000000000003,
+      "segment_id": "seg_0089",
+      "start_seconds": 427.78000000000003,
+      "text": "Revolut",
+      "words": []
+    },
+    {
+      "end_seconds": 429.78000000000003,
+      "segment_id": "seg_0090",
+      "start_seconds": 428.78000000000003,
+      "text": "Ya es mi banco",
+      "words": []
+    },
+    {
+      "end_seconds": 430.78000000000003,
+      "segment_id": "seg_0091",
+      "start_seconds": 429.78000000000003,
+      "text": "Esté en México",
+      "words": []
+    },
+    {
+      "end_seconds": 432.78000000000003,
+      "segment_id": "seg_0092",
+      "start_seconds": 430.78000000000003,
+      "text": "O en cualquier parte del mundo",
+      "words": []
+    },
+    {
+      "end_seconds": 433.78000000000003,
+      "segment_id": "seg_0093",
+      "start_seconds": 432.78000000000003,
+      "text": "Ya que nunca me deja varado",
+      "words": []
+    },
+    {
+      "end_seconds": 435.78000000000003,
+      "segment_id": "seg_0094",
+      "start_seconds": 433.78000000000003,
+      "text": "Esté donde esté",
+      "words": []
+    },
+    {
+      "end_seconds": 436.78000000000003,
+      "segment_id": "seg_0095",
+      "start_seconds": 435.78000000000003,
+      "text": "Desde la app",
+      "words": []
+    },
+    {
+      "end_seconds": 437.78000000000003,
+      "segment_id": "seg_0096",
+      "start_seconds": 436.78000000000003,
+      "text": "Puedo manejar",
+      "words": []
+    },
+    {
+      "end_seconds": 438.78000000000003,
+      "segment_id": "seg_0097",
+      "start_seconds": 437.78000000000003,
+      "text": "Más de 30 divisas",
+      "words": []
+    },
+    {
+      "end_seconds": 439.78000000000003,
+      "segment_id": "seg_0098",
+      "start_seconds": 438.78000000000003,
+      "text": "Incluyendo dólares",
+      "words": []
+    },
+    {
+      "end_seconds": 440.78000000000003,
+      "segment_id": "seg_0099",
+      "start_seconds": 439.78000000000003,
+      "text": "Y euros",
+      "words": []
+    },
+    {
+      "end_seconds": 441.78000000000003,
+      "segment_id": "seg_0100",
+      "start_seconds": 440.78000000000003,
+      "text": "Los obtengo",
+      "words": []
+    },
+    {
+      "end_seconds": 443.78000000000003,
+      "segment_id": "seg_0101",
+      "start_seconds": 441.78000000000003,
+      "text": "A la mejor tasa de cambio",
+      "words": []
+    },
+    {
+      "end_seconds": 444.78000000000003,
+      "segment_id": "seg_0102",
+      "start_seconds": 443.78000000000003,
+      "text": "Mejor incluso",
+      "words": []
+    },
+    {
+      "end_seconds": 445.78000000000003,
+      "segment_id": "seg_0103",
+      "start_seconds": 444.78000000000003,
+      "text": "Que en casas de cambio",
+      "words": []
+    },
+    {
+      "end_seconds": 447.78000000000003,
+      "segment_id": "seg_0104",
+      "start_seconds": 445.78000000000003,
+      "text": "Y en otros bancos",
+      "words": []
+    },
+    {
+      "end_seconds": 448.78000000000003,
+      "segment_id": "seg_0105",
+      "start_seconds": 447.78000000000003,
+      "text": "Y se las puedo mandar",
+      "words": []
+    },
+    {
+      "end_seconds": 449.78000000000003,
+      "segment_id": "seg_0106",
+      "start_seconds": 448.78000000000003,
+      "text": "A mis amigos",
+      "words": []
+    },
+    {
+      "end_seconds": 450.78000000000003,
+      "segment_id": "seg_0107",
+      "start_seconds": 449.78000000000003,
+      "text": "Que tienen cuenta",
+      "words": []
+    },
+    {
+      "end_seconds": 451.78000000000003,
+      "segment_id": "seg_0108",
+      "start_seconds": 450.78000000000003,
+      "text": "En Revolut",
+      "words": []
+    },
+    {
+      "end_seconds": 452.78000000000003,
+      "segment_id": "seg_0109",
+      "start_seconds": 451.78000000000003,
+      "text": "Sin comisión",
+      "words": []
+    },
+    {
+      "end_seconds": 453.78000000000003,
+      "segment_id": "seg_0110",
+      "start_seconds": 452.78000000000003,
+      "text": "A cualquier parte del mundo",
+      "words": []
+    },
+    {
+      "end_seconds": 454.78000000000003,
+      "segment_id": "seg_0111",
+      "start_seconds": 453.78000000000003,
+      "text": "Ya que Revolut",
+      "words": []
+    },
+    {
+      "end_seconds": 456.78000000000003,
+      "segment_id": "seg_0112",
+      "start_seconds": 454.78000000000003,
+      "text": "Está en más de 40 países",
+      "words": []
+    },
+    {
+      "end_seconds": 457.78000000000003,
+      "segment_id": "seg_0113",
+      "start_seconds": 456.78000000000003,
+      "text": "Y lo que más me gusta",
+      "words": []
+    },
+    {
+      "end_seconds": 458.78000000000003,
+      "segment_id": "seg_0114",
+      "start_seconds": 457.78000000000003,
+      "text": "Es que cada vez",
+      "words": []
+    },
+    {
+      "end_seconds": 459.78000000000003,
+      "segment_id": "seg_0115",
+      "start_seconds": 458.78000000000003,
+      "text": "Sacan más beneficios",
+      "words": []
+    },
+    {
+      "end_seconds": 460.78000000000003,
+      "segment_id": "seg_0116",
+      "start_seconds": 459.78000000000003,
+      "text": "Además de los que",
+      "words": []
+    },
+    {
+      "end_seconds": 461.78000000000003,
+      "segment_id": "seg_0117",
+      "start_seconds": 460.78000000000003,
+      "text": "Ya les he contado",
+      "words": []
+    },
+    {
+      "end_seconds": 462.78000000000003,
+      "segment_id": "seg_0118",
+      "start_seconds": 461.78000000000003,
+      "text": "Ahora desde la app",
+      "words": []
+    },
+    {
+      "end_seconds": 463.78000000000003,
+      "segment_id": "seg_0119",
+      "start_seconds": 462.78000000000003,
+      "text": "Puedo comprar",
+      "words": []
+    },
+    {
+      "end_seconds": 464.78000000000003,
+      "segment_id": "seg_0120",
+      "start_seconds": 463.78000000000003,
+      "text": "E-SIM",
+      "words": []
+    },
+    {
+      "end_seconds": 465.78000000000003,
+      "segment_id": "seg_0121",
+      "start_seconds": 464.78000000000003,
+      "text": "Para mis viajes internacionales",
+      "words": []
+    },
+    {
+      "end_seconds": 466.78000000000003,
+      "segment_id": "seg_0122",
+      "start_seconds": 465.78000000000003,
+      "text": "Y mantenerme conectado",
+      "words": []
+    },
+    {
+      "end_seconds": 468.78000000000003,
+      "segment_id": "seg_0123",
+      "start_seconds": 466.78000000000003,
+      "text": "En más de 100 países",
+      "words": []
+    },
+    {
+      "end_seconds": 469.78000000000003,
+      "segment_id": "seg_0124",
+      "start_seconds": 468.78000000000003,
+      "text": "Desde la misma aplicación",
+      "words": []
+    },
+    {
+      "end_seconds": 470.78000000000003,
+      "segment_id": "seg_0125",
+      "start_seconds": 469.78000000000003,
+      "text": "Lo compro",
+      "words": []
+    },
+    {
+      "end_seconds": 471.78000000000003,
+      "segment_id": "seg_0126",
+      "start_seconds": 470.78000000000003,
+      "text": "Y lo instalo",
+      "words": []
+    },
+    {
+      "end_seconds": 472.78000000000003,
+      "segment_id": "seg_0127",
+      "start_seconds": 471.78000000000003,
+      "text": "Sin problema",
+      "words": []
+    },
+    {
+      "end_seconds": 474.78000000000003,
+      "segment_id": "seg_0128",
+      "start_seconds": 473.78000000000003,
+      "text": "Descarga Revolut",
+      "words": []
+    },
+    {
+      "end_seconds": 475.78000000000003,
+      "segment_id": "seg_0129",
+      "start_seconds": 474.78000000000003,
+      "text": "Con mi link",
+      "words": []
+    },
+    {
+      "end_seconds": 476.78000000000003,
+      "segment_id": "seg_0130",
+      "start_seconds": 475.78000000000003,
+      "text": "En la descripción",
+      "words": []
+    },
+    {
+      "end_seconds": 477.78000000000003,
+      "segment_id": "seg_0131",
+      "start_seconds": 476.78000000000003,
+      "text": "Este código QR",
+      "words": []
+    },
+    {
+      "end_seconds": 478.78000000000003,
+      "segment_id": "seg_0132",
+      "start_seconds": 477.78000000000003,
+      "text": "Y recibe 300 pesos",
+      "words": []
+    },
+    {
+      "end_seconds": 479.78000000000003,
+      "segment_id": "seg_0133",
+      "start_seconds": 478.78000000000003,
+      "text": "De cashback",
+      "words": []
+    },
+    {
+      "end_seconds": 480.78000000000003,
+      "segment_id": "seg_0134",
+      "start_seconds": 479.78000000000003,
+      "text": "De bienvenida",
+      "words": []
+    },
+    {
+      "end_seconds": 486.78000000000003,
+      "segment_id": "seg_0135",
+      "start_seconds": 485.78000000000003,
+      "text": "Gracias",
+      "words": []
+    },
+    {
+      "end_seconds": 489.78000000000003,
+      "segment_id": "seg_0136",
+      "start_seconds": 488.78000000000003,
+      "text": "¡Tres, dos, acción!",
+      "words": []
+    },
+    {
+      "end_seconds": 516.78,
+      "segment_id": "seg_0137",
+      "start_seconds": 506.78000000000003,
+      "text": "Ya que terminamos la teoría",
+      "words": []
+    },
+    {
+      "end_seconds": 517.78,
+      "segment_id": "seg_0138",
+      "start_seconds": 516.78,
+      "text": "Ahora vamos a la práctica",
+      "words": []
+    },
+    {
+      "end_seconds": 518.78,
+      "segment_id": "seg_0139",
+      "start_seconds": 517.78,
+      "text": "Vamos a empezar a trabajar en el Supra",
+      "words": []
+    },
+    {
+      "end_seconds": 519.78,
+      "segment_id": "seg_0140",
+      "start_seconds": 518.78,
+      "text": "A lo que venimos",
+      "words": []
+    },
+    {
+      "end_seconds": 521.78,
+      "segment_id": "seg_0141",
+      "start_seconds": 519.78,
+      "text": "A instalar el sistema Single Turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 522.78,
+      "segment_id": "seg_0142",
+      "start_seconds": 521.78,
+      "text": "Comenzando por el Turbo Manifold",
+      "words": []
+    },
+    {
+      "end_seconds": 523.78,
+      "segment_id": "seg_0143",
+      "start_seconds": 522.78,
+      "text": "Comenzando por el Turbo Manifold",
+      "words": []
+    },
+    {
+      "end_seconds": 524.78,
+      "segment_id": "seg_0144",
+      "start_seconds": 523.78,
+      "text": "Este conjunto de tubos",
+      "words": []
+    },
+    {
+      "end_seconds": 525.78,
+      "segment_id": "seg_0145",
+      "start_seconds": 524.78,
+      "text": "Son los que se encargan de redirigir",
+      "words": []
+    },
+    {
+      "end_seconds": 527.78,
+      "segment_id": "seg_0146",
+      "start_seconds": 525.78,
+      "text": "Los gases del escape",
+      "words": []
+    },
+    {
+      "end_seconds": 528.78,
+      "segment_id": "seg_0147",
+      "start_seconds": 527.78,
+      "text": "Hacia el Turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 529.78,
+      "segment_id": "seg_0148",
+      "start_seconds": 528.78,
+      "text": "Entran por estos tubos",
+      "words": []
+    },
+    {
+      "end_seconds": 530.78,
+      "segment_id": "seg_0149",
+      "start_seconds": 529.78,
+      "text": "Uno por uno",
+      "words": []
+    },
+    {
+      "end_seconds": 531.78,
+      "segment_id": "seg_0150",
+      "start_seconds": 530.78,
+      "text": "Y luego salen por este",
+      "words": []
+    },
+    {
+      "end_seconds": 532.78,
+      "segment_id": "seg_0151",
+      "start_seconds": 531.78,
+      "text": "Vamos a instalarlo",
+      "words": []
+    },
+    {
+      "end_seconds": 533.78,
+      "segment_id": "seg_0152",
+      "start_seconds": 532.78,
+      "text": "Vamos a instalarlo",
+      "words": []
+    },
+    {
+      "end_seconds": 534.78,
+      "segment_id": "seg_0153",
+      "start_seconds": 533.78,
+      "text": "Vamos a instalarlo",
+      "words": []
+    },
+    {
+      "end_seconds": 535.78,
+      "segment_id": "seg_0154",
+      "start_seconds": 534.78,
+      "text": "Comenzando por el Turbo Manifold",
+      "words": []
+    },
+    {
+      "end_seconds": 536.78,
+      "segment_id": "seg_0155",
+      "start_seconds": 535.78,
+      "text": "Este conjunto de tubos",
+      "words": []
+    },
+    {
+      "end_seconds": 538.78,
+      "segment_id": "seg_0156",
+      "start_seconds": 536.78,
+      "text": "Son los que se encargan de redirigir",
+      "words": []
+    },
+    {
+      "end_seconds": 540.78,
+      "segment_id": "seg_0157",
+      "start_seconds": 538.78,
+      "text": "Los gases del escape",
+      "words": []
+    },
+    {
+      "end_seconds": 541.78,
+      "segment_id": "seg_0158",
+      "start_seconds": 540.78,
+      "text": "Hacia el Turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 542.78,
+      "segment_id": "seg_0159",
+      "start_seconds": 541.78,
+      "text": "Entran por estos tubos",
+      "words": []
+    },
+    {
+      "end_seconds": 543.78,
+      "segment_id": "seg_0160",
+      "start_seconds": 542.78,
+      "text": "Uno por uno",
+      "words": []
+    },
+    {
+      "end_seconds": 544.78,
+      "segment_id": "seg_0161",
+      "start_seconds": 543.78,
+      "text": "Y luego salen por este",
+      "words": []
+    },
+    {
+      "end_seconds": 545.78,
+      "segment_id": "seg_0162",
+      "start_seconds": 544.78,
+      "text": "Vamos a instalarlo",
+      "words": []
+    },
+    {
+      "end_seconds": 546.78,
+      "segment_id": "seg_0163",
+      "start_seconds": 545.78,
+      "text": "Aquí como pueden ver",
+      "words": []
+    },
+    {
+      "end_seconds": 547.78,
+      "segment_id": "seg_0164",
+      "start_seconds": 546.78,
+      "text": "Ya se comienza a ver todo",
+      "words": []
+    },
+    {
+      "end_seconds": 548.78,
+      "segment_id": "seg_0165",
+      "start_seconds": 547.78,
+      "text": "Muchísimo más sencillo",
+      "words": []
+    },
+    {
+      "end_seconds": 549.78,
+      "segment_id": "seg_0166",
+      "start_seconds": 548.78,
+      "text": "Más limpio",
+      "words": []
+    },
+    {
+      "end_seconds": 550.78,
+      "segment_id": "seg_0167",
+      "start_seconds": 549.78,
+      "text": "E incluso entre Manifolds",
+      "words": []
+    },
+    {
+      "end_seconds": 551.78,
+      "segment_id": "seg_0168",
+      "start_seconds": 550.78,
+      "text": "Hay diferentes tipos",
+      "words": []
+    },
+    {
+      "end_seconds": 552.78,
+      "segment_id": "seg_0169",
+      "start_seconds": 551.78,
+      "text": "Hay unos que solamente",
+      "words": []
+    },
+    {
+      "end_seconds": 553.78,
+      "segment_id": "seg_0170",
+      "start_seconds": 552.78,
+      "text": "Se conectan todos los tubos",
+      "words": []
+    },
+    {
+      "end_seconds": 554.78,
+      "segment_id": "seg_0171",
+      "start_seconds": 553.78,
+      "text": "Salen a una brida",
+      "words": []
+    },
+    {
+      "end_seconds": 555.78,
+      "segment_id": "seg_0172",
+      "start_seconds": 554.78,
+      "text": "Y listo",
+      "words": []
+    },
+    {
+      "end_seconds": 556.78,
+      "segment_id": "seg_0173",
+      "start_seconds": 555.78,
+      "text": "Pero este por ejemplo",
+      "words": []
+    },
+    {
+      "end_seconds": 557.78,
+      "segment_id": "seg_0174",
+      "start_seconds": 556.78,
+      "text": "Si te puedes acercarte aquí tantito",
+      "words": []
+    },
+    {
+      "end_seconds": 559.78,
+      "segment_id": "seg_0175",
+      "start_seconds": 557.78,
+      "text": "Cada tubo tiene la misma longitud",
+      "words": []
+    },
+    {
+      "end_seconds": 560.78,
+      "segment_id": "seg_0176",
+      "start_seconds": 559.78,
+      "text": "Y esto lo que ayuda",
+      "words": []
+    },
+    {
+      "end_seconds": 562.78,
+      "segment_id": "seg_0177",
+      "start_seconds": 560.78,
+      "text": "Es que cuando uno sale",
+      "words": []
+    },
+    {
+      "end_seconds": 563.78,
+      "segment_id": "seg_0178",
+      "start_seconds": 562.78,
+      "text": "Arrastra el que sigue",
+      "words": []
+    },
+    {
+      "end_seconds": 564.78,
+      "segment_id": "seg_0179",
+      "start_seconds": 563.78,
+      "text": "Y eso ayuda a que tenga",
+      "words": []
+    },
+    {
+      "end_seconds": 565.78,
+      "segment_id": "seg_0180",
+      "start_seconds": 564.78,
+      "text": "Muchísimo mejor flujo",
+      "words": []
+    },
+    {
+      "end_seconds": 566.78,
+      "segment_id": "seg_0181",
+      "start_seconds": 565.78,
+      "text": "O sea tiene mejor función",
+      "words": []
+    },
+    {
+      "end_seconds": 567.78,
+      "segment_id": "seg_0182",
+      "start_seconds": 566.78,
+      "text": "Y como siempre chavos",
+      "words": []
+    },
+    {
+      "end_seconds": 568.78,
+      "segment_id": "seg_0183",
+      "start_seconds": 567.78,
+      "text": "No se les olvide torquear",
+      "words": []
+    },
+    {
+      "end_seconds": 569.78,
+      "segment_id": "seg_0184",
+      "start_seconds": 568.78,
+      "text": "Que por cierto chavos",
+      "words": []
+    },
+    {
+      "end_seconds": 571.78,
+      "segment_id": "seg_0185",
+      "start_seconds": 569.78,
+      "text": "Estos van a 29 libras a pie",
+      "words": []
+    },
+    {
+      "end_seconds": 573.78,
+      "segment_id": "seg_0186",
+      "start_seconds": 571.78,
+      "text": "Pero ustedes lo tienen que revisar en su manual",
+      "words": []
+    },
+    {
+      "end_seconds": 575.78,
+      "segment_id": "seg_0187",
+      "start_seconds": 573.78,
+      "text": "Porque varían de motor a motor",
+      "words": []
+    },
+    {
+      "end_seconds": 582.78,
+      "segment_id": "seg_0188",
+      "start_seconds": 580.78,
+      "text": "Y para complementar un buen Turbo Head",
+      "words": []
+    },
+    {
+      "end_seconds": 583.78,
+      "segment_id": "seg_0189",
+      "start_seconds": 582.78,
+      "text": "Necesitamos una buena admisión",
+      "words": []
+    },
+    {
+      "end_seconds": 584.78,
+      "segment_id": "seg_0190",
+      "start_seconds": 583.78,
+      "text": "Aquí tenemos la original",
+      "words": []
+    },
+    {
+      "end_seconds": 585.78,
+      "segment_id": "seg_0191",
+      "start_seconds": 584.78,
+      "text": "Que si se fijan",
+      "words": []
+    },
+    {
+      "end_seconds": 586.78,
+      "segment_id": "seg_0192",
+      "start_seconds": 585.78,
+      "text": "La diferencia de esta",
+      "words": []
+    },
+    {
+      "end_seconds": 587.78,
+      "segment_id": "seg_0193",
+      "start_seconds": 586.78,
+      "text": "Es muchísimo más grande",
+      "words": []
+    },
+    {
+      "end_seconds": 588.78,
+      "segment_id": "seg_0194",
+      "start_seconds": 587.78,
+      "text": "Y más sencilla",
+      "words": []
+    },
+    {
+      "end_seconds": 590.78,
+      "segment_id": "seg_0195",
+      "start_seconds": 588.78,
+      "text": "Esta tenía casi 200 vacíos",
+      "words": []
+    },
+    {
+      "end_seconds": 592.78,
+      "segment_id": "seg_0196",
+      "start_seconds": 590.78,
+      "text": "Y esto únicamente va a tener 4",
+      "words": []
+    },
+    {
+      "end_seconds": 593.78,
+      "segment_id": "seg_0197",
+      "start_seconds": 592.78,
+      "text": "Y su válvula ya",
+      "words": []
+    },
+    {
+      "end_seconds": 594.78,
+      "segment_id": "seg_0198",
+      "start_seconds": 593.78,
+      "text": "Que de hecho",
+      "words": []
+    },
+    {
+      "end_seconds": 595.78,
+      "segment_id": "seg_0199",
+      "start_seconds": 594.78,
+      "text": "La vamos a quitar de esta",
+      "words": []
+    },
+    {
+      "end_seconds": 596.78,
+      "segment_id": "seg_0200",
+      "start_seconds": 595.78,
+      "text": "Para reutilizarla",
+      "words": []
+    },
+    {
+      "end_seconds": 597.78,
+      "segment_id": "seg_0201",
+      "start_seconds": 596.78,
+      "text": "Esta lo que hace",
+      "words": []
+    },
+    {
+      "end_seconds": 598.78,
+      "segment_id": "seg_0202",
+      "start_seconds": 597.78,
+      "text": "Es que va a agarrar el aire por aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 600.78,
+      "segment_id": "seg_0203",
+      "start_seconds": 598.78,
+      "text": "Y la va a meter directamente",
+      "words": []
+    },
+    {
+      "end_seconds": 601.78,
+      "segment_id": "seg_0204",
+      "start_seconds": 600.78,
+      "text": "A la admisión",
+      "words": []
+    },
+    {
+      "end_seconds": 603.78,
+      "segment_id": "seg_0205",
+      "start_seconds": 601.78,
+      "text": "Esto nos va a ayudar a controlar",
+      "words": []
+    },
+    {
+      "end_seconds": 604.78,
+      "segment_id": "seg_0206",
+      "start_seconds": 603.78,
+      "text": "Las bajas revoluciones",
+      "words": []
+    },
+    {
+      "end_seconds": 605.78,
+      "segment_id": "seg_0207",
+      "start_seconds": 604.78,
+      "text": "Que tenga un ralenti estable",
+      "words": []
+    },
+    {
+      "end_seconds": 607.78,
+      "segment_id": "seg_0208",
+      "start_seconds": 605.78,
+      "text": "Sin necesidad de estar jugando",
+      "words": []
+    },
+    {
+      "end_seconds": 609.78,
+      "segment_id": "seg_0209",
+      "start_seconds": 607.78,
+      "text": "Con el cuerpo de aceleración",
+      "words": []
+    },
+    {
+      "end_seconds": 610.78,
+      "segment_id": "seg_0210",
+      "start_seconds": 609.78,
+      "text": "Que de hecho este",
+      "words": []
+    },
+    {
+      "end_seconds": 611.78,
+      "segment_id": "seg_0211",
+      "start_seconds": 610.78,
+      "text": "Si se fijan",
+      "words": []
+    },
+    {
+      "end_seconds": 612.78,
+      "segment_id": "seg_0212",
+      "start_seconds": 611.78,
+      "text": "Con el original",
+      "words": []
+    },
+    {
+      "end_seconds": 613.78,
+      "segment_id": "seg_0213",
+      "start_seconds": 612.78,
+      "text": "Hay una diferencia enorme",
+      "words": []
+    },
+    {
+      "end_seconds": 614.78,
+      "segment_id": "seg_0214",
+      "start_seconds": 613.78,
+      "text": "Este es de 90 milímetros",
+      "words": []
+    },
+    {
+      "end_seconds": 615.78,
+      "segment_id": "seg_0215",
+      "start_seconds": 614.78,
+      "text": "Y este",
+      "words": []
+    },
+    {
+      "end_seconds": 617.78,
+      "segment_id": "seg_0216",
+      "start_seconds": 615.78,
+      "text": "Bueno está mucho más pequeño",
+      "words": []
+    },
+    {
+      "end_seconds": 618.78,
+      "segment_id": "seg_0217",
+      "start_seconds": 617.78,
+      "text": "Otra de las cosas",
+      "words": []
+    },
+    {
+      "end_seconds": 619.78,
+      "segment_id": "seg_0218",
+      "start_seconds": 618.78,
+      "text": "Que vamos a reutilizar",
+      "words": []
+    },
+    {
+      "end_seconds": 620.78,
+      "segment_id": "seg_0219",
+      "start_seconds": 619.78,
+      "text": "Es este sensor de aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 621.78,
+      "segment_id": "seg_0220",
+      "start_seconds": 620.78,
+      "text": "Este es el sensor MAP",
+      "words": []
+    },
+    {
+      "end_seconds": 622.78,
+      "segment_id": "seg_0221",
+      "start_seconds": 621.78,
+      "text": "Y este lo que hace",
+      "words": []
+    },
+    {
+      "end_seconds": 623.78,
+      "segment_id": "seg_0222",
+      "start_seconds": 622.78,
+      "text": "Es que va a medir",
+      "words": []
+    },
+    {
+      "end_seconds": 624.78,
+      "segment_id": "seg_0223",
+      "start_seconds": 623.78,
+      "text": "La presión que hay dentro",
+      "words": []
+    },
+    {
+      "end_seconds": 625.78,
+      "segment_id": "seg_0224",
+      "start_seconds": 624.78,
+      "text": "De la admisión",
+      "words": []
+    },
+    {
+      "end_seconds": 626.78,
+      "segment_id": "seg_0225",
+      "start_seconds": 625.78,
+      "text": "Para que la computadora",
+      "words": []
+    },
+    {
+      "end_seconds": 627.78,
+      "segment_id": "seg_0226",
+      "start_seconds": 626.78,
+      "text": "Pueda hacer sus cálculos",
+      "words": []
+    },
+    {
+      "end_seconds": 628.78,
+      "segment_id": "seg_0227",
+      "start_seconds": 627.78,
+      "text": "De cuánta gasolina",
+      "words": []
+    },
+    {
+      "end_seconds": 629.78,
+      "segment_id": "seg_0228",
+      "start_seconds": 628.78,
+      "text": "Es la que va a inyectar",
+      "words": []
+    },
+    {
+      "end_seconds": 630.78,
+      "segment_id": "seg_0229",
+      "start_seconds": 629.78,
+      "text": "Esto lo vamos a adaptar",
+      "words": []
+    },
+    {
+      "end_seconds": 631.78,
+      "segment_id": "seg_0230",
+      "start_seconds": 630.78,
+      "text": "Un poquito más adelante",
+      "words": []
+    },
+    {
+      "end_seconds": 632.78,
+      "segment_id": "seg_0231",
+      "start_seconds": 631.78,
+      "text": "Otra de las piezas",
+      "words": []
+    },
+    {
+      "end_seconds": 633.78,
+      "segment_id": "seg_0232",
+      "start_seconds": 632.78,
+      "text": "Que vamos a reutilizar",
+      "words": []
+    },
+    {
+      "end_seconds": 634.78,
+      "segment_id": "seg_0233",
+      "start_seconds": 633.78,
+      "text": "Es este sensor de aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 635.78,
+      "segment_id": "seg_0234",
+      "start_seconds": 634.78,
+      "text": "Este es un sensor",
+      "words": []
+    },
+    {
+      "end_seconds": 637.78,
+      "segment_id": "seg_0235",
+      "start_seconds": 635.78,
+      "text": "El sensor de temperatura de aire",
+      "words": []
+    },
+    {
+      "end_seconds": 638.78,
+      "segment_id": "seg_0236",
+      "start_seconds": 637.78,
+      "text": "El cual es muy importante",
+      "words": []
+    },
+    {
+      "end_seconds": 639.78,
+      "segment_id": "seg_0237",
+      "start_seconds": 638.78,
+      "text": "Porque entre más frío el aire",
+      "words": []
+    },
+    {
+      "end_seconds": 640.78,
+      "segment_id": "seg_0238",
+      "start_seconds": 639.78,
+      "text": "Más denso es",
+      "words": []
+    },
+    {
+      "end_seconds": 641.78,
+      "segment_id": "seg_0239",
+      "start_seconds": 640.78,
+      "text": "Eso quiere decir",
+      "words": []
+    },
+    {
+      "end_seconds": 642.78,
+      "segment_id": "seg_0240",
+      "start_seconds": 641.78,
+      "text": "Que hay más oxígeno",
+      "words": []
+    },
+    {
+      "end_seconds": 643.78,
+      "segment_id": "seg_0241",
+      "start_seconds": 642.78,
+      "text": "Por lo tanto",
+      "words": []
+    },
+    {
+      "end_seconds": 644.78,
+      "segment_id": "seg_0242",
+      "start_seconds": 643.78,
+      "text": "Necesitamos más gasolina",
+      "words": []
+    },
+    {
+      "end_seconds": 645.78,
+      "segment_id": "seg_0243",
+      "start_seconds": 644.78,
+      "text": "Y cuando está más caliente",
+      "words": []
+    },
+    {
+      "end_seconds": 646.78,
+      "segment_id": "seg_0244",
+      "start_seconds": 645.78,
+      "text": "Necesitamos un poquito menos",
+      "words": []
+    },
+    {
+      "end_seconds": 647.78,
+      "segment_id": "seg_0245",
+      "start_seconds": 646.78,
+      "text": "Entonces con este",
+      "words": []
+    },
+    {
+      "end_seconds": 648.78,
+      "segment_id": "seg_0246",
+      "start_seconds": 647.78,
+      "text": "Nos vamos a ayudar",
+      "words": []
+    },
+    {
+      "end_seconds": 649.78,
+      "segment_id": "seg_0247",
+      "start_seconds": 648.78,
+      "text": "Para hacer la programación",
+      "words": []
+    },
+    {
+      "end_seconds": 650.78,
+      "segment_id": "seg_0248",
+      "start_seconds": 649.78,
+      "text": "De la computadora",
+      "words": []
+    },
+    {
+      "end_seconds": 651.78,
+      "segment_id": "seg_0249",
+      "start_seconds": 650.78,
+      "text": "Y por último",
+      "words": []
+    },
+    {
+      "end_seconds": 652.78,
+      "segment_id": "seg_0250",
+      "start_seconds": 651.78,
+      "text": "Vamos a reutilizar",
+      "words": []
+    },
+    {
+      "end_seconds": 653.78,
+      "segment_id": "seg_0251",
+      "start_seconds": 652.78,
+      "text": "Este sensor de aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 654.78,
+      "segment_id": "seg_0252",
+      "start_seconds": 653.78,
+      "text": "Este es el TPS",
+      "words": []
+    },
+    {
+      "end_seconds": 655.78,
+      "segment_id": "seg_0253",
+      "start_seconds": 654.78,
+      "text": "El cual nos va a indicar",
+      "words": []
+    },
+    {
+      "end_seconds": 656.78,
+      "segment_id": "seg_0254",
+      "start_seconds": 655.78,
+      "text": "Qué tan abierto está",
+      "words": []
+    },
+    {
+      "end_seconds": 657.78,
+      "segment_id": "seg_0255",
+      "start_seconds": 656.78,
+      "text": "El cuerpo de aceleración",
+      "words": []
+    },
+    {
+      "end_seconds": 658.78,
+      "segment_id": "seg_0256",
+      "start_seconds": 657.78,
+      "text": "Ya que tenemos en cuenta",
+      "words": []
+    },
+    {
+      "end_seconds": 659.78,
+      "segment_id": "seg_0257",
+      "start_seconds": 658.78,
+      "text": "Los sensores que vamos a reutilizar",
+      "words": []
+    },
+    {
+      "end_seconds": 660.78,
+      "segment_id": "seg_0258",
+      "start_seconds": 659.78,
+      "text": "Vamos a instalarlos",
+      "words": []
+    },
+    {
+      "end_seconds": 661.78,
+      "segment_id": "seg_0259",
+      "start_seconds": 660.78,
+      "text": "Junto con las tomas de aire",
+      "words": []
+    },
+    {
+      "end_seconds": 662.78,
+      "segment_id": "seg_0260",
+      "start_seconds": 661.78,
+      "text": "Que lleva esta admisión",
+      "words": []
+    },
+    {
+      "end_seconds": 663.78,
+      "segment_id": "seg_0261",
+      "start_seconds": 662.78,
+      "text": "Que van a ser para el buster",
+      "words": []
+    },
+    {
+      "end_seconds": 664.78,
+      "segment_id": "seg_0262",
+      "start_seconds": 663.78,
+      "text": "El MAP",
+      "words": []
+    },
+    {
+      "end_seconds": 665.78,
+      "segment_id": "seg_0263",
+      "start_seconds": 664.78,
+      "text": "La blow-off",
+      "words": []
+    },
+    {
+      "end_seconds": 666.78,
+      "segment_id": "seg_0264",
+      "start_seconds": 665.78,
+      "text": "El regulador de presión de gasolina",
+      "words": []
+    },
+    {
+      "end_seconds": 667.78,
+      "segment_id": "seg_0265",
+      "start_seconds": 666.78,
+      "text": "Y por cierto",
+      "words": []
+    },
+    {
+      "end_seconds": 668.78,
+      "segment_id": "seg_0266",
+      "start_seconds": 667.78,
+      "text": "Esta admisión no lleva",
+      "words": []
+    },
+    {
+      "end_seconds": 669.78,
+      "segment_id": "seg_0267",
+      "start_seconds": 668.78,
+      "text": "Un empaque convencional",
+      "words": []
+    },
+    {
+      "end_seconds": 670.78,
+      "segment_id": "seg_0268",
+      "start_seconds": 669.78,
+      "text": "Lleva unas ligas como estas",
+      "words": []
+    },
+    {
+      "end_seconds": 671.78,
+      "segment_id": "seg_0269",
+      "start_seconds": 670.78,
+      "text": "Aquí tenemos la admisión",
+      "words": []
+    },
+    {
+      "end_seconds": 672.78,
+      "segment_id": "seg_0270",
+      "start_seconds": 671.78,
+      "text": "Ya lista para instalar",
+      "words": []
+    },
+    {
+      "end_seconds": 673.78,
+      "segment_id": "seg_0271",
+      "start_seconds": 672.78,
+      "text": "Ya tenemos aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 674.78,
+      "segment_id": "seg_0272",
+      "start_seconds": 673.78,
+      "text": "La abuelita Jack",
+      "words": []
+    },
+    {
+      "end_seconds": 675.78,
+      "segment_id": "seg_0273",
+      "start_seconds": 674.78,
+      "text": "Y sus vacíos",
+      "words": []
+    },
+    {
+      "end_seconds": 676.78,
+      "segment_id": "seg_0274",
+      "start_seconds": 675.78,
+      "text": "Como se fijan",
+      "words": []
+    },
+    {
+      "end_seconds": 677.78,
+      "segment_id": "seg_0275",
+      "start_seconds": 676.78,
+      "text": "Ya nada más son 4 vacíos",
+      "words": []
+    },
+    {
+      "end_seconds": 678.78,
+      "segment_id": "seg_0276",
+      "start_seconds": 677.78,
+      "text": "¿No?",
+      "words": []
+    },
+    {
+      "end_seconds": 679.78,
+      "segment_id": "seg_0277",
+      "start_seconds": 678.78,
+      "text": "223",
+      "words": []
+    },
+    {
+      "end_seconds": 680.78,
+      "segment_id": "seg_0278",
+      "start_seconds": 679.78,
+      "text": "Y medio ¿No?",
+      "words": []
+    },
+    {
+      "end_seconds": 681.78,
+      "segment_id": "seg_0279",
+      "start_seconds": 680.78,
+      "text": "Porque uno estaba roto",
+      "words": []
+    },
+    {
+      "end_seconds": 682.78,
+      "segment_id": "seg_0280",
+      "start_seconds": 681.78,
+      "text": "Sí",
+      "words": []
+    },
+    {
+      "end_seconds": 683.78,
+      "segment_id": "seg_0281",
+      "start_seconds": 682.78,
+      "text": "Cabe mencionar",
+      "words": []
+    },
+    {
+      "end_seconds": 684.78,
+      "segment_id": "seg_0282",
+      "start_seconds": 683.78,
+      "text": "Que así como estamos",
+      "words": []
+    },
+    {
+      "end_seconds": 685.78,
+      "segment_id": "seg_0283",
+      "start_seconds": 684.78,
+      "text": "Simplificando",
+      "words": []
+    },
+    {
+      "end_seconds": 687.78,
+      "segment_id": "seg_0284",
+      "start_seconds": 685.78,
+      "text": "Por decirlo de alguna manera",
+      "words": []
+    },
+    {
+      "end_seconds": 688.78,
+      "segment_id": "seg_0285",
+      "start_seconds": 687.78,
+      "text": "El sistema",
+      "words": []
+    },
+    {
+      "end_seconds": 689.78,
+      "segment_id": "seg_0286",
+      "start_seconds": 688.78,
+      "text": "De los vacíos",
+      "words": []
+    },
+    {
+      "end_seconds": 690.78,
+      "segment_id": "seg_0287",
+      "start_seconds": 689.78,
+      "text": "También estamos reduciendo",
+      "words": []
+    },
+    {
+      "end_seconds": 691.78,
+      "segment_id": "seg_0288",
+      "start_seconds": 690.78,
+      "text": "Las mangueras",
+      "words": []
+    },
+    {
+      "end_seconds": 692.78,
+      "segment_id": "seg_0289",
+      "start_seconds": 691.78,
+      "text": "Que se va a llevar",
+      "words": []
+    },
+    {
+      "end_seconds": 693.78,
+      "segment_id": "seg_0290",
+      "start_seconds": 692.78,
+      "text": "De enfriamiento",
+      "words": []
+    },
+    {
+      "end_seconds": 694.78,
+      "segment_id": "seg_0291",
+      "start_seconds": 693.78,
+      "text": "Si se fijan",
+      "words": []
+    },
+    {
+      "end_seconds": 695.78,
+      "segment_id": "seg_0292",
+      "start_seconds": 694.78,
+      "text": "Pues teníamos los dos turbos",
+      "words": []
+    },
+    {
+      "end_seconds": 696.78,
+      "segment_id": "seg_0293",
+      "start_seconds": 695.78,
+      "text": "De aquel lado",
+      "words": []
+    },
+    {
+      "end_seconds": 697.78,
+      "segment_id": "seg_0294",
+      "start_seconds": 696.78,
+      "text": "Los dos llevaban enfriamiento",
+      "words": []
+    },
+    {
+      "end_seconds": 698.78,
+      "segment_id": "seg_0295",
+      "start_seconds": 697.78,
+      "text": "Así que ya no se van a utilizar",
+      "words": []
+    },
+    {
+      "end_seconds": 699.78,
+      "segment_id": "seg_0296",
+      "start_seconds": 698.78,
+      "text": "Aquí hay algunas tomas",
+      "words": []
+    },
+    {
+      "end_seconds": 700.78,
+      "segment_id": "seg_0297",
+      "start_seconds": 699.78,
+      "text": "Que se tuvieron que eliminar",
+      "words": []
+    },
+    {
+      "end_seconds": 701.78,
+      "segment_id": "seg_0298",
+      "start_seconds": 700.78,
+      "text": "Hay que reubicar estas",
+      "words": []
+    },
+    {
+      "end_seconds": 702.78,
+      "segment_id": "seg_0299",
+      "start_seconds": 701.78,
+      "text": "Que son de la calefacción",
+      "words": []
+    },
+    {
+      "end_seconds": 703.78,
+      "segment_id": "seg_0300",
+      "start_seconds": 702.78,
+      "text": "Nada más completar ahí",
+      "words": []
+    },
+    {
+      "end_seconds": 704.78,
+      "segment_id": "seg_0301",
+      "start_seconds": 703.78,
+      "text": "El circuito",
+      "words": []
+    },
+    {
+      "end_seconds": 705.78,
+      "segment_id": "seg_0302",
+      "start_seconds": 704.78,
+      "text": "Y tiene sus chistes chavos",
+      "words": []
+    },
+    {
+      "end_seconds": 707.78,
+      "segment_id": "seg_0303",
+      "start_seconds": 705.78,
+      "text": "No es cualquier cosita",
+      "words": []
+    },
+    {
+      "end_seconds": 711.78,
+      "segment_id": "seg_0304",
+      "start_seconds": 710.78,
+      "text": "Ya tenemos la admisión",
+      "words": []
+    },
+    {
+      "end_seconds": 713.78,
+      "segment_id": "seg_0305",
+      "start_seconds": 711.78,
+      "text": "Completamente instalada",
+      "words": []
+    },
+    {
+      "end_seconds": 714.78,
+      "segment_id": "seg_0306",
+      "start_seconds": 713.78,
+      "text": "Lo que es el pleno",
+      "words": []
+    },
+    {
+      "end_seconds": 716.78,
+      "segment_id": "seg_0307",
+      "start_seconds": 714.78,
+      "text": "Y el cuerpo de aceleración",
+      "words": []
+    },
+    {
+      "end_seconds": 717.78,
+      "segment_id": "seg_0308",
+      "start_seconds": 716.78,
+      "text": "Y un dato técnico",
+      "words": []
+    },
+    {
+      "end_seconds": 718.78,
+      "segment_id": "seg_0309",
+      "start_seconds": 717.78,
+      "text": "Muy importante",
+      "words": []
+    },
+    {
+      "end_seconds": 719.78,
+      "segment_id": "seg_0310",
+      "start_seconds": 718.78,
+      "text": "Es que en un carro",
+      "words": []
+    },
+    {
+      "end_seconds": 720.78,
+      "segment_id": "seg_0311",
+      "start_seconds": 719.78,
+      "text": "NA",
+      "words": []
+    },
+    {
+      "end_seconds": 721.78,
+      "segment_id": "seg_0312",
+      "start_seconds": 720.78,
+      "text": "Cuando tú pones una admisión",
+      "words": []
+    },
+    {
+      "end_seconds": 722.78,
+      "segment_id": "seg_0313",
+      "start_seconds": 721.78,
+      "text": "De mayor volumen",
+      "words": []
+    },
+    {
+      "end_seconds": 723.78,
+      "segment_id": "seg_0314",
+      "start_seconds": 722.78,
+      "text": "O más grande",
+      "words": []
+    },
+    {
+      "end_seconds": 724.78,
+      "segment_id": "seg_0315",
+      "start_seconds": 723.78,
+      "text": "Tiendes a perder un poquito",
+      "words": []
+    },
+    {
+      "end_seconds": 725.78,
+      "segment_id": "seg_0316",
+      "start_seconds": 724.78,
+      "text": "De torque en bajas revoluciones",
+      "words": []
+    },
+    {
+      "end_seconds": 727.78,
+      "segment_id": "seg_0317",
+      "start_seconds": 725.78,
+      "text": "Pero los ganas en alta",
+      "words": []
+    },
+    {
+      "end_seconds": 728.78,
+      "segment_id": "seg_0318",
+      "start_seconds": 727.78,
+      "text": "Entonces como vamos a meter",
+      "words": []
+    },
+    {
+      "end_seconds": 729.78,
+      "segment_id": "seg_0319",
+      "start_seconds": 728.78,
+      "text": "Más aire",
+      "words": []
+    },
+    {
+      "end_seconds": 730.78,
+      "segment_id": "seg_0320",
+      "start_seconds": 729.78,
+      "text": "Es necesario meter",
+      "words": []
+    },
+    {
+      "end_seconds": 731.78,
+      "segment_id": "seg_0321",
+      "start_seconds": 730.78,
+      "text": "Más gasolina",
+      "words": []
+    },
+    {
+      "end_seconds": 732.78,
+      "segment_id": "seg_0322",
+      "start_seconds": 731.78,
+      "text": "Y para eso",
+      "words": []
+    },
+    {
+      "end_seconds": 733.78,
+      "segment_id": "seg_0323",
+      "start_seconds": 732.78,
+      "text": "Vamos a utilizar",
+      "words": []
+    },
+    {
+      "end_seconds": 734.78,
+      "segment_id": "seg_0324",
+      "start_seconds": 733.78,
+      "text": "Un reel de inyectores",
+      "words": []
+    },
+    {
+      "end_seconds": 735.78,
+      "segment_id": "seg_0325",
+      "start_seconds": 734.78,
+      "text": "Y sus inyectores",
+      "words": []
+    },
+    {
+      "end_seconds": 736.78,
+      "segment_id": "seg_0326",
+      "start_seconds": 735.78,
+      "text": "De mayor volumen",
+      "words": []
+    },
+    {
+      "end_seconds": 737.78,
+      "segment_id": "seg_0327",
+      "start_seconds": 736.78,
+      "text": "Los vamos a cambiar",
+      "words": []
+    },
+    {
+      "end_seconds": 738.78,
+      "segment_id": "seg_0328",
+      "start_seconds": 737.78,
+      "text": "Porque nuestros inyectores",
+      "words": []
+    },
+    {
+      "end_seconds": 739.78,
+      "segment_id": "seg_0329",
+      "start_seconds": 738.78,
+      "text": "Originales han llegado",
+      "words": []
+    },
+    {
+      "end_seconds": 740.78,
+      "segment_id": "seg_0330",
+      "start_seconds": 739.78,
+      "text": "A su límite",
+      "words": []
+    },
+    {
+      "end_seconds": 741.78,
+      "segment_id": "seg_0331",
+      "start_seconds": 740.78,
+      "text": "Y vamos a necesitar",
+      "words": []
+    },
+    {
+      "end_seconds": 742.78,
+      "segment_id": "seg_0332",
+      "start_seconds": 741.78,
+      "text": "Muchísima más gasolina",
+      "words": []
+    },
+    {
+      "end_seconds": 743.78,
+      "segment_id": "seg_0333",
+      "start_seconds": 742.78,
+      "text": "Cuando metamos más boost",
+      "words": []
+    },
+    {
+      "end_seconds": 744.78,
+      "segment_id": "seg_0334",
+      "start_seconds": 743.78,
+      "text": "Para instalarlos es muy sencillo",
+      "words": []
+    },
+    {
+      "end_seconds": 745.78,
+      "segment_id": "seg_0335",
+      "start_seconds": 744.78,
+      "text": "Únicamente",
+      "words": []
+    },
+    {
+      "end_seconds": 746.78,
+      "segment_id": "seg_0336",
+      "start_seconds": 745.78,
+      "text": "De aceite",
+      "words": []
+    },
+    {
+      "end_seconds": 747.78,
+      "segment_id": "seg_0337",
+      "start_seconds": 746.78,
+      "text": "Le ponemos aquí en la liga",
+      "words": []
+    },
+    {
+      "end_seconds": 749.78,
+      "segment_id": "seg_0338",
+      "start_seconds": 747.78,
+      "text": "Y lo metemos así de fácil",
+      "words": []
+    },
+    {
+      "end_seconds": 750.78,
+      "segment_id": "seg_0339",
+      "start_seconds": 749.78,
+      "text": "Listo",
+      "words": []
+    },
+    {
+      "end_seconds": 751.78,
+      "segment_id": "seg_0340",
+      "start_seconds": 750.78,
+      "text": "Y así con todos",
+      "words": []
+    },
+    {
+      "end_seconds": 752.78,
+      "segment_id": "seg_0341",
+      "start_seconds": 751.78,
+      "text": "Es muy importante",
+      "words": []
+    },
+    {
+      "end_seconds": 753.78,
+      "segment_id": "seg_0342",
+      "start_seconds": 752.78,
+      "text": "Que le invierten",
+      "words": []
+    },
+    {
+      "end_seconds": 754.78,
+      "segment_id": "seg_0343",
+      "start_seconds": 753.78,
+      "text": "En unos muy buenos inyectores",
+      "words": []
+    },
+    {
+      "end_seconds": 755.78,
+      "segment_id": "seg_0344",
+      "start_seconds": 754.78,
+      "text": "Ya que si no tienen",
+      "words": []
+    },
+    {
+      "end_seconds": 756.78,
+      "segment_id": "seg_0345",
+      "start_seconds": 755.78,
+      "text": "Los datos técnicos",
+      "words": []
+    },
+    {
+      "end_seconds": 757.78,
+      "segment_id": "seg_0346",
+      "start_seconds": 756.78,
+      "text": "O nada más los compran",
+      "words": []
+    },
+    {
+      "end_seconds": 758.78,
+      "segment_id": "seg_0347",
+      "start_seconds": 757.78,
+      "text": "Solamente por comprar",
+      "words": []
+    },
+    {
+      "end_seconds": 759.78,
+      "segment_id": "seg_0348",
+      "start_seconds": 758.78,
+      "text": "Sin saber la marca",
+      "words": []
+    },
+    {
+      "end_seconds": 760.78,
+      "segment_id": "seg_0349",
+      "start_seconds": 759.78,
+      "text": "Ni nada",
+      "words": []
+    },
+    {
+      "end_seconds": 761.78,
+      "segment_id": "seg_0350",
+      "start_seconds": 760.78,
+      "text": "Van a tener muchos problemas",
+      "words": []
+    },
+    {
+      "end_seconds": 762.78,
+      "segment_id": "seg_0351",
+      "start_seconds": 761.78,
+      "text": "A la hora de tunear",
+      "words": []
+    },
+    {
+      "end_seconds": 763.78,
+      "segment_id": "seg_0352",
+      "start_seconds": 762.78,
+      "text": "Es muy importante",
+      "words": []
+    },
+    {
+      "end_seconds": 764.78,
+      "segment_id": "seg_0353",
+      "start_seconds": 763.78,
+      "text": "Que el fabricante",
+      "words": []
+    },
+    {
+      "end_seconds": 765.78,
+      "segment_id": "seg_0354",
+      "start_seconds": 764.78,
+      "text": "Te comparta todos los datos técnicos",
+      "words": []
+    },
+    {
+      "end_seconds": 766.78,
+      "segment_id": "seg_0355",
+      "start_seconds": 765.78,
+      "text": "Desde el tiempo muerto",
+      "words": []
+    },
+    {
+      "end_seconds": 767.78,
+      "segment_id": "seg_0356",
+      "start_seconds": 766.78,
+      "text": "El flujo",
+      "words": []
+    },
+    {
+      "end_seconds": 769.78,
+      "segment_id": "seg_0357",
+      "start_seconds": 767.78,
+      "text": "A que voltaje están calibrados",
+      "words": []
+    },
+    {
+      "end_seconds": 770.78,
+      "segment_id": "seg_0358",
+      "start_seconds": 769.78,
+      "text": "Para en base a eso",
+      "words": []
+    },
+    {
+      "end_seconds": 771.78,
+      "segment_id": "seg_0359",
+      "start_seconds": 770.78,
+      "text": "Poner todos los datos",
+      "words": []
+    },
+    {
+      "end_seconds": 772.78,
+      "segment_id": "seg_0360",
+      "start_seconds": 771.78,
+      "text": "En la computadora",
+      "words": []
+    },
+    {
+      "end_seconds": 773.78,
+      "segment_id": "seg_0361",
+      "start_seconds": 772.78,
+      "text": "Y tener un tune muy fino",
+      "words": []
+    },
+    {
+      "end_seconds": 774.78,
+      "segment_id": "seg_0362",
+      "start_seconds": 773.78,
+      "text": "Y así se ven",
+      "words": []
+    },
+    {
+      "end_seconds": 776.78,
+      "segment_id": "seg_0363",
+      "start_seconds": 774.78,
+      "text": "Ya los inyectores instalados",
+      "words": []
+    },
+    {
+      "end_seconds": 777.78,
+      "segment_id": "seg_0364",
+      "start_seconds": 776.78,
+      "text": "Así de sencillo",
+      "words": []
+    },
+    {
+      "end_seconds": 778.78,
+      "segment_id": "seg_0365",
+      "start_seconds": 777.78,
+      "text": "Y para instalarlos",
+      "words": []
+    },
+    {
+      "end_seconds": 779.78,
+      "segment_id": "seg_0366",
+      "start_seconds": 778.78,
+      "text": "Es muy fácil",
+      "words": []
+    },
+    {
+      "end_seconds": 780.78,
+      "segment_id": "seg_0367",
+      "start_seconds": 779.78,
+      "text": "Vénganse por acá",
+      "words": []
+    },
+    {
+      "end_seconds": 781.78,
+      "segment_id": "seg_0368",
+      "start_seconds": 780.78,
+      "text": "Por este lado",
+      "words": []
+    },
+    {
+      "end_seconds": 782.78,
+      "segment_id": "seg_0369",
+      "start_seconds": 781.78,
+      "text": "Únicamente lo que tienen que hacer",
+      "words": []
+    },
+    {
+      "end_seconds": 783.78,
+      "segment_id": "seg_0370",
+      "start_seconds": 782.78,
+      "text": "Es alinear los inyectores",
+      "words": []
+    },
+    {
+      "end_seconds": 784.78,
+      "segment_id": "seg_0371",
+      "start_seconds": 783.78,
+      "text": "Con su respectivo puerto",
+      "words": []
+    },
+    {
+      "end_seconds": 785.78,
+      "segment_id": "seg_0372",
+      "start_seconds": 784.78,
+      "text": "Y atornillar el riel",
+      "words": []
+    },
+    {
+      "end_seconds": 786.78,
+      "segment_id": "seg_0373",
+      "start_seconds": 785.78,
+      "text": "A la admisión",
+      "words": []
+    },
+    {
+      "end_seconds": 787.78,
+      "segment_id": "seg_0374",
+      "start_seconds": 786.78,
+      "text": "Así de fácil",
+      "words": []
+    },
+    {
+      "end_seconds": 788.78,
+      "segment_id": "seg_0375",
+      "start_seconds": 787.78,
+      "text": "Oiga profe",
+      "words": []
+    },
+    {
+      "end_seconds": 789.78,
+      "segment_id": "seg_0376",
+      "start_seconds": 788.78,
+      "text": "¿A qué onda Manu?",
+      "words": []
+    },
+    {
+      "end_seconds": 790.78,
+      "segment_id": "seg_0377",
+      "start_seconds": 789.78,
+      "text": "Este...",
+      "words": []
+    },
+    {
+      "end_seconds": 791.78,
+      "segment_id": "seg_0378",
+      "start_seconds": 790.78,
+      "text": "Que es un Biturbo",
+      "words": []
+    },
+    {
+      "end_seconds": 792.78,
+      "segment_id": "seg_0379",
+      "start_seconds": 791.78,
+      "text": "El Biturbo pues",
+      "words": []
+    },
+    {
+      "end_seconds": 793.78,
+      "segment_id": "seg_0380",
+      "start_seconds": 792.78,
+      "text": "Es otro nombre",
+      "words": []
+    },
+    {
+      "end_seconds": 794.78,
+      "segment_id": "seg_0381",
+      "start_seconds": 793.78,
+      "text": "Para el sistema de Twin Turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 795.78,
+      "segment_id": "seg_0382",
+      "start_seconds": 794.78,
+      "text": "Eso se lo pone",
+      "words": []
+    },
+    {
+      "end_seconds": 796.78,
+      "segment_id": "seg_0383",
+      "start_seconds": 795.78,
+      "text": "Pues ciertas marcas",
+      "words": []
+    },
+    {
+      "end_seconds": 797.78,
+      "segment_id": "seg_0384",
+      "start_seconds": 796.78,
+      "text": "A los carros",
+      "words": []
+    },
+    {
+      "end_seconds": 798.78,
+      "segment_id": "seg_0385",
+      "start_seconds": 797.78,
+      "text": "Que traen dos turbos",
+      "words": []
+    },
+    {
+      "end_seconds": 799.78,
+      "segment_id": "seg_0386",
+      "start_seconds": 798.78,
+      "text": "Pero es meramente",
+      "words": []
+    },
+    {
+      "end_seconds": 800.78,
+      "segment_id": "seg_0387",
+      "start_seconds": 799.78,
+      "text": "Un...",
+      "words": []
+    },
+    {
+      "end_seconds": 801.78,
+      "segment_id": "seg_0388",
+      "start_seconds": 800.78,
+      "text": "El mismo Twin Turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 802.78,
+      "segment_id": "seg_0389",
+      "start_seconds": 801.78,
+      "text": "Pero en otro nombre nada más",
+      "words": []
+    },
+    {
+      "end_seconds": 804.78,
+      "segment_id": "seg_0390",
+      "start_seconds": 802.78,
+      "text": "Y viene siendo como",
+      "words": []
+    },
+    {
+      "end_seconds": 805.78,
+      "segment_id": "seg_0391",
+      "start_seconds": 804.78,
+      "text": "El turbo chiquito",
+      "words": []
+    },
+    {
+      "end_seconds": 806.78,
+      "segment_id": "seg_0392",
+      "start_seconds": 805.78,
+      "text": "Y el turbo grande",
+      "words": []
+    },
+    {
+      "end_seconds": 807.78,
+      "segment_id": "seg_0393",
+      "start_seconds": 806.78,
+      "text": "Que el turbo chiquito",
+      "words": []
+    },
+    {
+      "end_seconds": 808.78,
+      "segment_id": "seg_0394",
+      "start_seconds": 807.78,
+      "text": "Infla el grande",
+      "words": []
+    },
+    {
+      "end_seconds": 809.78,
+      "segment_id": "seg_0395",
+      "start_seconds": 808.78,
+      "text": "Ah...",
+      "words": []
+    },
+    {
+      "end_seconds": 810.78,
+      "segment_id": "seg_0396",
+      "start_seconds": 809.78,
+      "text": "No, no, no",
+      "words": []
+    },
+    {
+      "end_seconds": 811.78,
+      "segment_id": "seg_0397",
+      "start_seconds": 810.78,
+      "text": "Ese se llama turbo compuesto",
+      "words": []
+    },
+    {
+      "end_seconds": 812.78,
+      "segment_id": "seg_0398",
+      "start_seconds": 811.78,
+      "text": "El turbo compuesto",
+      "words": []
+    },
+    {
+      "end_seconds": 813.78,
+      "segment_id": "seg_0399",
+      "start_seconds": 812.78,
+      "text": "Mira, imagina que tienes",
+      "words": []
+    },
+    {
+      "end_seconds": 814.78,
+      "segment_id": "seg_0400",
+      "start_seconds": 813.78,
+      "text": "Un turbo demasiado grande",
+      "words": []
+    },
+    {
+      "end_seconds": 815.78,
+      "segment_id": "seg_0401",
+      "start_seconds": 814.78,
+      "text": "Ajá",
+      "words": []
+    },
+    {
+      "end_seconds": 816.78,
+      "segment_id": "seg_0402",
+      "start_seconds": 815.78,
+      "text": "Que el motor por sí solo",
+      "words": []
+    },
+    {
+      "end_seconds": 817.78,
+      "segment_id": "seg_0403",
+      "start_seconds": 816.78,
+      "text": "No lo puede inflar",
+      "words": []
+    },
+    {
+      "end_seconds": 818.78,
+      "segment_id": "seg_0404",
+      "start_seconds": 817.78,
+      "text": "Entonces, ¿qué haces?",
+      "words": []
+    },
+    {
+      "end_seconds": 819.78,
+      "segment_id": "seg_0405",
+      "start_seconds": 818.78,
+      "text": "Vas a poner primero",
+      "words": []
+    },
+    {
+      "end_seconds": 820.78,
+      "segment_id": "seg_0406",
+      "start_seconds": 819.78,
+      "text": "Un turbo chiquito",
+      "words": []
+    },
+    {
+      "end_seconds": 822.78,
+      "segment_id": "seg_0407",
+      "start_seconds": 820.78,
+      "text": "Ese va a empezar a inflar desde abajo",
+      "words": []
+    },
+    {
+      "end_seconds": 823.78,
+      "segment_id": "seg_0408",
+      "start_seconds": 822.78,
+      "text": "Y con el flujo de aire",
+      "words": []
+    },
+    {
+      "end_seconds": 824.78,
+      "segment_id": "seg_0409",
+      "start_seconds": 823.78,
+      "text": "Que va a sacar",
+      "words": []
+    },
+    {
+      "end_seconds": 825.78,
+      "segment_id": "seg_0410",
+      "start_seconds": 824.78,
+      "text": "Va a alimentar al turbo grandote",
+      "words": []
+    },
+    {
+      "end_seconds": 827.78,
+      "segment_id": "seg_0411",
+      "start_seconds": 825.78,
+      "text": "Para hacerlo girar más rápido",
+      "words": []
+    },
+    {
+      "end_seconds": 828.78,
+      "segment_id": "seg_0412",
+      "start_seconds": 827.78,
+      "text": "O sea, le va a dar la habilidad",
+      "words": []
+    },
+    {
+      "end_seconds": 829.78,
+      "segment_id": "seg_0413",
+      "start_seconds": 828.78,
+      "text": "De cargarlo",
+      "words": []
+    },
+    {
+      "end_seconds": 830.78,
+      "segment_id": "seg_0414",
+      "start_seconds": 829.78,
+      "text": "Ok...",
+      "words": []
+    },
+    {
+      "end_seconds": 831.78,
+      "segment_id": "seg_0415",
+      "start_seconds": 830.78,
+      "text": "Exactamente eso",
+      "words": []
+    },
+    {
+      "end_seconds": 834.78,
+      "segment_id": "seg_0416",
+      "start_seconds": 833.78,
+      "text": "Bueno",
+      "words": []
+    },
+    {
+      "end_seconds": 835.78,
+      "segment_id": "seg_0417",
+      "start_seconds": 834.78,
+      "text": "Si lo apuntaste",
+      "words": []
+    },
+    {
+      "end_seconds": 836.78,
+      "segment_id": "seg_0418",
+      "start_seconds": 835.78,
+      "text": "Gracias",
+      "words": []
+    },
+    {
+      "end_seconds": 837.78,
+      "segment_id": "seg_0419",
+      "start_seconds": 836.78,
+      "text": "Si, ya está canal",
+      "words": []
+    },
+    {
+      "end_seconds": 838.78,
+      "segment_id": "seg_0420",
+      "start_seconds": 837.78,
+      "text": "Y le duela a quien le duela",
+      "words": []
+    },
+    {
+      "end_seconds": 839.78,
+      "segment_id": "seg_0421",
+      "start_seconds": 838.78,
+      "text": "Ese es el Biturbo",
+      "words": []
+    },
+    {
+      "end_seconds": 840.78,
+      "segment_id": "seg_0422",
+      "start_seconds": 839.78,
+      "text": "Es meramente otro nombre",
+      "words": []
+    },
+    {
+      "end_seconds": 841.78,
+      "segment_id": "seg_0423",
+      "start_seconds": 840.78,
+      "text": "Para el Twin Turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 842.78,
+      "segment_id": "seg_0424",
+      "start_seconds": 841.78,
+      "text": "Esto que tenemos aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 843.78,
+      "segment_id": "seg_0425",
+      "start_seconds": 842.78,
+      "text": "Es el famoso intercooler",
+      "words": []
+    },
+    {
+      "end_seconds": 844.78,
+      "segment_id": "seg_0426",
+      "start_seconds": 843.78,
+      "text": "Y para que vean cómo funciona",
+      "words": []
+    },
+    {
+      "end_seconds": 845.78,
+      "segment_id": "seg_0427",
+      "start_seconds": 844.78,
+      "text": "Vamos a poner la prueba",
+      "words": []
+    },
+    {
+      "end_seconds": 847.78,
+      "segment_id": "seg_0428",
+      "start_seconds": 845.78,
+      "text": "Pero aquí no",
+      "words": []
+    },
+    {
+      "end_seconds": 849.78,
+      "segment_id": "seg_0429",
+      "start_seconds": 847.78,
+      "text": "Para comprobar su funcionamiento",
+      "words": []
+    },
+    {
+      "end_seconds": 851.78,
+      "segment_id": "seg_0430",
+      "start_seconds": 849.78,
+      "text": "Vamos a hacer una pequeña prueba casera",
+      "words": []
+    },
+    {
+      "end_seconds": 852.78,
+      "segment_id": "seg_0431",
+      "start_seconds": 851.78,
+      "text": "Donde vamos a utilizar",
+      "words": []
+    },
+    {
+      "end_seconds": 853.78,
+      "segment_id": "seg_0432",
+      "start_seconds": 852.78,
+      "text": "Un pirómetro",
+      "words": []
+    },
+    {
+      "end_seconds": 854.78,
+      "segment_id": "seg_0433",
+      "start_seconds": 853.78,
+      "text": "Y una secadora de pelo",
+      "words": []
+    },
+    {
+      "end_seconds": 855.78,
+      "segment_id": "seg_0434",
+      "start_seconds": 854.78,
+      "text": "Lo que vamos a hacer",
+      "words": []
+    },
+    {
+      "end_seconds": 856.78,
+      "segment_id": "seg_0435",
+      "start_seconds": 855.78,
+      "text": "Es que le vamos a meter",
+      "words": []
+    },
+    {
+      "end_seconds": 857.78,
+      "segment_id": "seg_0436",
+      "start_seconds": 856.78,
+      "text": "El aire caliente por aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 858.78,
+      "segment_id": "seg_0437",
+      "start_seconds": 857.78,
+      "text": "Y vamos a medir",
+      "words": []
+    },
+    {
+      "end_seconds": 859.78,
+      "segment_id": "seg_0438",
+      "start_seconds": 858.78,
+      "text": "A lo largo del intercooler",
+      "words": []
+    },
+    {
+      "end_seconds": 860.78,
+      "segment_id": "seg_0439",
+      "start_seconds": 859.78,
+      "text": "Cómo es que se va enfriando",
+      "words": []
+    },
+    {
+      "end_seconds": 861.78,
+      "segment_id": "seg_0440",
+      "start_seconds": 860.78,
+      "text": "Aquí lo aprendemos",
+      "words": []
+    },
+    {
+      "end_seconds": 862.78,
+      "segment_id": "seg_0441",
+      "start_seconds": 861.78,
+      "text": "Si se fijan",
+      "words": []
+    },
+    {
+      "end_seconds": 863.78,
+      "segment_id": "seg_0442",
+      "start_seconds": 862.78,
+      "text": "Ya está saliendo el aire",
+      "words": []
+    },
+    {
+      "end_seconds": 864.78,
+      "segment_id": "seg_0443",
+      "start_seconds": 863.78,
+      "text": "Por aquel lado",
+      "words": []
+    },
+    {
+      "end_seconds": 865.78,
+      "segment_id": "seg_0444",
+      "start_seconds": 864.78,
+      "text": "Aquí tenemos",
+      "words": []
+    },
+    {
+      "end_seconds": 868.78,
+      "segment_id": "seg_0445",
+      "start_seconds": 865.78,
+      "text": "40, 44, 46",
+      "words": []
+    },
+    {
+      "end_seconds": 869.78,
+      "segment_id": "seg_0446",
+      "start_seconds": 868.78,
+      "text": "Aquí se va calentando el aire",
+      "words": []
+    },
+    {
+      "end_seconds": 871.78,
+      "segment_id": "seg_0447",
+      "start_seconds": 869.78,
+      "text": "Y se tiene que ir enfriando",
+      "words": []
+    },
+    {
+      "end_seconds": 872.78,
+      "segment_id": "seg_0448",
+      "start_seconds": 871.78,
+      "text": "Sí",
+      "words": []
+    },
+    {
+      "end_seconds": 873.78,
+      "segment_id": "seg_0449",
+      "start_seconds": 872.78,
+      "text": "¿Cuánto va ahí?",
+      "words": []
+    },
+    {
+      "end_seconds": 874.78,
+      "segment_id": "seg_0450",
+      "start_seconds": 873.78,
+      "text": "24",
+      "words": []
+    },
+    {
+      "end_seconds": 875.78,
+      "segment_id": "seg_0451",
+      "start_seconds": 874.78,
+      "text": "Ok",
+      "words": []
+    },
+    {
+      "end_seconds": 878.78,
+      "segment_id": "seg_0452",
+      "start_seconds": 875.78,
+      "text": "31",
+      "words": []
+    },
+    {
+      "end_seconds": 879.78,
+      "segment_id": "seg_0453",
+      "start_seconds": 878.78,
+      "text": "30",
+      "words": []
+    },
+    {
+      "end_seconds": 880.78,
+      "segment_id": "seg_0454",
+      "start_seconds": 879.78,
+      "text": "Y aquí ya vemos",
+      "words": []
+    },
+    {
+      "end_seconds": 881.78,
+      "segment_id": "seg_0455",
+      "start_seconds": 880.78,
+      "text": "Cómo bajó la temperatura",
+      "words": []
+    },
+    {
+      "end_seconds": 882.78,
+      "segment_id": "seg_0456",
+      "start_seconds": 881.78,
+      "text": "Funciona igual",
+      "words": []
+    },
+    {
+      "end_seconds": 883.78,
+      "segment_id": "seg_0457",
+      "start_seconds": 882.78,
+      "text": "Que un radiador de coche",
+      "words": []
+    },
+    {
+      "end_seconds": 884.78,
+      "segment_id": "seg_0458",
+      "start_seconds": 883.78,
+      "text": "Donde enfría tu motor",
+      "words": []
+    },
+    {
+      "end_seconds": 885.78,
+      "segment_id": "seg_0459",
+      "start_seconds": 884.78,
+      "text": "Pero este enfría",
+      "words": []
+    },
+    {
+      "end_seconds": 886.78,
+      "segment_id": "seg_0460",
+      "start_seconds": 885.78,
+      "text": "El aire comprimido del turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 887.78,
+      "segment_id": "seg_0461",
+      "start_seconds": 886.78,
+      "text": "Se descompuso, güey",
+      "words": []
+    },
+    {
+      "end_seconds": 891.78,
+      "segment_id": "seg_0462",
+      "start_seconds": 890.78,
+      "text": "Bueno, como ya no podemos",
+      "words": []
+    },
+    {
+      "end_seconds": 892.78,
+      "segment_id": "seg_0463",
+      "start_seconds": 891.78,
+      "text": "Repetir la prueba",
+      "words": []
+    },
+    {
+      "end_seconds": 894.78,
+      "segment_id": "seg_0464",
+      "start_seconds": 892.78,
+      "text": "Vamos a instalarlo",
+      "words": []
+    },
+    {
+      "end_seconds": 896.78,
+      "segment_id": "seg_0465",
+      "start_seconds": 895.78,
+      "text": "¡Oh, está empezado!",
+      "words": []
+    },
+    {
+      "end_seconds": 897.78,
+      "segment_id": "seg_0466",
+      "start_seconds": 896.78,
+      "text": "Cuando el turbo comprime el aire",
+      "words": []
+    },
+    {
+      "end_seconds": 899.78,
+      "segment_id": "seg_0467",
+      "start_seconds": 897.78,
+      "text": "Este también se calienta",
+      "words": []
+    },
+    {
+      "end_seconds": 900.78,
+      "segment_id": "seg_0468",
+      "start_seconds": 899.78,
+      "text": "Y las moléculas de oxígeno",
+      "words": []
+    },
+    {
+      "end_seconds": 901.78,
+      "segment_id": "seg_0469",
+      "start_seconds": 900.78,
+      "text": "Se separan",
+      "words": []
+    },
+    {
+      "end_seconds": 902.78,
+      "segment_id": "seg_0470",
+      "start_seconds": 901.78,
+      "text": "Lo que lo hace menos denso",
+      "words": []
+    },
+    {
+      "end_seconds": 903.78,
+      "segment_id": "seg_0471",
+      "start_seconds": 902.78,
+      "text": "Al enfriarlo con un intercooler",
+      "words": []
+    },
+    {
+      "end_seconds": 905.78,
+      "segment_id": "seg_0472",
+      "start_seconds": 903.78,
+      "text": "Conseguimos que las moléculas de oxígeno",
+      "words": []
+    },
+    {
+      "end_seconds": 906.78,
+      "segment_id": "seg_0473",
+      "start_seconds": 905.78,
+      "text": "Se vuelvan a juntar",
+      "words": []
+    },
+    {
+      "end_seconds": 907.78,
+      "segment_id": "seg_0474",
+      "start_seconds": 906.78,
+      "text": "Y el aire vuelva a ser más denso",
+      "words": []
+    },
+    {
+      "end_seconds": 909.78,
+      "segment_id": "seg_0475",
+      "start_seconds": 907.78,
+      "text": "Por lo que entrará más oxígeno",
+      "words": []
+    },
+    {
+      "end_seconds": 910.78,
+      "segment_id": "seg_0476",
+      "start_seconds": 909.78,
+      "text": "Por volumen",
+      "words": []
+    },
+    {
+      "end_seconds": 911.78,
+      "segment_id": "seg_0477",
+      "start_seconds": 910.78,
+      "text": "Aquí tenemos la comparación",
+      "words": []
+    },
+    {
+      "end_seconds": 912.78,
+      "segment_id": "seg_0478",
+      "start_seconds": 911.78,
+      "text": "De lado a lado",
+      "words": []
+    },
+    {
+      "end_seconds": 913.78,
+      "segment_id": "seg_0479",
+      "start_seconds": 912.78,
+      "text": "De los dos intercoolers",
+      "words": []
+    },
+    {
+      "end_seconds": 914.78,
+      "segment_id": "seg_0480",
+      "start_seconds": 913.78,
+      "text": "Y sí se nota una diferencia",
+      "words": []
+    },
+    {
+      "end_seconds": 916.78,
+      "segment_id": "seg_0481",
+      "start_seconds": 914.78,
+      "text": "Sobre todo porque este ya está todo podrido",
+      "words": []
+    },
+    {
+      "end_seconds": 917.78,
+      "segment_id": "seg_0482",
+      "start_seconds": 916.78,
+      "text": "Si se fijan",
+      "words": []
+    },
+    {
+      "end_seconds": 918.78,
+      "segment_id": "seg_0483",
+      "start_seconds": 917.78,
+      "text": "Todo el serpentín se está deshaciendo",
+      "words": []
+    },
+    {
+      "end_seconds": 920.78,
+      "segment_id": "seg_0484",
+      "start_seconds": 918.78,
+      "text": "Se cae a pedazos",
+      "words": []
+    },
+    {
+      "end_seconds": 921.78,
+      "segment_id": "seg_0485",
+      "start_seconds": 920.78,
+      "text": "Se cae a pedazos",
+      "words": []
+    },
+    {
+      "end_seconds": 923.78,
+      "segment_id": "seg_0486",
+      "start_seconds": 921.78,
+      "text": "Entonces este le va a ayudar",
+      "words": []
+    },
+    {
+      "end_seconds": 924.78,
+      "segment_id": "seg_0487",
+      "start_seconds": 923.78,
+      "text": "Muchísimo",
+      "words": []
+    },
+    {
+      "end_seconds": 925.78,
+      "segment_id": "seg_0488",
+      "start_seconds": 924.78,
+      "text": "El intercooler tiene que ir",
+      "words": []
+    },
+    {
+      "end_seconds": 927.78,
+      "segment_id": "seg_0489",
+      "start_seconds": 925.78,
+      "text": "En este espacio",
+      "words": []
+    },
+    {
+      "end_seconds": 928.78,
+      "segment_id": "seg_0490",
+      "start_seconds": 927.78,
+      "text": "Aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 929.78,
+      "segment_id": "seg_0491",
+      "start_seconds": 928.78,
+      "text": "Algo así",
+      "words": []
+    },
+    {
+      "end_seconds": 930.78,
+      "segment_id": "seg_0492",
+      "start_seconds": 929.78,
+      "text": "Pero lastimosamente",
+      "words": []
+    },
+    {
+      "end_seconds": 931.78,
+      "segment_id": "seg_0493",
+      "start_seconds": 930.78,
+      "text": "Este lip retraíble",
+      "words": []
+    },
+    {
+      "end_seconds": 932.78,
+      "segment_id": "seg_0494",
+      "start_seconds": 931.78,
+      "text": "Nos estorba",
+      "words": []
+    },
+    {
+      "end_seconds": 933.78,
+      "segment_id": "seg_0495",
+      "start_seconds": 932.78,
+      "text": "No lo podemos instalar",
+      "words": []
+    },
+    {
+      "end_seconds": 934.78,
+      "segment_id": "seg_0496",
+      "start_seconds": 933.78,
+      "text": "Si está",
+      "words": []
+    },
+    {
+      "end_seconds": 935.78,
+      "segment_id": "seg_0497",
+      "start_seconds": 934.78,
+      "text": "Esto aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 936.78,
+      "segment_id": "seg_0498",
+      "start_seconds": 935.78,
+      "text": "Así que lo vamos a tener que sacrificar",
+      "words": []
+    },
+    {
+      "end_seconds": 937.78,
+      "segment_id": "seg_0499",
+      "start_seconds": 936.78,
+      "text": "La verdad es algo muy llamativo",
+      "words": []
+    },
+    {
+      "end_seconds": 938.78,
+      "segment_id": "seg_0500",
+      "start_seconds": 937.78,
+      "text": "De los carros de este año",
+      "words": []
+    },
+    {
+      "end_seconds": 940.78,
+      "segment_id": "seg_0501",
+      "start_seconds": 938.78,
+      "text": "Que tengan un Active Aero",
+      "words": []
+    },
+    {
+      "end_seconds": 941.78,
+      "segment_id": "seg_0502",
+      "start_seconds": 940.78,
+      "text": "O aerodinámica activa",
+      "words": []
+    },
+    {
+      "end_seconds": 942.78,
+      "segment_id": "seg_0503",
+      "start_seconds": 941.78,
+      "text": "Entonces",
+      "words": []
+    },
+    {
+      "end_seconds": 944.78,
+      "segment_id": "seg_0504",
+      "start_seconds": 943.78,
+      "text": "Ni modo",
+      "words": []
+    },
+    {
+      "end_seconds": 945.78,
+      "segment_id": "seg_0505",
+      "start_seconds": 944.78,
+      "text": "Vamos a sacrificar estética",
+      "words": []
+    },
+    {
+      "end_seconds": 947.78,
+      "segment_id": "seg_0506",
+      "start_seconds": 945.78,
+      "text": "Por performance",
+      "words": []
+    },
+    {
+      "end_seconds": 948.78,
+      "segment_id": "seg_0507",
+      "start_seconds": 947.78,
+      "text": "Este lip lo que hace",
+      "words": []
+    },
+    {
+      "end_seconds": 949.78,
+      "segment_id": "seg_0508",
+      "start_seconds": 948.78,
+      "text": "Es que nos ayuda",
+      "words": []
+    },
+    {
+      "end_seconds": 950.78,
+      "segment_id": "seg_0509",
+      "start_seconds": 949.78,
+      "text": "A mejorar nuestra estabilidad",
+      "words": []
+    },
+    {
+      "end_seconds": 951.78,
+      "segment_id": "seg_0510",
+      "start_seconds": 950.78,
+      "text": "En altas velocidades",
+      "words": []
+    },
+    {
+      "end_seconds": 952.78,
+      "segment_id": "seg_0511",
+      "start_seconds": 951.78,
+      "text": "Y aparte",
+      "words": []
+    },
+    {
+      "end_seconds": 953.78,
+      "segment_id": "seg_0512",
+      "start_seconds": 952.78,
+      "text": "Le da una vista",
+      "words": []
+    },
+    {
+      "end_seconds": 954.78,
+      "segment_id": "seg_0513",
+      "start_seconds": 953.78,
+      "text": "Muy muy bonita",
+      "words": []
+    },
+    {
+      "end_seconds": 955.78,
+      "segment_id": "seg_0514",
+      "start_seconds": 954.78,
+      "text": "Y así en el sistema",
+      "words": []
+    },
+    {
+      "end_seconds": 956.78,
+      "segment_id": "seg_0515",
+      "start_seconds": 955.78,
+      "text": "De aerodinámica activa",
+      "words": []
+    },
+    {
+      "end_seconds": 957.78,
+      "segment_id": "seg_0516",
+      "start_seconds": 956.78,
+      "text": "Ya tenemos un espacio",
+      "words": []
+    },
+    {
+      "end_seconds": 958.78,
+      "segment_id": "seg_0517",
+      "start_seconds": 957.78,
+      "text": "Donde podemos instalar",
+      "words": []
+    },
+    {
+      "end_seconds": 959.78,
+      "segment_id": "seg_0518",
+      "start_seconds": 958.78,
+      "text": "El intercooler",
+      "words": []
+    },
+    {
+      "end_seconds": 960.78,
+      "segment_id": "seg_0519",
+      "start_seconds": 959.78,
+      "text": "Mi hermano me va a ayudar",
+      "words": []
+    },
+    {
+      "end_seconds": 961.78,
+      "segment_id": "seg_0520",
+      "start_seconds": 960.78,
+      "text": "A instalarlo",
+      "words": []
+    },
+    {
+      "end_seconds": 962.78,
+      "segment_id": "seg_0521",
+      "start_seconds": 961.78,
+      "text": "Esta mano agárrate ahí",
+      "words": []
+    },
+    {
+      "end_seconds": 964.78,
+      "segment_id": "seg_0522",
+      "start_seconds": 962.78,
+      "text": "Vámonos",
+      "words": []
+    },
+    {
+      "end_seconds": 965.78,
+      "segment_id": "seg_0523",
+      "start_seconds": 964.78,
+      "text": "Hola profe",
+      "words": []
+    },
+    {
+      "end_seconds": 966.78,
+      "segment_id": "seg_0524",
+      "start_seconds": 965.78,
+      "text": "Mande",
+      "words": []
+    },
+    {
+      "end_seconds": 968.78,
+      "segment_id": "seg_0525",
+      "start_seconds": 966.78,
+      "text": "Y un Twin Power Turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 970.78,
+      "segment_id": "seg_0526",
+      "start_seconds": 968.78,
+      "text": "Es lo mismo que un Twin Turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 971.78,
+      "segment_id": "seg_0527",
+      "start_seconds": 970.78,
+      "text": "No",
+      "words": []
+    },
+    {
+      "end_seconds": 973.78,
+      "segment_id": "seg_0528",
+      "start_seconds": 971.78,
+      "text": "De hecho ese nombre lo utiliza BMW",
+      "words": []
+    },
+    {
+      "end_seconds": 974.78,
+      "segment_id": "seg_0529",
+      "start_seconds": 973.78,
+      "text": "No es un Twin Turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 976.78,
+      "segment_id": "seg_0530",
+      "start_seconds": 974.78,
+      "text": "Pero es como la combinación",
+      "words": []
+    },
+    {
+      "end_seconds": 977.78,
+      "segment_id": "seg_0531",
+      "start_seconds": 976.78,
+      "text": "De una turbina grande",
+      "words": []
+    },
+    {
+      "end_seconds": 978.78,
+      "segment_id": "seg_0532",
+      "start_seconds": 977.78,
+      "text": "Y una turbina pequeña",
+      "words": []
+    },
+    {
+      "end_seconds": 979.78,
+      "segment_id": "seg_0533",
+      "start_seconds": 978.78,
+      "text": "De hecho",
+      "words": []
+    },
+    {
+      "end_seconds": 980.78,
+      "segment_id": "seg_0534",
+      "start_seconds": 979.78,
+      "text": "Déjame traigo el Turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 981.78,
+      "segment_id": "seg_0535",
+      "start_seconds": 980.78,
+      "text": "Aquí lo tengo",
+      "words": []
+    },
+    {
+      "end_seconds": 982.78,
+      "segment_id": "seg_0536",
+      "start_seconds": 981.78,
+      "text": "Este de aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 983.78,
+      "segment_id": "seg_0537",
+      "start_seconds": 982.78,
+      "text": "Es una turbina normal",
+      "words": []
+    },
+    {
+      "end_seconds": 984.78,
+      "segment_id": "seg_0538",
+      "start_seconds": 983.78,
+      "text": "Si te fijas nada más tiene",
+      "words": []
+    },
+    {
+      "end_seconds": 985.78,
+      "segment_id": "seg_0539",
+      "start_seconds": 984.78,
+      "text": "Una entrada",
+      "words": []
+    },
+    {
+      "end_seconds": 986.78,
+      "segment_id": "seg_0540",
+      "start_seconds": 985.78,
+      "text": "Y un solo camino",
+      "words": []
+    },
+    {
+      "end_seconds": 987.78,
+      "segment_id": "seg_0541",
+      "start_seconds": 986.78,
+      "text": "El Twin Power Turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 988.78,
+      "segment_id": "seg_0542",
+      "start_seconds": 987.78,
+      "text": "Se llama Twin Scroll",
+      "words": []
+    },
+    {
+      "end_seconds": 989.78,
+      "segment_id": "seg_0543",
+      "start_seconds": 988.78,
+      "text": "Y eso lo que tiene",
+      "words": []
+    },
+    {
+      "end_seconds": 991.78,
+      "segment_id": "seg_0544",
+      "start_seconds": 989.78,
+      "text": "Es una brida dividida",
+      "words": []
+    },
+    {
+      "end_seconds": 992.78,
+      "segment_id": "seg_0545",
+      "start_seconds": 991.78,
+      "text": "Y tiene un camino chiquito",
+      "words": []
+    },
+    {
+      "end_seconds": 993.78,
+      "segment_id": "seg_0546",
+      "start_seconds": 992.78,
+      "text": "Así como este",
+      "words": []
+    },
+    {
+      "end_seconds": 994.78,
+      "segment_id": "seg_0547",
+      "start_seconds": 993.78,
+      "text": "Y tiene un camino grande",
+      "words": []
+    },
+    {
+      "end_seconds": 995.78,
+      "segment_id": "seg_0548",
+      "start_seconds": 994.78,
+      "text": "Entonces lo que te hace",
+      "words": []
+    },
+    {
+      "end_seconds": 996.78,
+      "segment_id": "seg_0549",
+      "start_seconds": 995.78,
+      "text": "Es que ayuda",
+      "words": []
+    },
+    {
+      "end_seconds": 997.78,
+      "segment_id": "seg_0550",
+      "start_seconds": 996.78,
+      "text": "A reducir el lag",
+      "words": []
+    },
+    {
+      "end_seconds": 998.78,
+      "segment_id": "seg_0551",
+      "start_seconds": 997.78,
+      "text": "Por el camino chiquito",
+      "words": []
+    },
+    {
+      "end_seconds": 999.78,
+      "segment_id": "seg_0552",
+      "start_seconds": 998.78,
+      "text": "Pero te ayuda",
+      "words": []
+    },
+    {
+      "end_seconds": 1000.78,
+      "segment_id": "seg_0553",
+      "start_seconds": 999.78,
+      "text": "A tener más flujo",
+      "words": []
+    },
+    {
+      "end_seconds": 1001.78,
+      "segment_id": "seg_0554",
+      "start_seconds": 1000.78,
+      "text": "En altas revoluciones",
+      "words": []
+    },
+    {
+      "end_seconds": 1002.78,
+      "segment_id": "seg_0555",
+      "start_seconds": 1001.78,
+      "text": "Por el camino grande",
+      "words": []
+    },
+    {
+      "end_seconds": 1004.78,
+      "segment_id": "seg_0556",
+      "start_seconds": 1002.78,
+      "text": "Ese es el Twin Power Turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1005.78,
+      "segment_id": "seg_0557",
+      "start_seconds": 1004.78,
+      "text": "Anótalo",
+      "words": []
+    },
+    {
+      "end_seconds": 1009.78,
+      "segment_id": "seg_0558",
+      "start_seconds": 1007.78,
+      "text": "A ver tus apuntes",
+      "words": []
+    },
+    {
+      "end_seconds": 1010.78,
+      "segment_id": "seg_0559",
+      "start_seconds": 1009.78,
+      "text": "¿Qué?",
+      "words": []
+    },
+    {
+      "end_seconds": 1011.78,
+      "segment_id": "seg_0560",
+      "start_seconds": 1010.78,
+      "text": "A ver tus apuntes",
+      "words": []
+    },
+    {
+      "end_seconds": 1012.78,
+      "segment_id": "seg_0561",
+      "start_seconds": 1011.78,
+      "text": "Para ver si los haces",
+      "words": []
+    },
+    {
+      "end_seconds": 1013.78,
+      "segment_id": "seg_0562",
+      "start_seconds": 1012.78,
+      "text": "Apuntando bien",
+      "words": []
+    },
+    {
+      "end_seconds": 1014.78,
+      "segment_id": "seg_0563",
+      "start_seconds": 1013.78,
+      "text": "A ver qué estás haciendo",
+      "words": []
+    },
+    {
+      "end_seconds": 1015.78,
+      "segment_id": "seg_0564",
+      "start_seconds": 1014.78,
+      "text": "Pues para ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1016.78,
+      "segment_id": "seg_0565",
+      "start_seconds": 1015.78,
+      "text": "Si tienes bien la información",
+      "words": []
+    },
+    {
+      "end_seconds": 1025.78,
+      "segment_id": "seg_0566",
+      "start_seconds": 1024.78,
+      "text": "¿Qué es eso, mano?",
+      "words": []
+    },
+    {
+      "end_seconds": 1027.78,
+      "segment_id": "seg_0567",
+      "start_seconds": 1026.78,
+      "text": "Pues es que se ve chido",
+      "words": []
+    },
+    {
+      "end_seconds": 1029.78,
+      "segment_id": "seg_0568",
+      "start_seconds": 1028.78,
+      "text": "Es la sandía",
+      "words": []
+    },
+    {
+      "end_seconds": 1030.78,
+      "segment_id": "seg_0569",
+      "start_seconds": 1029.78,
+      "text": "No, ya le vi la polvera",
+      "words": []
+    },
+    {
+      "end_seconds": 1031.78,
+      "segment_id": "seg_0570",
+      "start_seconds": 1030.78,
+      "text": "Saca flamas",
+      "words": []
+    },
+    {
+      "end_seconds": 1033.78,
+      "segment_id": "seg_0571",
+      "start_seconds": 1032.78,
+      "text": "Para poder instalar",
+      "words": []
+    },
+    {
+      "end_seconds": 1034.78,
+      "segment_id": "seg_0572",
+      "start_seconds": 1033.78,
+      "text": "El Turbo correctamente",
+      "words": []
+    },
+    {
+      "end_seconds": 1035.78,
+      "segment_id": "seg_0573",
+      "start_seconds": 1034.78,
+      "text": "Nos vimos en la necesidad",
+      "words": []
+    },
+    {
+      "end_seconds": 1036.78,
+      "segment_id": "seg_0574",
+      "start_seconds": 1035.78,
+      "text": "De desarmarlo",
+      "words": []
+    },
+    {
+      "end_seconds": 1037.78,
+      "segment_id": "seg_0575",
+      "start_seconds": 1036.78,
+      "text": "Y aquí tenemos",
+      "words": []
+    },
+    {
+      "end_seconds": 1038.78,
+      "segment_id": "seg_0576",
+      "start_seconds": 1037.78,
+      "text": "Lo que es el cartucho",
+      "words": []
+    },
+    {
+      "end_seconds": 1039.78,
+      "segment_id": "seg_0577",
+      "start_seconds": 1038.78,
+      "text": "Si se fijan",
+      "words": []
+    },
+    {
+      "end_seconds": 1040.78,
+      "segment_id": "seg_0578",
+      "start_seconds": 1039.78,
+      "text": "Aquí tenemos el compresor",
+      "words": []
+    },
+    {
+      "end_seconds": 1041.78,
+      "segment_id": "seg_0579",
+      "start_seconds": 1040.78,
+      "text": "Y de este lado",
+      "words": []
+    },
+    {
+      "end_seconds": 1042.78,
+      "segment_id": "seg_0580",
+      "start_seconds": 1041.78,
+      "text": "La turbina",
+      "words": []
+    },
+    {
+      "end_seconds": 1043.78,
+      "segment_id": "seg_0581",
+      "start_seconds": 1042.78,
+      "text": "Ahora lo que vamos a hacer",
+      "words": []
+    },
+    {
+      "end_seconds": 1045.78,
+      "segment_id": "seg_0582",
+      "start_seconds": 1043.78,
+      "text": "Es instalarlo de nuevo",
+      "words": []
+    },
+    {
+      "end_seconds": 1046.78,
+      "segment_id": "seg_0583",
+      "start_seconds": 1045.78,
+      "text": "Para poder fabricar",
+      "words": []
+    },
+    {
+      "end_seconds": 1047.78,
+      "segment_id": "seg_0584",
+      "start_seconds": 1046.78,
+      "text": "Las líneas del aceite",
+      "words": []
+    },
+    {
+      "end_seconds": 1048.78,
+      "segment_id": "seg_0585",
+      "start_seconds": 1047.78,
+      "text": "De este lado",
+      "words": []
+    },
+    {
+      "end_seconds": 1049.78,
+      "segment_id": "seg_0586",
+      "start_seconds": 1048.78,
+      "text": "Va la alimentación",
+      "words": []
+    },
+    {
+      "end_seconds": 1050.78,
+      "segment_id": "seg_0587",
+      "start_seconds": 1049.78,
+      "text": "Si se fijan",
+      "words": []
+    },
+    {
+      "end_seconds": 1051.78,
+      "segment_id": "seg_0588",
+      "start_seconds": 1050.78,
+      "text": "Aquí adentro",
+      "words": []
+    },
+    {
+      "end_seconds": 1052.78,
+      "segment_id": "seg_0589",
+      "start_seconds": 1051.78,
+      "text": "Tenemos un pequeño restrictor",
+      "words": []
+    },
+    {
+      "end_seconds": 1053.78,
+      "segment_id": "seg_0590",
+      "start_seconds": 1052.78,
+      "text": "Esto ya viene",
+      "words": []
+    },
+    {
+      "end_seconds": 1054.78,
+      "segment_id": "seg_0591",
+      "start_seconds": 1053.78,
+      "text": "Pues de fábrica",
+      "words": []
+    },
+    {
+      "end_seconds": 1055.78,
+      "segment_id": "seg_0592",
+      "start_seconds": 1054.78,
+      "text": "Y de este lado",
+      "words": []
+    },
+    {
+      "end_seconds": 1056.78,
+      "segment_id": "seg_0593",
+      "start_seconds": 1055.78,
+      "text": "Vamos a utilizar",
+      "words": []
+    },
+    {
+      "end_seconds": 1057.78,
+      "segment_id": "seg_0594",
+      "start_seconds": 1056.78,
+      "text": "Este adaptador",
+      "words": []
+    },
+    {
+      "end_seconds": 1058.78,
+      "segment_id": "seg_0595",
+      "start_seconds": 1057.78,
+      "text": "Para poder fabricar",
+      "words": []
+    },
+    {
+      "end_seconds": 1060.78,
+      "segment_id": "seg_0596",
+      "start_seconds": 1058.78,
+      "text": "Con líneas",
+      "words": []
+    },
+    {
+      "end_seconds": 1061.78,
+      "segment_id": "seg_0597",
+      "start_seconds": 1060.78,
+      "text": "Este de aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1062.78,
+      "segment_id": "seg_0598",
+      "start_seconds": 1061.78,
+      "text": "Es un 10 AN",
+      "words": []
+    },
+    {
+      "end_seconds": 1064.78,
+      "segment_id": "seg_0599",
+      "start_seconds": 1062.78,
+      "text": "Y va únicamente así",
+      "words": []
+    },
+    {
+      "end_seconds": 1065.78,
+      "segment_id": "seg_0600",
+      "start_seconds": 1064.78,
+      "text": "Esto nos facilita mucho",
+      "words": []
+    },
+    {
+      "end_seconds": 1066.78,
+      "segment_id": "seg_0601",
+      "start_seconds": 1065.78,
+      "text": "El trabajo de fabricación",
+      "words": []
+    },
+    {
+      "end_seconds": 1067.78,
+      "segment_id": "seg_0602",
+      "start_seconds": 1066.78,
+      "text": "Aquí tengo el Turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1068.78,
+      "segment_id": "seg_0603",
+      "start_seconds": 1067.78,
+      "text": "Ya listo",
+      "words": []
+    },
+    {
+      "end_seconds": 1069.78,
+      "segment_id": "seg_0604",
+      "start_seconds": 1068.78,
+      "text": "Para volverlo a poner en su lugar",
+      "words": []
+    },
+    {
+      "end_seconds": 1070.78,
+      "segment_id": "seg_0605",
+      "start_seconds": 1069.78,
+      "text": "Y para instalarlo",
+      "words": []
+    },
+    {
+      "end_seconds": 1071.78,
+      "segment_id": "seg_0606",
+      "start_seconds": 1070.78,
+      "text": "Es muy sencillo",
+      "words": []
+    },
+    {
+      "end_seconds": 1072.78,
+      "segment_id": "seg_0607",
+      "start_seconds": 1071.78,
+      "text": "Únicamente hay que tener",
+      "words": []
+    },
+    {
+      "end_seconds": 1073.78,
+      "segment_id": "seg_0608",
+      "start_seconds": 1072.78,
+      "text": "Mucho cuidado",
+      "words": []
+    },
+    {
+      "end_seconds": 1074.78,
+      "segment_id": "seg_0609",
+      "start_seconds": 1073.78,
+      "text": "De que no se vaya a golpear",
+      "words": []
+    },
+    {
+      "end_seconds": 1075.78,
+      "segment_id": "seg_0610",
+      "start_seconds": 1074.78,
+      "text": "Que no se vaya a doblar",
+      "words": []
+    },
+    {
+      "end_seconds": 1076.78,
+      "segment_id": "seg_0611",
+      "start_seconds": 1075.78,
+      "text": "Nada porque se puede quebrar",
+      "words": []
+    },
+    {
+      "end_seconds": 1077.78,
+      "segment_id": "seg_0612",
+      "start_seconds": 1076.78,
+      "text": "También",
+      "words": []
+    },
+    {
+      "end_seconds": 1078.78,
+      "segment_id": "seg_0613",
+      "start_seconds": 1077.78,
+      "text": "Y lo acomodamos",
+      "words": []
+    },
+    {
+      "end_seconds": 1079.78,
+      "segment_id": "seg_0614",
+      "start_seconds": 1078.78,
+      "text": "Es muy importante",
+      "words": []
+    },
+    {
+      "end_seconds": 1081.78,
+      "segment_id": "seg_0615",
+      "start_seconds": 1079.78,
+      "text": "Que el puerto de admisión",
+      "words": []
+    },
+    {
+      "end_seconds": 1082.78,
+      "segment_id": "seg_0616",
+      "start_seconds": 1081.78,
+      "text": "Que es este de aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1083.78,
+      "segment_id": "seg_0617",
+      "start_seconds": 1082.78,
+      "text": "Esta es la alimentación",
+      "words": []
+    },
+    {
+      "end_seconds": 1084.78,
+      "segment_id": "seg_0618",
+      "start_seconds": 1083.78,
+      "text": "Del aceite",
+      "words": []
+    },
+    {
+      "end_seconds": 1085.78,
+      "segment_id": "seg_0619",
+      "start_seconds": 1084.78,
+      "text": "Quede lo más derecho posible",
+      "words": []
+    },
+    {
+      "end_seconds": 1086.78,
+      "segment_id": "seg_0620",
+      "start_seconds": 1085.78,
+      "text": "Para que la misma gravedad",
+      "words": []
+    },
+    {
+      "end_seconds": 1087.78,
+      "segment_id": "seg_0621",
+      "start_seconds": 1086.78,
+      "text": "Le ayude a desfogar",
+      "words": []
+    },
+    {
+      "end_seconds": 1090.78,
+      "segment_id": "seg_0622",
+      "start_seconds": 1088.78,
+      "text": "Para la línea de aceite",
+      "words": []
+    },
+    {
+      "end_seconds": 1091.78,
+      "segment_id": "seg_0623",
+      "start_seconds": 1090.78,
+      "text": "Vamos a utilizar",
+      "words": []
+    },
+    {
+      "end_seconds": 1092.78,
+      "segment_id": "seg_0624",
+      "start_seconds": 1091.78,
+      "text": "Esta línea cerada",
+      "words": []
+    },
+    {
+      "end_seconds": 1093.78,
+      "segment_id": "seg_0625",
+      "start_seconds": 1092.78,
+      "text": "Y los puertos originales",
+      "words": []
+    },
+    {
+      "end_seconds": 1094.78,
+      "segment_id": "seg_0626",
+      "start_seconds": 1093.78,
+      "text": "Que alimentaban",
+      "words": []
+    },
+    {
+      "end_seconds": 1095.78,
+      "segment_id": "seg_0627",
+      "start_seconds": 1094.78,
+      "text": "Los turbos anteriores",
+      "words": []
+    },
+    {
+      "end_seconds": 1096.78,
+      "segment_id": "seg_0628",
+      "start_seconds": 1095.78,
+      "text": "Solamente vamos a instalar",
+      "words": []
+    },
+    {
+      "end_seconds": 1097.78,
+      "segment_id": "seg_0629",
+      "start_seconds": 1096.78,
+      "text": "Este adaptador",
+      "words": []
+    },
+    {
+      "end_seconds": 1098.78,
+      "segment_id": "seg_0630",
+      "start_seconds": 1097.78,
+      "text": "Para que se pueda utilizar",
+      "words": []
+    },
+    {
+      "end_seconds": 1100.78,
+      "segment_id": "seg_0631",
+      "start_seconds": 1098.78,
+      "text": "Esta entrada acónica de aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1102.78,
+      "segment_id": "seg_0632",
+      "start_seconds": 1100.78,
+      "text": "Es muy sencillo de instalar",
+      "words": []
+    },
+    {
+      "end_seconds": 1104.78,
+      "segment_id": "seg_0633",
+      "start_seconds": 1102.78,
+      "text": "Solamente hay que ponerla",
+      "words": []
+    },
+    {
+      "end_seconds": 1105.78,
+      "segment_id": "seg_0634",
+      "start_seconds": 1104.78,
+      "text": "La aguacita",
+      "words": []
+    },
+    {
+      "end_seconds": 1106.78,
+      "segment_id": "seg_0635",
+      "start_seconds": 1105.78,
+      "text": "Y apretarlo muy muy bien",
+      "words": []
+    },
+    {
+      "end_seconds": 1107.78,
+      "segment_id": "seg_0636",
+      "start_seconds": 1106.78,
+      "text": "Aquí no se si",
+      "words": []
+    },
+    {
+      "end_seconds": 1108.78,
+      "segment_id": "seg_0637",
+      "start_seconds": 1107.78,
+      "text": "Vayan a alcanzar a ver muy bien",
+      "words": []
+    },
+    {
+      "end_seconds": 1109.78,
+      "segment_id": "seg_0638",
+      "start_seconds": 1108.78,
+      "text": "Pero aquí tiene",
+      "words": []
+    },
+    {
+      "end_seconds": 1110.78,
+      "segment_id": "seg_0639",
+      "start_seconds": 1109.78,
+      "text": "Una salida de aceite",
+      "words": []
+    },
+    {
+      "end_seconds": 1111.78,
+      "segment_id": "seg_0640",
+      "start_seconds": 1110.78,
+      "text": "Que lubricaba",
+      "words": []
+    },
+    {
+      "end_seconds": 1112.78,
+      "segment_id": "seg_0641",
+      "start_seconds": 1111.78,
+      "text": "Los turbos anteriores",
+      "words": []
+    },
+    {
+      "end_seconds": 1113.78,
+      "segment_id": "seg_0642",
+      "start_seconds": 1112.78,
+      "text": "Y por ende",
+      "words": []
+    },
+    {
+      "end_seconds": 1114.78,
+      "segment_id": "seg_0643",
+      "start_seconds": 1113.78,
+      "text": "Como eran dos turbos",
+      "words": []
+    },
+    {
+      "end_seconds": 1115.78,
+      "segment_id": "seg_0644",
+      "start_seconds": 1114.78,
+      "text": "Tenía dos salidas",
+      "words": []
+    },
+    {
+      "end_seconds": 1116.78,
+      "segment_id": "seg_0645",
+      "start_seconds": 1115.78,
+      "text": "Entonces la otra",
+      "words": []
+    },
+    {
+      "end_seconds": 1117.78,
+      "segment_id": "seg_0646",
+      "start_seconds": 1116.78,
+      "text": "La vamos a tapar",
+      "words": []
+    },
+    {
+      "end_seconds": 1118.78,
+      "segment_id": "seg_0647",
+      "start_seconds": 1117.78,
+      "text": "Creo que esta si la puedes ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1119.78,
+      "segment_id": "seg_0648",
+      "start_seconds": 1118.78,
+      "text": "De aquí cámara",
+      "words": []
+    },
+    {
+      "end_seconds": 1120.78,
+      "segment_id": "seg_0649",
+      "start_seconds": 1119.78,
+      "text": "Esta es la otra",
+      "words": []
+    },
+    {
+      "end_seconds": 1121.78,
+      "segment_id": "seg_0650",
+      "start_seconds": 1120.78,
+      "text": "Salida de aceite",
+      "words": []
+    },
+    {
+      "end_seconds": 1122.78,
+      "segment_id": "seg_0651",
+      "start_seconds": 1121.78,
+      "text": "Por eso la vamos a tapar",
+      "words": []
+    },
+    {
+      "end_seconds": 1124.78,
+      "segment_id": "seg_0652",
+      "start_seconds": 1122.78,
+      "text": "Ya no se va a utilizar",
+      "words": []
+    },
+    {
+      "end_seconds": 1125.78,
+      "segment_id": "seg_0653",
+      "start_seconds": 1124.78,
+      "text": "Vamos a utilizar la que estaba",
+      "words": []
+    },
+    {
+      "end_seconds": 1126.78,
+      "segment_id": "seg_0654",
+      "start_seconds": 1125.78,
+      "text": "Acá enfrente",
+      "words": []
+    },
+    {
+      "end_seconds": 1127.78,
+      "segment_id": "seg_0655",
+      "start_seconds": 1126.78,
+      "text": "Y eso nos va a facilitar",
+      "words": []
+    },
+    {
+      "end_seconds": 1128.78,
+      "segment_id": "seg_0656",
+      "start_seconds": 1127.78,
+      "text": "Mucho",
+      "words": []
+    },
+    {
+      "end_seconds": 1129.78,
+      "segment_id": "seg_0657",
+      "start_seconds": 1128.78,
+      "text": "Instalar esta línea de aceite",
+      "words": []
+    },
+    {
+      "end_seconds": 1136.78,
+      "segment_id": "seg_0658",
+      "start_seconds": 1129.78,
+      "text": "Los que han trabajado",
+      "words": []
+    },
+    {
+      "end_seconds": 1137.78,
+      "segment_id": "seg_0659",
+      "start_seconds": 1136.78,
+      "text": "Con un sistema twin turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1138.78,
+      "segment_id": "seg_0660",
+      "start_seconds": 1137.78,
+      "text": "No me van a dejar mentir",
+      "words": []
+    },
+    {
+      "end_seconds": 1139.78,
+      "segment_id": "seg_0661",
+      "start_seconds": 1138.78,
+      "text": "Es el doble de complejo",
+      "words": []
+    },
+    {
+      "end_seconds": 1140.78,
+      "segment_id": "seg_0662",
+      "start_seconds": 1139.78,
+      "text": "El doble de turbos",
+      "words": []
+    },
+    {
+      "end_seconds": 1141.78,
+      "segment_id": "seg_0663",
+      "start_seconds": 1140.78,
+      "text": "El doble de manifold",
+      "words": []
+    },
+    {
+      "end_seconds": 1142.78,
+      "segment_id": "seg_0664",
+      "start_seconds": 1141.78,
+      "text": "El doble de líneas",
+      "words": []
+    },
+    {
+      "end_seconds": 1143.78,
+      "segment_id": "seg_0665",
+      "start_seconds": 1142.78,
+      "text": "El doble de mangueras",
+      "words": []
+    },
+    {
+      "end_seconds": 1144.78,
+      "segment_id": "seg_0666",
+      "start_seconds": 1143.78,
+      "text": "El doble de todo",
+      "words": []
+    },
+    {
+      "end_seconds": 1145.78,
+      "segment_id": "seg_0667",
+      "start_seconds": 1144.78,
+      "text": "De todo de todo",
+      "words": []
+    },
+    {
+      "end_seconds": 1146.78,
+      "segment_id": "seg_0668",
+      "start_seconds": 1145.78,
+      "text": "Y sobre todo el espacio reducido",
+      "words": []
+    },
+    {
+      "end_seconds": 1147.78,
+      "segment_id": "seg_0669",
+      "start_seconds": 1146.78,
+      "text": "De ese no hablamos",
+      "words": []
+    },
+    {
+      "end_seconds": 1148.78,
+      "segment_id": "seg_0670",
+      "start_seconds": 1147.78,
+      "text": "Ya con ese single turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1150.78,
+      "segment_id": "seg_0671",
+      "start_seconds": 1148.78,
+      "text": "Desbloqueamos un espacio",
+      "words": []
+    },
+    {
+      "end_seconds": 1151.78,
+      "segment_id": "seg_0672",
+      "start_seconds": 1150.78,
+      "text": "Completamente grande",
+      "words": []
+    },
+    {
+      "end_seconds": 1152.78,
+      "segment_id": "seg_0673",
+      "start_seconds": 1151.78,
+      "text": "Donde podemos accesar",
+      "words": []
+    },
+    {
+      "end_seconds": 1153.78,
+      "segment_id": "seg_0674",
+      "start_seconds": 1152.78,
+      "text": "Todo el motor",
+      "words": []
+    },
+    {
+      "end_seconds": 1154.78,
+      "segment_id": "seg_0675",
+      "start_seconds": 1153.78,
+      "text": "Sin ningún problema",
+      "words": []
+    },
+    {
+      "end_seconds": 1155.78,
+      "segment_id": "seg_0676",
+      "start_seconds": 1154.78,
+      "text": "Por aquí y por acá",
+      "words": []
+    },
+    {
+      "end_seconds": 1156.78,
+      "segment_id": "seg_0677",
+      "start_seconds": 1155.78,
+      "text": "Tenemos mucho mucho espacio",
+      "words": []
+    },
+    {
+      "end_seconds": 1157.78,
+      "segment_id": "seg_0678",
+      "start_seconds": 1156.78,
+      "text": "Pero",
+      "words": []
+    },
+    {
+      "end_seconds": 1158.78,
+      "segment_id": "seg_0679",
+      "start_seconds": 1157.78,
+      "text": "Si nosotros ahorita",
+      "words": []
+    },
+    {
+      "end_seconds": 1159.78,
+      "segment_id": "seg_0680",
+      "start_seconds": 1158.78,
+      "text": "Descendemos el motor",
+      "words": []
+    },
+    {
+      "end_seconds": 1160.78,
+      "segment_id": "seg_0681",
+      "start_seconds": 1159.78,
+      "text": "No nos va a generar",
+      "words": []
+    },
+    {
+      "end_seconds": 1161.78,
+      "segment_id": "seg_0682",
+      "start_seconds": 1160.78,
+      "text": "Nada de presión",
+      "words": []
+    },
+    {
+      "end_seconds": 1162.78,
+      "segment_id": "seg_0683",
+      "start_seconds": 1161.78,
+      "text": "¿Por qué?",
+      "words": []
+    },
+    {
+      "end_seconds": 1163.78,
+      "segment_id": "seg_0684",
+      "start_seconds": 1162.78,
+      "text": "Porque falta un elemento",
+      "words": []
+    },
+    {
+      "end_seconds": 1164.78,
+      "segment_id": "seg_0685",
+      "start_seconds": 1163.78,
+      "text": "Muy muy importante",
+      "words": []
+    },
+    {
+      "end_seconds": 1165.78,
+      "segment_id": "seg_0686",
+      "start_seconds": 1164.78,
+      "text": "Que es este de aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1166.78,
+      "segment_id": "seg_0687",
+      "start_seconds": 1165.78,
+      "text": "Este de aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1167.78,
+      "segment_id": "seg_0688",
+      "start_seconds": 1166.78,
+      "text": "Y lo que nos va a ayudar",
+      "words": []
+    },
+    {
+      "end_seconds": 1169.78,
+      "segment_id": "seg_0689",
+      "start_seconds": 1167.78,
+      "text": "Es a regular la presión en el turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1171.78,
+      "segment_id": "seg_0690",
+      "start_seconds": 1169.78,
+      "text": "Cuando aquí ya genera la presión suficiente",
+      "words": []
+    },
+    {
+      "end_seconds": 1173.78,
+      "segment_id": "seg_0691",
+      "start_seconds": 1171.78,
+      "text": "Va a entrar por este puerto de aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1175.78,
+      "segment_id": "seg_0692",
+      "start_seconds": 1173.78,
+      "text": "Y va a levantar esta válvula de este lado",
+      "words": []
+    },
+    {
+      "end_seconds": 1176.78,
+      "segment_id": "seg_0693",
+      "start_seconds": 1175.78,
+      "text": "Si lo alcanzan a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1177.78,
+      "segment_id": "seg_0694",
+      "start_seconds": 1176.78,
+      "text": "Cuando esta levanta",
+      "words": []
+    },
+    {
+      "end_seconds": 1179.78,
+      "segment_id": "seg_0695",
+      "start_seconds": 1177.78,
+      "text": "Por aquí salen los gases del escape",
+      "words": []
+    },
+    {
+      "end_seconds": 1181.78,
+      "segment_id": "seg_0696",
+      "start_seconds": 1179.78,
+      "text": "Y es como un bypass únicamente",
+      "words": []
+    },
+    {
+      "end_seconds": 1182.78,
+      "segment_id": "seg_0697",
+      "start_seconds": 1181.78,
+      "text": "¿Si me explique bien?",
+      "words": []
+    },
+    {
+      "end_seconds": 1185.78,
+      "segment_id": "seg_0698",
+      "start_seconds": 1182.78,
+      "text": "Pues yo la verdad no lo entendí profe",
+      "words": []
+    },
+    {
+      "end_seconds": 1187.78,
+      "segment_id": "seg_0699",
+      "start_seconds": 1185.78,
+      "text": "Vamos a hacerlo más gráfico",
+      "words": []
+    },
+    {
+      "end_seconds": 1188.78,
+      "segment_id": "seg_0700",
+      "start_seconds": 1187.78,
+      "text": "Va",
+      "words": []
+    },
+    {
+      "end_seconds": 1189.78,
+      "segment_id": "seg_0701",
+      "start_seconds": 1188.78,
+      "text": "Dentro de la Waysgate",
+      "words": []
+    },
+    {
+      "end_seconds": 1190.78,
+      "segment_id": "seg_0702",
+      "start_seconds": 1189.78,
+      "text": "Podemos tener varios resortes",
+      "words": []
+    },
+    {
+      "end_seconds": 1191.78,
+      "segment_id": "seg_0703",
+      "start_seconds": 1190.78,
+      "text": "Y los resortes",
+      "words": []
+    },
+    {
+      "end_seconds": 1192.78,
+      "segment_id": "seg_0704",
+      "start_seconds": 1191.78,
+      "text": "Son de varios colores",
+      "words": []
+    },
+    {
+      "end_seconds": 1193.78,
+      "segment_id": "seg_0705",
+      "start_seconds": 1192.78,
+      "text": "Cada color determina",
+      "words": []
+    },
+    {
+      "end_seconds": 1194.78,
+      "segment_id": "seg_0706",
+      "start_seconds": 1193.78,
+      "text": "El tipo de dureza del resorte",
+      "words": []
+    },
+    {
+      "end_seconds": 1196.78,
+      "segment_id": "seg_0707",
+      "start_seconds": 1194.78,
+      "text": "Y entre más duro sea",
+      "words": []
+    },
+    {
+      "end_seconds": 1197.78,
+      "segment_id": "seg_0708",
+      "start_seconds": 1196.78,
+      "text": "Más boost tendremos",
+      "words": []
+    },
+    {
+      "end_seconds": 1198.78,
+      "segment_id": "seg_0709",
+      "start_seconds": 1197.78,
+      "text": "La Waysgate está dividida",
+      "words": []
+    },
+    {
+      "end_seconds": 1199.78,
+      "segment_id": "seg_0710",
+      "start_seconds": 1198.78,
+      "text": "En dos partes",
+      "words": []
+    },
+    {
+      "end_seconds": 1200.78,
+      "segment_id": "seg_0711",
+      "start_seconds": 1199.78,
+      "text": "Por la parte de abajo",
+      "words": []
+    },
+    {
+      "end_seconds": 1201.78,
+      "segment_id": "seg_0712",
+      "start_seconds": 1200.78,
+      "text": "Tenemos la entrada",
+      "words": []
+    },
+    {
+      "end_seconds": 1202.78,
+      "segment_id": "seg_0713",
+      "start_seconds": 1201.78,
+      "text": "De la presión del turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1203.78,
+      "segment_id": "seg_0714",
+      "start_seconds": 1202.78,
+      "text": "Cuando esta vence",
+      "words": []
+    },
+    {
+      "end_seconds": 1204.78,
+      "segment_id": "seg_0715",
+      "start_seconds": 1203.78,
+      "text": "La dureza del resorte",
+      "words": []
+    },
+    {
+      "end_seconds": 1205.78,
+      "segment_id": "seg_0716",
+      "start_seconds": 1204.78,
+      "text": "Abre la válvula",
+      "words": []
+    },
+    {
+      "end_seconds": 1206.78,
+      "segment_id": "seg_0717",
+      "start_seconds": 1205.78,
+      "text": "Dejando salir los gases del escape",
+      "words": []
+    },
+    {
+      "end_seconds": 1207.78,
+      "segment_id": "seg_0718",
+      "start_seconds": 1206.78,
+      "text": "Y en la parte de arriba",
+      "words": []
+    },
+    {
+      "end_seconds": 1208.78,
+      "segment_id": "seg_0719",
+      "start_seconds": 1207.78,
+      "text": "Existe otro puerto",
+      "words": []
+    },
+    {
+      "end_seconds": 1210.78,
+      "segment_id": "seg_0720",
+      "start_seconds": 1208.78,
+      "text": "Donde con un boost controller electrónico",
+      "words": []
+    },
+    {
+      "end_seconds": 1211.78,
+      "segment_id": "seg_0721",
+      "start_seconds": 1210.78,
+      "text": "Podemos meter presión de aire",
+      "words": []
+    },
+    {
+      "end_seconds": 1212.78,
+      "segment_id": "seg_0722",
+      "start_seconds": 1211.78,
+      "text": "Para aumentar aún más",
+      "words": []
+    },
+    {
+      "end_seconds": 1213.78,
+      "segment_id": "seg_0723",
+      "start_seconds": 1212.78,
+      "text": "La dureza del resorte",
+      "words": []
+    },
+    {
+      "end_seconds": 1214.78,
+      "segment_id": "seg_0724",
+      "start_seconds": 1213.78,
+      "text": "Y meter más boost",
+      "words": []
+    },
+    {
+      "end_seconds": 1216.78,
+      "segment_id": "seg_0725",
+      "start_seconds": 1214.78,
+      "text": "Pero como tenemos un resorte",
+      "words": []
+    },
+    {
+      "end_seconds": 1217.78,
+      "segment_id": "seg_0726",
+      "start_seconds": 1216.78,
+      "text": "De 10 libras",
+      "words": []
+    },
+    {
+      "end_seconds": 1218.78,
+      "segment_id": "seg_0727",
+      "start_seconds": 1217.78,
+      "text": "Es decir, nuestro turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1219.78,
+      "segment_id": "seg_0728",
+      "start_seconds": 1218.78,
+      "text": "Va a cargar únicamente 10 libras",
+      "words": []
+    },
+    {
+      "end_seconds": 1220.78,
+      "segment_id": "seg_0729",
+      "start_seconds": 1219.78,
+      "text": "Y queremos hacer una corrida",
+      "words": []
+    },
+    {
+      "end_seconds": 1221.78,
+      "segment_id": "seg_0730",
+      "start_seconds": 1220.78,
+      "text": "En el dinamómetro",
+      "words": []
+    },
+    {
+      "end_seconds": 1222.78,
+      "segment_id": "seg_0731",
+      "start_seconds": 1221.78,
+      "text": "Con 14 libras",
+      "words": []
+    },
+    {
+      "end_seconds": 1223.78,
+      "segment_id": "seg_0732",
+      "start_seconds": 1222.78,
+      "text": "Que eran los que nos dio",
+      "words": []
+    },
+    {
+      "end_seconds": 1224.78,
+      "segment_id": "seg_0733",
+      "start_seconds": 1223.78,
+      "text": "Originalmente",
+      "words": []
+    },
+    {
+      "end_seconds": 1225.78,
+      "segment_id": "seg_0734",
+      "start_seconds": 1224.78,
+      "text": "Vamos a instalar este boost controller",
+      "words": []
+    },
+    {
+      "end_seconds": 1226.78,
+      "segment_id": "seg_0735",
+      "start_seconds": 1225.78,
+      "text": "Este boost controller",
+      "words": []
+    },
+    {
+      "end_seconds": 1227.78,
+      "segment_id": "seg_0736",
+      "start_seconds": 1226.78,
+      "text": "Lo que hace",
+      "words": []
+    },
+    {
+      "end_seconds": 1228.78,
+      "segment_id": "seg_0737",
+      "start_seconds": 1227.78,
+      "text": "Es que por aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1229.78,
+      "segment_id": "seg_0738",
+      "start_seconds": 1228.78,
+      "text": "Entra la presión del turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1230.78,
+      "segment_id": "seg_0739",
+      "start_seconds": 1229.78,
+      "text": "Y con esta perillita",
+      "words": []
+    },
+    {
+      "end_seconds": 1231.78,
+      "segment_id": "seg_0740",
+      "start_seconds": 1230.78,
+      "text": "De aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1232.78,
+      "segment_id": "seg_0741",
+      "start_seconds": 1231.78,
+      "text": "Vamos a ir ajustando",
+      "words": []
+    },
+    {
+      "end_seconds": 1233.78,
+      "segment_id": "seg_0742",
+      "start_seconds": 1232.78,
+      "text": "La restricción",
+      "words": []
+    },
+    {
+      "end_seconds": 1234.78,
+      "segment_id": "seg_0743",
+      "start_seconds": 1233.78,
+      "text": "Es decir, que el turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1235.78,
+      "segment_id": "seg_0744",
+      "start_seconds": 1234.78,
+      "text": "Va a necesitar",
+      "words": []
+    },
+    {
+      "end_seconds": 1236.78,
+      "segment_id": "seg_0745",
+      "start_seconds": 1235.78,
+      "text": "Más libras",
+      "words": []
+    },
+    {
+      "end_seconds": 1237.78,
+      "segment_id": "seg_0746",
+      "start_seconds": 1236.78,
+      "text": "Para poder abrir la Waysgate",
+      "words": []
+    },
+    {
+      "end_seconds": 1238.78,
+      "segment_id": "seg_0747",
+      "start_seconds": 1237.78,
+      "text": "Así de sencillo",
+      "words": []
+    },
+    {
+      "end_seconds": 1239.78,
+      "segment_id": "seg_0748",
+      "start_seconds": 1238.78,
+      "text": "El boost controller",
+      "words": []
+    },
+    {
+      "end_seconds": 1240.78,
+      "segment_id": "seg_0749",
+      "start_seconds": 1239.78,
+      "text": "Lo vamos a poner aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1241.78,
+      "segment_id": "seg_0750",
+      "start_seconds": 1240.78,
+      "text": "Al lado del turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1242.78,
+      "segment_id": "seg_0751",
+      "start_seconds": 1241.78,
+      "text": "Porque si se fijan",
+      "words": []
+    },
+    {
+      "end_seconds": 1243.78,
+      "segment_id": "seg_0752",
+      "start_seconds": 1242.78,
+      "text": "Aquí tiene una salida de presión",
+      "words": []
+    },
+    {
+      "end_seconds": 1244.78,
+      "segment_id": "seg_0753",
+      "start_seconds": 1243.78,
+      "text": "Y esa salida",
+      "words": []
+    },
+    {
+      "end_seconds": 1245.78,
+      "segment_id": "seg_0754",
+      "start_seconds": 1244.78,
+      "text": "Lo que vamos a hacer",
+      "words": []
+    },
+    {
+      "end_seconds": 1246.78,
+      "segment_id": "seg_0755",
+      "start_seconds": 1245.78,
+      "text": "Vamos a poner una manguera de aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1247.78,
+      "segment_id": "seg_0756",
+      "start_seconds": 1246.78,
+      "text": "A este puerto de aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1248.78,
+      "segment_id": "seg_0757",
+      "start_seconds": 1247.78,
+      "text": "Y luego de este",
+      "words": []
+    },
+    {
+      "end_seconds": 1249.78,
+      "segment_id": "seg_0758",
+      "start_seconds": 1248.78,
+      "text": "Hacia la Waysgate",
+      "words": []
+    },
+    {
+      "end_seconds": 1250.78,
+      "segment_id": "seg_0759",
+      "start_seconds": 1249.78,
+      "text": "Y de esta manera",
+      "words": []
+    },
+    {
+      "end_seconds": 1251.78,
+      "segment_id": "seg_0760",
+      "start_seconds": 1250.78,
+      "text": "Vamos a regular la presión del turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1252.78,
+      "segment_id": "seg_0761",
+      "start_seconds": 1251.78,
+      "text": "Ya con eso",
+      "words": []
+    },
+    {
+      "end_seconds": 1253.78,
+      "segment_id": "seg_0762",
+      "start_seconds": 1252.78,
+      "text": "Tenemos el control total",
+      "words": []
+    },
+    {
+      "end_seconds": 1254.78,
+      "segment_id": "seg_0763",
+      "start_seconds": 1253.78,
+      "text": "Sobre la presión del lado caliente",
+      "words": []
+    },
+    {
+      "end_seconds": 1255.78,
+      "segment_id": "seg_0764",
+      "start_seconds": 1254.78,
+      "text": "Pero ahora",
+      "words": []
+    },
+    {
+      "end_seconds": 1256.78,
+      "segment_id": "seg_0765",
+      "start_seconds": 1255.78,
+      "text": "¿Qué pasa con la presión del lado frío?",
+      "words": []
+    },
+    {
+      "end_seconds": 1257.78,
+      "segment_id": "seg_0766",
+      "start_seconds": 1256.78,
+      "text": "Más boost",
+      "words": []
+    },
+    {
+      "end_seconds": 1258.78,
+      "segment_id": "seg_0767",
+      "start_seconds": 1257.78,
+      "text": "Más aire",
+      "words": []
+    },
+    {
+      "end_seconds": 1259.78,
+      "segment_id": "seg_0768",
+      "start_seconds": 1258.78,
+      "text": "Más presión",
+      "words": []
+    },
+    {
+      "end_seconds": 1261.78,
+      "segment_id": "seg_0769",
+      "start_seconds": 1259.78,
+      "text": "Pero ¿Qué pasa cuando cerramos la mariposa?",
+      "words": []
+    },
+    {
+      "end_seconds": 1262.78,
+      "segment_id": "seg_0770",
+      "start_seconds": 1261.78,
+      "text": "Cuando dejamos de acelerar",
+      "words": []
+    },
+    {
+      "end_seconds": 1263.78,
+      "segment_id": "seg_0771",
+      "start_seconds": 1262.78,
+      "text": "Toda esa presión",
+      "words": []
+    },
+    {
+      "end_seconds": 1264.78,
+      "segment_id": "seg_0772",
+      "start_seconds": 1263.78,
+      "text": "Tiene que salir por algún lado",
+      "words": []
+    },
+    {
+      "end_seconds": 1265.78,
+      "segment_id": "seg_0773",
+      "start_seconds": 1264.78,
+      "text": "Y la única salida que tiene",
+      "words": []
+    },
+    {
+      "end_seconds": 1266.78,
+      "segment_id": "seg_0774",
+      "start_seconds": 1265.78,
+      "text": "Es por donde entró",
+      "words": []
+    },
+    {
+      "end_seconds": 1268.78,
+      "segment_id": "seg_0775",
+      "start_seconds": 1266.78,
+      "text": "Ahí es donde se produce el famoso sonido",
+      "words": []
+    },
+    {
+      "end_seconds": 1271.78,
+      "segment_id": "seg_0776",
+      "start_seconds": 1270.78,
+      "text": "Ah, ese sonido",
+      "words": []
+    },
+    {
+      "end_seconds": 1272.78,
+      "segment_id": "seg_0777",
+      "start_seconds": 1271.78,
+      "text": "El que a todos nos gusta",
+      "words": []
+    },
+    {
+      "end_seconds": 1274.78,
+      "segment_id": "seg_0778",
+      "start_seconds": 1272.78,
+      "text": "Pero hay alguien a quien no le gusta",
+      "words": []
+    },
+    {
+      "end_seconds": 1275.78,
+      "segment_id": "seg_0779",
+      "start_seconds": 1274.78,
+      "text": "Y ese es al turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1276.78,
+      "segment_id": "seg_0780",
+      "start_seconds": 1275.78,
+      "text": "Les voy a explicar por qué",
+      "words": []
+    },
+    {
+      "end_seconds": 1277.78,
+      "segment_id": "seg_0781",
+      "start_seconds": 1276.78,
+      "text": "Ese sonido se llama",
+      "words": []
+    },
+    {
+      "end_seconds": 1278.78,
+      "segment_id": "seg_0782",
+      "start_seconds": 1277.78,
+      "text": "Surge o flutter",
+      "words": []
+    },
+    {
+      "end_seconds": 1280.78,
+      "segment_id": "seg_0783",
+      "start_seconds": 1278.78,
+      "text": "Y se produce cuando el aire que entra por el turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1281.78,
+      "segment_id": "seg_0784",
+      "start_seconds": 1280.78,
+      "text": "Choca con el aire que está saliendo",
+      "words": []
+    },
+    {
+      "end_seconds": 1283.78,
+      "segment_id": "seg_0785",
+      "start_seconds": 1281.78,
+      "text": "A todos nos encanta ese sonido",
+      "words": []
+    },
+    {
+      "end_seconds": 1284.78,
+      "segment_id": "seg_0786",
+      "start_seconds": 1283.78,
+      "text": "Suena muy muy bien",
+      "words": []
+    },
+    {
+      "end_seconds": 1286.78,
+      "segment_id": "seg_0787",
+      "start_seconds": 1284.78,
+      "text": "Pero no es muy bueno para el turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1287.78,
+      "segment_id": "seg_0788",
+      "start_seconds": 1286.78,
+      "text": "Porque lo que le provoca",
+      "words": []
+    },
+    {
+      "end_seconds": 1288.78,
+      "segment_id": "seg_0789",
+      "start_seconds": 1287.78,
+      "text": "Es un estrés axial",
+      "words": []
+    },
+    {
+      "end_seconds": 1289.78,
+      "segment_id": "seg_0790",
+      "start_seconds": 1288.78,
+      "text": "Y el estrés axial",
+      "words": []
+    },
+    {
+      "end_seconds": 1290.78,
+      "segment_id": "seg_0791",
+      "start_seconds": 1289.78,
+      "text": "Para que ustedes lo comprendan",
+      "words": []
+    },
+    {
+      "end_seconds": 1291.78,
+      "segment_id": "seg_0792",
+      "start_seconds": 1290.78,
+      "text": "Ese es el turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1292.78,
+      "segment_id": "seg_0793",
+      "start_seconds": 1291.78,
+      "text": "Entonces está entrando el aire",
+      "words": []
+    },
+    {
+      "end_seconds": 1294.78,
+      "segment_id": "seg_0794",
+      "start_seconds": 1292.78,
+      "text": "Mientras quiere salir el otro",
+      "words": []
+    },
+    {
+      "end_seconds": 1296.78,
+      "segment_id": "seg_0795",
+      "start_seconds": 1294.78,
+      "text": "Y es como si esta parte de aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1297.78,
+      "segment_id": "seg_0796",
+      "start_seconds": 1296.78,
+      "text": "El compresor quisiera salir disparado",
+      "words": []
+    },
+    {
+      "end_seconds": 1300.78,
+      "segment_id": "seg_0797",
+      "start_seconds": 1297.78,
+      "text": "Una manera de mitigar ese problema",
+      "words": []
+    },
+    {
+      "end_seconds": 1302.78,
+      "segment_id": "seg_0798",
+      "start_seconds": 1300.78,
+      "text": "Es utilizar una válvula de alivio",
+      "words": []
+    },
+    {
+      "end_seconds": 1304.78,
+      "segment_id": "seg_0799",
+      "start_seconds": 1302.78,
+      "text": "Esta de aquí lo que nos hace",
+      "words": []
+    },
+    {
+      "end_seconds": 1305.78,
+      "segment_id": "seg_0800",
+      "start_seconds": 1304.78,
+      "text": "Es que genera una salida",
+      "words": []
+    },
+    {
+      "end_seconds": 1306.78,
+      "segment_id": "seg_0801",
+      "start_seconds": 1305.78,
+      "text": "Con menos resistencia",
+      "words": []
+    },
+    {
+      "end_seconds": 1307.78,
+      "segment_id": "seg_0802",
+      "start_seconds": 1306.78,
+      "text": "Y se escucha el famoso",
+      "words": []
+    },
+    {
+      "end_seconds": 1310.78,
+      "segment_id": "seg_0803",
+      "start_seconds": 1308.78,
+      "text": "Que es el sonido que se produce",
+      "words": []
+    },
+    {
+      "end_seconds": 1311.78,
+      "segment_id": "seg_0804",
+      "start_seconds": 1310.78,
+      "text": "Cuando entra el aire a presión por aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1312.78,
+      "segment_id": "seg_0805",
+      "start_seconds": 1311.78,
+      "text": "Y lo saca a la atmósfera",
+      "words": []
+    },
+    {
+      "end_seconds": 1313.78,
+      "segment_id": "seg_0806",
+      "start_seconds": 1312.78,
+      "text": "Por esto ya tendríamos",
+      "words": []
+    },
+    {
+      "end_seconds": 1314.78,
+      "segment_id": "seg_0807",
+      "start_seconds": 1313.78,
+      "text": "La mayoría de los elementos",
+      "words": []
+    },
+    {
+      "end_seconds": 1316.78,
+      "segment_id": "seg_0808",
+      "start_seconds": 1314.78,
+      "text": "Del sistema turbo instalados",
+      "words": []
+    },
+    {
+      "end_seconds": 1317.78,
+      "segment_id": "seg_0809",
+      "start_seconds": 1316.78,
+      "text": "Que lo vamos a repasar aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1319.78,
+      "segment_id": "seg_0810",
+      "start_seconds": 1317.78,
+      "text": "Es el header",
+      "words": []
+    },
+    {
+      "end_seconds": 1320.78,
+      "segment_id": "seg_0811",
+      "start_seconds": 1319.78,
+      "text": "El turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1321.78,
+      "segment_id": "seg_0812",
+      "start_seconds": 1320.78,
+      "text": "El intercooler",
+      "words": []
+    },
+    {
+      "end_seconds": 1322.78,
+      "segment_id": "seg_0813",
+      "start_seconds": 1321.78,
+      "text": "La tubería",
+      "words": []
+    },
+    {
+      "end_seconds": 1323.78,
+      "segment_id": "seg_0814",
+      "start_seconds": 1322.78,
+      "text": "Las líneas de aceite",
+      "words": []
+    },
+    {
+      "end_seconds": 1324.78,
+      "segment_id": "seg_0815",
+      "start_seconds": 1323.78,
+      "text": "La blow off",
+      "words": []
+    },
+    {
+      "end_seconds": 1325.78,
+      "segment_id": "seg_0816",
+      "start_seconds": 1324.78,
+      "text": "La wastegate",
+      "words": []
+    },
+    {
+      "end_seconds": 1326.78,
+      "segment_id": "seg_0817",
+      "start_seconds": 1325.78,
+      "text": "Y el downpipe",
+      "words": []
+    },
+    {
+      "end_seconds": 1327.78,
+      "segment_id": "seg_0818",
+      "start_seconds": 1326.78,
+      "text": "Este es nuestro downpipe",
+      "words": []
+    },
+    {
+      "end_seconds": 1328.78,
+      "segment_id": "seg_0819",
+      "start_seconds": 1327.78,
+      "text": "Y esto nos va a ayudar",
+      "words": []
+    },
+    {
+      "end_seconds": 1329.78,
+      "segment_id": "seg_0820",
+      "start_seconds": 1328.78,
+      "text": "A transportar los gases",
+      "words": []
+    },
+    {
+      "end_seconds": 1330.78,
+      "segment_id": "seg_0821",
+      "start_seconds": 1329.78,
+      "text": "Que salen del turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1331.78,
+      "segment_id": "seg_0822",
+      "start_seconds": 1330.78,
+      "text": "Entran por aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1332.78,
+      "segment_id": "seg_0823",
+      "start_seconds": 1331.78,
+      "text": "Y lo conectan",
+      "words": []
+    },
+    {
+      "end_seconds": 1333.78,
+      "segment_id": "seg_0824",
+      "start_seconds": 1332.78,
+      "text": "Hacia el resto del escape",
+      "words": []
+    },
+    {
+      "end_seconds": 1334.78,
+      "segment_id": "seg_0825",
+      "start_seconds": 1333.78,
+      "text": "Aquí tenemos una entrada",
+      "words": []
+    },
+    {
+      "end_seconds": 1335.78,
+      "segment_id": "seg_0826",
+      "start_seconds": 1334.78,
+      "text": "Donde vamos a colocar",
+      "words": []
+    },
+    {
+      "end_seconds": 1336.78,
+      "segment_id": "seg_0827",
+      "start_seconds": 1335.78,
+      "text": "Un sensor de oxígeno",
+      "words": []
+    },
+    {
+      "end_seconds": 1337.78,
+      "segment_id": "seg_0828",
+      "start_seconds": 1336.78,
+      "text": "El cual nos va a ayudar",
+      "words": []
+    },
+    {
+      "end_seconds": 1338.78,
+      "segment_id": "seg_0829",
+      "start_seconds": 1337.78,
+      "text": "A leer la mezcla",
+      "words": []
+    },
+    {
+      "end_seconds": 1339.78,
+      "segment_id": "seg_0830",
+      "start_seconds": 1338.78,
+      "text": "De aire y combustible",
+      "words": []
+    },
+    {
+      "end_seconds": 1340.78,
+      "segment_id": "seg_0831",
+      "start_seconds": 1339.78,
+      "text": "Que hay en el escape",
+      "words": []
+    },
+    {
+      "end_seconds": 1341.78,
+      "segment_id": "seg_0832",
+      "start_seconds": 1340.78,
+      "text": "Ahora si tenemos",
+      "words": []
+    },
+    {
+      "end_seconds": 1342.78,
+      "segment_id": "seg_0833",
+      "start_seconds": 1341.78,
+      "text": "Todas las piezas listas",
+      "words": []
+    },
+    {
+      "end_seconds": 1343.78,
+      "segment_id": "seg_0834",
+      "start_seconds": 1342.78,
+      "text": "Y es momento",
+      "words": []
+    },
+    {
+      "end_seconds": 1344.78,
+      "segment_id": "seg_0835",
+      "start_seconds": 1343.78,
+      "text": "De armar el Supra",
+      "words": []
+    },
+    {
+      "end_seconds": 1345.78,
+      "segment_id": "seg_0836",
+      "start_seconds": 1344.78,
+      "text": "Si ustedes tienen",
+      "words": []
+    },
+    {
+      "end_seconds": 1346.78,
+      "segment_id": "seg_0837",
+      "start_seconds": 1345.78,
+      "text": "Una máquina",
+      "words": []
+    },
+    {
+      "end_seconds": 1347.78,
+      "segment_id": "seg_0838",
+      "start_seconds": 1346.78,
+      "text": "De soldar en su casa",
+      "words": []
+    },
+    {
+      "end_seconds": 1348.78,
+      "segment_id": "seg_0839",
+      "start_seconds": 1347.78,
+      "text": "La verdad es que les va a ayudar",
+      "words": []
+    },
+    {
+      "end_seconds": 1349.78,
+      "segment_id": "seg_0840",
+      "start_seconds": 1348.78,
+      "text": "Mucho con los procesos",
+      "words": []
+    },
+    {
+      "end_seconds": 1350.78,
+      "segment_id": "seg_0841",
+      "start_seconds": 1349.78,
+      "text": "De fabricación",
+      "words": []
+    },
+    {
+      "end_seconds": 1351.78,
+      "segment_id": "seg_0842",
+      "start_seconds": 1350.78,
+      "text": "Como este de aquí",
+      "words": []
+    },
+    {
+      "end_seconds": 1352.78,
+      "segment_id": "seg_0843",
+      "start_seconds": 1351.78,
+      "text": "Y es momento",
+      "words": []
+    },
+    {
+      "end_seconds": 1353.78,
+      "segment_id": "seg_0844",
+      "start_seconds": 1352.78,
+      "text": "De hacer un recuento",
+      "words": []
+    },
+    {
+      "end_seconds": 1354.78,
+      "segment_id": "seg_0845",
+      "start_seconds": 1353.78,
+      "text": "De las cosas que instalamos",
+      "words": []
+    },
+    {
+      "end_seconds": 1356.78,
+      "segment_id": "seg_0846",
+      "start_seconds": 1354.78,
+      "text": "El header",
+      "words": []
+    },
+    {
+      "end_seconds": 1357.78,
+      "segment_id": "seg_0847",
+      "start_seconds": 1356.78,
+      "text": "El turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1359.78,
+      "segment_id": "seg_0848",
+      "start_seconds": 1357.78,
+      "text": "Ya tenemos el downpipe",
+      "words": []
+    },
+    {
+      "end_seconds": 1361.78,
+      "segment_id": "seg_0849",
+      "start_seconds": 1359.78,
+      "text": "Las líneas del aceite",
+      "words": []
+    },
+    {
+      "end_seconds": 1362.78,
+      "segment_id": "seg_0850",
+      "start_seconds": 1361.78,
+      "text": "El intercooler",
+      "words": []
+    },
+    {
+      "end_seconds": 1363.78,
+      "segment_id": "seg_0851",
+      "start_seconds": 1362.78,
+      "text": "La tubería",
+      "words": []
+    },
+    {
+      "end_seconds": 1365.78,
+      "segment_id": "seg_0852",
+      "start_seconds": 1363.78,
+      "text": "Los inyectores",
+      "words": []
+    },
+    {
+      "end_seconds": 1366.78,
+      "segment_id": "seg_0853",
+      "start_seconds": 1365.78,
+      "text": "La admisión",
+      "words": []
+    },
+    {
+      "end_seconds": 1367.78,
+      "segment_id": "seg_0854",
+      "start_seconds": 1366.78,
+      "text": "El cuerpo de aceleración",
+      "words": []
+    },
+    {
+      "end_seconds": 1369.78,
+      "segment_id": "seg_0855",
+      "start_seconds": 1367.78,
+      "text": "La blow off",
+      "words": []
+    },
+    {
+      "end_seconds": 1370.78,
+      "segment_id": "seg_0856",
+      "start_seconds": 1369.78,
+      "text": "La wastegate",
+      "words": []
+    },
+    {
+      "end_seconds": 1372.78,
+      "segment_id": "seg_0857",
+      "start_seconds": 1370.78,
+      "text": "Si le puse empaque verdad",
+      "words": []
+    },
+    {
+      "end_seconds": 1373.78,
+      "segment_id": "seg_0858",
+      "start_seconds": 1372.78,
+      "text": "La wastegate",
+      "words": []
+    },
+    {
+      "end_seconds": 1374.78,
+      "segment_id": "seg_0859",
+      "start_seconds": 1373.78,
+      "text": "Si si le puse",
+      "words": []
+    },
+    {
+      "end_seconds": 1375.78,
+      "segment_id": "seg_0860",
+      "start_seconds": 1374.78,
+      "text": "Mmmmm",
+      "words": []
+    },
+    {
+      "end_seconds": 1376.78,
+      "segment_id": "seg_0861",
+      "start_seconds": 1375.78,
+      "text": "Creo que es todo",
+      "words": []
+    },
+    {
+      "end_seconds": 1377.78,
+      "segment_id": "seg_0862",
+      "start_seconds": 1376.78,
+      "text": "De hecho ya debe estar listo",
+      "words": []
+    },
+    {
+      "end_seconds": 1379.78,
+      "segment_id": "seg_0863",
+      "start_seconds": 1377.78,
+      "text": "Si ya está listo",
+      "words": []
+    },
+    {
+      "end_seconds": 1380.78,
+      "segment_id": "seg_0864",
+      "start_seconds": 1379.78,
+      "text": "Vamos al Dino",
+      "words": []
+    },
+    {
+      "end_seconds": 1382.78,
+      "segment_id": "seg_0865",
+      "start_seconds": 1380.78,
+      "text": "Y llegamos a la hora de la verdad",
+      "words": []
+    },
+    {
+      "end_seconds": 1384.78,
+      "segment_id": "seg_0866",
+      "start_seconds": 1382.78,
+      "text": "Un turbo será mejor que dos turbos",
+      "words": []
+    },
+    {
+      "end_seconds": 1385.78,
+      "segment_id": "seg_0867",
+      "start_seconds": 1384.78,
+      "text": "Será peor",
+      "words": []
+    },
+    {
+      "end_seconds": 1386.78,
+      "segment_id": "seg_0868",
+      "start_seconds": 1385.78,
+      "text": "Tendrá mejoras",
+      "words": []
+    },
+    {
+      "end_seconds": 1387.78,
+      "segment_id": "seg_0869",
+      "start_seconds": 1386.78,
+      "text": "Vamos a averiguarlo",
+      "words": []
+    },
+    {
+      "end_seconds": 1388.78,
+      "segment_id": "seg_0870",
+      "start_seconds": 1387.78,
+      "text": "Ahorita tenemos",
+      "words": []
+    },
+    {
+      "end_seconds": 1389.78,
+      "segment_id": "seg_0871",
+      "start_seconds": 1388.78,
+      "text": "Una pequeña reprogramación",
+      "words": []
+    },
+    {
+      "end_seconds": 1390.78,
+      "segment_id": "seg_0872",
+      "start_seconds": 1389.78,
+      "text": "Con una computadora link",
+      "words": []
+    },
+    {
+      "end_seconds": 1391.78,
+      "segment_id": "seg_0873",
+      "start_seconds": 1390.78,
+      "text": "Quitamos la original",
+      "words": []
+    },
+    {
+      "end_seconds": 1392.78,
+      "segment_id": "seg_0874",
+      "start_seconds": 1391.78,
+      "text": "Y pues vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1393.78,
+      "segment_id": "seg_0875",
+      "start_seconds": 1392.78,
+      "text": "Que números da",
+      "words": []
+    },
+    {
+      "end_seconds": 1394.78,
+      "segment_id": "seg_0876",
+      "start_seconds": 1393.78,
+      "text": "Vamos",
+      "words": []
+    },
+    {
+      "end_seconds": 1395.78,
+      "segment_id": "seg_0877",
+      "start_seconds": 1394.78,
+      "text": "Primera corrida",
+      "words": []
+    },
+    {
+      "end_seconds": 1397.78,
+      "segment_id": "seg_0878",
+      "start_seconds": 1395.78,
+      "text": "Con un solo turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1398.78,
+      "segment_id": "seg_0879",
+      "start_seconds": 1397.78,
+      "text": "Estoy nervioso",
+      "words": []
+    },
+    {
+      "end_seconds": 1399.78,
+      "segment_id": "seg_0880",
+      "start_seconds": 1398.78,
+      "text": "Vamos",
+      "words": []
+    },
+    {
+      "end_seconds": 1400.78,
+      "segment_id": "seg_0881",
+      "start_seconds": 1399.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1401.78,
+      "segment_id": "seg_0882",
+      "start_seconds": 1400.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1402.78,
+      "segment_id": "seg_0883",
+      "start_seconds": 1401.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1404.78,
+      "segment_id": "seg_0884",
+      "start_seconds": 1402.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1405.78,
+      "segment_id": "seg_0885",
+      "start_seconds": 1404.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1406.78,
+      "segment_id": "seg_0886",
+      "start_seconds": 1405.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1407.78,
+      "segment_id": "seg_0887",
+      "start_seconds": 1406.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1408.78,
+      "segment_id": "seg_0888",
+      "start_seconds": 1407.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1409.78,
+      "segment_id": "seg_0889",
+      "start_seconds": 1408.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1410.78,
+      "segment_id": "seg_0890",
+      "start_seconds": 1409.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1411.78,
+      "segment_id": "seg_0891",
+      "start_seconds": 1410.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1412.78,
+      "segment_id": "seg_0892",
+      "start_seconds": 1411.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1413.78,
+      "segment_id": "seg_0893",
+      "start_seconds": 1412.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1414.78,
+      "segment_id": "seg_0894",
+      "start_seconds": 1413.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1415.78,
+      "segment_id": "seg_0895",
+      "start_seconds": 1414.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1416.78,
+      "segment_id": "seg_0896",
+      "start_seconds": 1415.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1417.78,
+      "segment_id": "seg_0897",
+      "start_seconds": 1416.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1418.78,
+      "segment_id": "seg_0898",
+      "start_seconds": 1417.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1419.78,
+      "segment_id": "seg_0899",
+      "start_seconds": 1418.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1420.78,
+      "segment_id": "seg_0900",
+      "start_seconds": 1419.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1421.78,
+      "segment_id": "seg_0901",
+      "start_seconds": 1420.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1422.78,
+      "segment_id": "seg_0902",
+      "start_seconds": 1421.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1423.78,
+      "segment_id": "seg_0903",
+      "start_seconds": 1422.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1424.78,
+      "segment_id": "seg_0904",
+      "start_seconds": 1423.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1425.78,
+      "segment_id": "seg_0905",
+      "start_seconds": 1424.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1426.78,
+      "segment_id": "seg_0906",
+      "start_seconds": 1425.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1427.78,
+      "segment_id": "seg_0907",
+      "start_seconds": 1426.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1428.78,
+      "segment_id": "seg_0908",
+      "start_seconds": 1427.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1429.78,
+      "segment_id": "seg_0909",
+      "start_seconds": 1428.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1430.78,
+      "segment_id": "seg_0910",
+      "start_seconds": 1429.78,
+      "text": "Vamos a ver",
+      "words": []
+    },
+    {
+      "end_seconds": 1436.18,
+      "segment_id": "seg_0911",
+      "start_seconds": 1430.78,
+      "text": "No les voy a mentir",
+      "words": []
+    },
+    {
+      "end_seconds": 1438.98,
+      "segment_id": "seg_0912",
+      "start_seconds": 1436.18,
+      "text": "Esos solamente fueron 6 libras de boost",
+      "words": []
+    },
+    {
+      "end_seconds": 1440.6399999999999,
+      "segment_id": "seg_0913",
+      "start_seconds": 1438.98,
+      "text": "Y ya tenemos",
+      "words": []
+    },
+    {
+      "end_seconds": 1443.66,
+      "segment_id": "seg_0914",
+      "start_seconds": 1440.6399999999999,
+      "text": "335 caballos",
+      "words": []
+    },
+    {
+      "end_seconds": 1445.04,
+      "segment_id": "seg_0915",
+      "start_seconds": 1443.66,
+      "text": "Pues de entrada ya tenemos",
+      "words": []
+    },
+    {
+      "end_seconds": 1446.76,
+      "segment_id": "seg_0916",
+      "start_seconds": 1445.04,
+      "text": "Muchísimo menos libras",
+      "words": []
+    },
+    {
+      "end_seconds": 1449.08,
+      "segment_id": "seg_0917",
+      "start_seconds": 1446.76,
+      "text": "Prácticamente un poquito menos",
+      "words": []
+    },
+    {
+      "end_seconds": 1450.52,
+      "segment_id": "seg_0918",
+      "start_seconds": 1449.08,
+      "text": "De la mitad",
+      "words": []
+    },
+    {
+      "end_seconds": 1452.94,
+      "segment_id": "seg_0919",
+      "start_seconds": 1450.52,
+      "text": "Vamos teniendo muy buenos resultados",
+      "words": []
+    },
+    {
+      "end_seconds": 1455.24,
+      "segment_id": "seg_0920",
+      "start_seconds": 1452.94,
+      "text": "Todavía no igualamos las libras originales",
+      "words": []
+    },
+    {
+      "end_seconds": 1457.16,
+      "segment_id": "seg_0921",
+      "start_seconds": 1455.24,
+      "text": "Y ya tenemos muchísimos más caballos",
+      "words": []
+    },
+    {
+      "end_seconds": 1458.32,
+      "segment_id": "seg_0922",
+      "start_seconds": 1457.16,
+      "text": "Pues vamos a seguirlo intentando",
+      "words": []
+    },
+    {
+      "end_seconds": 1460.86,
+      "segment_id": "seg_0923",
+      "start_seconds": 1458.32,
+      "text": "Pasarle un poquito más para arriba y a ver hasta donde llegamos",
+      "words": []
+    },
+    {
+      "end_seconds": 1463.46,
+      "segment_id": "seg_0924",
+      "start_seconds": 1460.86,
+      "text": "Ahora si estamos listos vamos por la segunda corrida",
+      "words": []
+    },
+    {
+      "end_seconds": 1510.8,
+      "segment_id": "seg_0925",
+      "start_seconds": 1488.32,
+      "text": "Se fue a 16 libras",
+      "words": []
+    },
+    {
+      "end_seconds": 1515.26,
+      "segment_id": "seg_0926",
+      "start_seconds": 1510.8,
+      "text": "Y nos dio 432 caballos",
+      "words": []
+    },
+    {
+      "end_seconds": 1518.7,
+      "segment_id": "seg_0927",
+      "start_seconds": 1515.26,
+      "text": "Ya estamos del otro lado",
+      "words": []
+    },
+    {
+      "end_seconds": 1519.78,
+      "segment_id": "seg_0928",
+      "start_seconds": 1518.7,
+      "text": "No no manches",
+      "words": []
+    },
+    {
+      "end_seconds": 1521.32,
+      "segment_id": "seg_0929",
+      "start_seconds": 1519.78,
+      "text": "Hay que hacer unos ajustes",
+      "words": []
+    },
+    {
+      "end_seconds": 1523.4199999999998,
+      "segment_id": "seg_0930",
+      "start_seconds": 1521.32,
+      "text": "Puede sacar poquito más pero",
+      "words": []
+    },
+    {
+      "end_seconds": 1525.34,
+      "segment_id": "seg_0931",
+      "start_seconds": 1523.4199999999998,
+      "text": "Es bastante",
+      "words": []
+    },
+    {
+      "end_seconds": 1528.1399999999999,
+      "segment_id": "seg_0932",
+      "start_seconds": 1525.34,
+      "text": "Miren nada más esa gráfica",
+      "words": []
+    },
+    {
+      "end_seconds": 1529.8799999999999,
+      "segment_id": "seg_0933",
+      "start_seconds": 1528.1399999999999,
+      "text": "432 yo creo que está",
+      "words": []
+    },
+    {
+      "end_seconds": 1531.52,
+      "segment_id": "seg_0934",
+      "start_seconds": 1529.8799999999999,
+      "text": "Muy muy bien para un carro de calle",
+      "words": []
+    },
+    {
+      "end_seconds": 1533.68,
+      "segment_id": "seg_0935",
+      "start_seconds": 1531.52,
+      "text": "Honestamente un carro arriba de 400",
+      "words": []
+    },
+    {
+      "end_seconds": 1535.6599999999999,
+      "segment_id": "seg_0936",
+      "start_seconds": 1533.68,
+      "text": "Está muy muy peligroso",
+      "words": []
+    },
+    {
+      "end_seconds": 1538.7,
+      "segment_id": "seg_0937",
+      "start_seconds": 1535.6599999999999,
+      "text": "Así es acabamos de pasar de 290 caballos",
+      "words": []
+    },
+    {
+      "end_seconds": 1540.16,
+      "segment_id": "seg_0938",
+      "start_seconds": 1538.7,
+      "text": "Con el sistema Twin Turbo original",
+      "words": []
+    },
+    {
+      "end_seconds": 1542.44,
+      "segment_id": "seg_0939",
+      "start_seconds": 1540.16,
+      "text": "A 430 con un solo turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1542.9,
+      "segment_id": "seg_0940",
+      "start_seconds": 1542.44,
+      "text": "Que bueno",
+      "words": []
+    },
+    {
+      "end_seconds": 1544.92,
+      "segment_id": "seg_0941",
+      "start_seconds": 1542.9,
+      "text": "Este ya es un sistema muy muy viejo",
+      "words": []
+    },
+    {
+      "end_seconds": 1547.0800000000002,
+      "segment_id": "seg_0942",
+      "start_seconds": 1544.92,
+      "text": "Y estamos instalando algo muchísimo más reciente",
+      "words": []
+    },
+    {
+      "end_seconds": 1548.8400000000001,
+      "segment_id": "seg_0943",
+      "start_seconds": 1547.0800000000002,
+      "text": "Con mayor tecnología y más eficiencia",
+      "words": []
+    },
+    {
+      "end_seconds": 1550.76,
+      "segment_id": "seg_0944",
+      "start_seconds": 1548.8400000000001,
+      "text": "Yo la verdad prefiero el sistema Single Turbo",
+      "words": []
+    },
+    {
+      "end_seconds": 1553.0,
+      "segment_id": "seg_0945",
+      "start_seconds": 1550.76,
+      "text": "Ya que es un sistema muchísimo más sencillo de trabajar",
+      "words": []
+    },
+    {
+      "end_seconds": 1555.04,
+      "segment_id": "seg_0946",
+      "start_seconds": 1553.0,
+      "text": "Y te da un acabado más más limpio",
+      "words": []
+    },
+    {
+      "end_seconds": 1557.44,
+      "segment_id": "seg_0947",
+      "start_seconds": 1555.04,
+      "text": "También queremos agradecer a JDM Cars México",
+      "words": []
+    },
+    {
+      "end_seconds": 1559.3600000000001,
+      "segment_id": "seg_0948",
+      "start_seconds": 1557.44,
+      "text": "Por darnos la confianza de trabajar en su proyecto",
+      "words": []
+    },
+    {
+      "end_seconds": 1562.24,
+      "segment_id": "seg_0949",
+      "start_seconds": 1559.3600000000001,
+      "text": "El cual va a ser una réplica de Rápidos y Furiosos",
+      "words": []
+    },
+    {
+      "end_seconds": 1563.96,
+      "segment_id": "seg_0950",
+      "start_seconds": 1562.24,
+      "text": "Yo les recomiendo que vayan a verlo",
+      "words": []
+    },
+    {
+      "end_seconds": 1565.48,
+      "segment_id": "seg_0951",
+      "start_seconds": 1563.96,
+      "text": "Porque va a estar muy muy interesante",
+      "words": []
+    },
+    {
+      "end_seconds": 1568.06,
+      "segment_id": "seg_0952",
+      "start_seconds": 1565.48,
+      "text": "Y bueno si quieren saber más acerca de modificaciones",
+      "words": []
+    },
+    {
+      "end_seconds": 1569.7,
+      "segment_id": "seg_0953",
+      "start_seconds": 1568.06,
+      "text": "Todo lo que tenga que ver con performance",
+      "words": []
+    },
+    {
+      "end_seconds": 1570.5,
+      "segment_id": "seg_0954",
+      "start_seconds": 1569.7,
+      "text": "Reprogramaciones",
+      "words": []
+    },
+    {
+      "end_seconds": 1572.04,
+      "segment_id": "seg_0955",
+      "start_seconds": 1570.5,
+      "text": "Déjenmelo saber en los comentarios",
+      "words": []
+    },
+    {
+      "end_seconds": 1573.24,
+      "segment_id": "seg_0956",
+      "start_seconds": 1572.04,
+      "text": "Yo soy Adrián",
+      "words": []
+    },
+    {
+      "end_seconds": 1574.42,
+      "segment_id": "seg_0957",
+      "start_seconds": 1573.24,
+      "text": "Y eso es Nocturna",
+      "words": []
+    },
+    {
+      "end_seconds": 1578.26,
+      "segment_id": "seg_0958",
+      "start_seconds": 1574.42,
+      "text": "Y eso es Nocturna",
+      "words": []
+    },
+    {
+      "end_seconds": 1586.340862,
+      "segment_id": "seg_0959",
+      "start_seconds": 1578.26,
+      "text": "Gracias por ver el video.",
+      "words": []
+    }
+  ],
+  "source_asset_id": "sha256-75ddae1b7b1830fc96491d97b066e02150c51cd4420e5e535730df6023edb50c",
+  "words": []
+}

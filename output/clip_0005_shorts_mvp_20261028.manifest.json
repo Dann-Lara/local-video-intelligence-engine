@@ -1,0 +1,821 @@
+{
+  "schema": "local_video_studio.mvp_deliverable.v1",
+  "created_at": "2026-10-29T02:21:08+00:00",
+  "status": "mvp_candidate_pending_human_review",
+  "review_status": "pending_user_review",
+  "human_review": {
+    "approved": false,
+    "required": true,
+    "note": "las validaciones automaticas de este manifiesto NO constituyen aprobacion humana; el Short 5 requiere revision y aprobacion explicita"
+  },
+  "note": "Candidato MVP del quinto Short (clip_0005). La seleccion editorial es NUEVA: se derivo de la transcripcion propia del fragmento (seg_0317..seg_0325), no de una propuesta de LM Studio ni de una aprobacion humana previa. No se publica y no se marca como aprobado.",
+  "deliverable": {
+    "file": "clip_0005_shorts_mvp_20261028.mp4",
+    "bytes": 22565975,
+    "sha256": "183C6CFBAA4ED52993042BA8C3EA28A9142582F645CEB32E529A9362E5A0EF10",
+    "video": "H.264 High, 1080x1920, 30000/1001 fps, 1487 frames, yuv420p",
+    "audio": "AAC-LC 44100 Hz estereo, 320 kb/s solicitados (310386 b/s medidos)",
+    "duration_seconds": 49.69,
+    "video_duration_seconds": 49.616233,
+    "audio_duration_seconds": 49.69,
+    "decoded_pcm_samples": 2191360,
+    "decoded_pcm_seconds": 49.6907,
+    "container": "MP4 (mov,mp4,m4a,3gp,3g2,mj2)",
+    "video_minus_audio_seconds": 0.073767,
+    "duration_note": "FFprobe declara 49.690000 s de audio AAC y 49.616233 s de video. El PCM decodificado suma 2191360 muestras = 49.690703 s; la diferencia de 0.703 ms frente a la duracion declarada es granularidad del contenedor/encoder, no un corte de audio"
+  },
+  "provenance": {
+    "source_asset": {
+      "path": "input/Escape 100 Cops, Win $500,000 (2160p_30fps_AV1-128kbit_AAC-inglés).mp4",
+      "bytes": 1627212173,
+      "sha256": "281A885B92A667AD0CF706B4B7218A9227FAFE4CEC94757047C4354C86B6FA13"
+    },
+    "source_asset_media": "3840x2160 AV1 Main, 29.97 fps, AAC 44.1 kHz estereo, 1228.382041 s",
+    "source_cut": {
+      "path": "work/mvp_short_clip5_20261028_200526/clips/clip_0005_sourcecut.mp4",
+      "bytes": 37481065,
+      "sha256": "00064BC84801C0FFDA1C60B9F01E362BC8443CC103488C8C06752276E32DCA2E",
+      "requested_range_seconds": [
+        1178.72,
+        1228.382041
+      ],
+      "requested_duration_seconds": 49.662041,
+      "actual_duration_seconds": 49.690703,
+      "video_start_time_seconds": 0.019,
+      "method": "ffmpeg -ss 1178.72 -t 49.662041 -c copy (sin recodificar)",
+      "start_adjustment_note": "el tramo editorial pedido empieza en 1176.207 s, 0.000832 s despues del fin medido de clip_0004 (1176.206168 s). Para arrancar en keyframe y evitar la pausa/cierre del Short 4 se usa el primer keyframe posterior: 1178.710867 s (-ss 1178.72). El audio del corte mapea por NCC a 1178.691338 s, 19.529 ms antes del keyframe nominal por el start_time de video de 0.019 s."
+    },
+    "vertical_source_clip": {
+      "path": "work/mvp_short_clip5_20261028_200526/clips/clip_0005_shorts.mp4",
+      "bytes": 16902302,
+      "sha256": "E5C03B7B88F87BADCFC0B52FD33B004B873577190896EBA9151B201FE9DE57D2",
+      "video_start_time_seconds": 0.033,
+      "audio_start_time_seconds": 0.0,
+      "note": "Generado en esta misma ejecucion con services.rendering.renderer.render_vertical sobre el corte propio: 1080x1920, fondo desenfocado y banda central nitida. No es un activo heredado de clip_0001..clip_0004. El video vertical arranca en 0.033 s mientras el audio arranca en 0.000 s; el desplazamiento heredado no supera 1 frame y no se corrige"
+    },
+    "composed_before_notification": {
+      "path": "work/mvp_short_clip5_20261028_200526/input_composed.mp4",
+      "bytes": 20372298,
+      "sha256": "02F26877704D8202C57ACD91161C6D4B55360EF8C686D60BE779FD767D9A55A9"
+    },
+    "editorial_selection": {
+      "clip_id": "clip_0005",
+      "project_id": "d3d5157c-542e-4967-b87c-86f254ef5602",
+      "title": "El libro bajo el dinero",
+      "origin": "autoria basada en la transcripcion del fragmento; no existia propuesta previa de clip_0005 y no se uso LM Studio para este paso",
+      "source_range_seconds": [
+        1176.207,
+        1228.382041
+      ],
+      "cut_range_seconds": [
+        1178.72,
+        1228.382041
+      ],
+      "real_start_seconds": 1178.691338,
+      "refs": [
+        "seg_0317",
+        "seg_0318",
+        "seg_0319",
+        "seg_0320",
+        "seg_0321",
+        "seg_0322",
+        "seg_0323",
+        "seg_0324",
+        "seg_0325"
+      ],
+      "review_status": "pending_user_review",
+      "confidence": "media",
+      "reason": "tras la captura, el participante pide su libro, se revela el libro nuevo coescrito con James Patterson y el sorteo de un millon de dolares; el tramo cierra con una frase natural ('to give it a read') y completa el desenlace",
+      "independence": {
+        "no_overlap": true,
+        "overlap_seconds": {
+          "clip_0001": 0.0,
+          "clip_0002": 0.0,
+          "clip_0003": 0.0,
+          "clip_0004": 0.0
+        },
+        "gap_seconds_vs_clip_0004": 2.48517,
+        "note": "verificado antes y despues del render contra los rangos medidos de clip_0001..clip_0004; incluye el intervalo editorial pedido (1176.207 s), el corte planificado (1178.72 s) y el rango medido del entregable"
+      }
+    }
+  },
+  "timing_alignment": {
+    "clip_zero_maps_to_source_seconds": 1178.691338,
+    "method": "correlacion cruzada normalizada del audio del clip vertical contra 1150-1230 s del audio fuente (NCC global 0.999841)",
+    "planned_start_seconds": 1178.72,
+    "planned_keyframe_seconds": 1178.710867,
+    "explanation": "El audio del corte real empieza 28.662 ms antes del valor solicitado (1178.72 - 1178.691338). Esa diferencia incluye el start_time de video del corte (0.019 s): el primer frame de video es el keyframe 1178.710867 y el audio mapea a 1178.691338. El drift maximo por tramos de 9.7 s es 0.0 s. Subtitulos, rotulos y clics usan el tiempo local real del audio. En el entregable ambos streams declaran start_time 0.000000",
+    "video_start_time_seconds": {
+      "source_cut": 0.019,
+      "vertical_base": 0.033,
+      "deliverable": 0.0
+    },
+    "audio_start_time_seconds": {
+      "source_cut": 0.0,
+      "vertical_base": 0.0,
+      "deliverable": 0.0
+    },
+    "drift_max_seconds": 0.0,
+    "chunks_checked": 5,
+    "subtitles_file": "subs.ass",
+    "subtitles_source": "transcription.json (sin word_timestamps)",
+    "alignment_evidence": {
+      "path": "work/mvp_short_clip5_20261028_200526/alignment_clip5.json",
+      "bytes": 1422,
+      "sha256": "69E8D7F7370934BFD00EEF54E3F88627210867936B710CB8A01E92DE00401337"
+    }
+  },
+  "segments": [
+    {
+      "segment_id": "seg_0317",
+      "source_start": 1179.5800000000002,
+      "source_end": 1184.78,
+      "local_start": 0.888662,
+      "local_end": 6.088662,
+      "text": "before i go to jail can you do me a favor and pull my book out of that bag i'm okay with that",
+      "words_available": false
+    },
+    {
+      "segment_id": "seg_0318",
+      "source_start": 1185.74,
+      "source_end": 1187.5800000000002,
+      "local_start": 7.048662,
+      "local_end": 8.888662,
+      "text": "yeah it's just underneath all the money yeah",
+      "words_available": false
+    },
+    {
+      "segment_id": "seg_0319",
+      "source_start": 1191.3400000000001,
+      "source_end": 1196.78,
+      "local_start": 12.648662,
+      "local_end": 18.088662,
+      "text": "i promise it's in there there you go this is the most dangerous games which is a brand new book that",
+      "words_available": false
+    },
+    {
+      "segment_id": "seg_0320",
+      "source_start": 1196.78,
+      "source_end": 1201.1000000000001,
+      "local_start": 18.088662,
+      "local_end": 22.408662,
+      "text": "i co-authored with james patterson i know this might sound weird because a lot of you might not read books",
+      "words_available": false
+    },
+    {
+      "segment_id": "seg_0321",
+      "source_start": 1201.1000000000001,
+      "source_end": 1205.8200000000002,
+      "local_start": 22.408662,
+      "local_end": 27.128662,
+      "text": "but i promise if you've ever enjoyed a mr beast video you actually really enjoyed this book 100",
+      "words_available": false
+    },
+    {
+      "segment_id": "seg_0322",
+      "source_start": 1205.8200000000002,
+      "source_end": 1209.66,
+      "local_start": 27.128662,
+      "local_end": 30.968662,
+      "text": "contestants go through the most dangerous games all around the world with some of the highest stakes",
+      "words_available": false
+    },
+    {
+      "segment_id": "seg_0323",
+      "source_start": 1209.66,
+      "source_end": 1214.46,
+      "local_start": 30.968662,
+      "local_end": 35.768662,
+      "text": "to compete for a billion dollars and to save humanity and starting september 1st if you buy",
+      "words_available": false
+    },
+    {
+      "segment_id": "seg_0324",
+      "source_start": 1214.46,
+      "source_end": 1219.5800000000002,
+      "local_start": 35.768662,
+      "local_end": 40.888662,
+      "text": "the book and enter we're gonna give one person one million dollars so scan the qr code on her face",
+      "words_available": false
+    },
+    {
+      "segment_id": "seg_0325",
+      "source_start": 1219.5800000000002,
+      "source_end": 1228.382041,
+      "local_start": 40.888662,
+      "local_end": 49.690703,
+      "text": "sorry about that or go wherever you buy books to give it a read",
+      "words_available": false
+    }
+  ],
+  "overlays": {
+    "subtitles": {
+      "file": {
+        "path": "work/mvp_short_clip5_20261028_200526/subs.ass",
+        "bytes": 2486,
+        "sha256": "6D55985476CC6877F379C9282CB5765440BF507BD1A67F823D747C168DC32D3E"
+      },
+      "style": "Arial Black 96, blanco con contorno negro, hasta 2 lineas, margen inferior 340",
+      "cues": 21,
+      "first_cue": {
+        "start": 0.8886620000000676,
+        "end": 3.6124715238094964
+      },
+      "last_cue": {
+        "start": 44.525149916666706,
+        "end": 49.616233
+      },
+      "source": "services.rendering.subtitles.build_cues/write_ass sobre la transcripcion propia",
+      "limitation": "sin word_timestamps no se puede recortar por palabra. El primer cue empieza en 0.888662 s (inicio de seg_0317, tras la pausa natural) y el ultimo se recorta a 49.616233 s (fin del video), 73.77 ms antes del fin del audio"
+    },
+    "emphasis": {
+      "file": {
+        "path": "work/mvp_short_clip5_20261028_200526/motion.ass",
+        "bytes": 1676,
+        "sha256": "51662D74F932DFD1C33E8C9405371BC70CF6A6327AD60004261B6B10D455B148"
+      },
+      "style": "Arial Black 84, pos (540,1010), pop de escala 45%->100%->103%",
+      "events": [
+        {
+          "text": "MY BOOK",
+          "start": 3.9,
+          "end": 5.9,
+          "evidence_segment": "seg_0317",
+          "segment_local_range": [
+            0.888662,
+            6.088662
+          ],
+          "transcript": "before i go to jail can you do me a favor and pull my book out of that bag i'm okay with that",
+          "position_note": "frase localizada al 56-65% del segmento; ventana de 2.0 s centrada"
+        },
+        {
+          "text": "BRAND NEW BOOK",
+          "start": 16.4,
+          "end": 18.4,
+          "evidence_segment": "seg_0319",
+          "segment_local_range": [
+            12.648662,
+            18.088662
+          ],
+          "transcript": "i promise it's in there there you go this is the most dangerous games which is a brand new book that",
+          "position_note": "frase localizada al 81-95% del segmento; ventana de 2.0 s centrada"
+        },
+        {
+          "text": "JAMES PATTERSON",
+          "start": 18.55,
+          "end": 20.55,
+          "evidence_segment": "seg_0320",
+          "segment_local_range": [
+            18.088662,
+            22.408662
+          ],
+          "transcript": "i co-authored with james patterson i know this might sound weird because a lot of you might not read books",
+          "position_note": "frase localizada al 14-24% del segmento; ventana de 2.0 s desde el inicio"
+        },
+        {
+          "text": "ONE MILLION DOLLARS",
+          "start": 37.5,
+          "end": 39.5,
+          "evidence_segment": "seg_0324",
+          "segment_local_range": [
+            35.768662,
+            40.888662
+          ],
+          "transcript": "the book and enter we're gonna give one person one million dollars so scan the qr code on her face",
+          "position_note": "frase localizada al 50-60% del segmento; ventana de 2.0 s centrada"
+        }
+      ],
+      "positioning_note": "sin word_timestamps la posicion dentro del segmento es proporcional; las ventanas de 2.0 s se eligieron alrededor de la frase y no solapan tarjetas",
+      "grounding_note": "los cuatro textos son palabras literales de la transcripcion del clip; no se anaden cifras, nombres ni conclusiones ajenas al material",
+      "measured": {
+        "my_book": {
+          "bbox": [
+            372,
+            984,
+            343,
+            60
+          ],
+          "center_x": 543.5,
+          "center_y": 1014.0,
+          "ocr": "MY BOOK",
+          "iou_final_vs_reference": 0.9233
+        },
+        "brand_new_book": {
+          "bbox": [
+            213,
+            984,
+            661,
+            60
+          ],
+          "center_x": 543.5,
+          "center_y": 1014.0,
+          "ocr": "BRAND NEW BOOK",
+          "iou_final_vs_reference": 0.9439
+        },
+        "james_patterson": {
+          "bbox": [
+            193,
+            984,
+            693,
+            61
+          ],
+          "center_x": 539.5,
+          "center_y": 1014.5,
+          "ocr": "JAMES PATTERSON",
+          "iou_final_vs_reference": 0.9577
+        },
+        "one_million_dollars": {
+          "bbox": [
+            133,
+            984,
+            815,
+            61
+          ],
+          "center_x": 540.5,
+          "center_y": 1014.5,
+          "ocr": "ONE MILLION DOLLARS",
+          "iou_final_vs_reference": 0.9295
+        }
+      }
+    },
+    "neon_frame": {
+      "file": {
+        "path": "work/mvp_short_clip5_20261028_200526/neon_frame.ass",
+        "bytes": 125979,
+        "sha256": "BE86C68EAC84531DDE8851E4D65650ECD7CCCAEADFC6E48FE3442CB64FEAF06F"
+      },
+      "generated_by": "make_neon_frame_adj.py (copia aislada en esta carpeta; semilla 20261020)",
+      "duration_seconds": 49.616233,
+      "measured_cyan_pixels": {
+        "4.905s": 21835,
+        "48.515s": 19645
+      },
+      "note": "geometria y colores heredados del generador del MVP; solo cambia la duracion para este clip. El generador global no se modifico"
+    },
+    "notifications": [
+      {
+        "action": "comment",
+        "title": "COMENTA",
+        "subtitle_text": "¿Ya lo leíste?",
+        "file": "plans/plan_clip5.json",
+        "subtitle_is_contextual": true,
+        "enter_start": 22.9,
+        "hold_start": 23.42,
+        "hold_end": 27.02,
+        "exit_end": 27.44,
+        "card_size": [
+          932,
+          312
+        ],
+        "card_alpha_bbox_hold": [
+          76,
+          126,
+          929,
+          309
+        ],
+        "card_x_nominal": 74,
+        "card_alpha_bbox_x_hold": 76,
+        "card_center_x_measured": 540.0,
+        "card_center_x_nominal": 540,
+        "centered": true,
+        "measured_visibility": {
+          "first_visible_seconds": 22.9229,
+          "last_visible_seconds": 27.4274,
+          "hold_first_seconds": 23.3567,
+          "hold_last_seconds": 27.0604,
+          "hold_frames_sampled": 7,
+          "method": "canal alfa de render/overlay_timing.mov (RGBA) muestreado en limites de tarjeta"
+        },
+        "evidence": [
+          "seg_0321"
+        ],
+        "evidence_note": "seg_0321: 'but i promise if you've ever enjoyed a mr beast video you actually really enjoyed this book'. La tarjeta pregunta si el espectador ya leyo el libro; es una parafrasis editorial en espanol, no una cita literal.",
+        "reason": "invita a comentar si ya conocian el libro del que habla el clip",
+        "click_seconds": 22.912
+      },
+      {
+        "action": "share",
+        "title": "COMPARTE",
+        "subtitle_text": "Un millón en juego",
+        "file": "plans/plan_clip5.json",
+        "subtitle_is_contextual": true,
+        "enter_start": 42.6,
+        "hold_start": 43.12,
+        "hold_end": 46.72,
+        "exit_end": 47.14,
+        "card_size": [
+          932,
+          312
+        ],
+        "card_alpha_bbox_hold": [
+          76,
+          126,
+          929,
+          309
+        ],
+        "card_x_nominal": 74,
+        "card_alpha_bbox_x_hold": 76,
+        "card_center_x_measured": 540.0,
+        "card_center_x_nominal": 540,
+        "centered": true,
+        "measured_visibility": {
+          "first_visible_seconds": 42.6092,
+          "last_visible_seconds": 47.1137,
+          "hold_first_seconds": 43.0764,
+          "hold_last_seconds": 46.7467,
+          "hold_frames_sampled": 6,
+          "method": "canal alfa de render/overlay_timing.mov (RGBA) muestreado en limites de tarjeta"
+        },
+        "evidence": [
+          "seg_0324"
+        ],
+        "evidence_note": "seg_0324: 'the book and enter we're gonna give one person one million dollars so scan the qr code on her face'. La tarjeta resume el sorteo de un millon de dolares mencionado literalmente en el segmento; no anade datos ajenos.",
+        "reason": "compartir el sorteo que el propio video anuncia",
+        "click_seconds": 42.612
+      }
+    ],
+    "click": {
+      "file": {
+        "path": "work/mvp_short_clip5_20261028_200526/audio/click_hf_v1_stereo.wav",
+        "bytes": 7980,
+        "sha256": "CE60E1062DBD849EA0B22043B89AA2329EAA2C4855E74D8890C095101CF52C83"
+      },
+      "sound_id": "ui_click_hf_v1",
+      "generated_by": "audio/synth_click_hf.py (semilla 20261028, sintesis local)",
+      "times_seconds": [
+        22.912,
+        42.612
+      ],
+      "gain_db": -2.0,
+      "gain_change_vs_clip_0001": "+4.0 dB",
+      "duration_seconds": 0.045,
+      "onset_offset_ms": 12.0,
+      "onset_offset_frames": 0.36,
+      "isolated_peak_dbfs_after_gain": -12.4579,
+      "isolated_peak_dbfs_old_gain": -16.4579,
+      "measured_gain_db": [
+        4.0,
+        4.0
+      ],
+      "measured_gain_hf_7_15k_db": [
+        4.0,
+        4.0
+      ],
+      "measured_hf_transients": [
+        {
+          "time_seconds": 22.9079,
+          "window_seconds": [
+            22.9079,
+            22.9329
+          ],
+          "boost_db_7_16k": 15.05,
+          "offset_ms": -4.1,
+          "offset_frames": -0.12
+        },
+        {
+          "time_seconds": 42.6082,
+          "window_seconds": [
+            42.6082,
+            42.6331
+          ],
+          "boost_db_7_16k": 28.16,
+          "offset_ms": -3.8,
+          "offset_frames": -0.11
+        }
+      ],
+      "rationale": "+4 dB sobre el clic del MVP (-6 -> -2 dB). El inicio se retrasa 12 ms (0.36 frame) dentro del primer frame visible para no elevar el pico global del programa. Medido sobre este mismo audio: el pico de la mezcla queda igual al del audio base (1.086767) y no aparecen muestras nuevas >1.0 en las ventanas de clic. No se aplico atenuacion global, ducking ni limiter",
+      "comparison_evidence": {
+        "file": "click_level_comparison.json",
+        "path": "work/mvp_short_clip5_20261028_200526/click_level_comparison.json",
+        "bytes": 5395,
+        "sha256": "8FC104ABD518550E7E556DA657896F9ECD99FCD77B81C01F859F6F2F88708855",
+        "listening_samples": "audio/compare/ (AB_old_new_float32.wav, AB_old_new_16bit_minus2dB.wav y 4 ventanas por clic)",
+        "measured_gain_per_click_db": [
+          4.0,
+          4.0
+        ]
+      },
+      "perception_note": "no se verifico percepcion humana; la evidencia es espectral/de nivel y se incluye una muestra A/B para escucha"
+    }
+  },
+  "audio_mix": {
+    "filter": "2 clics (atrim 0.045 s, adelay 22912/42612 ms, volume 0.794328 = -2.0 dB) + audio base, amix=inputs=3:duration=first:dropout_transition=0:normalize=0",
+    "original_audio_outside_clicks": "bit-exacto en el PCM mezclado (delta maximo 0.0)",
+    "deliverable_is_aac_of_reference_mix": true,
+    "no_limiter": true,
+    "no_ducking": true,
+    "no_global_gain": true,
+    "aac_bitrate": "320k",
+    "measured_level_vs_source_redecode_db": [
+      -0.244,
+      -0.296,
+      -0.139,
+      -0.266
+    ],
+    "level_note": "diferencias de -0.244/-0.296/-0.139 dB por tramo (-0.266 dB global) atribuidas a la re-codificacion AAC; no hay atenuacion por tramos ni ducking",
+    "source_true_peak_dbfs": 0.723,
+    "true_peak_final_dbfs": 0.658,
+    "program_peak_linear": {
+      "base": 1.086767,
+      "final": 1.07868,
+      "delta_db": -0.065
+    },
+    "clipping": "10 muestras float > 1.0 en el entregable frente a 390 en el audio base heredado; el mezclador no recorta (PCM float) y el clic nuevo no eleva el pico del programa",
+    "unexpected_transients": {
+      "audible": [],
+      "raw_in_digital_silence": [
+        {
+          "start_frame_5ms": 9958,
+          "end_frame_5ms": 9959,
+          "start_seconds": 49.6771,
+          "end_seconds": 49.6871,
+          "final_level_dbfs": -127.33
+        }
+      ],
+      "criterion": "se descartan saltos relativos en ventanas con nivel absoluto <= -90 dBFS (silencio digital); el hallazgo bruto queda registrado en unexpected_fullband_transients_raw"
+    }
+  },
+  "verification": {
+    "ffprobe": {
+      "duration_seconds": 49.69,
+      "video": "h264 High 1080x1920 30000/1001 1487 frames yuv420p",
+      "audio": "aac LC 44100 Hz 2 ch 49.690000 s 310386 b/s",
+      "size_bytes": 22565975,
+      "format_bit_rate": 3633081
+    },
+    "container_checks": {
+      "n_frames_is_1487": true,
+      "n_frames_matches_duration": true,
+      "video_duration_is_49_616233": true,
+      "audio_duration_is_49_690000": true,
+      "format_duration_matches_container": true,
+      "video_audio_gap_is_73_767ms": true,
+      "video_1080x1920": true,
+      "video_fps": true,
+      "video_codec_h264_high": true,
+      "video_pix_fmt_yuv420p": true,
+      "audio_aac_lc_44100_stereo": true
+    },
+    "all_container_checks_ok": true,
+    "video_stream_identical_to_tmp_video": true,
+    "video_stream_md5": {
+      "final": "361cbabde2bfb4d3b61ceec53b41d0f5",
+      "tmp_video_noaudio": "361cbabde2bfb4d3b61ceec53b41d0f5"
+    },
+    "ocr_frames": {
+      "0.5s": {
+        "bottom": "<no text>"
+      },
+      "4.9s": {
+        "mid": "MY BOOK",
+        "bottom": "pull [my book out of that bag i'm Okay with that"
+      },
+      "17.4s": {
+        "mid": "BRAND NEW BOOK"
+      },
+      "19.55s": {
+        "mid": "JAMES PATTERSON"
+      },
+      "25.0s": {
+        "top": "COMENTA �Ya lo le�ste?"
+      },
+      "38.5s": {
+        "mid": "ONE MILLION DOLLARS",
+        "bottom": "give one person One million dollars III"
+      },
+      "45.0s": {
+        "top": "COMPARTE Un mill�n enjuego"
+      },
+      "47.5s": {
+        "top": "<no text>"
+      },
+      "48.5s": {
+        "mid": "etne MY eoov FOR A COOKIE",
+        "bottom": "you buy books to give it a read"
+      }
+    },
+    "card_geometry": {
+      "card1": {
+        "first_visible_seconds": 22.9229,
+        "last_visible_seconds": 27.4274,
+        "hold_first_seconds": 23.3567,
+        "hold_last_seconds": 27.0604,
+        "hold_frames_sampled": 7,
+        "alpha_bbox_hold": [
+          76,
+          126,
+          929,
+          309
+        ],
+        "alpha_center_x_hold": 540.0,
+        "alpha_max_first_visible": 19,
+        "alpha_max_last_visible": 10
+      },
+      "card2": {
+        "first_visible_seconds": 42.6092,
+        "last_visible_seconds": 47.1137,
+        "hold_first_seconds": 43.0764,
+        "hold_last_seconds": 46.7467,
+        "hold_frames_sampled": 6,
+        "alpha_bbox_hold": [
+          76,
+          126,
+          929,
+          309
+        ],
+        "alpha_center_x_hold": 540.0,
+        "alpha_max_first_visible": 7,
+        "alpha_max_last_visible": 20
+      },
+      "method": "canal alfa de render/overlay_timing.mov (RGBA) + diferencia por region",
+      "note": "el primer y el ultimo frame con alfa > 0 son cotas: la mascara se muestrea en los limites de cada tarjeta, no en todos los frames. El bbox de hold [76,126,929,309] incluye la sombra; el centro medido es 540 px sobre 1080"
+    },
+    "click_sync": {
+      "click1": {
+        "measured_seconds": 22.9079,
+        "card_first_visible_seconds": 22.9229,
+        "delta_ms": -15.0,
+        "delta_frames": -0.45
+      },
+      "click2": {
+        "measured_seconds": 42.6082,
+        "card_first_visible_seconds": 42.6092,
+        "delta_ms": -1.0,
+        "delta_frames": -0.03
+      },
+      "note": "la deteccion del clic usa ventanas de 5 ms. El clic arranca 12 ms despues del inicio de la animacion (22.912 s / 42.612 s) y el primer frame muestreado con alfa > 0 es 22.9229 s / 42.6092 s; la diferencia queda dentro de 1 frame. El primer frame con alfa > 0 se muestrea en los limites de tarjeta, no en todos los frames, por lo que el valor es una cota de 1 frame"
+    },
+    "overlay_checks": {
+      "four_emphasis_present": true,
+      "emphasis_centered_x540": true,
+      "emphasis_in_band_y950_1070": true,
+      "no_emphasis_at_controls": true,
+      "emphasis_matches_final_iou": true,
+      "neon_only_on_border": true,
+      "neon_covers_full_height": true,
+      "neon_matches_final_iou": true,
+      "subtitles_bottom_centered": true,
+      "subtitles_match_final_iou": true
+    },
+    "all_overlay_checks_ok": true,
+    "audio_checks": {
+      "two_clicks_detected": true,
+      "click_offset_within_1_frame": true,
+      "no_unexpected_transients": true,
+      "pcm_mix_preserved_outside_clicks": true,
+      "deliverable_is_aac_of_reference_mix": true,
+      "no_ducking_or_segment_attenuation": true,
+      "alignment_matches_1178_691338": true,
+      "peak_not_above_base": true
+    },
+    "all_audio_checks_ok": true,
+    "layers": {
+      "blurred_background_vs_sharp_center_laplacian_4_905s": {
+        "top_150_450": 1.08,
+        "center_700_950": 4.11,
+        "lower_center_1000_1250": 6.19,
+        "bottom_1650_1850": 0.57
+      },
+      "frame_size": [
+        1080,
+        1920
+      ]
+    },
+    "evidence_files": [
+      {
+        "path": "work/mvp_short_clip5_20261028_200526/verification_video.json",
+        "bytes": 19865,
+        "sha256": "37A4961A500285DBE47E5318A30B6139D484E4B36AFEEF92D8F2C74EDED5EF8F"
+      },
+      {
+        "path": "work/mvp_short_clip5_20261028_200526/verification_overlays.json",
+        "bytes": 3884,
+        "sha256": "3C140FFA2196F7C65C51C6D959711F492D966BC119F3E6B2A442B92ACA10A9E1"
+      },
+      {
+        "path": "work/mvp_short_clip5_20261028_200526/verification_audio.json",
+        "bytes": 4974,
+        "sha256": "3CA0B6705D383551BDDFB904CED57BF52A4049FE5D0BDA2F8576DC36A15F2FC0"
+      },
+      {
+        "path": "work/mvp_short_clip5_20261028_200526/click_level_comparison.json",
+        "bytes": 5395,
+        "sha256": "8FC104ABD518550E7E556DA657896F9ECD99FCD77B81C01F859F6F2F88708855"
+      },
+      {
+        "path": "work/mvp_short_clip5_20261028_200526/alignment_clip5.json",
+        "bytes": 1422,
+        "sha256": "69E8D7F7370934BFD00EEF54E3F88627210867936B710CB8A01E92DE00401337"
+      },
+      {
+        "path": "work/mvp_short_clip5_20261028_200526/assets_manifest.json",
+        "bytes": 2900,
+        "sha256": "5CD89AD18DFA0763005C1CA7AA7D9CB4ACF05056D34280E709948AD8E995A0E8"
+      },
+      {
+        "path": "work/mvp_short_clip5_20261028_200526/clip5_render_manifest.json",
+        "bytes": 11363,
+        "sha256": "7F0AB432FAEBFABF1C188DFD4743DBE381C8596E796C63F21437E4C135066043"
+      },
+      {
+        "path": "work/mvp_short_clip5_20261028_200526/independence_check.json",
+        "bytes": 1938,
+        "sha256": "BE7D85D0994777F75BC316236F6ADFCB47AD9B21636465E1385CB9ADCBC2E2BB"
+      },
+      {
+        "path": "work/mvp_short_clip5_20261028_200526/independence_check_measured.json",
+        "bytes": 1859,
+        "sha256": "EA0BB7395C75B7F4E9ECC36CB07453781418E4A4DBF5A38D17A8B3A3F132496E"
+      },
+      {
+        "path": "work/mvp_short_clip5_20261028_200526/input_composed_manifest.json",
+        "bytes": 1013,
+        "sha256": "804D87D2CDDFE799B1A8FCCD3E67034A242C152D8A02CE0A90AD52B5F7BA33CF"
+      }
+    ],
+    "limitations": [
+      "el tramo pedido empieza en 1176.207 s, 0.000832 s despues del fin medido de clip_0004 (1176.206168 s); el corte arranca en el keyframe 1178.710867 s (audio medido 1178.691338 s), 2.485 s despues, para no repetir la pausa/cierre del Short 4",
+      "no hay word_timestamps: los rotulos se ubican por proporcion dentro del segmento, no por palabra",
+      "el primer subtitulo empieza en 0.888662 s (inicio de seg_0317); antes hay 0.889 s sin texto, que corresponden a la pausa natural del habla",
+      "el ultimo subtitulo se recorta a 49.616233 s (fin del video), 73.77 ms antes del fin del audio",
+      "el audio dura 73.77 ms mas que el video (49.690000 vs 49.616233 s); la diferencia proviene del vertical heredado y de la granularidad AAC. No se recorta audio",
+      "el audio base heredado ya pico por encima de 0 dBFS: el entregable conserva 10 muestras float >1.0 (frente a 390 del base) y un pico 0.065 dB menor; no se aplico limiter por diseno",
+      "se detecto un salto relativo de energia a 49.677-49.687 s, pero el nivel absoluto del entregable en esa ventana es -127.33 dBFS (silencio digital); se registra como hallazgo bruto y se excluye de los transitorios audibles con umbral -90 dBFS",
+      "en 38.5 s el rotulo ONE MILLION DOLLARS se superpone al texto legal en pantalla de la fuente; el rotulo es legible por su contorno, pero tapa parte de ese texto. Se deja para revision humana",
+      "el corte arranca 19.529 ms despues del inicio del audio por el start_time de video del corte (0.019 s); el desfase A/V es inferior a 1 frame y el audio es la referencia de subtitulos, igual que en los cuatro Shorts previos",
+      "la seleccion editorial es nueva y esta pendiente de revision humana; no es una salida de LM Studio",
+      "las tarjetas usan parafrasis editoriales en espanol, no citas literales",
+      "no se verifico percepcion humana del clic; hay muestra A/B y evidencia espectral",
+      "el diseno visual (marco neon, tarjetas, banda desenfocada) es herencia del MVP; no se re-disena en este paso"
+    ]
+  },
+  "protected_baselines": {
+    "checked_at": "2026-10-29T02:21:13+00:00",
+    "unchanged": true,
+    "files": {
+      "clip_0001_mp4": {
+        "path": "output/clip_0001_shorts_mvp_20261028.mp4",
+        "bytes": 42790148,
+        "sha256": "EBBD2270DAC8A1D06FF82AB16F35F8E42E58BB9A1EEA14B32FFB05F2191D95DC",
+        "expected_sha256": "EBBD2270DAC8A1D06FF82AB16F35F8E42E58BB9A1EEA14B32FFB05F2191D95DC"
+      },
+      "clip_0001_manifest": {
+        "path": "output/clip_0001_shorts_mvp_20261028.manifest.json",
+        "bytes": 18386,
+        "sha256": "330D9A7C86E17304FB10ED64E151D2A360C01306A8545FFD7D3209E71B4226CE",
+        "expected_sha256": "330D9A7C86E17304FB10ED64E151D2A360C01306A8545FFD7D3209E71B4226CE"
+      },
+      "clip_0002_mp4": {
+        "path": "output/clip_0002_shorts_mvp_20261028.mp4",
+        "bytes": 19794327,
+        "sha256": "8A45FFA4983E0705F2BDC9D761A35CE7339FFCBF8CF83CE58E0A20C85B09B311",
+        "expected_sha256": "8A45FFA4983E0705F2BDC9D761A35CE7339FFCBF8CF83CE58E0A20C85B09B311"
+      },
+      "clip_0002_manifest": {
+        "path": "output/clip_0002_shorts_mvp_20261028.manifest.json",
+        "bytes": 9490,
+        "sha256": "D0F916FEC66D207E86E8B9E5903E4B56017BCE89B3C1D972959357D01B8AED98",
+        "expected_sha256": "D0F916FEC66D207E86E8B9E5903E4B56017BCE89B3C1D972959357D01B8AED98"
+      },
+      "clip_0003_mp4": {
+        "path": "output/clip_0003_shorts_mvp_20261028.mp4",
+        "bytes": 32355578,
+        "sha256": "089A99DEFE7CB2777FF470EFDD8FE15A68B8E5BC90B1874AD0D33547E4D8B723",
+        "expected_sha256": "089A99DEFE7CB2777FF470EFDD8FE15A68B8E5BC90B1874AD0D33547E4D8B723"
+      },
+      "clip_0003_manifest": {
+        "path": "output/clip_0003_shorts_mvp_20261028.manifest.json",
+        "bytes": 24974,
+        "sha256": "46E11B876D4BA4B6BB6F7901417394A886FBD92034484BA32DC17EF5EB058F96",
+        "expected_sha256": "46E11B876D4BA4B6BB6F7901417394A886FBD92034484BA32DC17EF5EB058F96"
+      },
+      "clip_0004_mp4": {
+        "path": "output/clip_0004_shorts_mvp_20261028.mp4",
+        "bytes": 31754469,
+        "sha256": "1362571FB103895D5548177B0429896CB5CC7A1AF3EC6F37AD0093C1458C2E22",
+        "expected_sha256": "1362571FB103895D5548177B0429896CB5CC7A1AF3EC6F37AD0093C1458C2E22"
+      },
+      "clip_0004_manifest": {
+        "path": "output/clip_0004_shorts_mvp_20261028.manifest.json",
+        "bytes": 25416,
+        "sha256": "545CA9EA76B50996B0B8FAA23E7E06796FE2DBC9332C56B7219F57012BE49029",
+        "expected_sha256": "545CA9EA76B50996B0B8FAA23E7E06796FE2DBC9332C56B7219F57012BE49029"
+      }
+    },
+    "note": "los cuatro MVP previos (clip_0001..clip_0004) y sus manifiestos conservan su SHA-256. La aprobacion verbal del Short 4 esta registrada aparte en docs/decisions/20261028_short4_aprobacion_usuario.md y su manifiesto NO se reescribio (sigue en pending_user_review)"
+  },
+  "reproduction": [
+    "cd work/mvp_short_clip5_20261028_200526",
+    "python cut_and_vertical_clip5.py  # corte en 1178.72 s + vertical 1080x1920",
+    "python align_clip5.py             # start 1178.691338 s, NCC 0.99984100",
+    "python independence_check_clip5.py",
+    "python build_assets_clip5.py      # subs.ass, motion.ass, neon_frame.ass, plan_clip5.json",
+    "python compose_base_clip5.py",
+    "python render_timing.py --plan plans/plan_clip5.json --out render/clip_0005_mvp.mp4 --with-click",
+    "python verify_video_clip5.py",
+    "python verify_overlays_clip5.py",
+    "python verify_audio_clip5.py",
+    "python compare_click_levels_clip5.py",
+    "python make_manifest_clip5.py     # copia a output/ sin sobrescribir"
+  ]
+}

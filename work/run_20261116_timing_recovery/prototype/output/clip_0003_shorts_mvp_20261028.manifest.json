@@ -1,0 +1,648 @@
+{
+  "schema": "local_video_studio.mvp_deliverable.v1",
+  "created_at": "2026-10-28T22:41:56+00:00",
+  "status": "mvp_candidate_pending_human_review",
+  "review_status": "pending_user_review",
+  "note": "Candidato MVP del tercer Short (clip_0003). La seleccion editorial es NUEVA: se derivo de la transcripcion propia del fragmento (seg_0250..seg_0258), no de una propuesta de LM Studio ni de una aprobacion humana previa. No se publica.",
+  "deliverable": {
+    "file": "clip_0003_shorts_mvp_20261028.mp4",
+    "bytes": 32355578,
+    "sha256": "089A99DEFE7CB2777FF470EFDD8FE15A68B8E5BC90B1874AD0D33547E4D8B723",
+    "video": "H.264 High, 1080x1920, 30000/1001 fps, 1456 frames, yuv420p",
+    "audio": "AAC-LC 44100 Hz estereo, 320 kb/s (319063 b/s medidos)",
+    "duration_seconds": 48.581867,
+    "video_duration_seconds": 48.581867,
+    "audio_duration_seconds": 48.576009,
+    "container": "MP4 (mov,mp4,m4a,3gp,3g2,mj2)"
+  },
+  "provenance": {
+    "source_asset": {
+      "path": "input/Escape 100 Cops, Win $500,000 (2160p_30fps_AV1-128kbit_AAC-inglés).mp4",
+      "bytes": 1627212173,
+      "sha256": "281A885B92A667AD0CF706B4B7218A9227FAFE4CEC94757047C4354C86B6FA13"
+    },
+    "source_asset_media": "3840x2160 AV1, 29.97 fps, AAC 44.1 kHz estereo, 1228.382041 s",
+    "source_cut": {
+      "path": "work/mvp_short_clip3_20261028_162437/clips/clip_0003_sourcecut.mp4",
+      "bytes": 67977219,
+      "sha256": "BF087BC8AA4FB2E46C2781D03A797EF2A3780B9B941BE7B1BB2FE7826E344BD7",
+      "requested_range_seconds": [
+        780.78,
+        829.34
+      ],
+      "requested_duration_seconds": 48.56,
+      "actual_duration_seconds": 48.590867,
+      "method": "ffmpeg -ss 780.78 -t 48.56 -c copy (corte en keyframe, sin recodificar)"
+    },
+    "vertical_source_clip": {
+      "path": "work/mvp_short_clip3_20261028_162437/clips/clip_0003_shorts.mp4",
+      "bytes": 26965699,
+      "sha256": "EF2B593778ADAC25CB20EE13B1341AEA58BB98809081D1139992D7B5BD85F75B",
+      "note": "Generado en esta misma ejecucion con services.rendering.renderer.render_vertical sobre el corte propio: 1080x1920, fondo desenfocado y banda central nitida. No es un activo heredado de clip_0001/clip_0002."
+    },
+    "composed_before_notification": {
+      "path": "work/mvp_short_clip3_20261028_162437/input_composed.mp4",
+      "bytes": 32296132,
+      "sha256": "37204661D38317103C260304BF5496F781F9D2982EAAA4789B5A432A300E8C85"
+    },
+    "editorial_selection": {
+      "clip_id": "clip_0003",
+      "project_id": "d3d5157c-542e-4967-b87c-86f254ef5602",
+      "title": "El plan del túnel",
+      "origin": "autoria basada en la transcripcion del fragmento; no existia propuesta previa de clip_0003 y no se uso LM Studio para este paso",
+      "source_range_seconds": [
+        779.24,
+        829.34
+      ],
+      "cut_range_seconds": [
+        780.78,
+        829.34
+      ],
+      "real_start_seconds": 780.770975,
+      "refs": [
+        "seg_0250",
+        "seg_0251",
+        "seg_0252",
+        "seg_0253",
+        "seg_0254",
+        "seg_0255",
+        "seg_0256",
+        "seg_0257",
+        "seg_0258"
+      ],
+      "review_status": "pending_user_review",
+      "confidence": "media",
+      "reason": "el fragmento plantea un plan completo (tunel, entrada, unica salida y riesgo) con inicio y cierre naturales dentro del tramo"
+    },
+    "reference_candidate3": {
+      "path": "work/fase5f_final_fix2_20261022_110101/final/render/final_candidate3.mp4",
+      "sha256": "D6E1420BCEF9B314D1AE9778DCF373B79718EB2177E9E08785EB03F80E766E8B",
+      "role": "referencia visual heredada; no se sobrescribe"
+    }
+  },
+  "timing_alignment": {
+    "clip_zero_maps_to_source_seconds": 780.770975,
+    "method": "correlacion cruzada normalizada del audio del clip vertical contra 740-860 s del audio fuente (NCC global 0.99968388)",
+    "planned_start_seconds": 780.78,
+    "explanation": "El corte real empieza 9 ms antes del valor solicitado (780.78 - 780.770975). El drift maximo por tramos de 9.7 s es 0.0 s. Subtitulos, rotulos y clics usan el tiempo local real del clip.",
+    "drift_max_seconds": 0.0,
+    "chunks_checked": 5,
+    "subtitles_file": "subs.ass",
+    "subtitles_source": "transcription.json (sin word_timestamps)",
+    "alignment_evidence": {
+      "path": "work/mvp_short_clip3_20261028_162437/alignment_clip3.json",
+      "bytes": 1416,
+      "sha256": "10C7C33B4554D80A2DD85EF12600600AB33A510C3A6EA84C4BC35A9107532450"
+    }
+  },
+  "overlays": {
+    "subtitles": {
+      "file": {
+        "path": "work/mvp_short_clip3_20261028_162437/subs.ass",
+        "bytes": 2647,
+        "sha256": "C058D156E4674BDEC3011CF8B57F37D52A8AA063864A0608591EF6610C800054"
+      },
+      "style": "Arial Black 96, blanco con contorno negro, hasta 2 lineas, margen inferior 340",
+      "cues": 23,
+      "first_cue": {
+        "start": 0.0,
+        "end": 1.1188557692307857
+      },
+      "last_cue": {
+        "start": 43.601024999999915,
+        "end": 48.5690249999999
+      },
+      "source": "services.rendering.subtitles.build_cues/write_ass sobre la transcripcion propia",
+      "limitation": "el primer cue incluye palabras de seg_0250 anteriores al corte (el segmento empieza en 779.24 s y el corte en 780.78 s); sin word_timestamps no se puede recortar por palabra sin inventar tiempos"
+    },
+    "emphasis": {
+      "file": {
+        "path": "work/mvp_short_clip3_20261028_162437/motion.ass",
+        "bytes": 1845,
+        "sha256": "3D645A3B53CE4420518B292D0D5CE4DFE735018A5886F3CBFD915A495D8B0733"
+      },
+      "style": "Arial Black 84, pos (540,1010), pop de escala 45%->100%->103%",
+      "events": [
+        {
+          "text": "GHILLIE SUIT",
+          "start": 1.7,
+          "end": 3.7,
+          "evidence_segment": "seg_0250",
+          "segment_local_range": [
+            -1.531,
+            2.909
+          ],
+          "transcript": "... no one's in a ghillie suit",
+          "position_note": "frase localizada al 52-65% del segmento; ventana de 2.0 s centrada"
+        },
+        {
+          "text": "DUMBEST THING",
+          "start": 12.3,
+          "end": 14.3,
+          "evidence_segment": "seg_0252",
+          "segment_local_range": [
+            10.049,
+            15.209
+          ],
+          "transcript": "... or the dumbest thing we've ever done ...",
+          "position_note": "frase localizada al 58-72% del segmento; ventana de 2.0 s centrada"
+        },
+        {
+          "text": "UNDERGROUND TUNNEL",
+          "start": 18.8,
+          "end": 20.8,
+          "evidence_segment": "seg_0253+seg_0254",
+          "segment_local_range": [
+            15.209,
+            24.269
+          ],
+          "transcript": "there's a building with an underground / tunnel that runs directly to the jail",
+          "position_note": "frase repartida entre el final de seg_0253 y el inicio de seg_0254"
+        },
+        {
+          "text": "ONLY WAY OUT",
+          "start": 26.6,
+          "end": 28.6,
+          "evidence_segment": "seg_0255",
+          "segment_local_range": [
+            24.269,
+            29.909
+          ],
+          "transcript": "... that tunnel is the only way out ...",
+          "position_note": "frase localizada al 38-50% del segmento; ventana de 2.0 s centrada"
+        },
+        {
+          "text": "DOPPELGANGER",
+          "start": 39.9,
+          "end": 41.9,
+          "evidence_segment": "seg_0258",
+          "segment_local_range": [
+            40.289,
+            48.569
+          ],
+          "transcript": "doppelganger to police HQ with a brilliant plan ...",
+          "position_note": "primera palabra del segmento; ventana de 2.0 s desde el inicio"
+        }
+      ],
+      "positioning_note": "sin word_timestamps la posicion dentro del segmento es proporcional; las ventanas de 2.0 s se eligieron alrededor de la frase y no solapan tarjetas",
+      "grounding_note": "los cinco textos son palabras literales de la transcripcion del clip; no se anaden cifras, nombres ni conclusiones ajenas al material",
+      "measured": {
+        "ghillie_suit": {
+          "bbox": [
+            304,
+            985,
+            467,
+            56
+          ],
+          "center_x": 537.5,
+          "center_y": 1013.0,
+          "ocr": "GHILLIE SUIT",
+          "iou_final_vs_reference": 0.942
+        },
+        "dumbest_thing": {
+          "bbox": [
+            245,
+            984,
+            584,
+            60
+          ],
+          "center_x": 537.0,
+          "center_y": 1014.0,
+          "ocr": "DUMBEST THING",
+          "iou_final_vs_reference": 0.9312
+        },
+        "underground_tunnel": {
+          "bbox": [
+            118,
+            984,
+            846,
+            61
+          ],
+          "center_x": 541.0,
+          "center_y": 1014.5,
+          "ocr": "UNDERGROUND TUNNEL",
+          "iou_final_vs_reference": 0.9068
+        },
+        "only_way_out": {
+          "bbox": [
+            272,
+            984,
+            537,
+            60
+          ],
+          "center_x": 540.5,
+          "center_y": 1014.0,
+          "ocr": "ONLY WAY OUT",
+          "iou_final_vs_reference": 0.9187
+        },
+        "doppelganger": {
+          "bbox": [
+            252,
+            984,
+            583,
+            61
+          ],
+          "center_x": 543.5,
+          "center_y": 1014.5,
+          "ocr": "DOPPELGANGER",
+          "iou_final_vs_reference": 0.9777
+        }
+      }
+    },
+    "neon_frame": {
+      "file": {
+        "path": "work/mvp_short_clip3_20261028_162437/neon_frame.ass",
+        "bytes": 111545,
+        "sha256": "0F18A9570F822F30C199A8B8AFD35C865EB92A29C67DBFEFBD16CC11F9BC347C"
+      },
+      "generated_by": "make_neon_frame_adj.py (copia aislada en esta carpeta; semilla 20261020)",
+      "duration_seconds": 48.581867,
+      "measured_cyan_pixels": {
+        "2.502s": 18861,
+        "46.013s": 24338
+      },
+      "note": "geometria y colores heredados del generador del MVP; solo cambia la duracion para este clip. El generador global no se modifico"
+    },
+    "notifications": [
+      {
+        "action": "like",
+        "title": "DA LIKE",
+        "subtitle_text": "Si entraras al túnel",
+        "file": "plans/plan_clip3.json",
+        "subtitle_is_contextual": true,
+        "enter_start": 6.0,
+        "hold_start": 6.52,
+        "hold_end": 10.12,
+        "exit_end": 10.54,
+        "card_size": [
+          932,
+          312
+        ],
+        "card_alpha_bbox_hold": [
+          76,
+          126,
+          929,
+          309
+        ],
+        "card_x": 76,
+        "card_center_x": 540,
+        "centered": true,
+        "evidence": [
+          "seg_0253",
+          "seg_0254",
+          "seg_0255"
+        ],
+        "evidence_note": "seg_0253: 'there's a building with an underground'; seg_0254: 'tunnel that runs directly to the jail'; seg_0255: 'that tunnel is the only way out'. La tarjeta es una parafrasis editorial en espanol, no una cita literal.",
+        "reason": "invita a imaginar la entrada al tunel que plantea el clip",
+        "click_seconds": [
+          6.012
+        ]
+      },
+      {
+        "action": "share",
+        "title": "COMPARTE",
+        "subtitle_text": "Comparte el plan del túnel",
+        "file": "plans/plan_clip3.json",
+        "subtitle_is_contextual": true,
+        "enter_start": 21.4,
+        "hold_start": 21.92,
+        "hold_end": 25.52,
+        "exit_end": 25.94,
+        "card_size": [
+          932,
+          312
+        ],
+        "card_alpha_bbox_hold": [
+          76,
+          126,
+          929,
+          309
+        ],
+        "card_x": 76,
+        "card_center_x": 540,
+        "centered": true,
+        "evidence": [
+          "seg_0253",
+          "seg_0254",
+          "seg_0255",
+          "seg_0256",
+          "seg_0258"
+        ],
+        "evidence_note": "seg_0253-0256 describen el plan del tunel; seg_0258: 'with a brilliant plan to distract the cops let's go check it out'. Parafrasis editorial, no cita literal.",
+        "reason": "compartir el plan que articula el fragmento",
+        "click_seconds": [
+          21.412
+        ]
+      }
+    ],
+    "click": {
+      "file": {
+        "path": "work/mvp_short_clip3_20261028_162437/audio/click_hf_v1_stereo.wav",
+        "bytes": 7980,
+        "sha256": "CE60E1062DBD849EA0B22043B89AA2329EAA2C4855E74D8890C095101CF52C83"
+      },
+      "sound_id": "ui_click_hf_v1",
+      "generated_by": "audio/synth_click_hf.py (semilla 20261028, sintesis local)",
+      "times_seconds": [
+        6.012,
+        21.412
+      ],
+      "gain_db": -2.0,
+      "gain_change_vs_clip_0001": "+4.0 dB",
+      "duration_seconds": 0.045,
+      "onset_offset_ms": 12.0,
+      "onset_offset_frames": 0.36,
+      "isolated_peak_dbfs_after_gain": -12.4579,
+      "isolated_peak_dbfs_old_gain": -16.4579,
+      "measured_gain_db": [
+        4.0,
+        4.0
+      ],
+      "measured_gain_hf_7_15k_db": [
+        4.0,
+        4.0
+      ],
+      "measured_hf_transients": [
+        {
+          "time_seconds": 6.0113,
+          "window_seconds": [
+            6.0113,
+            6.0313
+          ],
+          "boost_db_7_16k": 19.57,
+          "offset_ms": -0.7,
+          "offset_frames": -0.02
+        },
+        {
+          "time_seconds": 21.4113,
+          "window_seconds": [
+            21.4113,
+            21.4263
+          ],
+          "boost_db_7_16k": 12.58,
+          "offset_ms": -0.7,
+          "offset_frames": -0.02
+        }
+      ],
+      "rationale": "+4 dB sobre el clic del MVP (-6 -> -2 dB). Con el clic en el instante exacto del inicio de tarjeta, el pico del programa subia de 1.159235 a 1.192179 (+0.243 dB) y aparecian 13 muestras nuevas >1.0; retrasar el inicio 12 ms (0.36 frame) mantiene el pico del programa en 1.159235 y reduce las muestras nuevas >1.0 a 3. No se aplico atenuacion global, ducking ni limiter",
+      "comparison_evidence": {
+        "file": "click_level_comparison.json",
+        "path": "work/mvp_short_clip3_20261028_162437/click_level_comparison.json",
+        "bytes": 5387,
+        "sha256": "B0F535601CB4444F0935844B9018E8F39D9BB85D1DDF80B5BBF6B30156A5EA2E",
+        "listening_samples": "audio/compare/ (AB_old_new_float32.wav, AB_old_new_16bit_minus2dB.wav y 4 ventanas por clic)",
+        "measured_gain_per_click_db": [
+          4.0,
+          4.0
+        ]
+      },
+      "perception_note": "no se verifico percepcion humana; la evidencia es espectral/de nivel y se incluye una muestra A/B para escucha"
+    }
+  },
+  "audio_mix": {
+    "filter": "2 clics (atrim 0.045 s, adelay 6012/21412 ms, volume 0.794328 = -2.0 dB) + audio base, amix=inputs=3:duration=first:dropout_transition=0:normalize=0",
+    "original_audio_outside_clicks": "bit-exacto en el PCM mezclado (delta maximo 0.0)",
+    "deliverable_is_aac_of_reference_mix": true,
+    "no_limiter": true,
+    "no_ducking": true,
+    "no_global_gain": true,
+    "aac_bitrate": "320k",
+    "measured_level_vs_source_redecode_db": [
+      -0.314,
+      -0.315,
+      -0.379,
+      -0.349
+    ],
+    "level_note": "diferencias de -0.314/-0.315/-0.379 dB atribuidas a la re-codificacion AAC; no hay atenuacion por tramos ni ducking",
+    "source_true_peak_dbfs": 1.283,
+    "true_peak_final_dbfs": 0.879,
+    "program_peak_linear": {
+      "base": 1.159235,
+      "final": 1.106546,
+      "delta_db": -0.404
+    },
+    "clipping": "113 muestras float > 1.0 en el entregable frente a 1421 en el audio base heredado; el mezclador no recorta (PCM float) y el clic nuevo no eleva el pico del programa"
+  },
+  "verification": {
+    "ffprobe": {
+      "duration_seconds": 48.581867,
+      "video": "h264 High 1080x1920 30000/1001 1456 frames yuv420p",
+      "audio": "aac LC 44100 Hz 2 ch 48.576009 s 319063 b/s",
+      "size_bytes": 32355578
+    },
+    "container_checks": {
+      "n_frames_is_1456": true,
+      "n_frames_matches_duration": true,
+      "duration_is_48_581867": true,
+      "video_1080x1920": true,
+      "video_fps": true,
+      "video_codec_h264_high": true,
+      "video_pix_fmt_yuv420p": true,
+      "audio_aac_lc_44100_stereo": true
+    },
+    "all_container_checks_ok": true,
+    "video_stream_identical_to_tmp_video": true,
+    "video_stream_md5": {
+      "final": "c07b7dccfcc231658239a0db0eb1bc91",
+      "tmp_video_noaudio": "c07b7dccfcc231658239a0db0eb1bc91"
+    },
+    "ocr_frames": {
+      "0.5s": {
+        "bottom": "shouldn't have started that start tracking"
+      },
+      "2.5s": {
+        "mid": "GHILLIE SUIT",
+        "bottom": "what they're wearing no one's in a ghillie suit"
+      },
+      "8.0s": {
+        "top": "DA LIKE Si entraras al t�nel"
+      },
+      "13.3s": {
+        "mid": "DUMBEST THING"
+      },
+      "19.6s": {
+        "mid": "UNDERGROUND TUNNEL"
+      },
+      "23.4s": {
+        "top": "COMPARTE Comparte el plan del t�nel"
+      },
+      "27.5s": {
+        "mid": "ONLY WAY OUT"
+      },
+      "40.9s": {
+        "mid": "DOPPELGANGER"
+      },
+      "48.3s": {
+        "bottom": "plan to distract the cops let's go check it out"
+      }
+    },
+    "card_geometry": {
+      "alpha_bbox_hold": [
+        76,
+        126,
+        929,
+        309
+      ],
+      "alpha_center_x_hold": [
+        540.0,
+        540.0
+      ],
+      "card1_first_visible_seconds": 6.006,
+      "card1_last_visible_seconds": 10.5105,
+      "card2_first_visible_seconds": 21.4214,
+      "card2_last_visible_seconds": 25.9259,
+      "method": "canal alfa de render/overlay_timing.mov (RGBA) + diferencia por region"
+    },
+    "click_sync": {
+      "click1": {
+        "measured_seconds": 6.0113,
+        "card_first_visible_seconds": 6.006,
+        "delta_ms": 5.3,
+        "delta_frames": 0.16
+      },
+      "click2": {
+        "measured_seconds": 21.4113,
+        "card_first_visible_seconds": 21.4214,
+        "delta_ms": -10.1,
+        "delta_frames": -0.3
+      },
+      "note": "ambos clics quedan a menos de 1 frame del inicio visual; el clic 2 empieza 10.1 ms antes del primer frame con alfa >0 porque el inicio de animacion (21.40 s) cae entre los frames 641 y 642"
+    },
+    "overlay_checks": {
+      "five_emphasis_present": true,
+      "emphasis_centered_x540": true,
+      "emphasis_in_band_y950_1070": true,
+      "no_emphasis_at_controls": true,
+      "emphasis_matches_final_iou": true,
+      "neon_only_on_border": true,
+      "neon_covers_full_height": true,
+      "neon_matches_final_iou": true,
+      "subtitles_bottom_centered": true,
+      "subtitles_match_final_iou": true
+    },
+    "all_overlay_checks_ok": true,
+    "audio_checks": {
+      "two_clicks_detected": true,
+      "click_offset_within_1_frame": true,
+      "no_unexpected_transients": true,
+      "pcm_mix_preserved_outside_clicks": true,
+      "deliverable_is_aac_of_reference_mix": true,
+      "no_ducking_or_segment_attenuation": true,
+      "alignment_matches_780_770975": true,
+      "peak_not_above_base": true
+    },
+    "all_audio_checks_ok": true,
+    "layers": {
+      "blurred_background_vs_sharp_center_laplacian_2_502s": {
+        "top_150_450": 0.41,
+        "center_700_950": 1.59,
+        "lower_center_1000_1250": 4.14,
+        "bottom_1650_1850": 0.56
+      },
+      "frame_size": [
+        1080,
+        1920
+      ]
+    },
+    "evidence_files": [
+      {
+        "path": "work/mvp_short_clip3_20261028_162437/verification_video.json",
+        "bytes": 14506,
+        "sha256": "70404D7BF71656E01236C87F4DF10242FDAC7CFA9A870456B7C49FD5BF60D665"
+      },
+      {
+        "path": "work/mvp_short_clip3_20261028_162437/verification_overlays.json",
+        "bytes": 4239,
+        "sha256": "A2696373E4D8B92415858206061B1F8F5E896D402E57CCD1F2713FCB7BFF50AC"
+      },
+      {
+        "path": "work/mvp_short_clip3_20261028_162437/verification_audio.json",
+        "bytes": 4519,
+        "sha256": "60B969758B8FB7043AAC03DA0D34BE40A1DBB0E915F1562713A4597F1B83D747"
+      },
+      {
+        "path": "work/mvp_short_clip3_20261028_162437/click_level_comparison.json",
+        "bytes": 5387,
+        "sha256": "B0F535601CB4444F0935844B9018E8F39D9BB85D1DDF80B5BBF6B30156A5EA2E"
+      },
+      {
+        "path": "work/mvp_short_clip3_20261028_162437/alignment_clip3.json",
+        "bytes": 1416,
+        "sha256": "10C7C33B4554D80A2DD85EF12600600AB33A510C3A6EA84C4BC35A9107532450"
+      },
+      {
+        "path": "work/mvp_short_clip3_20261028_162437/assets_manifest.json",
+        "bytes": 3016,
+        "sha256": "8201293857B4153E740A85DD9FF2019B535FC4C0EB42D6D9C0DE63003EAED210"
+      },
+      {
+        "path": "work/mvp_short_clip3_20261028_162437/clip3_render_manifest.json",
+        "bytes": 11211,
+        "sha256": "CDB988DAE05092E25F654B57AEDF717BEA14DA24849B476759D1EB402612CFD7"
+      }
+    ],
+    "limitations": [
+      "no hay word_timestamps: los rotulos se ubican por proporcion dentro del segmento, no por palabra",
+      "el primer subtitulo incluye palabras de seg_0250 anteriores al corte; no se recorto por palabra para no inventar tiempos",
+      "la seleccion editorial es nueva y esta pendiente de revision humana; no es una salida de LM Studio",
+      "las tarjetas usan parafrasis editoriales en espanol, no citas literales",
+      "no se verifico percepcion humana del clic; hay muestra A/B y evidencia espectral",
+      "el audio base heredado ya pico por encima de 0 dBFS: el entregable conserva 113 muestras float >1.0 (menos que las 1421 del base) y un pico 0.404 dB menor; no se aplico limiter por diseno",
+      "el audio dura 5.858 ms menos que el video (48.576009 vs 48.581867 s), igual que el activo vertical heredado",
+      "el clic 2 empieza 10.1 ms antes del primer frame con alfa de tarjeta >0 (0.30 frame), aunque despues del inicio de la animacion (21.40 s); queda dentro de 1 frame",
+      "el diseno visual (marco neon, tarjetas, banda desenfocada) es herencia del MVP; no se re-disena en este paso"
+    ]
+  },
+  "protected_baselines": {
+    "checked_at": "2026-10-28T22:41:59+00:00",
+    "unchanged": true,
+    "files": {
+      "clip_0001": {
+        "path": "output/clip_0001_shorts_mvp_20261028.mp4",
+        "bytes": 42790148,
+        "sha256": "EBBD2270DAC8A1D06FF82AB16F35F8E42E58BB9A1EEA14B32FFB05F2191D95DC",
+        "expected_sha256": "EBBD2270DAC8A1D06FF82AB16F35F8E42E58BB9A1EEA14B32FFB05F2191D95DC"
+      },
+      "clip_0001_manifest": {
+        "path": "output/clip_0001_shorts_mvp_20261028.manifest.json",
+        "bytes": 18386,
+        "sha256": "330D9A7C86E17304FB10ED64E151D2A360C01306A8545FFD7D3209E71B4226CE",
+        "expected_sha256": "330D9A7C86E17304FB10ED64E151D2A360C01306A8545FFD7D3209E71B4226CE"
+      },
+      "clip_0002": {
+        "path": "output/clip_0002_shorts_mvp_20261028.mp4",
+        "bytes": 19794327,
+        "sha256": "8A45FFA4983E0705F2BDC9D761A35CE7339FFCBF8CF83CE58E0A20C85B09B311",
+        "expected_sha256": "8A45FFA4983E0705F2BDC9D761A35CE7339FFCBF8CF83CE58E0A20C85B09B311"
+      },
+      "clip_0002_manifest": {
+        "path": "output/clip_0002_shorts_mvp_20261028.manifest.json",
+        "bytes": 9490,
+        "sha256": "D0F916FEC66D207E86E8B9E5903E4B56017BCE89B3C1D972959357D01B8AED98",
+        "expected_sha256": "D0F916FEC66D207E86E8B9E5903E4B56017BCE89B3C1D972959357D01B8AED98"
+      },
+      "final_candidate3": {
+        "path": "work/fase5f_final_fix2_20261022_110101/final/render/final_candidate3.mp4",
+        "bytes": 19402031,
+        "sha256": "D6E1420BCEF9B314D1AE9778DCF373B79718EB2177E9E08785EB03F80E766E8B",
+        "expected_sha256": "D6E1420BCEF9B314D1AE9778DCF373B79718EB2177E9E08785EB03F80E766E8B"
+      }
+    },
+    "note": "los dos MVP previos, sus manifiestos y final_candidate3 conservan su SHA-256"
+  },
+  "reproduction": [
+    "cd work/mvp_short_clip3_20261028_162437",
+    "python cut_and_vertical.py   # corte en 780.78 s + vertical 1080x1920",
+    "python align_clip3.py        # start 780.770975 s, NCC 0.99968388",
+    "python click_gain_probe.py && python click_gain_sweep.py && python click_offset_sweep.py",
+    "python build_assets_clip3.py # subs.ass, motion.ass, neon_frame.ass, plan_clip3.json",
+    "python preview_cards_clip3.py",
+    "python compose_base_clip3.py",
+    "python render_timing.py --plan plans/plan_clip3.json --out render/clip_0003_mvp.mp4 --with-click",
+    "python verify_video_clip3.py",
+    "python verify_overlays_clip3.py",
+    "python verify_audio_clip3.py",
+    "python compare_click_levels.py",
+    "python make_manifest_clip3.py   # copia a output/ sin sobrescribir"
+  ]
+}

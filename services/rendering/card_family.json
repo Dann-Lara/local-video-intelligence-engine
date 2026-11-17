@@ -1,0 +1,531 @@
+{
+  "version": "1.4-family",
+  "note": "Configuraciones independientes por accion. Colores PROPUESTOS, no aprobados.",
+  "shared_structure": "tarjeta/fondo/neon/tipografia/chevron/margenes/centrado/responsivo/animacion",
+  "actions": {
+    "subscribe": {
+      "version": "1.4-family",
+      "variant": "subscribe",
+      "canvas": {
+        "width": 1080,
+        "height": 1920,
+        "fps": "30000/1001"
+      },
+      "text": {
+        "title": "SUSCRÍBETE",
+        "subtitle": "Nuevos enfrentamientos cada semana"
+      },
+      "card": {
+        "width": 880,
+        "height": 260,
+        "corner_radius": 42,
+        "final_top_y": 150,
+        "final_left_x": 100,
+        "padding": 26
+      },
+      "icon": {
+        "kind": "watch_play",
+        "badge_diameter": 150,
+        "badge_left": 34,
+        "glyph_scale": 0.62
+      },
+      "typography": {
+        "title_font": "seguisb.ttf",
+        "title_size": 62,
+        "subtitle_font": "segoeui.ttf",
+        "subtitle_size": 38,
+        "title_color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "subtitle_color": [
+          206,
+          224,
+          240,
+          235
+        ],
+        "text_left": 214
+      },
+      "palette": {
+        "card_fill": [
+          12,
+          16,
+          26,
+          214
+        ],
+        "card_fill_top": [
+          22,
+          30,
+          48,
+          224
+        ],
+        "border_electric": [
+          0,
+          128,
+          255,
+          255
+        ],
+        "filament_white": [
+          235,
+          245,
+          255,
+          235
+        ],
+        "badge_accent": [
+          0,
+          128,
+          255,
+          255
+        ],
+        "badge_accent_2": [
+          0,
+          210,
+          255,
+          255
+        ],
+        "progress_track": [
+          70,
+          90,
+          120,
+          150
+        ],
+        "progress_fill": [
+          0,
+          150,
+          255,
+          255
+        ],
+        "progress_accent": [
+          0,
+          220,
+          255,
+          255
+        ]
+      },
+      "animation": {
+        "start_s": 3.0,
+        "enter_ms": 520,
+        "hold_ms": 3600,
+        "exit_ms": 420,
+        "enter_offset_y": 150,
+        "exit_offset_y": 150,
+        "enter_fade_ms": 300,
+        "exit_fade_ms": 320
+      },
+      "subtitle_layout": {
+        "subtitle_max_width": 600,
+        "subtitle_font_size": 38,
+        "subtitle_min_font_size": 26,
+        "subtitle_max_lines": 3,
+        "subtitle_line_spacing": 0.96,
+        "subtitle_horizontal_padding": 24,
+        "subtitle_vertical_padding": 12,
+        "subtitle_right_reserve": 96,
+        "subtitle_line_height_pad": 0,
+        "subtitle_bottom_margin": 22
+      },
+      "composition": {
+        "content_top_margin": 40,
+        "content_bottom_margin": 52,
+        "title_subtitle_gap": 6,
+        "chevron_right_offset": 54,
+        "chevron_center_mode": "card_center"
+      }
+    },
+    "like": {
+      "version": "1.4-family",
+      "variant": "like",
+      "canvas": {
+        "width": 1080,
+        "height": 1920,
+        "fps": "30000/1001"
+      },
+      "text": {
+        "title": "DA LIKE",
+        "subtitle": "Si te gustó este enfrentamiento"
+      },
+      "card": {
+        "width": 880,
+        "height": 260,
+        "corner_radius": 42,
+        "final_top_y": 150,
+        "final_left_x": 100,
+        "padding": 26
+      },
+      "icon": {
+        "kind": "thumbs_up",
+        "badge_diameter": 150,
+        "badge_left": 34,
+        "glyph_scale": 0.62
+      },
+      "typography": {
+        "title_font": "seguisb.ttf",
+        "title_size": 62,
+        "subtitle_font": "segoeui.ttf",
+        "subtitle_size": 38,
+        "title_color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "subtitle_color": [
+          206,
+          224,
+          240,
+          235
+        ],
+        "text_left": 214
+      },
+      "palette": {
+        "card_fill": [
+          12,
+          16,
+          26,
+          214
+        ],
+        "card_fill_top": [
+          22,
+          30,
+          48,
+          224
+        ],
+        "border_electric": [
+          232,
+          62,
+          74,
+          255
+        ],
+        "filament_white": [
+          235,
+          245,
+          255,
+          235
+        ],
+        "badge_accent": [
+          232,
+          62,
+          74,
+          255
+        ],
+        "badge_accent_2": [
+          255,
+          120,
+          110,
+          255
+        ],
+        "progress_track": [
+          70,
+          90,
+          120,
+          150
+        ],
+        "progress_fill": [
+          235,
+          80,
+          80,
+          255
+        ],
+        "progress_accent": [
+          255,
+          140,
+          130,
+          255
+        ]
+      },
+      "animation": {
+        "start_s": 3.0,
+        "enter_ms": 520,
+        "hold_ms": 3600,
+        "exit_ms": 420,
+        "enter_offset_y": 150,
+        "exit_offset_y": 150,
+        "enter_fade_ms": 300,
+        "exit_fade_ms": 320
+      },
+      "subtitle_layout": {
+        "subtitle_max_width": 600,
+        "subtitle_font_size": 38,
+        "subtitle_min_font_size": 26,
+        "subtitle_max_lines": 3,
+        "subtitle_line_spacing": 0.96,
+        "subtitle_horizontal_padding": 24,
+        "subtitle_vertical_padding": 12,
+        "subtitle_right_reserve": 96,
+        "subtitle_line_height_pad": 0,
+        "subtitle_bottom_margin": 22
+      },
+      "composition": {
+        "content_top_margin": 40,
+        "content_bottom_margin": 52,
+        "title_subtitle_gap": 6,
+        "chevron_right_offset": 54,
+        "chevron_center_mode": "card_center"
+      }
+    },
+    "comment": {
+      "version": "1.4-family",
+      "variant": "comment",
+      "canvas": {
+        "width": 1080,
+        "height": 1920,
+        "fps": "30000/1001"
+      },
+      "text": {
+        "title": "COMENTA",
+        "subtitle": "¿Quién ganaría esta batalla?"
+      },
+      "card": {
+        "width": 880,
+        "height": 260,
+        "corner_radius": 42,
+        "final_top_y": 150,
+        "final_left_x": 100,
+        "padding": 26
+      },
+      "icon": {
+        "kind": "comment_bubble",
+        "badge_diameter": 150,
+        "badge_left": 34,
+        "glyph_scale": 0.62
+      },
+      "typography": {
+        "title_font": "seguisb.ttf",
+        "title_size": 62,
+        "subtitle_font": "segoeui.ttf",
+        "subtitle_size": 38,
+        "title_color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "subtitle_color": [
+          206,
+          224,
+          240,
+          235
+        ],
+        "text_left": 214
+      },
+      "palette": {
+        "card_fill": [
+          12,
+          16,
+          26,
+          214
+        ],
+        "card_fill_top": [
+          22,
+          30,
+          48,
+          224
+        ],
+        "border_electric": [
+          138,
+          82,
+          226,
+          255
+        ],
+        "filament_white": [
+          235,
+          245,
+          255,
+          235
+        ],
+        "badge_accent": [
+          138,
+          82,
+          226,
+          255
+        ],
+        "badge_accent_2": [
+          186,
+          140,
+          255,
+          255
+        ],
+        "progress_track": [
+          70,
+          90,
+          120,
+          150
+        ],
+        "progress_fill": [
+          150,
+          95,
+          235,
+          255
+        ],
+        "progress_accent": [
+          196,
+          160,
+          255,
+          255
+        ]
+      },
+      "animation": {
+        "start_s": 3.0,
+        "enter_ms": 520,
+        "hold_ms": 3600,
+        "exit_ms": 420,
+        "enter_offset_y": 150,
+        "exit_offset_y": 150,
+        "enter_fade_ms": 300,
+        "exit_fade_ms": 320
+      },
+      "subtitle_layout": {
+        "subtitle_max_width": 600,
+        "subtitle_font_size": 38,
+        "subtitle_min_font_size": 26,
+        "subtitle_max_lines": 3,
+        "subtitle_line_spacing": 0.96,
+        "subtitle_horizontal_padding": 24,
+        "subtitle_vertical_padding": 12,
+        "subtitle_right_reserve": 96,
+        "subtitle_line_height_pad": 0,
+        "subtitle_bottom_margin": 22
+      },
+      "composition": {
+        "content_top_margin": 40,
+        "content_bottom_margin": 52,
+        "title_subtitle_gap": 6,
+        "chevron_right_offset": 54,
+        "chevron_center_mode": "card_center"
+      }
+    },
+    "share": {
+      "version": "1.4-family",
+      "variant": "share",
+      "canvas": {
+        "width": 1080,
+        "height": 1920,
+        "fps": "30000/1001"
+      },
+      "text": {
+        "title": "COMPARTE",
+        "subtitle": "Que más personas descubran esta batalla"
+      },
+      "card": {
+        "width": 880,
+        "height": 260,
+        "corner_radius": 42,
+        "final_top_y": 150,
+        "final_left_x": 100,
+        "padding": 26
+      },
+      "icon": {
+        "kind": "share",
+        "badge_diameter": 150,
+        "badge_left": 34,
+        "glyph_scale": 0.62
+      },
+      "typography": {
+        "title_font": "seguisb.ttf",
+        "title_size": 62,
+        "subtitle_font": "segoeui.ttf",
+        "subtitle_size": 38,
+        "title_color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "subtitle_color": [
+          206,
+          224,
+          240,
+          235
+        ],
+        "text_left": 214
+      },
+      "palette": {
+        "card_fill": [
+          12,
+          16,
+          26,
+          214
+        ],
+        "card_fill_top": [
+          22,
+          30,
+          48,
+          224
+        ],
+        "border_electric": [
+          0,
+          176,
+          148,
+          255
+        ],
+        "filament_white": [
+          235,
+          245,
+          255,
+          235
+        ],
+        "badge_accent": [
+          0,
+          176,
+          148,
+          255
+        ],
+        "badge_accent_2": [
+          64,
+          224,
+          196,
+          255
+        ],
+        "progress_track": [
+          70,
+          90,
+          120,
+          150
+        ],
+        "progress_fill": [
+          0,
+          190,
+          160,
+          255
+        ],
+        "progress_accent": [
+          80,
+          230,
+          205,
+          255
+        ]
+      },
+      "animation": {
+        "start_s": 3.0,
+        "enter_ms": 520,
+        "hold_ms": 3600,
+        "exit_ms": 420,
+        "enter_offset_y": 150,
+        "exit_offset_y": 150,
+        "enter_fade_ms": 300,
+        "exit_fade_ms": 320
+      },
+      "subtitle_layout": {
+        "subtitle_max_width": 600,
+        "subtitle_font_size": 38,
+        "subtitle_min_font_size": 26,
+        "subtitle_max_lines": 3,
+        "subtitle_line_spacing": 0.96,
+        "subtitle_horizontal_padding": 24,
+        "subtitle_vertical_padding": 12,
+        "subtitle_right_reserve": 96,
+        "subtitle_line_height_pad": 0,
+        "subtitle_bottom_margin": 22
+      },
+      "composition": {
+        "content_top_margin": 40,
+        "content_bottom_margin": 52,
+        "title_subtitle_gap": 6,
+        "chevron_right_offset": 54,
+        "chevron_center_mode": "card_center"
+      }
+    }
+  }
+}

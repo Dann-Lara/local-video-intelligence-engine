@@ -1,0 +1,2309 @@
+{
+  "compute_type": "float16",
+  "created_at": "2026-10-17T04:39:23+00:00",
+  "device": "cuda",
+  "duration_seconds": 1228.382041,
+  "language": "en",
+  "model_size": "large-v3-turbo",
+  "project_id": "d3d5157c-542e-4967-b87c-86f254ef5602",
+  "segments": [
+    {
+      "end_seconds": 1.8,
+      "segment_id": "seg_0001",
+      "start_seconds": 0.0,
+      "text": "Behind me are 100 Tops!",
+      "words": []
+    },
+    {
+      "end_seconds": 4.0,
+      "segment_id": "seg_0002",
+      "start_seconds": 1.8,
+      "text": "And if they arrest us by the end of the day,",
+      "words": []
+    },
+    {
+      "end_seconds": 6.0,
+      "segment_id": "seg_0003",
+      "start_seconds": 4.0,
+      "text": "they would have a million dollars!",
+      "words": []
+    },
+    {
+      "end_seconds": 8.0,
+      "segment_id": "seg_0004",
+      "start_seconds": 6.0,
+      "text": "But if we escape, they get nothing!",
+      "words": []
+    },
+    {
+      "end_seconds": 9.0,
+      "segment_id": "seg_0005",
+      "start_seconds": 8.0,
+      "text": "Start the timer!",
+      "words": []
+    },
+    {
+      "end_seconds": 10.0,
+      "segment_id": "seg_0006",
+      "start_seconds": 9.0,
+      "text": "Jimmy Drive!",
+      "words": []
+    },
+    {
+      "end_seconds": 11.0,
+      "segment_id": "seg_0007",
+      "start_seconds": 10.0,
+      "text": "You're there right on us!",
+      "words": []
+    },
+    {
+      "end_seconds": 13.0,
+      "segment_id": "seg_0008",
+      "start_seconds": 11.0,
+      "text": "Don't worry guys, I have a plan!",
+      "words": []
+    },
+    {
+      "end_seconds": 14.0,
+      "segment_id": "seg_0009",
+      "start_seconds": 13.0,
+      "text": "Jimmy!",
+      "words": []
+    },
+    {
+      "end_seconds": 16.0,
+      "segment_id": "seg_0010",
+      "start_seconds": 15.0,
+      "text": "Let's get it! Let's go!",
+      "words": []
+    },
+    {
+      "end_seconds": 18.0,
+      "segment_id": "seg_0011",
+      "start_seconds": 16.0,
+      "text": "We gotta go! We gotta get outta here!",
+      "words": []
+    },
+    {
+      "end_seconds": 19.0,
+      "segment_id": "seg_0012",
+      "start_seconds": 18.0,
+      "text": "Where do we go?",
+      "words": []
+    },
+    {
+      "end_seconds": 21.0,
+      "segment_id": "seg_0013",
+      "start_seconds": 19.0,
+      "text": "Yo! Yo! Oh my god! Let's blow it off!",
+      "words": []
+    },
+    {
+      "end_seconds": 22.0,
+      "segment_id": "seg_0014",
+      "start_seconds": 21.0,
+      "text": "Get up!",
+      "words": []
+    },
+    {
+      "end_seconds": 26.0,
+      "segment_id": "seg_0015",
+      "start_seconds": 25.0,
+      "text": "That's a button! It's a touch!",
+      "words": []
+    },
+    {
+      "end_seconds": 30.0,
+      "segment_id": "seg_0016",
+      "start_seconds": 26.0,
+      "text": "Me and my four friends just escaped from 100 real cops,",
+      "words": []
+    },
+    {
+      "end_seconds": 31.0,
+      "segment_id": "seg_0017",
+      "start_seconds": 30.0,
+      "text": "at least for now.",
+      "words": []
+    },
+    {
+      "end_seconds": 32.0,
+      "segment_id": "seg_0018",
+      "start_seconds": 31.0,
+      "text": "Good luck everybody!",
+      "words": []
+    },
+    {
+      "end_seconds": 34.0,
+      "segment_id": "seg_0019",
+      "start_seconds": 32.0,
+      "text": "They have until the end of the day to arrest us",
+      "words": []
+    },
+    {
+      "end_seconds": 36.0,
+      "segment_id": "seg_0020",
+      "start_seconds": 34.0,
+      "text": "and to give us a fighting chance.",
+      "words": []
+    },
+    {
+      "end_seconds": 38.0,
+      "segment_id": "seg_0021",
+      "start_seconds": 36.0,
+      "text": "I spent months setting up hundreds of cameras,",
+      "words": []
+    },
+    {
+      "end_seconds": 40.0,
+      "segment_id": "seg_0022",
+      "start_seconds": 38.0,
+      "text": "booby traps, and secret rooms.",
+      "words": []
+    },
+    {
+      "end_seconds": 43.0,
+      "segment_id": "seg_0023",
+      "start_seconds": 40.0,
+      "text": "Let's just hope it's enough to keep us from getting caught.",
+      "words": []
+    },
+    {
+      "end_seconds": 44.0,
+      "segment_id": "seg_0024",
+      "start_seconds": 43.0,
+      "text": "You're under arrest!",
+      "words": []
+    },
+    {
+      "end_seconds": 46.0,
+      "segment_id": "seg_0025",
+      "start_seconds": 44.0,
+      "text": "Everyone, go to your spot. Don't get arrested.",
+      "words": []
+    },
+    {
+      "end_seconds": 48.0,
+      "segment_id": "seg_0026",
+      "start_seconds": 46.0,
+      "text": "Alright guys, got speed!",
+      "words": []
+    },
+    {
+      "end_seconds": 50.0,
+      "segment_id": "seg_0027",
+      "start_seconds": 48.0,
+      "text": "We're gonna get something to clear that van.",
+      "words": []
+    },
+    {
+      "end_seconds": 52.0,
+      "segment_id": "seg_0028",
+      "start_seconds": 50.0,
+      "text": "I'm the last one they're gonna catch.",
+      "words": []
+    },
+    {
+      "end_seconds": 54.0,
+      "segment_id": "seg_0029",
+      "start_seconds": 53.0,
+      "text": "Jimmy, where are we going?",
+      "words": []
+    },
+    {
+      "end_seconds": 56.0,
+      "segment_id": "seg_0030",
+      "start_seconds": 54.0,
+      "text": "Our first destination's right up here.",
+      "words": []
+    },
+    {
+      "end_seconds": 57.0,
+      "segment_id": "seg_0031",
+      "start_seconds": 56.0,
+      "text": "We should've done more cardio before this.",
+      "words": []
+    },
+    {
+      "end_seconds": 58.0,
+      "segment_id": "seg_0032",
+      "start_seconds": 57.0,
+      "text": "Here we go baby.",
+      "words": []
+    },
+    {
+      "end_seconds": 60.0,
+      "segment_id": "seg_0033",
+      "start_seconds": 58.0,
+      "text": "And just like that, we're at the first time.",
+      "words": []
+    },
+    {
+      "end_seconds": 62.0,
+      "segment_id": "seg_0034",
+      "start_seconds": 60.0,
+      "text": "Darius hid inside a fort covered in hay.",
+      "words": []
+    },
+    {
+      "end_seconds": 63.0,
+      "segment_id": "seg_0035",
+      "start_seconds": 62.0,
+      "text": "Let's get in there.",
+      "words": []
+    },
+    {
+      "end_seconds": 64.0,
+      "segment_id": "seg_0036",
+      "start_seconds": 63.0,
+      "text": "We all quickly changed our clothes.",
+      "words": []
+    },
+    {
+      "end_seconds": 66.0,
+      "segment_id": "seg_0037",
+      "start_seconds": 64.0,
+      "text": "I'm gonna change starting now.",
+      "words": []
+    },
+    {
+      "end_seconds": 67.0,
+      "segment_id": "seg_0038",
+      "start_seconds": 66.0,
+      "text": "Alright.",
+      "words": []
+    },
+    {
+      "end_seconds": 68.0,
+      "segment_id": "seg_0039",
+      "start_seconds": 67.0,
+      "text": "And Allison...",
+      "words": []
+    },
+    {
+      "end_seconds": 70.0,
+      "segment_id": "seg_0040",
+      "start_seconds": 68.0,
+      "text": "We are here with the trash.",
+      "words": []
+    },
+    {
+      "end_seconds": 71.0,
+      "segment_id": "seg_0041",
+      "start_seconds": 70.0,
+      "text": "And before we knew it...",
+      "words": []
+    },
+    {
+      "end_seconds": 72.0,
+      "segment_id": "seg_0042",
+      "start_seconds": 71.0,
+      "text": "We got the fire out!",
+      "words": []
+    },
+    {
+      "end_seconds": 73.0,
+      "segment_id": "seg_0043",
+      "start_seconds": 72.0,
+      "text": "Everybody split up!",
+      "words": []
+    },
+    {
+      "end_seconds": 75.0,
+      "segment_id": "seg_0044",
+      "start_seconds": 73.0,
+      "text": "The cops were already on our tail.",
+      "words": []
+    },
+    {
+      "end_seconds": 76.0,
+      "segment_id": "seg_0045",
+      "start_seconds": 75.0,
+      "text": "Hey police!",
+      "words": []
+    },
+    {
+      "end_seconds": 78.0,
+      "segment_id": "seg_0046",
+      "start_seconds": 76.0,
+      "text": "Alright, we're on our way over and out.",
+      "words": []
+    },
+    {
+      "end_seconds": 79.0,
+      "segment_id": "seg_0047",
+      "start_seconds": 78.0,
+      "text": "Okay, meet me at the market.",
+      "words": []
+    },
+    {
+      "end_seconds": 81.0,
+      "segment_id": "seg_0048",
+      "start_seconds": 79.0,
+      "text": "What about these straw bales right here?",
+      "words": []
+    },
+    {
+      "end_seconds": 82.0,
+      "segment_id": "seg_0049",
+      "start_seconds": 81.0,
+      "text": "That looks a little suspicious.",
+      "words": []
+    },
+    {
+      "end_seconds": 83.0,
+      "segment_id": "seg_0050",
+      "start_seconds": 82.0,
+      "text": "Where we at baby?",
+      "words": []
+    },
+    {
+      "end_seconds": 84.0,
+      "segment_id": "seg_0051",
+      "start_seconds": 83.0,
+      "text": "Mr. Beast!",
+      "words": []
+    },
+    {
+      "end_seconds": 85.0,
+      "segment_id": "seg_0052",
+      "start_seconds": 84.0,
+      "text": "They're so close.",
+      "words": []
+    },
+    {
+      "end_seconds": 86.0,
+      "segment_id": "seg_0053",
+      "start_seconds": 85.0,
+      "text": "I can hear them.",
+      "words": []
+    },
+    {
+      "end_seconds": 87.0,
+      "segment_id": "seg_0054",
+      "start_seconds": 86.0,
+      "text": "I can hear them.",
+      "words": []
+    },
+    {
+      "end_seconds": 88.0,
+      "segment_id": "seg_0055",
+      "start_seconds": 87.0,
+      "text": "This is something.",
+      "words": []
+    },
+    {
+      "end_seconds": 89.0,
+      "segment_id": "seg_0056",
+      "start_seconds": 88.0,
+      "text": "We're on somebody.",
+      "words": []
+    },
+    {
+      "end_seconds": 98.0,
+      "segment_id": "seg_0057",
+      "start_seconds": 97.0,
+      "text": "Show us your hands!",
+      "words": []
+    },
+    {
+      "end_seconds": 99.0,
+      "segment_id": "seg_0058",
+      "start_seconds": 98.0,
+      "text": "Show us your hands!",
+      "words": []
+    },
+    {
+      "end_seconds": 100.0,
+      "segment_id": "seg_0059",
+      "start_seconds": 99.0,
+      "text": "What are we going?",
+      "words": []
+    },
+    {
+      "end_seconds": 101.0,
+      "segment_id": "seg_0060",
+      "start_seconds": 100.0,
+      "text": "What?",
+      "words": []
+    },
+    {
+      "end_seconds": 102.0,
+      "segment_id": "seg_0061",
+      "start_seconds": 101.0,
+      "text": "What's your name?",
+      "words": []
+    },
+    {
+      "end_seconds": 103.0,
+      "segment_id": "seg_0062",
+      "start_seconds": 102.0,
+      "text": "Is this Darius?",
+      "words": []
+    },
+    {
+      "end_seconds": 104.0,
+      "segment_id": "seg_0063",
+      "start_seconds": 103.0,
+      "text": "Let me go!",
+      "words": []
+    },
+    {
+      "end_seconds": 105.0,
+      "segment_id": "seg_0064",
+      "start_seconds": 104.0,
+      "text": "Let me go!",
+      "words": []
+    },
+    {
+      "end_seconds": 106.0,
+      "segment_id": "seg_0065",
+      "start_seconds": 105.0,
+      "text": "Let me go!",
+      "words": []
+    },
+    {
+      "end_seconds": 108.0,
+      "segment_id": "seg_0066",
+      "start_seconds": 106.0,
+      "text": "Yeah, it's only been 10 minutes.",
+      "words": []
+    },
+    {
+      "end_seconds": 110.0,
+      "segment_id": "seg_0067",
+      "start_seconds": 108.0,
+      "text": "And Darius has already been arrested.",
+      "words": []
+    },
+    {
+      "end_seconds": 112.0,
+      "segment_id": "seg_0068",
+      "start_seconds": 110.0,
+      "text": "I see so many cops go!",
+      "words": []
+    },
+    {
+      "end_seconds": 114.0,
+      "segment_id": "seg_0069",
+      "start_seconds": 112.0,
+      "text": "They're forming a line and sweeping the city.",
+      "words": []
+    },
+    {
+      "end_seconds": 115.0,
+      "segment_id": "seg_0070",
+      "start_seconds": 114.0,
+      "text": "I'm officially at the market.",
+      "words": []
+    },
+    {
+      "end_seconds": 116.0,
+      "segment_id": "seg_0071",
+      "start_seconds": 115.0,
+      "text": "Tariq, we're heading your way.",
+      "words": []
+    },
+    {
+      "end_seconds": 117.0,
+      "segment_id": "seg_0072",
+      "start_seconds": 116.0,
+      "text": "Alright, I'll be ready.",
+      "words": []
+    },
+    {
+      "end_seconds": 118.0,
+      "segment_id": "seg_0073",
+      "start_seconds": 117.0,
+      "text": "Alright, Tariq.",
+      "words": []
+    },
+    {
+      "end_seconds": 119.0,
+      "segment_id": "seg_0074",
+      "start_seconds": 118.0,
+      "text": "Hand me the map.",
+      "words": []
+    },
+    {
+      "end_seconds": 120.0,
+      "segment_id": "seg_0075",
+      "start_seconds": 119.0,
+      "text": "They clearly formed a straight line",
+      "words": []
+    },
+    {
+      "end_seconds": 122.0,
+      "segment_id": "seg_0076",
+      "start_seconds": 120.0,
+      "text": "and are going and checking every nook and crack.",
+      "words": []
+    },
+    {
+      "end_seconds": 124.0,
+      "segment_id": "seg_0077",
+      "start_seconds": 122.0,
+      "text": "The only weakness in that strategy though",
+      "words": []
+    },
+    {
+      "end_seconds": 126.0,
+      "segment_id": "seg_0078",
+      "start_seconds": 124.0,
+      "text": "is if we can somehow sneak past the line,",
+      "words": []
+    },
+    {
+      "end_seconds": 128.0,
+      "segment_id": "seg_0079",
+      "start_seconds": 126.0,
+      "text": "they're not gonna suspect us to be in buildings they already searched.",
+      "words": []
+    },
+    {
+      "end_seconds": 131.0,
+      "segment_id": "seg_0080",
+      "start_seconds": 128.0,
+      "text": "If there was ever a time to penetrate the line, I've got a plan to follow.",
+      "words": []
+    },
+    {
+      "end_seconds": 134.0,
+      "segment_id": "seg_0081",
+      "start_seconds": 131.0,
+      "text": "I don't think the cops realize there's tunnels under the city.",
+      "words": []
+    },
+    {
+      "end_seconds": 137.0,
+      "segment_id": "seg_0082",
+      "start_seconds": 136.0,
+      "text": "Oh my gosh.",
+      "words": []
+    },
+    {
+      "end_seconds": 138.0,
+      "segment_id": "seg_0083",
+      "start_seconds": 137.0,
+      "text": "I think they're moving.",
+      "words": []
+    },
+    {
+      "end_seconds": 139.0,
+      "segment_id": "seg_0084",
+      "start_seconds": 138.0,
+      "text": "We're on top of this, guys.",
+      "words": []
+    },
+    {
+      "end_seconds": 140.0,
+      "segment_id": "seg_0085",
+      "start_seconds": 139.0,
+      "text": "We're on top of this.",
+      "words": []
+    },
+    {
+      "end_seconds": 141.0,
+      "segment_id": "seg_0086",
+      "start_seconds": 140.0,
+      "text": "Let's just keep moving.",
+      "words": []
+    },
+    {
+      "end_seconds": 143.0,
+      "segment_id": "seg_0087",
+      "start_seconds": 141.0,
+      "text": "I'm currently sneaking through the sewer system underneath the city.",
+      "words": []
+    },
+    {
+      "end_seconds": 145.0,
+      "segment_id": "seg_0088",
+      "start_seconds": 143.0,
+      "text": "We might be able to make a run for it once we get above ground.",
+      "words": []
+    },
+    {
+      "end_seconds": 147.0,
+      "segment_id": "seg_0089",
+      "start_seconds": 145.0,
+      "text": "There's a safe room where I left this detonator.",
+      "words": []
+    },
+    {
+      "end_seconds": 150.0,
+      "segment_id": "seg_0090",
+      "start_seconds": 147.0,
+      "text": "Hopefully, the cops don't get there before we do.",
+      "words": []
+    },
+    {
+      "end_seconds": 152.0,
+      "segment_id": "seg_0091",
+      "start_seconds": 150.0,
+      "text": "Hey guys, we got 100k on them right here.",
+      "words": []
+    },
+    {
+      "end_seconds": 153.0,
+      "segment_id": "seg_0092",
+      "start_seconds": 152.0,
+      "text": "Oh yeah.",
+      "words": []
+    },
+    {
+      "end_seconds": 155.0,
+      "segment_id": "seg_0093",
+      "start_seconds": 153.0,
+      "text": "Hey guys, if you can hear me.",
+      "words": []
+    },
+    {
+      "end_seconds": 156.0,
+      "segment_id": "seg_0094",
+      "start_seconds": 155.0,
+      "text": "And they somehow found me.",
+      "words": []
+    },
+    {
+      "end_seconds": 157.0,
+      "segment_id": "seg_0095",
+      "start_seconds": 156.0,
+      "text": "I don't know how.",
+      "words": []
+    },
+    {
+      "end_seconds": 158.0,
+      "segment_id": "seg_0096",
+      "start_seconds": 157.0,
+      "text": "No, Darius.",
+      "words": []
+    },
+    {
+      "end_seconds": 159.0,
+      "segment_id": "seg_0097",
+      "start_seconds": 158.0,
+      "text": "But please, just run.",
+      "words": []
+    },
+    {
+      "end_seconds": 160.0,
+      "segment_id": "seg_0098",
+      "start_seconds": 159.0,
+      "text": "Find the best hiding spot.",
+      "words": []
+    },
+    {
+      "end_seconds": 163.0,
+      "segment_id": "seg_0099",
+      "start_seconds": 160.0,
+      "text": "Um, Darius, you shouldn't be apologizing to us.",
+      "words": []
+    },
+    {
+      "end_seconds": 164.0,
+      "segment_id": "seg_0100",
+      "start_seconds": 163.0,
+      "text": "You should be apologizing to your mom.",
+      "words": []
+    },
+    {
+      "end_seconds": 166.0,
+      "segment_id": "seg_0101",
+      "start_seconds": 164.0,
+      "text": "Yeah, she's watching this right now.",
+      "words": []
+    },
+    {
+      "end_seconds": 167.0,
+      "segment_id": "seg_0102",
+      "start_seconds": 166.0,
+      "text": "Oh yeah.",
+      "words": []
+    },
+    {
+      "end_seconds": 170.0,
+      "segment_id": "seg_0103",
+      "start_seconds": 167.0,
+      "text": "For those of us who successfully survived this 12-hour police chase,",
+      "words": []
+    },
+    {
+      "end_seconds": 174.0,
+      "segment_id": "seg_0104",
+      "start_seconds": 170.0,
+      "text": "unlike Darius, wins the $100,000 for their moms.",
+      "words": []
+    },
+    {
+      "end_seconds": 176.0,
+      "segment_id": "seg_0105",
+      "start_seconds": 174.0,
+      "text": "We had five suspects bail out.",
+      "words": []
+    },
+    {
+      "end_seconds": 179.0,
+      "segment_id": "seg_0106",
+      "start_seconds": 176.0,
+      "text": "These guys are crafty, they're sneaky, they're unpredictable.",
+      "words": []
+    },
+    {
+      "end_seconds": 182.0,
+      "segment_id": "seg_0107",
+      "start_seconds": 179.0,
+      "text": "All intel reports anything that you see that's out of place,",
+      "words": []
+    },
+    {
+      "end_seconds": 183.0,
+      "segment_id": "seg_0108",
+      "start_seconds": 182.0,
+      "text": "we need to know that.",
+      "words": []
+    },
+    {
+      "end_seconds": 187.0,
+      "segment_id": "seg_0109",
+      "start_seconds": 183.0,
+      "text": "And remember, each arrest awards our department $100,000.",
+      "words": []
+    },
+    {
+      "end_seconds": 189.0,
+      "segment_id": "seg_0110",
+      "start_seconds": 187.0,
+      "text": "Oh, we are out in the open, boys.",
+      "words": []
+    },
+    {
+      "end_seconds": 196.0,
+      "segment_id": "seg_0111",
+      "start_seconds": 191.0,
+      "text": "If my logic is correct, their line literally walked over top of us while we were in the sewer.",
+      "words": []
+    },
+    {
+      "end_seconds": 198.0,
+      "segment_id": "seg_0112",
+      "start_seconds": 196.0,
+      "text": "So we're already behind the line.",
+      "words": []
+    },
+    {
+      "end_seconds": 200.0,
+      "segment_id": "seg_0113",
+      "start_seconds": 198.0,
+      "text": "We should be able to just run across this field.",
+      "words": []
+    },
+    {
+      "end_seconds": 201.0,
+      "segment_id": "seg_0114",
+      "start_seconds": 200.0,
+      "text": "Simple as that.",
+      "words": []
+    },
+    {
+      "end_seconds": 204.0,
+      "segment_id": "seg_0115",
+      "start_seconds": 201.0,
+      "text": "And if we all get arrested, this video's screwed.",
+      "words": []
+    },
+    {
+      "end_seconds": 207.0,
+      "segment_id": "seg_0116",
+      "start_seconds": 206.0,
+      "text": "Should we drop his walkie?",
+      "words": []
+    },
+    {
+      "end_seconds": 210.0,
+      "segment_id": "seg_0117",
+      "start_seconds": 209.0,
+      "text": "Okay.",
+      "words": []
+    },
+    {
+      "end_seconds": 212.0,
+      "segment_id": "seg_0118",
+      "start_seconds": 210.0,
+      "text": "Notice that you don't see any cons.",
+      "words": []
+    },
+    {
+      "end_seconds": 215.0,
+      "segment_id": "seg_0119",
+      "start_seconds": 214.0,
+      "text": "Okay, we're three hours in.",
+      "words": []
+    },
+    {
+      "end_seconds": 217.0,
+      "segment_id": "seg_0120",
+      "start_seconds": 215.0,
+      "text": "I think it's time this is where we're split off.",
+      "words": []
+    },
+    {
+      "end_seconds": 218.0,
+      "segment_id": "seg_0121",
+      "start_seconds": 217.0,
+      "text": "Who wants to take the subway?",
+      "words": []
+    },
+    {
+      "end_seconds": 219.0,
+      "segment_id": "seg_0122",
+      "start_seconds": 218.0,
+      "text": "I'm good, I'm good. I don't like the subway.",
+      "words": []
+    },
+    {
+      "end_seconds": 220.0,
+      "segment_id": "seg_0123",
+      "start_seconds": 219.0,
+      "text": "I can take the subway.",
+      "words": []
+    },
+    {
+      "end_seconds": 221.0,
+      "segment_id": "seg_0124",
+      "start_seconds": 220.0,
+      "text": "Alright, go down there.",
+      "words": []
+    },
+    {
+      "end_seconds": 222.0,
+      "segment_id": "seg_0125",
+      "start_seconds": 221.0,
+      "text": "Okay, Nolan, come with me.",
+      "words": []
+    },
+    {
+      "end_seconds": 223.0,
+      "segment_id": "seg_0126",
+      "start_seconds": 222.0,
+      "text": "Where are we going?",
+      "words": []
+    },
+    {
+      "end_seconds": 224.0,
+      "segment_id": "seg_0127",
+      "start_seconds": 223.0,
+      "text": "As far from the line as possible.",
+      "words": []
+    },
+    {
+      "end_seconds": 227.0,
+      "segment_id": "seg_0128",
+      "start_seconds": 226.0,
+      "text": "This is where I leave you.",
+      "words": []
+    },
+    {
+      "end_seconds": 229.0,
+      "segment_id": "seg_0129",
+      "start_seconds": 227.0,
+      "text": "Alright, this could be the last time we see each other.",
+      "words": []
+    },
+    {
+      "end_seconds": 230.0,
+      "segment_id": "seg_0130",
+      "start_seconds": 229.0,
+      "text": "Ever.",
+      "words": []
+    },
+    {
+      "end_seconds": 234.0,
+      "segment_id": "seg_0131",
+      "start_seconds": 233.0,
+      "text": "Alright.",
+      "words": []
+    },
+    {
+      "end_seconds": 235.0,
+      "segment_id": "seg_0132",
+      "start_seconds": 234.0,
+      "text": "Allison, I'm in the subway.",
+      "words": []
+    },
+    {
+      "end_seconds": 236.0,
+      "segment_id": "seg_0133",
+      "start_seconds": 235.0,
+      "text": "Mimi there.",
+      "words": []
+    },
+    {
+      "end_seconds": 237.0,
+      "segment_id": "seg_0134",
+      "start_seconds": 236.0,
+      "text": "Hey! I think that's her!",
+      "words": []
+    },
+    {
+      "end_seconds": 238.0,
+      "segment_id": "seg_0135",
+      "start_seconds": 237.0,
+      "text": "Oh no!",
+      "words": []
+    },
+    {
+      "end_seconds": 239.0,
+      "segment_id": "seg_0136",
+      "start_seconds": 238.0,
+      "text": "Guys!",
+      "words": []
+    },
+    {
+      "end_seconds": 240.0,
+      "segment_id": "seg_0137",
+      "start_seconds": 239.0,
+      "text": "Guys!",
+      "words": []
+    },
+    {
+      "end_seconds": 241.0,
+      "segment_id": "seg_0138",
+      "start_seconds": 240.0,
+      "text": "Bad news!",
+      "words": []
+    },
+    {
+      "end_seconds": 242.0,
+      "segment_id": "seg_0139",
+      "start_seconds": 241.0,
+      "text": "Bad news!",
+      "words": []
+    },
+    {
+      "end_seconds": 243.0,
+      "segment_id": "seg_0140",
+      "start_seconds": 242.0,
+      "text": "Stop right there!",
+      "words": []
+    },
+    {
+      "end_seconds": 244.0,
+      "segment_id": "seg_0141",
+      "start_seconds": 243.0,
+      "text": "You're under arrest!",
+      "words": []
+    },
+    {
+      "end_seconds": 245.0,
+      "segment_id": "seg_0142",
+      "start_seconds": 244.0,
+      "text": "Jimmy, they're on us.",
+      "words": []
+    },
+    {
+      "end_seconds": 247.0,
+      "segment_id": "seg_0143",
+      "start_seconds": 245.0,
+      "text": "In the back left corner, there's a secret hiding spot.",
+      "words": []
+    },
+    {
+      "end_seconds": 248.0,
+      "segment_id": "seg_0144",
+      "start_seconds": 247.0,
+      "text": "Pull on the wall.",
+      "words": []
+    },
+    {
+      "end_seconds": 249.0,
+      "segment_id": "seg_0145",
+      "start_seconds": 248.0,
+      "text": "It opens.",
+      "words": []
+    },
+    {
+      "end_seconds": 250.0,
+      "segment_id": "seg_0146",
+      "start_seconds": 249.0,
+      "text": "Please, anyone here?",
+      "words": []
+    },
+    {
+      "end_seconds": 251.0,
+      "segment_id": "seg_0147",
+      "start_seconds": 250.0,
+      "text": "Some cops are coming.",
+      "words": []
+    },
+    {
+      "end_seconds": 252.0,
+      "segment_id": "seg_0148",
+      "start_seconds": 251.0,
+      "text": "Oh my god.",
+      "words": []
+    },
+    {
+      "end_seconds": 253.0,
+      "segment_id": "seg_0149",
+      "start_seconds": 252.0,
+      "text": "Give me your hands!",
+      "words": []
+    },
+    {
+      "end_seconds": 258.0,
+      "segment_id": "seg_0150",
+      "start_seconds": 254.0,
+      "text": "This has got to be the most embarrassing thing I've ever experienced in my entire life.",
+      "words": []
+    },
+    {
+      "end_seconds": 259.0,
+      "segment_id": "seg_0151",
+      "start_seconds": 258.0,
+      "text": "Shut up!",
+      "words": []
+    },
+    {
+      "end_seconds": 265.0,
+      "segment_id": "seg_0152",
+      "start_seconds": 259.0,
+      "text": "The reason I've been trying to get to the school is because I have a hidden room planned here",
+      "words": []
+    },
+    {
+      "end_seconds": 266.0,
+      "segment_id": "seg_0153",
+      "start_seconds": 265.0,
+      "text": "that they're never going to find.",
+      "words": []
+    },
+    {
+      "end_seconds": 267.0,
+      "segment_id": "seg_0154",
+      "start_seconds": 266.0,
+      "text": "Oh no.",
+      "words": []
+    },
+    {
+      "end_seconds": 268.0,
+      "segment_id": "seg_0155",
+      "start_seconds": 267.0,
+      "text": "Wait a minute.",
+      "words": []
+    },
+    {
+      "end_seconds": 269.0,
+      "segment_id": "seg_0156",
+      "start_seconds": 268.0,
+      "text": "Oh, this is not good.",
+      "words": []
+    },
+    {
+      "end_seconds": 270.0,
+      "segment_id": "seg_0157",
+      "start_seconds": 269.0,
+      "text": "This is not good.",
+      "words": []
+    },
+    {
+      "end_seconds": 271.0,
+      "segment_id": "seg_0158",
+      "start_seconds": 270.0,
+      "text": "Um...",
+      "words": []
+    },
+    {
+      "end_seconds": 272.0,
+      "segment_id": "seg_0159",
+      "start_seconds": 271.0,
+      "text": "No!",
+      "words": []
+    },
+    {
+      "end_seconds": 277.0,
+      "segment_id": "seg_0160",
+      "start_seconds": 272.0,
+      "text": "They found my hidden room!",
+      "words": []
+    },
+    {
+      "end_seconds": 281.0,
+      "segment_id": "seg_0161",
+      "start_seconds": 277.0,
+      "text": "Even though they found my secret room, they didn't grab this detonator.",
+      "words": []
+    },
+    {
+      "end_seconds": 282.0,
+      "segment_id": "seg_0162",
+      "start_seconds": 281.0,
+      "text": "I'm putting this in my bag with $100,000.",
+      "words": []
+    },
+    {
+      "end_seconds": 283.0,
+      "segment_id": "seg_0163",
+      "start_seconds": 282.0,
+      "text": "This is going to come in handy later.",
+      "words": []
+    },
+    {
+      "end_seconds": 284.0,
+      "segment_id": "seg_0164",
+      "start_seconds": 283.0,
+      "text": "You'll see why.",
+      "words": []
+    },
+    {
+      "end_seconds": 289.0,
+      "segment_id": "seg_0165",
+      "start_seconds": 284.0,
+      "text": "Thankfully, the cops didn't realize that this remote allows this TV to swap through every",
+      "words": []
+    },
+    {
+      "end_seconds": 290.0,
+      "segment_id": "seg_0166",
+      "start_seconds": 289.0,
+      "text": "single camera across the city.",
+      "words": []
+    },
+    {
+      "end_seconds": 291.0,
+      "segment_id": "seg_0167",
+      "start_seconds": 290.0,
+      "text": "I suspect that'll be back at this school.",
+      "words": []
+    },
+    {
+      "end_seconds": 292.0,
+      "segment_id": "seg_0168",
+      "start_seconds": 291.0,
+      "text": "So, I need you to back up.",
+      "words": []
+    },
+    {
+      "end_seconds": 293.0,
+      "segment_id": "seg_0169",
+      "start_seconds": 292.0,
+      "text": "Okay.",
+      "words": []
+    },
+    {
+      "end_seconds": 294.0,
+      "segment_id": "seg_0170",
+      "start_seconds": 293.0,
+      "text": "Okay.",
+      "words": []
+    },
+    {
+      "end_seconds": 295.0,
+      "segment_id": "seg_0171",
+      "start_seconds": 294.0,
+      "text": "Okay.",
+      "words": []
+    },
+    {
+      "end_seconds": 296.0,
+      "segment_id": "seg_0172",
+      "start_seconds": 295.0,
+      "text": "Okay.",
+      "words": []
+    },
+    {
+      "end_seconds": 297.0,
+      "segment_id": "seg_0173",
+      "start_seconds": 296.0,
+      "text": "Okay.",
+      "words": []
+    },
+    {
+      "end_seconds": 298.0,
+      "segment_id": "seg_0174",
+      "start_seconds": 297.0,
+      "text": "Okay.",
+      "words": []
+    },
+    {
+      "end_seconds": 299.0,
+      "segment_id": "seg_0175",
+      "start_seconds": 298.0,
+      "text": "Nolan, I got the detonator.",
+      "words": []
+    },
+    {
+      "end_seconds": 300.0,
+      "segment_id": "seg_0176",
+      "start_seconds": 299.0,
+      "text": "Okay.",
+      "words": []
+    },
+    {
+      "end_seconds": 301.0,
+      "segment_id": "seg_0177",
+      "start_seconds": 300.0,
+      "text": "Alright, this might be the riskiest part of the entire video.",
+      "words": []
+    },
+    {
+      "end_seconds": 308.0,
+      "segment_id": "seg_0178",
+      "start_seconds": 301.0,
+      "text": "To do what I'm thinking, I need to get on top of a really tall building.",
+      "words": []
+    },
+    {
+      "end_seconds": 311.0,
+      "segment_id": "seg_0179",
+      "start_seconds": 308.0,
+      "text": "At this point, we're halfway into the challenge.",
+      "words": []
+    },
+    {
+      "end_seconds": 314.0,
+      "segment_id": "seg_0180",
+      "start_seconds": 311.0,
+      "text": "The majority of our hideouts have been exposed and different.",
+      "words": []
+    },
+    {
+      "end_seconds": 315.0,
+      "segment_id": "seg_0181",
+      "start_seconds": 314.0,
+      "text": "Let's go.",
+      "words": []
+    },
+    {
+      "end_seconds": 316.0,
+      "segment_id": "seg_0182",
+      "start_seconds": 315.0,
+      "text": "Let's go.",
+      "words": []
+    },
+    {
+      "end_seconds": 317.0,
+      "segment_id": "seg_0183",
+      "start_seconds": 316.0,
+      "text": "Let's go.",
+      "words": []
+    },
+    {
+      "end_seconds": 318.0,
+      "segment_id": "seg_0184",
+      "start_seconds": 317.0,
+      "text": "We're at the end of the video.",
+      "words": []
+    },
+    {
+      "end_seconds": 319.0,
+      "segment_id": "seg_0185",
+      "start_seconds": 318.0,
+      "text": "Let's go.",
+      "words": []
+    },
+    {
+      "end_seconds": 320.0,
+      "segment_id": "seg_0186",
+      "start_seconds": 319.0,
+      "text": "You'll be equal to the end of the video.",
+      "words": []
+    },
+    {
+      "end_seconds": 321.0,
+      "segment_id": "seg_0187",
+      "start_seconds": 320.0,
+      "text": "We'll be right back.",
+      "words": []
+    },
+    {
+      "end_seconds": 322.0,
+      "segment_id": "seg_0188",
+      "start_seconds": 321.0,
+      "text": "We're at the end of the video.",
+      "words": []
+    },
+    {
+      "end_seconds": 323.0,
+      "segment_id": "seg_0189",
+      "start_seconds": 322.0,
+      "text": "Let's go.",
+      "words": []
+    },
+    {
+      "end_seconds": 324.0,
+      "segment_id": "seg_0190",
+      "start_seconds": 323.0,
+      "text": "Okay.",
+      "words": []
+    },
+    {
+      "end_seconds": 325.0,
+      "segment_id": "seg_0191",
+      "start_seconds": 324.0,
+      "text": "Let's go.",
+      "words": []
+    },
+    {
+      "end_seconds": 326.0,
+      "segment_id": "seg_0192",
+      "start_seconds": 325.0,
+      "text": "We're halfway into the challenge.",
+      "words": []
+    },
+    {
+      "end_seconds": 327.0,
+      "segment_id": "seg_0193",
+      "start_seconds": 326.0,
+      "text": "You can't go.",
+      "words": []
+    },
+    {
+      "end_seconds": 331.72,
+      "segment_id": "seg_0194",
+      "start_seconds": 327.0,
+      "text": "the majority of our hideouts have been exposed and darius has been arrested",
+      "words": []
+    },
+    {
+      "end_seconds": 337.0,
+      "segment_id": "seg_0195",
+      "start_seconds": 331.72,
+      "text": "which is why what you're about to see is my backup master plan hopefully unfolding as i intended",
+      "words": []
+    },
+    {
+      "end_seconds": 341.0,
+      "segment_id": "seg_0196",
+      "start_seconds": 337.88,
+      "text": "and it all starts with what nolan is about to do",
+      "words": []
+    },
+    {
+      "end_seconds": 358.84,
+      "segment_id": "seg_0197",
+      "start_seconds": 341.0,
+      "text": "ah yo yo what's up that's no one that's him yeah i saw it get the camera",
+      "words": []
+    },
+    {
+      "end_seconds": 368.04,
+      "segment_id": "seg_0198",
+      "start_seconds": 363.08,
+      "text": "for this next diversion i really just wanted to have a lot of explosions",
+      "words": []
+    },
+    {
+      "end_seconds": 372.84000000000003,
+      "segment_id": "seg_0199",
+      "start_seconds": 368.04,
+      "text": "it might not make much sense but man does it look epic",
+      "words": []
+    },
+    {
+      "end_seconds": 385.88,
+      "segment_id": "seg_0200",
+      "start_seconds": 383.8,
+      "text": "we can't see anything we're not gonna catch him",
+      "words": []
+    },
+    {
+      "end_seconds": 391.96000000000004,
+      "segment_id": "seg_0201",
+      "start_seconds": 389.16,
+      "text": "oh my gosh oh my gosh i love you all",
+      "words": []
+    },
+    {
+      "end_seconds": 401.00000000000006,
+      "segment_id": "seg_0202",
+      "start_seconds": 391.96000000000004,
+      "text": "we gotta go we gotta go oh my god that was the coolest thing i've ever done nolan you're welcome",
+      "words": []
+    },
+    {
+      "end_seconds": 406.44000000000005,
+      "segment_id": "seg_0203",
+      "start_seconds": 401.00000000000006,
+      "text": "anyways my next plan is a little bit more useful let me introduce you to my doppelganger",
+      "words": []
+    },
+    {
+      "end_seconds": 409.00000000000006,
+      "segment_id": "seg_0204",
+      "start_seconds": 407.72,
+      "text": "wait uh do a smile",
+      "words": []
+    },
+    {
+      "end_seconds": 415.24,
+      "segment_id": "seg_0205",
+      "start_seconds": 411.08000000000004,
+      "text": "okay he's not the only doppelganger here i have over 50 doppelgangers in the city i need you to take all",
+      "words": []
+    },
+    {
+      "end_seconds": 419.24,
+      "segment_id": "seg_0206",
+      "start_seconds": 415.24,
+      "text": "my doppelgangers to the movie table i want a bunch of cops go to search it lock the door behind them",
+      "words": []
+    },
+    {
+      "end_seconds": 422.68,
+      "segment_id": "seg_0207",
+      "start_seconds": 419.8,
+      "text": "i can do it bro that's me good luck go go",
+      "words": []
+    },
+    {
+      "end_seconds": 431.56,
+      "segment_id": "seg_0208",
+      "start_seconds": 425.40000000000003,
+      "text": "scanning guys come on in over here hey state police you need to stop hold on",
+      "words": []
+    },
+    {
+      "end_seconds": 436.76,
+      "segment_id": "seg_0209",
+      "start_seconds": 435.0,
+      "text": "everybody's got a backpack it's wearing all black",
+      "words": []
+    },
+    {
+      "end_seconds": 442.76,
+      "segment_id": "seg_0210",
+      "start_seconds": 438.36,
+      "text": "we need more backup please don't move where do they go they're in here but what the cops don't",
+      "words": []
+    },
+    {
+      "end_seconds": 449.4,
+      "segment_id": "seg_0211",
+      "start_seconds": 442.76,
+      "text": "realize is that there's one way in and no way out knowing that the cops are going to be trapped for",
+      "words": []
+    },
+    {
+      "end_seconds": 455.15999999999997,
+      "segment_id": "seg_0212",
+      "start_seconds": 449.4,
+      "text": "the next few hours i subjected them to one of my all-time classics me counting to a hundred thousand",
+      "words": []
+    },
+    {
+      "end_seconds": 461.96,
+      "segment_id": "seg_0213",
+      "start_seconds": 455.15999999999997,
+      "text": "one two three five nolan nolan we locked so many cops in the movie theater did you make it to the",
+      "words": []
+    },
+    {
+      "end_seconds": 470.52000000000004,
+      "segment_id": "seg_0214",
+      "start_seconds": 461.96000000000004,
+      "text": "safe house all right i think we found it there's a door what is this what is this all right wait",
+      "words": []
+    },
+    {
+      "end_seconds": 476.6,
+      "segment_id": "seg_0215",
+      "start_seconds": 472.44000000000005,
+      "text": "okay so this is weird uh jimmy i'm locked inside the building and the door will not open you are",
+      "words": []
+    },
+    {
+      "end_seconds": 482.28000000000003,
+      "segment_id": "seg_0216",
+      "start_seconds": 476.6,
+      "text": "now locked inside that shed this door is locked too nice nice and the reason why you're in there",
+      "words": []
+    },
+    {
+      "end_seconds": 487.72,
+      "segment_id": "seg_0217",
+      "start_seconds": 482.28000000000003,
+      "text": "is because you'll have to win a 2v2 in cod mobile the sponsor of this video which if you do you will",
+      "words": []
+    },
+    {
+      "end_seconds": 491.8,
+      "segment_id": "seg_0218",
+      "start_seconds": 487.72,
+      "text": "unlock some very special stuff that'll make it very easy for you the rest of this video good luck",
+      "words": []
+    },
+    {
+      "end_seconds": 496.12,
+      "segment_id": "seg_0219",
+      "start_seconds": 491.8,
+      "text": "nolan win a cod mobile or we're screwed okay i need to hurry right now i just gotta focus on",
+      "words": []
+    },
+    {
+      "end_seconds": 500.20000000000005,
+      "segment_id": "seg_0220",
+      "start_seconds": 496.12,
+      "text": "not getting caught there's a nice little feast of this cafe i'm gonna go hide in there let's go",
+      "words": []
+    },
+    {
+      "end_seconds": 507.16,
+      "segment_id": "seg_0221",
+      "start_seconds": 500.20000000000005,
+      "text": "let's go let's go let's go okay hey somebody's in that doorway right there someone's coming we're",
+      "words": []
+    },
+    {
+      "end_seconds": 511.48,
+      "segment_id": "seg_0222",
+      "start_seconds": 507.16,
+      "text": "gonna enter the front yeah i've got back somebody's here somebody's hiding i've played a lot of call",
+      "words": []
+    },
+    {
+      "end_seconds": 514.84,
+      "segment_id": "seg_0223",
+      "start_seconds": 511.48,
+      "text": "of duty in my day so this should be pretty easy for me oh it's a call of duty ghost mount",
+      "words": []
+    },
+    {
+      "end_seconds": 520.12,
+      "segment_id": "seg_0224",
+      "start_seconds": 514.84,
+      "text": "featuring classic multiplayer and battle royale action call of duty mobile is the ultimate mobile",
+      "words": []
+    },
+    {
+      "end_seconds": 527.64,
+      "segment_id": "seg_0225",
+      "start_seconds": 520.12,
+      "text": "fps experience there's a trap door but this ain't opening get out there i mean it's like the freest",
+      "words": []
+    },
+    {
+      "end_seconds": 532.76,
+      "segment_id": "seg_0226",
+      "start_seconds": 527.64,
+      "text": "rewards i've ever gotten in my life oh never mind he got me hop into cod mobile right after this video",
+      "words": []
+    },
+    {
+      "end_seconds": 537.0,
+      "segment_id": "seg_0227",
+      "start_seconds": 532.76,
+      "text": "because if you do you get a free mr beast calling card and you can jump right into season seven where",
+      "words": []
+    },
+    {
+      "end_seconds": 541.4000000000001,
+      "segment_id": "seg_0228",
+      "start_seconds": 537.0,
+      "text": "you can earn free time limited cop points just by playing during the cod point rush event",
+      "words": []
+    },
+    {
+      "end_seconds": 548.84,
+      "segment_id": "seg_0229",
+      "start_seconds": 541.4,
+      "text": "i might get out soon all you have to do is log in and play to earth just scan this qr code or click",
+      "words": []
+    },
+    {
+      "end_seconds": 554.76,
+      "segment_id": "seg_0230",
+      "start_seconds": 548.84,
+      "text": "the link in the description to download call of duty mobile today yes see that victory thanks to",
+      "words": []
+    },
+    {
+      "end_seconds": 559.48,
+      "segment_id": "seg_0231",
+      "start_seconds": 554.76,
+      "text": "cop mobile i can get in here now because the code it says is zero zero zero they probably should have been",
+      "words": []
+    },
+    {
+      "end_seconds": 567.72,
+      "segment_id": "seg_0232",
+      "start_seconds": 559.48,
+      "text": "able to discuss that we'll see what's inside no way i think the cops are surrounding me i'm so scared",
+      "words": []
+    },
+    {
+      "end_seconds": 574.2,
+      "segment_id": "seg_0233",
+      "start_seconds": 569.4,
+      "text": "i got one somebody get on the trap doors you can't get out get him get him get him let's go",
+      "words": []
+    },
+    {
+      "end_seconds": 579.72,
+      "segment_id": "seg_0234",
+      "start_seconds": 575.88,
+      "text": "no stop you're under arrest you're under arrest you're under arrest how many of you did take huh",
+      "words": []
+    },
+    {
+      "end_seconds": 585.64,
+      "segment_id": "seg_0235",
+      "start_seconds": 579.72,
+      "text": "you know is it 100 out there is this your 100k uh yeah it's ours now jimmy nolan allison i've officially",
+      "words": []
+    },
+    {
+      "end_seconds": 589.4,
+      "segment_id": "seg_0236",
+      "start_seconds": 585.64,
+      "text": "been caught they just arrested tree so i'm gonna use it as a diversion while they're celebrating i'm",
+      "words": []
+    },
+    {
+      "end_seconds": 597.0,
+      "segment_id": "seg_0237",
+      "start_seconds": 589.4,
+      "text": "gonna get far away from here you guys do that for all your prisoners there is i see you have been caught",
+      "words": []
+    },
+    {
+      "end_seconds": 609.24,
+      "segment_id": "seg_0238",
+      "start_seconds": 600.28,
+      "text": "no way oh what even is binoculars what these are night vision goggles it's a ghillie suit i'm gonna",
+      "words": []
+    },
+    {
+      "end_seconds": 615.56,
+      "segment_id": "seg_0239",
+      "start_seconds": 609.24,
+      "text": "blend in anywhere i want to okay what else we got here we got smoke grenades what is this it's a uav",
+      "words": []
+    },
+    {
+      "end_seconds": 620.76,
+      "segment_id": "seg_0240",
+      "start_seconds": 615.88,
+      "text": "you can see exactly where everybody is tarik and darius are in jail dude this is so op",
+      "words": []
+    },
+    {
+      "end_seconds": 632.52,
+      "segment_id": "seg_0241",
+      "start_seconds": 627.8,
+      "text": "dispatch it's nightcrawler it's a dang ghost town out here anyone else seeing anything",
+      "words": []
+    },
+    {
+      "end_seconds": 636.4399999999999,
+      "segment_id": "seg_0242",
+      "start_seconds": 632.52,
+      "text": "we'll just have to wait until they slip up all right guys the sewer system has an underground",
+      "words": []
+    },
+    {
+      "end_seconds": 641.08,
+      "segment_id": "seg_0243",
+      "start_seconds": 636.4399999999999,
+      "text": "entrance into the prison what if we use that to help darius and tarik escape i'm over it",
+      "words": []
+    },
+    {
+      "end_seconds": 646.2800000000001,
+      "segment_id": "seg_0244",
+      "start_seconds": 641.08,
+      "text": "darius can you reach my hand don't go too fast don't get caught power pressure i'll see you there",
+      "words": []
+    },
+    {
+      "end_seconds": 654.84,
+      "segment_id": "seg_0245",
+      "start_seconds": 646.2800000000001,
+      "text": "in five minutes if they skirt out which they possibly are going to do you'll be set in position",
+      "words": []
+    },
+    {
+      "end_seconds": 659.8000000000001,
+      "segment_id": "seg_0246",
+      "start_seconds": 654.84,
+      "text": "to intercept them we're gonna search everything again just in case we miss anything we'll find them",
+      "words": []
+    },
+    {
+      "end_seconds": 666.6800000000001,
+      "segment_id": "seg_0247",
+      "start_seconds": 661.8000000000001,
+      "text": "still making my way over to the movie theater yo this is nolan i'm looking at the uav right now uh jimmy",
+      "words": []
+    },
+    {
+      "end_seconds": 672.2,
+      "segment_id": "seg_0248",
+      "start_seconds": 666.6800000000001,
+      "text": "there are a lot of cops around wait is that you above me yeah that's me okay allison i don't see",
+      "words": []
+    },
+    {
+      "end_seconds": 679.0000000000001,
+      "segment_id": "seg_0249",
+      "start_seconds": 672.2,
+      "text": "any cops by you go ahead we're on the move if i see flashlights i need to worry jimmy there are",
+      "words": []
+    },
+    {
+      "end_seconds": 686.0400000000001,
+      "segment_id": "seg_0250",
+      "start_seconds": 679.0000000000001,
+      "text": "literally cops right in front of you oh my gosh cops there's literally two cops right over there okay",
+      "words": []
+    },
+    {
+      "end_seconds": 691.32,
+      "segment_id": "seg_0251",
+      "start_seconds": 686.0400000000001,
+      "text": "i thought it was really in the clear i'm not yet jimmy you need to hide right now i'm just gonna",
+      "words": []
+    },
+    {
+      "end_seconds": 694.2,
+      "segment_id": "seg_0252",
+      "start_seconds": 691.32,
+      "text": "leave right here beside the course i got to turn this light off they're gonna see me i gotta turn",
+      "words": []
+    },
+    {
+      "end_seconds": 701.8000000000001,
+      "segment_id": "seg_0253",
+      "start_seconds": 694.2,
+      "text": "it off i gotta turn it off okay okay i'm hiding in a shadow right now i gotta turn all lights off even",
+      "words": []
+    },
+    {
+      "end_seconds": 717.8000000000001,
+      "segment_id": "seg_0254",
+      "start_seconds": 701.8000000000001,
+      "text": "this camera hey guys come over here",
+      "words": []
+    },
+    {
+      "end_seconds": 732.9200000000001,
+      "segment_id": "seg_0255",
+      "start_seconds": 721.32,
+      "text": "i can't believe i just got away shout out to nolan i was good all right guys i'm on my way over to",
+      "words": []
+    },
+    {
+      "end_seconds": 738.2,
+      "segment_id": "seg_0256",
+      "start_seconds": 732.9200000000001,
+      "text": "the movie theater allison where are you at i'm behind the movie theater jimmy i see you i see you i'm behind",
+      "words": []
+    },
+    {
+      "end_seconds": 743.4000000000001,
+      "segment_id": "seg_0257",
+      "start_seconds": 738.2,
+      "text": "you oh there you are okay nice to see you again oh my gosh you might be wondering why they haven't",
+      "words": []
+    },
+    {
+      "end_seconds": 748.36,
+      "segment_id": "seg_0258",
+      "start_seconds": 743.4000000000001,
+      "text": "found us turn the night vision off this is what they see without a flashlight so obviously you guys can",
+      "words": []
+    },
+    {
+      "end_seconds": 752.44,
+      "segment_id": "seg_0259",
+      "start_seconds": 748.36,
+      "text": "see everything but it's really hard with the naked eye right now all right nolan i'm with allison how",
+      "words": []
+    },
+    {
+      "end_seconds": 757.88,
+      "segment_id": "seg_0260",
+      "start_seconds": 752.44,
+      "text": "far out are you uh i have the movie theater in sight give me four or five ish rentals well how about you",
+      "words": []
+    },
+    {
+      "end_seconds": 762.6,
+      "segment_id": "seg_0261",
+      "start_seconds": 757.88,
+      "text": "get your ish over here right now give me one second there's something i want to do so good",
+      "words": []
+    },
+    {
+      "end_seconds": 771.96,
+      "segment_id": "seg_0262",
+      "start_seconds": 763.88,
+      "text": "17 665 17 666 6 and keep down this nolan you see this isn't this and this don't look good",
+      "words": []
+    },
+    {
+      "end_seconds": 779.08,
+      "segment_id": "seg_0263",
+      "start_seconds": 771.96,
+      "text": "don't do it hey man talk about this now it's on now it's on nolan i'm gonna go finish it",
+      "words": []
+    },
+    {
+      "end_seconds": 783.64,
+      "segment_id": "seg_0264",
+      "start_seconds": 781.08,
+      "text": "start tracking what they're wearing no one's in a ghillie suit",
+      "words": []
+    },
+    {
+      "end_seconds": 790.9200000000001,
+      "segment_id": "seg_0265",
+      "start_seconds": 785.08,
+      "text": "hey all right listen we got intel one of the suspects possibly in a ghillie suit what we're about",
+      "words": []
+    },
+    {
+      "end_seconds": 795.96,
+      "segment_id": "seg_0266",
+      "start_seconds": 790.9200000000001,
+      "text": "to do is either going to be freaking awesome or the dumbest thing we've ever done and all three of",
+      "words": []
+    },
+    {
+      "end_seconds": 800.2800000000001,
+      "segment_id": "seg_0267",
+      "start_seconds": 795.96,
+      "text": "us are going to get caught let's hope it's freaking awesome there's a building with an underground",
+      "words": []
+    },
+    {
+      "end_seconds": 805.8,
+      "segment_id": "seg_0268",
+      "start_seconds": 800.28,
+      "text": "tunnel that runs directly to the jail which also happens to be the police headquarters and if they",
+      "words": []
+    },
+    {
+      "end_seconds": 811.3199999999999,
+      "segment_id": "seg_0269",
+      "start_seconds": 805.8,
+      "text": "spot us that tunnel is the only way out you know we are literally going into the one place we are",
+      "words": []
+    },
+    {
+      "end_seconds": 816.36,
+      "segment_id": "seg_0270",
+      "start_seconds": 811.3199999999999,
+      "text": "trying to avoid right now breaking these guys out of jail might be the dumbest thing i have ever done",
+      "words": []
+    },
+    {
+      "end_seconds": 821.8,
+      "segment_id": "seg_0271",
+      "start_seconds": 816.36,
+      "text": "but i couldn't let tarik and darius go home with nothing for their moms so i sent my doppelganger to",
+      "words": []
+    },
+    {
+      "end_seconds": 825.2400000000001,
+      "segment_id": "seg_0272",
+      "start_seconds": 821.8000000000001,
+      "text": "police hq with a brilliant plan to distract the cops",
+      "words": []
+    },
+    {
+      "end_seconds": 832.9200000000001,
+      "segment_id": "seg_0273",
+      "start_seconds": 825.8800000000001,
+      "text": "some donuts christmas cream yeah let's go check it out don't go anywhere don't go anywhere",
+      "words": []
+    },
+    {
+      "end_seconds": 839.72,
+      "segment_id": "seg_0274",
+      "start_seconds": 832.9200000000001,
+      "text": "it's a distraction though for sure he's somewhere yeah all right last chance of the chicken out",
+      "words": []
+    },
+    {
+      "end_seconds": 845.32,
+      "segment_id": "seg_0275",
+      "start_seconds": 840.6,
+      "text": "no i'll just stay in the middle i feel kind of safe right here i'll stay at the back so i can run",
+      "words": []
+    },
+    {
+      "end_seconds": 850.2800000000001,
+      "segment_id": "seg_0276",
+      "start_seconds": 845.32,
+      "text": "away faster than you guys we're about to walk underneath the entire city i'm going to show you an uncut shot of",
+      "words": []
+    },
+    {
+      "end_seconds": 862.12,
+      "segment_id": "seg_0277",
+      "start_seconds": 850.28,
+      "text": "how long this tunnel is allison we're there we're there well by there i mean another giant long tunnel",
+      "words": []
+    },
+    {
+      "end_seconds": 874.76,
+      "segment_id": "seg_0278",
+      "start_seconds": 862.12,
+      "text": "oh man another time come here we're getting kind of close around this corner is the prison let's see if",
+      "words": []
+    },
+    {
+      "end_seconds": 885.08,
+      "segment_id": "seg_0279",
+      "start_seconds": 874.76,
+      "text": "there's any cops what do you see it looks empty i can see the jail cells down the hole it's only been",
+      "words": []
+    },
+    {
+      "end_seconds": 895.96,
+      "segment_id": "seg_0280",
+      "start_seconds": 885.08,
+      "text": "like what 10 hours for you if you don't be quiet i just heard darius by the way there's now two hours",
+      "words": []
+    },
+    {
+      "end_seconds": 903.8000000000001,
+      "segment_id": "seg_0281",
+      "start_seconds": 895.96,
+      "text": "left in the challenge what that close yeah i don't see any cops should we go check it out yeah let's go check it out",
+      "words": []
+    },
+    {
+      "end_seconds": 912.76,
+      "segment_id": "seg_0282",
+      "start_seconds": 906.6,
+      "text": "all right let's go ahead let's go this is the stupidest thing i've ever done",
+      "words": []
+    },
+    {
+      "end_seconds": 920.36,
+      "segment_id": "seg_0283",
+      "start_seconds": 912.76,
+      "text": "do you see anyone",
+      "words": []
+    },
+    {
+      "end_seconds": 930.04,
+      "segment_id": "seg_0284",
+      "start_seconds": 922.92,
+      "text": "no ghost is clear this might be where i chicken out wait wait stop",
+      "words": []
+    },
+    {
+      "end_seconds": 938.76,
+      "segment_id": "seg_0285",
+      "start_seconds": 930.04,
+      "text": "it's a cop run run he saw us he saw us this is a horrible idea this is a horrible idea",
+      "words": []
+    },
+    {
+      "end_seconds": 947.24,
+      "segment_id": "seg_0286",
+      "start_seconds": 939.3199999999999,
+      "text": "say please stop jimmy if that's you please come get me help i don't think he heard that you want to",
+      "words": []
+    },
+    {
+      "end_seconds": 952.68,
+      "segment_id": "seg_0287",
+      "start_seconds": 947.24,
+      "text": "say that jimmy go ahead of me go ahead okay go go go nolan you should drop the smoker name",
+      "words": []
+    },
+    {
+      "end_seconds": 967.32,
+      "segment_id": "seg_0288",
+      "start_seconds": 952.6800000000001,
+      "text": "you should drop the smoke bomb unsafe to continue pursuit suspects still on the run in the tunnels",
+      "words": []
+    },
+    {
+      "end_seconds": 974.6,
+      "segment_id": "seg_0289",
+      "start_seconds": 967.8800000000001,
+      "text": "we might be trapped they probably know where the exit is oh no we could be cooked this could be it",
+      "words": []
+    },
+    {
+      "end_seconds": 980.6800000000001,
+      "segment_id": "seg_0290",
+      "start_seconds": 975.1600000000001,
+      "text": "allison did we lose her oh my god why did allison stop not good not good",
+      "words": []
+    },
+    {
+      "end_seconds": 986.36,
+      "segment_id": "seg_0291",
+      "start_seconds": 980.6800000000001,
+      "text": "we gotta get out of here quick because they might be waiting for us come on nolan i'm following you",
+      "words": []
+    },
+    {
+      "end_seconds": 993.0000000000001,
+      "segment_id": "seg_0292",
+      "start_seconds": 987.5600000000001,
+      "text": "this place allison sacrifice yourself we gotta get as far away as possible they're gonna swarm this place",
+      "words": []
+    },
+    {
+      "end_seconds": 998.0400000000001,
+      "segment_id": "seg_0293",
+      "start_seconds": 993.0000000000001,
+      "text": "unit searching south end of the tunnel send units to the north end perimeter guys let's get out on the",
+      "words": []
+    },
+    {
+      "end_seconds": 1008.6800000000001,
+      "segment_id": "seg_0294",
+      "start_seconds": 998.0400000000001,
+      "text": "road now one of the suspects in a ghillie suit there's only one way out of that tunnel flood the exit go go go",
+      "words": []
+    },
+    {
+      "end_seconds": 1015.24,
+      "segment_id": "seg_0295",
+      "start_seconds": 1008.6800000000001,
+      "text": "i left the boys in the tunnel i might in the wall i'm gonna throw my light on now because i don't",
+      "words": []
+    },
+    {
+      "end_seconds": 1019.8800000000001,
+      "segment_id": "seg_0296",
+      "start_seconds": 1015.24,
+      "text": "want to be seen let's form a skirmish line right here or the wall towards those buildings nolan jimmy do you",
+      "words": []
+    },
+    {
+      "end_seconds": 1026.76,
+      "segment_id": "seg_0297",
+      "start_seconds": 1019.8800000000001,
+      "text": "copy yeah allison is that you yeah guys i i found a hole wait they didn't catch you no i was hiding",
+      "words": []
+    },
+    {
+      "end_seconds": 1031.5600000000002,
+      "segment_id": "seg_0298",
+      "start_seconds": 1026.76,
+      "text": "and found a hole in the wall that's clutch come meet us out the containers hurry the cops are coming",
+      "words": []
+    },
+    {
+      "end_seconds": 1033.0,
+      "segment_id": "seg_0299",
+      "start_seconds": 1031.56,
+      "text": "in four i'm halfway there",
+      "words": []
+    },
+    {
+      "end_seconds": 1038.2,
+      "segment_id": "seg_0300",
+      "start_seconds": 1035.6399999999999,
+      "text": "we're going to converge on this last location",
+      "words": []
+    },
+    {
+      "end_seconds": 1044.9199999999998,
+      "segment_id": "seg_0301",
+      "start_seconds": 1040.12,
+      "text": "let's execute let's go switch to knighthood switch to knighthood but wait i see flashlights",
+      "words": []
+    },
+    {
+      "end_seconds": 1047.8,
+      "segment_id": "seg_0302",
+      "start_seconds": 1044.9199999999998,
+      "text": "lights on all this stuff right here this way come on come on",
+      "words": []
+    },
+    {
+      "end_seconds": 1053.3999999999999,
+      "segment_id": "seg_0303",
+      "start_seconds": 1049.96,
+      "text": "all right guys the cops are getting close they're getting close i'm just gonna hide in the woods",
+      "words": []
+    },
+    {
+      "end_seconds": 1057.3999999999999,
+      "segment_id": "seg_0304",
+      "start_seconds": 1053.3999999999999,
+      "text": "i don't know about this in the wood line let's check the wood line",
+      "words": []
+    },
+    {
+      "end_seconds": 1061.96,
+      "segment_id": "seg_0305",
+      "start_seconds": 1058.0400000000002,
+      "text": "oh no i think they're coming oh gosh there's a lights there's a light there's a circle around here",
+      "words": []
+    },
+    {
+      "end_seconds": 1067.16,
+      "segment_id": "seg_0306",
+      "start_seconds": 1061.96,
+      "text": "give them some light in there oh no i think they're coming oh gosh right there right there i see eyes",
+      "words": []
+    },
+    {
+      "end_seconds": 1075.8000000000002,
+      "segment_id": "seg_0307",
+      "start_seconds": 1067.16,
+      "text": "right there in the trees 11 hours ago we set out to pull off the impossible even in a city entirely",
+      "words": []
+    },
+    {
+      "end_seconds": 1082.76,
+      "segment_id": "seg_0308",
+      "start_seconds": 1075.8000000000002,
+      "text": "designed to outsmart and outrun 100 cops this is still proven to be a true test",
+      "words": []
+    },
+    {
+      "end_seconds": 1088.44,
+      "segment_id": "seg_0309",
+      "start_seconds": 1082.76,
+      "text": "all right let me go and now entering our final minute guys they caught me all that we have left",
+      "words": []
+    },
+    {
+      "end_seconds": 1100.28,
+      "segment_id": "seg_0310",
+      "start_seconds": 1088.44,
+      "text": "to do no is outlast you'll never catch jenny the search area that we're going to be hitting is right",
+      "words": []
+    },
+    {
+      "end_seconds": 1108.12,
+      "segment_id": "seg_0311",
+      "start_seconds": 1100.28,
+      "text": "here target area 360 guys they're right there they're right there i think we should go left no they're that",
+      "words": []
+    },
+    {
+      "end_seconds": 1112.68,
+      "segment_id": "seg_0312",
+      "start_seconds": 1108.1200000000001,
+      "text": "way they're that way 360 scan right now in case they're moving while we're there taking her to",
+      "words": []
+    },
+    {
+      "end_seconds": 1119.88,
+      "segment_id": "seg_0313",
+      "start_seconds": 1113.24,
+      "text": "come over here follow me reset and walk go go hurry keep going she's got to be in a container",
+      "words": []
+    },
+    {
+      "end_seconds": 1130.68,
+      "segment_id": "seg_0314",
+      "start_seconds": 1123.0800000000002,
+      "text": "jimmy jimmy jimmy we're surrounded come on let's go deeper oh no it's a dead end it's a dead",
+      "words": []
+    },
+    {
+      "end_seconds": 1139.0800000000002,
+      "segment_id": "seg_0315",
+      "start_seconds": 1131.4,
+      "text": "i made a mistake hey center perimeter we're surrounded by the tops north side of the road",
+      "words": []
+    },
+    {
+      "end_seconds": 1143.0800000000002,
+      "segment_id": "seg_0316",
+      "start_seconds": 1139.0800000000002,
+      "text": "set up the perimeter they're right there they're right there spread out spread out",
+      "words": []
+    },
+    {
+      "end_seconds": 1148.1200000000001,
+      "segment_id": "seg_0317",
+      "start_seconds": 1147.72,
+      "text": "let's go",
+      "words": []
+    },
+    {
+      "end_seconds": 1172.44,
+      "segment_id": "seg_0318",
+      "start_seconds": 1148.1200000000001,
+      "text": "oh my gosh there are so many cops with that hour and a half remaining they have officially caught all",
+      "words": []
+    },
+    {
+      "end_seconds": 1175.8,
+      "segment_id": "seg_0319",
+      "start_seconds": 1172.44,
+      "text": "five of us and won that half a million dollars congratulations",
+      "words": []
+    },
+    {
+      "end_seconds": 1184.76,
+      "segment_id": "seg_0320",
+      "start_seconds": 1179.64,
+      "text": "before i go to jail can you do me a favor and pull my book out of that bag i'm okay with that",
+      "words": []
+    },
+    {
+      "end_seconds": 1187.56,
+      "segment_id": "seg_0321",
+      "start_seconds": 1185.72,
+      "text": "yeah it's just underneath all the money yeah",
+      "words": []
+    },
+    {
+      "end_seconds": 1196.76,
+      "segment_id": "seg_0322",
+      "start_seconds": 1191.4,
+      "text": "i promise it's in there there you go this is the most dangerous games which is a brand new book that",
+      "words": []
+    },
+    {
+      "end_seconds": 1201.16,
+      "segment_id": "seg_0323",
+      "start_seconds": 1196.76,
+      "text": "i co-authored with james patterson i know this might sound weird because a lot of you might not read books",
+      "words": []
+    },
+    {
+      "end_seconds": 1205.88,
+      "segment_id": "seg_0324",
+      "start_seconds": 1201.16,
+      "text": "but i promise if you've ever enjoyed a mr beast video you actually really enjoy this book 100",
+      "words": []
+    },
+    {
+      "end_seconds": 1209.64,
+      "segment_id": "seg_0325",
+      "start_seconds": 1205.88,
+      "text": "contestants go through the most dangerous games all around the world with some of the highest stakes",
+      "words": []
+    },
+    {
+      "end_seconds": 1214.52,
+      "segment_id": "seg_0326",
+      "start_seconds": 1209.64,
+      "text": "to compete for a billion dollars and to save humanity and starting september 1st if you buy",
+      "words": []
+    },
+    {
+      "end_seconds": 1219.5600000000002,
+      "segment_id": "seg_0327",
+      "start_seconds": 1214.52,
+      "text": "the book and enter we're gonna give one person one million dollars so scan the qr code on her face",
+      "words": []
+    },
+    {
+      "end_seconds": 1228.382041,
+      "segment_id": "seg_0328",
+      "start_seconds": 1219.5600000000002,
+      "text": "sorry about that or go wherever you buy books to give it a read",
+      "words": []
+    }
+  ],
+  "source_asset_id": "sha256-281a885b92a667ad0cf706b4b7218a9227fafe4cec94757047c4354c86b6fa13",
+  "words": []
+}

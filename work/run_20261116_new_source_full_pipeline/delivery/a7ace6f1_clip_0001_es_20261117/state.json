@@ -1,0 +1,1049 @@
+{
+  "job_id": "a7ace6f1_clip_0001_es_20261117_delivery",
+  "created_at": "2026-11-17T20:28:02+00:00",
+  "stages": {
+    "render": {
+      "status": "succeeded",
+      "started_at": "2026-11-17T20:28:02+00:00",
+      "finished_at": "2026-11-17T20:29:09+00:00",
+      "result": {
+        "final_work": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\render\\a7ace6f1_clip_0001_es_20261117.mp4",
+        "sha256": "3BE1207A9D579B9709492348B87572CA16EE57F373D8D4682F9F10F714DC3565",
+        "bytes": 10929647,
+        "actual_start_seconds": 0.0,
+        "duration_seconds": 16.433333
+      }
+    },
+    "validate_mp4": {
+      "status": "succeeded",
+      "started_at": "2026-11-17T20:31:20+00:00",
+      "finished_at": "2026-11-17T20:31:21+00:00",
+      "result": {
+        "published": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0001_es_20261117.mp4",
+        "sha256": "554146E67189666BDEECA32CBF1E9C8DFA808E3E9C66F9C850933B033DB00843",
+        "duration_seconds": 16.483
+      }
+    },
+    "seo": {
+      "status": "succeeded",
+      "started_at": "2026-11-17T20:31:21+00:00",
+      "finished_at": "2026-11-17T20:31:21+00:00",
+      "result": {
+        "work_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\seo.md",
+        "bytes": 3447,
+        "seo_language": "es",
+        "seo_language_decision": "auto_from_source_audio"
+      }
+    },
+    "manifest": {
+      "status": "succeeded",
+      "started_at": "2026-11-17T20:31:50+00:00",
+      "finished_at": "2026-11-17T20:31:50+00:00",
+      "result": {
+        "published": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0001_es_20261117.manifest.json",
+        "sha256": "71CDE1B8925156C0EB7D8FFAAF54F2E97F76AB54EDB981EC9BCF470EB4FB1ACD"
+      }
+    },
+    "validate_seo": {
+      "status": "succeeded",
+      "started_at": "2026-11-17T20:31:50+00:00",
+      "finished_at": "2026-11-17T20:31:50+00:00",
+      "result": {
+        "published": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0001_es_20261117.seo.md",
+        "valid": true,
+        "seo_language": "es"
+      }
+    }
+  },
+  "protected_before": {
+    "all_ok": true,
+    "files": {
+      "clip_0001_shorts_mvp_20261028.mp4": {
+        "exists": true,
+        "bytes": 42790148,
+        "sha256": "EBBD2270DAC8A1D06FF82AB16F35F8E42E58BB9A1EEA14B32FFB05F2191D95DC",
+        "expected": "EBBD2270DAC8A1D06FF82AB16F35F8E42E58BB9A1EEA14B32FFB05F2191D95DC",
+        "ok": true
+      },
+      "clip_0001_shorts_mvp_20261028.manifest.json": {
+        "exists": true,
+        "bytes": 18386,
+        "sha256": "330D9A7C86E17304FB10ED64E151D2A360C01306A8545FFD7D3209E71B4226CE",
+        "expected": "330D9A7C86E17304FB10ED64E151D2A360C01306A8545FFD7D3209E71B4226CE",
+        "ok": true
+      },
+      "clip_0002_shorts_mvp_20261028.mp4": {
+        "exists": true,
+        "bytes": 19794327,
+        "sha256": "8A45FFA4983E0705F2BDC9D761A35CE7339FFCBF8CF83CE58E0A20C85B09B311",
+        "expected": "8A45FFA4983E0705F2BDC9D761A35CE7339FFCBF8CF83CE58E0A20C85B09B311",
+        "ok": true
+      },
+      "clip_0002_shorts_mvp_20261028.manifest.json": {
+        "exists": true,
+        "bytes": 9490,
+        "sha256": "D0F916FEC66D207E86E8B9E5903E4B56017BCE89B3C1D972959357D01B8AED98",
+        "expected": "D0F916FEC66D207E86E8B9E5903E4B56017BCE89B3C1D972959357D01B8AED98",
+        "ok": true
+      },
+      "clip_0003_shorts_mvp_20261028.mp4": {
+        "exists": true,
+        "bytes": 32355578,
+        "sha256": "089A99DEFE7CB2777FF470EFDD8FE15A68B8E5BC90B1874AD0D33547E4D8B723",
+        "expected": "089A99DEFE7CB2777FF470EFDD8FE15A68B8E5BC90B1874AD0D33547E4D8B723",
+        "ok": true
+      },
+      "clip_0003_shorts_mvp_20261028.manifest.json": {
+        "exists": true,
+        "bytes": 24974,
+        "sha256": "46E11B876D4BA4B6BB6F7901417394A886FBD92034484BA32DC17EF5EB058F96",
+        "expected": "46E11B876D4BA4B6BB6F7901417394A886FBD92034484BA32DC17EF5EB058F96",
+        "ok": true
+      },
+      "clip_0004_shorts_mvp_20261028.mp4": {
+        "exists": true,
+        "bytes": 31754469,
+        "sha256": "1362571FB103895D5548177B0429896CB5CC7A1AF3EC6F37AD0093C1458C2E22",
+        "expected": "1362571FB103895D5548177B0429896CB5CC7A1AF3EC6F37AD0093C1458C2E22",
+        "ok": true
+      },
+      "clip_0004_shorts_mvp_20261028.manifest.json": {
+        "exists": true,
+        "bytes": 25416,
+        "sha256": "545CA9EA76B50996B0B8FAA23E7E06796FE2DBC9332C56B7219F57012BE49029",
+        "expected": "545CA9EA76B50996B0B8FAA23E7E06796FE2DBC9332C56B7219F57012BE49029",
+        "ok": true
+      },
+      "clip_0005_shorts_mvp_20261028.mp4": {
+        "exists": true,
+        "bytes": 22565975,
+        "sha256": "183C6CFBAA4ED52993042BA8C3EA28A9142582F645CEB32E529A9362E5A0EF10",
+        "expected": "183C6CFBAA4ED52993042BA8C3EA28A9142582F645CEB32E529A9362E5A0EF10",
+        "ok": true
+      },
+      "clip_0005_shorts_mvp_20261028.manifest.json": {
+        "exists": true,
+        "bytes": 34758,
+        "sha256": "EB76D10C55D20D82C0B372E351A92E02EB1DBDB2D66B9DBC2FB088F335636AB9",
+        "expected": "EB76D10C55D20D82C0B372E351A92E02EB1DBDB2D66B9DBC2FB088F335636AB9",
+        "ok": true
+      }
+    }
+  },
+  "language": {
+    "source_audio_language": "es",
+    "source_audio_language_source": "job",
+    "transcript_is_translation": false,
+    "canonical_language": "es",
+    "canonical_language_source": "job",
+    "transcript_language": "es",
+    "transcript_language_confidence": 0.741,
+    "subtitle_language": "es",
+    "notification_language": "es",
+    "emphasis_language": "es",
+    "overlay_language": "es",
+    "seo_language": "es",
+    "overlay_language_decision": "auto_from_source_audio",
+    "notification_language_decision": "auto_from_source_audio",
+    "emphasis_language_decision": "auto_from_source_audio",
+    "seo_language_decision": "auto_from_source_audio",
+    "overlay_language_reason": "idioma del audio declarado y confirmado por la deteccion del fragmento",
+    "emphasis_language_reason": "enfasis literal de la transcripcion en el idioma del audio",
+    "seo_language_reason": "idioma del audio declarado y confirmado por la deteccion del fragmento",
+    "names": {
+      "source_audio": "Spanish",
+      "transcript": "Spanish",
+      "subtitle": "Spanish",
+      "notification": "Spanish",
+      "emphasis": "Spanish",
+      "overlay": "Spanish",
+      "seo": "Spanish"
+    },
+    "evidence": {
+      "segments": [
+        {
+          "segment_id": "seg_0001",
+          "start_seconds": 0.0,
+          "end_seconds": 2.12
+        },
+        {
+          "segment_id": "seg_0002",
+          "start_seconds": 2.42,
+          "end_seconds": 5.22
+        },
+        {
+          "segment_id": "seg_0003",
+          "start_seconds": 5.64,
+          "end_seconds": 8.82
+        },
+        {
+          "segment_id": "seg_0004",
+          "start_seconds": 9.32,
+          "end_seconds": 13.34
+        },
+        {
+          "segment_id": "seg_0005",
+          "start_seconds": 14.36,
+          "end_seconds": 16.42
+        }
+      ],
+      "declared_source_audio": "es",
+      "transcript": {
+        "language": "es",
+        "candidate_language": "es",
+        "confidence": 0.741,
+        "decision": "auto",
+        "reason": "idioma predominante claro",
+        "tokens": 54,
+        "hits": {
+          "en": 0,
+          "es": 13,
+          "pt": 3,
+          "fr": 1,
+          "de": 0,
+          "it": 1
+        },
+        "top_hits": 13,
+        "coverage": 0.2407,
+        "runner_up": "pt",
+        "runner_up_hits": 3
+      },
+      "subtitles": {
+        "language": "es",
+        "candidate_language": "es",
+        "confidence": 0.741,
+        "decision": "auto",
+        "reason": "idioma predominante claro",
+        "tokens": 54,
+        "hits": {
+          "en": 0,
+          "es": 13,
+          "pt": 3,
+          "fr": 1,
+          "de": 0,
+          "it": 1
+        },
+        "top_hits": 13,
+        "coverage": 0.2407,
+        "runner_up": "pt",
+        "runner_up_hits": 3
+      }
+    }
+  },
+  "timing_alignment": {
+    "method": "NCC audio mono 44.1 kHz contra la fuente",
+    "clip": "work/run_20261116_new_source_full_pipeline/delivery/a7ace6f1_clip_0001_es_20261117/clips/a7ace6f1_clip_0001_es_20261117_vertical.mp4",
+    "source": "input/¿2 TURBOS SON MEJORES QUE 1¿ (2160p_30fps_AV1-128kbit_AAC-español).mp4",
+    "ref_window_seconds": [
+      0.0,
+      40.439728
+    ],
+    "global_ncc": 1.0,
+    "clip_zero_maps_to_source_seconds": 0.0,
+    "max_chunk_drift_seconds": 0.0,
+    "chunks": [
+      {
+        "local_start": 0.0,
+        "local_end": 5.0,
+        "ncc": 1.0,
+        "delta_seconds_vs_global": 0.0,
+        "start_seconds": 0.0
+      },
+      {
+        "local_start": 5.0,
+        "local_end": 10.0,
+        "ncc": 1.0,
+        "delta_seconds_vs_global": 0.0,
+        "start_seconds": 0.0
+      },
+      {
+        "local_start": 10.0,
+        "local_end": 15.0,
+        "ncc": 1.0,
+        "delta_seconds_vs_global": 0.0,
+        "start_seconds": 0.0
+      }
+    ]
+  },
+  "requested_cut_range_seconds": [
+    0.0,
+    16.42
+  ],
+  "overlap_seconds": {
+    "clip_0001": 0.0,
+    "clip_0002": 0.0,
+    "clip_0003": 0.0,
+    "clip_0004": 0.0,
+    "clip_0005": 0.0
+  },
+  "render": {
+    "finished_at": "2026-11-17T20:29:09+00:00",
+    "artifacts": {
+      "source_cut": {
+        "output_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\clips\\a7ace6f1_clip_0001_es_20261117_source.mp4",
+        "requested_start_seconds": 0.0,
+        "requested_end_seconds": 16.42,
+        "requested_duration_seconds": 16.42,
+        "actual_duration_seconds": 16.439728,
+        "duration_delta_seconds": 0.01972799999999708,
+        "size_bytes": 70368358,
+        "width": 3840,
+        "height": 2160,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "has_audio": true,
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "cut_method": "frame_accurate_hybrid_decode_trim_reencode_video_audio_copy",
+        "pre_roll_seconds": 0.0,
+        "input_seek_seconds": 0.0,
+        "output_seek_seconds": 0.0,
+        "ffmpeg_command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-y",
+          "-ss",
+          "0.000000",
+          "-i",
+          "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\input\\¿2 TURBOS SON MEJORES QUE 1¿ (2160p_30fps_AV1-128kbit_AAC-español).mp4",
+          "-ss",
+          "0.000000",
+          "-t",
+          "16.420000",
+          "-map",
+          "0:v:0",
+          "-map",
+          "0:a:0?",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "veryfast",
+          "-crf",
+          "14",
+          "-pix_fmt",
+          "yuv420p",
+          "-c:a",
+          "copy",
+          "-movflags",
+          "+faststart",
+          "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\clips\\a7ace6f1_clip_0001_es_20261117_source.mp4"
+        ],
+        "sha256": "441C03F40A1B383AD96D39991F590CE95D76B75AB613493799A09B2B164E5694"
+      },
+      "vertical": {
+        "output_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\clips\\a7ace6f1_clip_0001_es_20261117_vertical.mp4",
+        "source_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\clips\\a7ace6f1_clip_0001_es_20261117_source.mp4",
+        "source_width": 3840,
+        "source_height": 2160,
+        "source_duration_seconds": 16.439728,
+        "actual_duration_seconds": 16.439728,
+        "size_bytes": 8011392,
+        "width": 1080,
+        "height": 1920,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "has_audio": true,
+        "source_had_audio": true,
+        "framing": "blurred_background_fit",
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "sha256": "A061CA1B59DA11ADF72AF3311081306EBECDC422B16787A9C84B0183E5CE3368",
+        "duration_seconds": 16.433333
+      },
+      "subtitles": {
+        "path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\assets\\subs.ass",
+        "cues": 8,
+        "segments": 5,
+        "style": {
+          "font": "Arial Black 96",
+          "max_lines": 2,
+          "margin_bottom": 340,
+          "margin_lr": 70
+        }
+      },
+      "emphasis": {
+        "path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\assets\\motion.ass",
+        "events": [],
+        "count": 0
+      },
+      "neon": {
+        "path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\assets\\neon.ass",
+        "seed": 20261020,
+        "bytes": 46431
+      },
+      "notifications": [
+        {
+          "action": "comment",
+          "subtitle_text": "¿QUÉ TURBO PREFIERES?",
+          "enter_start_seconds": 2.463,
+          "hold_start_seconds": 2.983,
+          "hold_end_seconds": 6.463,
+          "exit_end_seconds": 6.883,
+          "evidence_refs": [
+            "seg_0001"
+          ],
+          "reason": "CTA en español, sin afirmaciones nuevas; idioma del audio original.",
+          "click": {
+            "enabled_in_mix": true,
+            "gain_db": -2.0,
+            "delay_s": 0.012,
+            "duration_s": 0.045
+          }
+        }
+      ],
+      "cards_anim": [
+        {
+          "action": "comment",
+          "language": "es",
+          "title_text": "COMENTA",
+          "png": "cards/card_01_comment.png",
+          "size": [
+            932,
+            312
+          ],
+          "fits": true,
+          "subtitle_text": "¿QUÉ TURBO PREFIERES?",
+          "subtitle_source": "job_override",
+          "localization": {
+            "action": "comment",
+            "language": "es",
+            "title": "COMENTA",
+            "subtitle": "¿Quién ganaría esta batalla?",
+            "source": "card_text_catalog",
+            "catalog_version": "card_text.v1",
+            "used_title": "COMENTA",
+            "used_subtitle": "¿QUÉ TURBO PREFIERES?",
+            "title_source": "catalog",
+            "subtitle_source": "job_override"
+          },
+          "enter_start_seconds": 2.463,
+          "exit_end_seconds": 6.883
+        }
+      ],
+      "overlay_mov": {
+        "path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\render\\overlay_timing.mov",
+        "bytes": 8838255,
+        "frames": 493,
+        "fps": "30000/1001",
+        "width": 1080,
+        "height": 1920,
+        "notifications": 1
+      },
+      "click": {
+        "path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\mvp_short_clip5_20261028_200526\\audio\\click_hf_v1_stereo.wav",
+        "sha256": "CE60E1062DBD849EA0B22043B89AA2329EAA2C4855E74D8890C095101CF52C83",
+        "gain_db": -2.0,
+        "delay_s": 0.012,
+        "duration_s": 0.045,
+        "license_note": "Sintetizado localmente; reutilizado del MVP clip_0005."
+      },
+      "audio_mix": {
+        "mode": "mix_clicks",
+        "clicks": 1,
+        "delay_s": 0.012,
+        "gain_db": -2.0,
+        "no_limiter": true,
+        "no_ducking": true,
+        "no_global_gain": true,
+        "measurements": {
+          "mean_volume_dB": -13.9,
+          "max_volume_dB": -1.0
+        }
+      },
+      "final_work_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\render\\a7ace6f1_clip_0001_es_20261117_fps2997.mp4",
+      "final_work_sha256": "554146E67189666BDEECA32CBF1E9C8DFA808E3E9C66F9C850933B033DB00843",
+      "final_work_bytes": 11419808,
+      "video_duration_seconds": 16.433333,
+      "composed": {
+        "path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\input_composed.mp4",
+        "bytes": 10301899
+      },
+      "fps_normalization": {
+        "reason": "La fuente nueva es 30/1; el contrato de entrega exige 30000/1001.",
+        "original_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\render\\a7ace6f1_clip_0001_es_20261117.mp4",
+        "original_fps": "30/1",
+        "normalized_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\render\\a7ace6f1_clip_0001_es_20261117_fps2997.mp4",
+        "normalized_fps": "30000/1001",
+        "normalized_duration_seconds": 16.483,
+        "expected_duration_seconds": 16.433333,
+        "method": "ffmpeg -vf fps=30000/1001 -c:v libx264 -crf 18 -preset veryfast -pix_fmt yuv420p -c:a copy",
+        "contract_relaxed": false,
+        "audio_reencoded": false,
+        "shared_code_modified": false
+      }
+    }
+  },
+  "validate_mp4": {
+    "finished_at": "2026-11-17T20:31:21+00:00",
+    "source": "render de trabajo",
+    "work_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\render\\a7ace6f1_clip_0001_es_20261117_fps2997.mp4",
+    "work_sha256": "554146E67189666BDEECA32CBF1E9C8DFA808E3E9C66F9C850933B033DB00843",
+    "probe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "mime_codec_string": "avc1.640028",
+          "width": 1080,
+          "height": 1920,
+          "coded_width": 1080,
+          "coded_height": 1920,
+          "has_b_frames": 2,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "9:16",
+          "pix_fmt": "yuv420p",
+          "level": 40,
+          "color_range": "tv",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "30000/1001",
+          "avg_frame_rate": "30000/1001",
+          "time_base": "1/30000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 494490,
+          "duration": "16.483000",
+          "bit_rate": "5267896",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "494",
+          "extradata_size": 49,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "encoder": "Lavc62.28.101 libx264"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "mime_codec_string": "mp4a.40.2",
+          "sample_fmt": "fltp",
+          "sample_rate": "44100",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/44100",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 724960,
+          "duration": "16.439002",
+          "bit_rate": "265531",
+          "nb_frames": "709",
+          "extradata_size": 5,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler"
+          }
+        }
+      ],
+      "format": {
+        "filename": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\render\\a7ace6f1_clip_0001_es_20261117_fps2997.mp4",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "16.483000",
+        "size": "11419808",
+        "bit_rate": "5542587",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "title": "¿2 TURBOS SON MEJORES QUE 1?",
+          "artist": "Nocturna",
+          "date": "2026",
+          "encoder": "Lavf62.12.101",
+          "comment": "https://www.youtube.com/watch?v=2bb1YV92NyQ"
+        }
+      }
+    },
+    "checks": {
+      "video_present": true,
+      "audio_present": true,
+      "video_codec": true,
+      "video_profile": true,
+      "pix_fmt": true,
+      "width": true,
+      "height": true,
+      "frame_rate": true,
+      "audio_codec": true,
+      "audio_profile": true,
+      "sample_rate": true,
+      "channels": true,
+      "duration_matches_expected": true,
+      "av_duration_delta": true,
+      "start_matches_cut": true,
+      "end_matches_request": true,
+      "alignment_confident": true,
+      "no_protected_overlap": true,
+      "has_frames": true,
+      "final_sync_matches_render": true,
+      "final_sync_confident": true,
+      "decode_integrity": true
+    },
+    "all_ok": true,
+    "overlap_seconds": {
+      "clip_0001": 0.0,
+      "clip_0002": 0.0,
+      "clip_0003": 0.0,
+      "clip_0004": 0.0,
+      "clip_0005": 0.0
+    },
+    "decode_integrity": {
+      "returncode": 0,
+      "error_lines": [],
+      "ok": true
+    },
+    "final_alignment": {
+      "method": "NCC audio mono 44.1 kHz contra la fuente",
+      "clip": "work/run_20261116_new_source_full_pipeline/delivery/a7ace6f1_clip_0001_es_20261117/render/a7ace6f1_clip_0001_es_20261117_fps2997.mp4",
+      "source": "input/¿2 TURBOS SON MEJORES QUE 1¿ (2160p_30fps_AV1-128kbit_AAC-español).mp4",
+      "ref_window_seconds": [
+        0.0,
+        40.439728
+      ],
+      "global_ncc": 0.99993825,
+      "clip_zero_maps_to_source_seconds": 0.0,
+      "max_chunk_drift_seconds": 0.0,
+      "chunks": [
+        {
+          "local_start": 0.0,
+          "local_end": 5.0,
+          "ncc": 0.999799,
+          "delta_seconds_vs_global": 0.0,
+          "start_seconds": 0.0
+        },
+        {
+          "local_start": 5.0,
+          "local_end": 10.0,
+          "ncc": 0.999997,
+          "delta_seconds_vs_global": 0.0,
+          "start_seconds": 0.0
+        },
+        {
+          "local_start": 10.0,
+          "local_end": 15.0,
+          "ncc": 0.999997,
+          "delta_seconds_vs_global": 0.0,
+          "start_seconds": 0.0
+        }
+      ]
+    },
+    "expected_duration_seconds": 16.433333,
+    "published": true
+  },
+  "deliverable": {
+    "path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0001_es_20261117.mp4",
+    "file_name": "a7ace6f1_clip_0001_es_20261117.mp4",
+    "bytes": 11419808,
+    "sha256": "554146E67189666BDEECA32CBF1E9C8DFA808E3E9C66F9C850933B033DB00843",
+    "duration_seconds": 16.483
+  },
+  "seo": {
+    "finished_at": "2026-11-17T20:31:21+00:00",
+    "work_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\seo.md",
+    "sha256": "E6C32E7B7A4C90FA66107B5796DD6D6D8B496B57B362E74D8FC5BE28587EDF9B",
+    "bytes": 3447,
+    "language_context": {
+      "source_audio_language": "es",
+      "source_audio_language_source": "job",
+      "transcript_is_translation": false,
+      "canonical_language": "es",
+      "canonical_language_source": "job",
+      "transcript_language": "es",
+      "transcript_language_confidence": 0.741,
+      "subtitle_language": "es",
+      "notification_language": "es",
+      "emphasis_language": "es",
+      "overlay_language": "es",
+      "seo_language": "es",
+      "overlay_language_decision": "auto_from_source_audio",
+      "notification_language_decision": "auto_from_source_audio",
+      "emphasis_language_decision": "auto_from_source_audio",
+      "seo_language_decision": "auto_from_source_audio",
+      "overlay_language_reason": "idioma del audio declarado y confirmado por la deteccion del fragmento",
+      "emphasis_language_reason": "enfasis literal de la transcripcion en el idioma del audio",
+      "seo_language_reason": "idioma del audio declarado y confirmado por la deteccion del fragmento",
+      "names": {
+        "source_audio": "Spanish",
+        "transcript": "Spanish",
+        "subtitle": "Spanish",
+        "notification": "Spanish",
+        "emphasis": "Spanish",
+        "overlay": "Spanish",
+        "seo": "Spanish"
+      },
+      "evidence": {
+        "segments": [
+          {
+            "segment_id": "seg_0001",
+            "start_seconds": 0.0,
+            "end_seconds": 2.12
+          },
+          {
+            "segment_id": "seg_0002",
+            "start_seconds": 2.42,
+            "end_seconds": 5.22
+          },
+          {
+            "segment_id": "seg_0003",
+            "start_seconds": 5.64,
+            "end_seconds": 8.82
+          },
+          {
+            "segment_id": "seg_0004",
+            "start_seconds": 9.32,
+            "end_seconds": 13.34
+          },
+          {
+            "segment_id": "seg_0005",
+            "start_seconds": 14.36,
+            "end_seconds": 16.42
+          }
+        ],
+        "declared_source_audio": "es",
+        "transcript": {
+          "language": "es",
+          "candidate_language": "es",
+          "confidence": 0.741,
+          "decision": "auto",
+          "reason": "idioma predominante claro",
+          "tokens": 54,
+          "hits": {
+            "en": 0,
+            "es": 13,
+            "pt": 3,
+            "fr": 1,
+            "de": 0,
+            "it": 1
+          },
+          "top_hits": 13,
+          "coverage": 0.2407,
+          "runner_up": "pt",
+          "runner_up_hits": 3
+        },
+        "subtitles": {
+          "language": "es",
+          "candidate_language": "es",
+          "confidence": 0.741,
+          "decision": "auto",
+          "reason": "idioma predominante claro",
+          "tokens": 54,
+          "hits": {
+            "en": 0,
+            "es": 13,
+            "pt": 3,
+            "fr": 1,
+            "de": 0,
+            "it": 1
+          },
+          "top_hits": 13,
+          "coverage": 0.2407,
+          "runner_up": "pt",
+          "runner_up_hits": 3
+        }
+      }
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "section:1. Archivo entregable": true,
+        "section:2. Titulo": true,
+        "section:3. Descripcion": true,
+        "section:4. Hashtags": true,
+        "section:5. Etiquetas": true,
+        "section:6. Comentario fijado": true,
+        "section:7. Miniatura": true,
+        "section:8. Verificacion de datos": true,
+        "section:9. Fuentes y requisitos": true,
+        "section:10. Estado": true,
+        "title_present": true,
+        "title_within_100": true,
+        "two_alternatives": true,
+        "description_present": true,
+        "description_within_5000": true,
+        "description_within_youtube_shorts": true,
+        "hashtags_present": true,
+        "hashtags_max_3": true,
+        "hashtags_max_60": true,
+        "hashtags_well_formed": true,
+        "tags_present": true,
+        "pinned_present": true,
+        "thumbnail_present": true,
+        "facts_present": true,
+        "facts_literal": true,
+        "sources_present": true,
+        "sources_well_formed": true,
+        "quotes_literal": true,
+        "numbers_backed": true,
+        "no_result_promises": true,
+        "mp4_name_matches": true,
+        "mp4_sha_matches": true,
+        "pending_review_declared": true,
+        "language_declared": true,
+        "audience_declared": true,
+        "seo_language_declared_in_header": true,
+        "seo_language_matches_transcript": true,
+        "seo_language_matches_overlay_language": true,
+        "seo_language_decision_recorded": true,
+        "source_audio_matches_transcript": true,
+        "language_fields_consistent": true
+      },
+      "language": {
+        "seo_language": "es",
+        "expected_language": "es",
+        "declared_in_header": "es",
+        "decision": "auto_from_source_audio"
+      },
+      "extracted": {
+        "title": "¿Qué tipos de turbo hay en un Supra?",
+        "alt_titles": [
+          "Twin turbo, big turbo y un Supra de agencia",
+          "Así empieza el experimento con el Toyota Supra"
+        ],
+        "description_chars": 416,
+        "hashtags": [
+          "#Shorts",
+          "#Turbo",
+          "#Supra"
+        ],
+        "tags": [
+          "turbo",
+          "supra",
+          "motor",
+          "twin turbo",
+          "automóvil"
+        ],
+        "facts": 3,
+        "sources": 5
+      }
+    },
+    "output_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0001_es_20261117.seo.md"
+  },
+  "validate_seo": {
+    "finished_at": "2026-11-17T20:31:50+00:00",
+    "result": {
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "section:1. Archivo entregable": true,
+        "section:2. Titulo": true,
+        "section:3. Descripcion": true,
+        "section:4. Hashtags": true,
+        "section:5. Etiquetas": true,
+        "section:6. Comentario fijado": true,
+        "section:7. Miniatura": true,
+        "section:8. Verificacion de datos": true,
+        "section:9. Fuentes y requisitos": true,
+        "section:10. Estado": true,
+        "title_present": true,
+        "title_within_100": true,
+        "two_alternatives": true,
+        "description_present": true,
+        "description_within_5000": true,
+        "description_within_youtube_shorts": true,
+        "hashtags_present": true,
+        "hashtags_max_3": true,
+        "hashtags_max_60": true,
+        "hashtags_well_formed": true,
+        "tags_present": true,
+        "pinned_present": true,
+        "thumbnail_present": true,
+        "facts_present": true,
+        "facts_literal": true,
+        "sources_present": true,
+        "sources_well_formed": true,
+        "quotes_literal": true,
+        "numbers_backed": true,
+        "no_result_promises": true,
+        "mp4_name_matches": true,
+        "mp4_sha_matches": true,
+        "pending_review_declared": true,
+        "language_declared": true,
+        "audience_declared": true,
+        "seo_language_declared_in_header": true,
+        "seo_language_matches_transcript": true,
+        "seo_language_matches_overlay_language": true,
+        "seo_language_decision_recorded": true,
+        "source_audio_matches_transcript": true,
+        "language_fields_consistent": true
+      },
+      "language": {
+        "seo_language": "es",
+        "expected_language": "es",
+        "declared_in_header": "es",
+        "decision": "auto_from_source_audio"
+      },
+      "extracted": {
+        "title": "¿Qué tipos de turbo hay en un Supra?",
+        "alt_titles": [
+          "Twin turbo, big turbo y un Supra de agencia",
+          "Así empieza el experimento con el Toyota Supra"
+        ],
+        "description_chars": 416,
+        "hashtags": [
+          "#Shorts",
+          "#Turbo",
+          "#Supra"
+        ],
+        "tags": [
+          "turbo",
+          "supra",
+          "motor",
+          "twin turbo",
+          "automóvil"
+        ],
+        "facts": 3,
+        "sources": 5
+      }
+    }
+  },
+  "manifest": {
+    "finished_at": "2026-11-17T20:31:50+00:00",
+    "work_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\manifest.json",
+    "output_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0001_es_20261117.manifest.json",
+    "sha256": "71CDE1B8925156C0EB7D8FFAAF54F2E97F76AB54EDB981EC9BCF470EB4FB1ACD",
+    "bytes": 36011,
+    "protected_after": {
+      "all_ok": true,
+      "files": {
+        "clip_0001_shorts_mvp_20261028.mp4": {
+          "exists": true,
+          "bytes": 42790148,
+          "sha256": "EBBD2270DAC8A1D06FF82AB16F35F8E42E58BB9A1EEA14B32FFB05F2191D95DC",
+          "expected": "EBBD2270DAC8A1D06FF82AB16F35F8E42E58BB9A1EEA14B32FFB05F2191D95DC",
+          "ok": true
+        },
+        "clip_0001_shorts_mvp_20261028.manifest.json": {
+          "exists": true,
+          "bytes": 18386,
+          "sha256": "330D9A7C86E17304FB10ED64E151D2A360C01306A8545FFD7D3209E71B4226CE",
+          "expected": "330D9A7C86E17304FB10ED64E151D2A360C01306A8545FFD7D3209E71B4226CE",
+          "ok": true
+        },
+        "clip_0002_shorts_mvp_20261028.mp4": {
+          "exists": true,
+          "bytes": 19794327,
+          "sha256": "8A45FFA4983E0705F2BDC9D761A35CE7339FFCBF8CF83CE58E0A20C85B09B311",
+          "expected": "8A45FFA4983E0705F2BDC9D761A35CE7339FFCBF8CF83CE58E0A20C85B09B311",
+          "ok": true
+        },
+        "clip_0002_shorts_mvp_20261028.manifest.json": {
+          "exists": true,
+          "bytes": 9490,
+          "sha256": "D0F916FEC66D207E86E8B9E5903E4B56017BCE89B3C1D972959357D01B8AED98",
+          "expected": "D0F916FEC66D207E86E8B9E5903E4B56017BCE89B3C1D972959357D01B8AED98",
+          "ok": true
+        },
+        "clip_0003_shorts_mvp_20261028.mp4": {
+          "exists": true,
+          "bytes": 32355578,
+          "sha256": "089A99DEFE7CB2777FF470EFDD8FE15A68B8E5BC90B1874AD0D33547E4D8B723",
+          "expected": "089A99DEFE7CB2777FF470EFDD8FE15A68B8E5BC90B1874AD0D33547E4D8B723",
+          "ok": true
+        },
+        "clip_0003_shorts_mvp_20261028.manifest.json": {
+          "exists": true,
+          "bytes": 24974,
+          "sha256": "46E11B876D4BA4B6BB6F7901417394A886FBD92034484BA32DC17EF5EB058F96",
+          "expected": "46E11B876D4BA4B6BB6F7901417394A886FBD92034484BA32DC17EF5EB058F96",
+          "ok": true
+        },
+        "clip_0004_shorts_mvp_20261028.mp4": {
+          "exists": true,
+          "bytes": 31754469,
+          "sha256": "1362571FB103895D5548177B0429896CB5CC7A1AF3EC6F37AD0093C1458C2E22",
+          "expected": "1362571FB103895D5548177B0429896CB5CC7A1AF3EC6F37AD0093C1458C2E22",
+          "ok": true
+        },
+        "clip_0004_shorts_mvp_20261028.manifest.json": {
+          "exists": true,
+          "bytes": 25416,
+          "sha256": "545CA9EA76B50996B0B8FAA23E7E06796FE2DBC9332C56B7219F57012BE49029",
+          "expected": "545CA9EA76B50996B0B8FAA23E7E06796FE2DBC9332C56B7219F57012BE49029",
+          "ok": true
+        },
+        "clip_0005_shorts_mvp_20261028.mp4": {
+          "exists": true,
+          "bytes": 22565975,
+          "sha256": "183C6CFBAA4ED52993042BA8C3EA28A9142582F645CEB32E529A9362E5A0EF10",
+          "expected": "183C6CFBAA4ED52993042BA8C3EA28A9142582F645CEB32E529A9362E5A0EF10",
+          "ok": true
+        },
+        "clip_0005_shorts_mvp_20261028.manifest.json": {
+          "exists": true,
+          "bytes": 34758,
+          "sha256": "EB76D10C55D20D82C0B372E351A92E02EB1DBDB2D66B9DBC2FB088F335636AB9",
+          "expected": "EB76D10C55D20D82C0B372E351A92E02EB1DBDB2D66B9DBC2FB088F335636AB9",
+          "ok": true
+        }
+      }
+    }
+  }
+}

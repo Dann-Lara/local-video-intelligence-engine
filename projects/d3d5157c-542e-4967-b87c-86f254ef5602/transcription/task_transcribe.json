@@ -1,0 +1,15 @@
+{
+  "artifact_paths": [
+    "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\projects\\d3d5157c-542e-4967-b87c-86f254ef5602\\transcription\\transcription.json",
+    "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\projects\\d3d5157c-542e-4967-b87c-86f254ef5602\\transcription\\task_transcribe.json"
+  ],
+  "attempt_count": 6,
+  "error_code": null,
+  "error_message": null,
+  "finished_at": "2026-10-17T20:47:10+00:00",
+  "project_id": "d3d5157c-542e-4967-b87c-86f254ef5602",
+  "stage": "transcription",
+  "started_at": "2026-10-17T20:46:13+00:00",
+  "status": "succeeded",
+  "task_id": "ded8fc6a-707b-4621-acb6-6854f65a00b0"
+}

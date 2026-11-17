@@ -1,0 +1,259 @@
+{
+  "source": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\input\\Escape 100 Cops, Win $500,000 (2160p_30fps_AV1-128kbit_AAC-inglés).mp4",
+  "source_video_packets": 36813,
+  "source_keyframes": 672,
+  "cut_command_template": [
+    "ffmpeg",
+    "-y",
+    "-ss",
+    "{start:.6f}",
+    "-i",
+    "{source}",
+    "-t",
+    "{duration:.6f}",
+    "-map",
+    "0:v:0",
+    "-map",
+    "0:a:0?",
+    "-c",
+    "copy",
+    "-avoid_negative_ts",
+    "make_zero",
+    "-movflags",
+    "+faststart",
+    "{output}"
+  ],
+  "candidates": {
+    "rec_0001": {
+      "requested_start_seconds": 0.0,
+      "requested_end_seconds": 43.0,
+      "requested_duration_seconds": 43.0,
+      "previous_keyframe_pts": 0.0,
+      "next_keyframe_pts": 1.668333,
+      "snap_back_seconds": 0.0,
+      "keyframe_interval_to_next": 1.668333,
+      "previous_cut": {
+        "path": "work/clip_0001_recovered_20261115_delivery/clips/clip_0001_recovered_20261115_source.mp4",
+        "exists": true,
+        "duration_seconds": 43.009633,
+        "first_video_frame": {
+          "key_frame": 1,
+          "pts_time": "0.000000"
+        },
+        "first_video_packet": {
+          "pts_time": 0.0,
+          "dts_time": 0.0,
+          "flags": "K__",
+          "keyframe": true
+        },
+        "measured_actual_start_seconds": 0.0,
+        "measured_minus_requested": 0.0
+      },
+      "previous_vertical": {
+        "path": "work/clip_0001_recovered_20261115_delivery/clips/clip_0001_recovered_20261115_vertical.mp4",
+        "duration_seconds": 43.009633,
+        "first_video_frame": {
+          "key_frame": 1,
+          "pts_time": "0.000000",
+          "side_data_list": [
+            {}
+          ]
+        }
+      }
+    },
+    "rec_0002": {
+      "requested_start_seconds": 73.0,
+      "requested_end_seconds": 134.0,
+      "requested_duration_seconds": 61.0,
+      "previous_keyframe_pts": 72.439033,
+      "next_keyframe_pts": 73.5735,
+      "snap_back_seconds": 0.560967,
+      "keyframe_interval_to_next": 1.134467,
+      "previous_cut": {
+        "path": "work/clip_0002_recovered_20261115_delivery/clips/clip_0002_recovered_20261115_source.mp4",
+        "exists": true,
+        "duration_seconds": 61.57932,
+        "first_video_frame": {
+          "key_frame": 1,
+          "pts_time": "0.016000"
+        },
+        "first_video_packet": {
+          "pts_time": 0.016,
+          "dts_time": 0.016,
+          "flags": "K__",
+          "keyframe": true
+        },
+        "measured_actual_start_seconds": 72.423039,
+        "measured_minus_requested": -0.576961
+      },
+      "previous_vertical": {
+        "path": "work/clip_0002_recovered_20261115_delivery/clips/clip_0002_recovered_20261115_vertical.mp4",
+        "duration_seconds": 61.57932,
+        "first_video_frame": {
+          "key_frame": 1,
+          "pts_time": "0.000000",
+          "side_data_list": [
+            {}
+          ]
+        }
+      }
+    },
+    "rec_0003": {
+      "requested_start_seconds": 153.0,
+      "requested_end_seconds": 187.0,
+      "requested_duration_seconds": 34.0,
+      "previous_keyframe_pts": 150.016533,
+      "next_keyframe_pts": 153.720233,
+      "snap_back_seconds": 2.983467,
+      "keyframe_interval_to_next": 3.7037,
+      "previous_cut": {
+        "path": "work/clip_0003_recovered_20261115_delivery/clips/clip_0003_recovered_20261115_source.mp4",
+        "exists": true,
+        "duration_seconds": 37.018633,
+        "first_video_frame": {
+          "key_frame": 1,
+          "pts_time": "0.015000"
+        },
+        "first_video_packet": {
+          "pts_time": 0.015,
+          "dts_time": 0.015,
+          "flags": "K__",
+          "keyframe": true
+        },
+        "measured_actual_start_seconds": 150.000907,
+        "measured_minus_requested": -2.999093
+      },
+      "previous_vertical": {
+        "path": "work/clip_0003_recovered_20261115_delivery/clips/clip_0003_recovered_20261115_vertical.mp4",
+        "duration_seconds": 37.012608,
+        "first_video_frame": {
+          "key_frame": 1,
+          "pts_time": "0.000000",
+          "side_data_list": [
+            {}
+          ]
+        }
+      }
+    },
+    "rec_0004": {
+      "requested_start_seconds": 259.0,
+      "requested_end_seconds": 284.0,
+      "requested_duration_seconds": 25.0,
+      "previous_keyframe_pts": 257.4572,
+      "next_keyframe_pts": 259.7595,
+      "snap_back_seconds": 1.5428,
+      "keyframe_interval_to_next": 2.3023,
+      "previous_cut": {
+        "path": "work/clip_0004_recovered_20261115_delivery/clips/clip_0004_recovered_20261115_source.mp4",
+        "exists": true,
+        "duration_seconds": 26.576867,
+        "first_video_frame": {
+          "key_frame": 1,
+          "pts_time": "0.017000"
+        },
+        "first_video_packet": {
+          "pts_time": 0.017,
+          "dts_time": 0.017,
+          "flags": "K__",
+          "keyframe": true
+        },
+        "measured_actual_start_seconds": 257.439637,
+        "measured_minus_requested": -1.560363
+      },
+      "previous_vertical": {
+        "path": "work/clip_0004_recovered_20261115_delivery/clips/clip_0004_recovered_20261115_vertical.mp4",
+        "duration_seconds": 26.592867,
+        "first_video_frame": {
+          "key_frame": 1,
+          "pts_time": "0.033000",
+          "side_data_list": [
+            {}
+          ]
+        }
+      }
+    },
+    "rec_0005": {
+      "requested_start_seconds": 678.06,
+      "requested_end_seconds": 730.16,
+      "requested_duration_seconds": 52.1,
+      "previous_keyframe_pts": 675.441433,
+      "next_keyframe_pts": 678.7781,
+      "snap_back_seconds": 2.618567,
+      "keyframe_interval_to_next": 3.336667,
+      "previous_cut": {
+        "path": "work/clip_0005_recovered_20261115_delivery/clips/clip_0005_recovered_20261115_source.mp4",
+        "exists": true,
+        "duration_seconds": 54.752653,
+        "first_video_frame": {
+          "key_frame": 1,
+          "pts_time": "0.019000"
+        },
+        "first_video_packet": {
+          "pts_time": 0.019,
+          "dts_time": 0.019,
+          "flags": "K__",
+          "keyframe": true
+        },
+        "measured_actual_start_seconds": 675.422041,
+        "measured_minus_requested": -2.637959
+      },
+      "previous_vertical": {
+        "path": "work/clip_0005_recovered_20261115_delivery/clips/clip_0005_recovered_20261115_vertical.mp4",
+        "duration_seconds": 54.754333,
+        "first_video_frame": {
+          "key_frame": 1,
+          "pts_time": "0.033000",
+          "side_data_list": [
+            {}
+          ]
+        }
+      }
+    },
+    "rec_0006": {
+      "requested_start_seconds": 1097.26,
+      "requested_end_seconds": 1175.82,
+      "requested_duration_seconds": 78.56,
+      "previous_keyframe_pts": 1095.7947,
+      "next_keyframe_pts": 1097.763333,
+      "snap_back_seconds": 1.4653,
+      "keyframe_interval_to_next": 1.968633
+    }
+  },
+  "measurement_vs_keyframe": [
+    {
+      "rec": "rec_0001",
+      "measured": 0.0,
+      "closest_keyframe": 0.0,
+      "abs_diff": 0.0,
+      "is_keyframe": true
+    },
+    {
+      "rec": "rec_0002",
+      "measured": 72.423039,
+      "closest_keyframe": 72.439033,
+      "abs_diff": 0.015994,
+      "is_keyframe": false
+    },
+    {
+      "rec": "rec_0003",
+      "measured": 150.000907,
+      "closest_keyframe": 150.016533,
+      "abs_diff": 0.015626,
+      "is_keyframe": false
+    },
+    {
+      "rec": "rec_0004",
+      "measured": 257.439637,
+      "closest_keyframe": 257.4572,
+      "abs_diff": 0.017563,
+      "is_keyframe": false
+    },
+    {
+      "rec": "rec_0005",
+      "measured": 675.422041,
+      "closest_keyframe": 675.441433,
+      "abs_diff": 0.019392,
+      "is_keyframe": false
+    }
+  ]
+}

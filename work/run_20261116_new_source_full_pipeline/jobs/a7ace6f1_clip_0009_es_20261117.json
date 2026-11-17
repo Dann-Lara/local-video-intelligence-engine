@@ -1,0 +1,165 @@
+{
+  "job_id": "a7ace6f1_clip_0009_es_20261117_delivery",
+  "project_id": "a7ace6f1-43b8-4769-9b67-58693575c499",
+  "source_asset_id": "sha256-75ddae1b7b1830fc96491d97b066e02150c51cd4420e5e535730df6023edb50c",
+  "output_stem": "a7ace6f1_clip_0009_es_20261117",
+  "source": {
+    "path": "C:/Users/SPARTAN PC/Documents/new_life/clipping/input/¿2 TURBOS SON MEJORES QUE 1¿ (2160p_30fps_AV1-128kbit_AAC-español).mp4",
+    "bytes": 954138171,
+    "sha256": "75DDAE1B7B1830FC96491D97B066E02150C51CD4420E5E535730DF6023EDB50C"
+  },
+  "transcription_path": "C:/Users/SPARTAN PC/Documents/new_life/clipping/projects/a7ace6f1-43b8-4769-9b67-58693575c499/transcription/transcription.json",
+  "click_sound": {
+    "path": "C:/Users/SPARTAN PC/Documents/new_life/clipping/work/mvp_short_clip5_20261028_200526/audio/click_hf_v1_stereo.wav",
+    "source": "synthetic_hf_v1",
+    "gain_db": -2.0,
+    "delay_s": 0.012,
+    "duration_s": 0.045
+  },
+  "candidate": {
+    "clip_id": "clip_0009",
+    "title": "Mejora Significativa en el Rendimiento",
+    "origin": "stage_b_editorial_20261117",
+    "requested_start_seconds": 1488.32,
+    "requested_end_seconds": 1531.52,
+    "start_seconds": 1488.32,
+    "end_seconds": 1531.52,
+    "evidence_refs": [
+      "seg_0925",
+      "seg_0926",
+      "seg_0927",
+      "seg_0928",
+      "seg_0929",
+      "seg_0930",
+      "seg_0931",
+      "seg_0932",
+      "seg_0933",
+      "seg_0934"
+    ],
+    "evidence_text": "Se fue a 16 libras",
+    "ad_classification": "none",
+    "ad_evidence": "",
+    "editorial_decision": "accept",
+    "reason": "Este segmento presenta una progresión clara del rendimiento, con datos concretos (16 libras, 432 caballos) que respaldan el avance. La referencia a 'coche de calle' añade contexto y valor al resultado.",
+    "boundary_evaluation": {
+      "end": "El final es natural, concluyendo con la evaluación del impacto en un coche de calle.",
+      "end_ok": true,
+      "notes": "Extension editorial humana: se anaden seg_0928 a seg_0934 hasta el limite real de Whisper 1531.52 s para dar un cierre natural ('Muy muy bien para un carro de calle') y reunir evidencia suficiente de idioma (6 palabras funcionales era insuficiente para el Detector; 20 con la extension). No se relaja ningun umbral.",
+      "start": "El inicio es natural, comenzando con un dato cuantificable sobre el rendimiento.",
+      "start_ok": true
+    },
+    "confidence": 0.8,
+    "human_review": {
+      "approved": false,
+      "status": "pending_user_review",
+      "trim_applied": false,
+      "trim_reason": "",
+      "extension_note": "Extension editorial humana: se anaden seg_0928 a seg_0934 hasta el limite real de Whisper 1531.52 s para dar un cierre natural ('Muy muy bien para un carro de calle') y reunir evidencia suficiente de idioma (6 palabras funcionales era insuficiente para el Detector; 20 con la extension). No se relaja ningun umbral."
+    },
+    "original_end_seconds": 1518.7
+  },
+  "notifications": [
+    {
+      "action": "comment",
+      "subtitle_text": "¿QUÉ TE PARECE LA CIFRA?",
+      "enter_start_seconds": 4.557,
+      "hold_start_seconds": 5.077,
+      "hold_end_seconds": 8.557,
+      "exit_end_seconds": 8.977,
+      "evidence_refs": [
+        "seg_0925"
+      ],
+      "reason": "CTA en español, sin afirmaciones nuevas; idioma del audio original.",
+      "click": {
+        "enabled_in_mix": true,
+        "gain_db": -2.0,
+        "delay_s": 0.012,
+        "duration_s": 0.045
+      }
+    }
+  ],
+  "emphasis": [],
+  "seo": {
+    "title": "432 caballos en la medición final",
+    "alt_titles": [
+      "La medición final del Supra turbo",
+      "Se fue a 16 libras y dio 432 caballos"
+    ],
+    "description": "Momento final de la medición del vehículo con el sistema turbo instalado, con cifras tomadas literalmente de la transcripción.\n\nCitas literales: \"Se fue a 16 libras\" y \"Y nos dio 432 caballos\".\n\nTexto extraído del video original. Sin promesas de resultados. Pendiente de revisión humana.",
+    "hashtags": [
+      "#Shorts",
+      "#Supra",
+      "#Turbo"
+    ],
+    "tags": [
+      "supra",
+      "turbo",
+      "caballos",
+      "medición",
+      "automóvil"
+    ],
+    "pinned_comment": "¿Qué te parece la cifra final? Comenta tu opinión.",
+    "thumbnail_text": "432 CABALLOS",
+    "language": "es",
+    "audience": "not_made_for_kids",
+    "facts": [
+      {
+        "claim": "Se fue a 16 libras",
+        "segment_id": "seg_0925"
+      },
+      {
+        "claim": "Y nos dio 432 caballos",
+        "segment_id": "seg_0926"
+      },
+      {
+        "claim": "Ya estamos del otro lado",
+        "segment_id": "seg_0927"
+      },
+      {
+        "claim": "432 yo creo que está",
+        "segment_id": "seg_0933"
+      },
+      {
+        "claim": "Muy muy bien para un carro de calle",
+        "segment_id": "seg_0934"
+      }
+    ],
+    "sources": [
+      {
+        "classification": "official_requirement",
+        "url": "https://support.google.com/youtube/answer/10059070",
+        "checked_on": "2026-11-15",
+        "claim": "Shorts can be up to 3 minutes long."
+      },
+      {
+        "classification": "official_requirement",
+        "url": "https://support.google.com/youtube/answer/57407",
+        "checked_on": "2026-11-15",
+        "claim": "The title allows up to 100 characters and the description up to 5,000."
+      },
+      {
+        "classification": "official_requirement",
+        "url": "https://support.google.com/youtube/answer/6390658",
+        "checked_on": "2026-11-15",
+        "claim": "Up to three hashtags from the description can appear next to the title; they cannot contain spaces and more than 60 are ignored."
+      },
+      {
+        "classification": "editorial_recommendation",
+        "url": "https://support.google.com/youtube/answer/57407",
+        "checked_on": "2026-11-15",
+        "claim": "YouTube states that tags play a minimal role in discovery; they are used only as descriptors."
+      },
+      {
+        "classification": "hypothesis",
+        "url": "https://support.google.com/youtube/answer/6390658",
+        "checked_on": "2026-11-15",
+        "claim": "Hipotesis propia, no verificada: #Shorts mas dos etiquetas tematicas puede ayudar a clasificar el contenido; no garantiza resultados."
+      }
+    ],
+    "notes": "SEO generado exclusivamente con citas y datos de la transcripción real del proyecto a7ace6f1-43b8-4769-9b67-58693575c499. Sin publicación automática. Pendiente de revisión humana. Extension editorial humana: se anaden seg_0928 a seg_0934 hasta el limite real de Whisper 1531.52 s para dar un cierre natural ('Muy muy bien para un carro de calle') y reunir evidencia suficiente de idioma (6 palabras funcionales era insuficiente para el Detector; 20 con la extension). No se relaja ningun umbral. Se retira '290' del titulo porque esa cifra no aparece en este clip."
+  },
+  "negative_fixtures": [],
+  "source_audio_language": "es",
+  "source_audio_language_source": "job",
+  "transcript_is_translation": false
+}

@@ -1,0 +1,235 @@
+{
+  "job_id": "clip_0002_timingfix_20261116_delivery",
+  "project_id": "d3d5157c-542e-4967-b87c-86f254ef5602",
+  "source_asset_id": "asset_escape_100_cops_2160p",
+  "output_stem": "clip_0002_timingfix_20261116",
+  "source": {
+    "path": "C:/Users/SPARTAN PC/Documents/new_life/clipping/input/Escape 100 Cops, Win $500,000 (2160p_30fps_AV1-128kbit_AAC-inglés).mp4",
+    "bytes": 1627212173,
+    "sha256": "281A885B92A667AD0CF706B4B7218A9227FAFE4CEC94757047C4354C86B6FA13"
+  },
+  "transcription_path": "C:/Users/SPARTAN PC/Documents/new_life/clipping/projects/d3d5157c-542e-4967-b87c-86f254ef5602/transcription/transcription.json",
+  "click_sound": {
+    "path": "C:/Users/SPARTAN PC/Documents/new_life/clipping/work/mvp_short_clip5_20261028_200526/audio/click_hf_v1_stereo.wav",
+    "source": "synthetic_hf_v1",
+    "gain_db": -2.0,
+    "delay_s": 0.012,
+    "duration_s": 0.045
+  },
+  "candidate": {
+    "clip_id": "clip_0002",
+    "recovery_id": "rec_0002",
+    "title": "Darius Is Caught in the First 10 Minutes",
+    "origin": "run_20261106_editorial_recovery",
+    "requested_start_seconds": 73.0,
+    "requested_end_seconds": 134.0,
+    "start_seconds": 73.0,
+    "end_seconds": 134.0,
+    "evidence_refs": [
+      "seg_0044",
+      "seg_0045",
+      "seg_0046",
+      "seg_0047",
+      "seg_0048",
+      "seg_0049",
+      "seg_0050",
+      "seg_0051",
+      "seg_0052",
+      "seg_0053",
+      "seg_0054",
+      "seg_0055",
+      "seg_0056",
+      "seg_0057",
+      "seg_0058",
+      "seg_0059",
+      "seg_0060",
+      "seg_0061",
+      "seg_0062",
+      "seg_0063",
+      "seg_0064",
+      "seg_0065",
+      "seg_0066",
+      "seg_0067",
+      "seg_0068",
+      "seg_0069",
+      "seg_0070",
+      "seg_0071",
+      "seg_0072",
+      "seg_0073",
+      "seg_0074",
+      "seg_0075",
+      "seg_0076",
+      "seg_0077",
+      "seg_0078",
+      "seg_0079",
+      "seg_0080",
+      "seg_0081"
+    ],
+    "evidence_text": "The cops were already on our tail. Hey police! Alright, we're on our way over and out. Okay, meet me at the market. What about these straw bales right here? That looks a little suspicious. Where we at baby? Mr. Beast! They're so close. I can hear them. I can hear them. This is something. We're on somebody. Show us your hands! Show us your hands! What are we going? What? What's your name? Is this Darius? Let me go! Let me go! Let me go! Yeah, it's only been 10 minutes. And Darius has already been arrested. I see so many cops go! They're forming a line and sweeping the city. I'm officially at the market. Tariq, we're heading your way. Alright, I'll be ready. Alright, Tariq. Hand me the map. They clearly formed a straight line and are going and checking every nook and crack. The only weakness in that strategy though is if we can somehow sneak past the line, they're not gonna suspect us to be in buildings they already searched. If there was ever a time to penetrate the line, I've got a plan to follow. I don't think the cops realize there's tunnels under the city.",
+    "ad_classification": "none",
+    "ad_evidence": "Sin publicidad: no hay marcas, productos, ofertas ni llamadas a la acción.",
+    "editorial_decision": "accept",
+    "reason": "A complete first-act beat: chase, first arrest, police strategy, and the counter-plan. It establishes the cost of failure and the plan that drives the next phase.",
+    "boundary_evaluation": {
+      "start": "Empieza en 'The cops were already on our tail.', una frase completa que establece la persecución.",
+      "end": "Termina en 'I don't think the cops realize there's tunnels under the city.', una frase completa y una revelación natural.",
+      "start_ok": true,
+      "end_ok": true,
+      "notes": "Recovered candidate rec_0002 (73.0s-134.0s). Cut alignment measured by NCC."
+    },
+    "confidence": 0.8
+  },
+  "notifications": [
+    {
+      "action": "comment",
+      "subtitle_text": "WHAT WOULD YOU DO?",
+      "enter_start_seconds": 6.0,
+      "hold_start_seconds": 6.52,
+      "hold_end_seconds": 10.0,
+      "exit_end_seconds": 10.42,
+      "evidence_refs": [
+        "seg_0044"
+      ],
+      "reason": "Editorial prompt in English; no added facts.",
+      "click": {
+        "enabled_in_mix": true,
+        "gain_db": -2.0,
+        "delay_s": 0.012,
+        "duration_s": 0.045
+      }
+    }
+  ],
+  "emphasis": [],
+  "seo": {
+    "title": "Darius Is Caught in the First 10 Minutes",
+    "alt_titles": [
+      "Darius Is Caught in the First 10 Minutes - Challenge Moment",
+      "Jimmy says the cops do not realize there are tunnels under the city"
+    ],
+    "description": "The first hiding spot of the group fails and Darius is arrested. The cops form a line and sweep the city; Jimmy explains the weakness of that line and says the cops do not know about the tunnels under the city.\n\nJimmy says the cops do not realize there are tunnels under the city.\n\nA complete first-act beat: chase, first arrest, police strategy, and the counter-plan. It establishes the cost of failure and the plan that drives the next phase.\n\nEditorial excerpt from the original video, selected from the real transcript. It is not a guide and it is not a promise of results.",
+    "hashtags": [
+      "#Shorts",
+      "#Challenge",
+      "#MrBeast"
+    ],
+    "tags": [
+      "challenge",
+      "escape",
+      "cops",
+      "shorts",
+      "mrbeast"
+    ],
+    "pinned_comment": "What would you do in this situation? Tell us in the comments.",
+    "thumbnail_text": "DARIUS IS CAUGHT IN THE FIRST 10 MINUTES",
+    "language": "en",
+    "audience": "not_made_for_kids",
+    "facts": [
+      {
+        "claim": "The cops were already on our tail.",
+        "segment_id": "seg_0044"
+      },
+      {
+        "claim": "What about these straw bales right here?",
+        "segment_id": "seg_0048"
+      },
+      {
+        "claim": "That looks a little suspicious.",
+        "segment_id": "seg_0049"
+      },
+      {
+        "claim": "Show us your hands!",
+        "segment_id": "seg_0057"
+      },
+      {
+        "claim": "Is this Darius?",
+        "segment_id": "seg_0062"
+      }
+    ],
+    "sources": [
+      {
+        "classification": "official_requirement",
+        "url": "https://support.google.com/youtube/answer/10059070",
+        "checked_on": "2026-11-15",
+        "claim": "Shorts can be up to 3 minutes long."
+      },
+      {
+        "classification": "official_requirement",
+        "url": "https://support.google.com/youtube/answer/57407",
+        "checked_on": "2026-11-15",
+        "claim": "The title allows up to 100 characters and the description up to 5,000."
+      },
+      {
+        "classification": "official_requirement",
+        "url": "https://support.google.com/youtube/answer/6390658",
+        "checked_on": "2026-11-15",
+        "claim": "Up to three hashtags from the description can appear next to the title; they cannot contain spaces and more than 60 are ignored."
+      },
+      {
+        "classification": "editorial_recommendation",
+        "url": "https://support.google.com/youtube/answer/57407",
+        "checked_on": "2026-11-15",
+        "claim": "YouTube states that tags play a minimal role in discovery; they are used only as descriptors."
+      },
+      {
+        "classification": "hypothesis",
+        "url": "https://support.google.com/youtube/answer/6390658",
+        "checked_on": "2026-11-15",
+        "claim": "Own hypothesis, not verified: #Shorts plus two topic hashtags may help classify the content; it does not guarantee performance."
+      }
+    ],
+    "notes": "SEO generated from real transcript evidence for rec_0002 (run_20261106_editorial_recovery). Pending human review before publishing."
+  },
+  "negative_fixtures": [
+    {
+      "clip_id": "clip_0001",
+      "brand_or_topic": "Call of Duty: Mobile",
+      "ad_classification": "promotional",
+      "protected_file": "output/clip_0001_shorts_mvp_20261028.mp4",
+      "source_range_seconds": [
+        526.791111,
+        584.949211
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_0210",
+          "quote": "hop into cod mobile right after this video"
+        },
+        {
+          "segment_id": "seg_0213",
+          "quote": "scan this QR code or click"
+        },
+        {
+          "segment_id": "seg_0214",
+          "quote": "the link in the description to download call of duty mobile today"
+        }
+      ]
+    },
+    {
+      "clip_id": "clip_0005",
+      "brand_or_topic": "Libro 'The Most Dangerous Games' (James Patterson)",
+      "ad_classification": "promotional",
+      "protected_file": "output/clip_0005_shorts_mvp_20261028.mp4",
+      "source_range_seconds": [
+        1178.691338,
+        1228.382041
+      ],
+      "evidence": [
+        {
+          "segment_id": "seg_0319",
+          "quote": "this is the most dangerous games which is a brand new book"
+        },
+        {
+          "segment_id": "seg_0324",
+          "quote": "the book and enter we're gonna give one person one million dollars so scan the qr code on her face"
+        },
+        {
+          "segment_id": "seg_0325",
+          "quote": "or go wherever you buy books"
+        }
+      ]
+    }
+  ],
+  "source_audio_language": "en",
+  "source_audio_language_source": "job",
+  "transcript_is_translation": false
+}

@@ -1,0 +1,172 @@
+{
+  "job_id": "a7ace6f1_clip_0008_es_20261117_delivery",
+  "project_id": "a7ace6f1-43b8-4769-9b67-58693575c499",
+  "source_asset_id": "sha256-75ddae1b7b1830fc96491d97b066e02150c51cd4420e5e535730df6023edb50c",
+  "output_stem": "a7ace6f1_clip_0008_es_20261117",
+  "source": {
+    "path": "C:/Users/SPARTAN PC/Documents/new_life/clipping/input/¿2 TURBOS SON MEJORES QUE 1¿ (2160p_30fps_AV1-128kbit_AAC-español).mp4",
+    "bytes": 954138171,
+    "sha256": "75DDAE1B7B1830FC96491D97B066E02150C51CD4420E5E535730DF6023EDB50C"
+  },
+  "transcription_path": "C:/Users/SPARTAN PC/Documents/new_life/clipping/projects/a7ace6f1-43b8-4769-9b67-58693575c499/transcription/transcription.json",
+  "click_sound": {
+    "path": "C:/Users/SPARTAN PC/Documents/new_life/clipping/work/mvp_short_clip5_20261028_200526/audio/click_hf_v1_stereo.wav",
+    "source": "synthetic_hf_v1",
+    "gain_db": -2.0,
+    "delay_s": 0.012,
+    "duration_s": 0.045
+  },
+  "candidate": {
+    "clip_id": "clip_0008",
+    "title": "El sonido del turbo",
+    "origin": "stage_b_editorial_20261117",
+    "requested_start_seconds": 1278.78,
+    "requested_end_seconds": 1312.78,
+    "start_seconds": 1278.78,
+    "end_seconds": 1312.78,
+    "evidence_refs": [
+      "seg_0783",
+      "seg_0784",
+      "seg_0785",
+      "seg_0786",
+      "seg_0787",
+      "seg_0788",
+      "seg_0789",
+      "seg_0790",
+      "seg_0791",
+      "seg_0792",
+      "seg_0793",
+      "seg_0794",
+      "seg_0795",
+      "seg_0796",
+      "seg_0797",
+      "seg_0798",
+      "seg_0799",
+      "seg_0800",
+      "seg_0801",
+      "seg_0802",
+      "seg_0803",
+      "seg_0804",
+      "seg_0805"
+    ],
+    "evidence_text": "Y se produce cuando el aire que entra por el turbo",
+    "ad_classification": "none",
+    "ad_evidence": "",
+    "editorial_decision": "accept",
+    "reason": "Este fragmento presenta una explicación clara y concisa del problema del sonido del turbo, su causa física y la solución técnica. Los segmentos están bien conectados para formar un relato coherente.",
+    "boundary_evaluation": {
+      "end": "Fin natural con referencia al componente principal del sistema.",
+      "end_ok": true,
+      "notes": "Se elimina el final colgante seg_0806-0811 (inicio de enumeracion); el nuevo fin es el limite real de seg_0805.",
+      "start": "Inicio natural de la explicación del fenómeno.",
+      "start_ok": true
+    },
+    "confidence": 0.95,
+    "human_review": {
+      "approved": false,
+      "status": "pending_user_review",
+      "trim_applied": true,
+      "trim_reason": "Se elimina el final colgante seg_0806-0811 (inicio de enumeracion); el nuevo fin es el limite real de seg_0805."
+    }
+  },
+  "notifications": [
+    {
+      "action": "comment",
+      "subtitle_text": "¿TE GUSTA ESE SONIDO?",
+      "enter_start_seconds": 5.1,
+      "hold_start_seconds": 5.62,
+      "hold_end_seconds": 9.1,
+      "exit_end_seconds": 9.52,
+      "evidence_refs": [
+        "seg_0783"
+      ],
+      "reason": "CTA en español, sin afirmaciones nuevas; idioma del audio original.",
+      "click": {
+        "enabled_in_mix": true,
+        "gain_db": -2.0,
+        "delay_s": 0.012,
+        "duration_s": 0.045
+      }
+    }
+  ],
+  "emphasis": [],
+  "seo": {
+    "title": "Por qué el sonido del turbo puede ser un problema",
+    "alt_titles": [
+      "Estrés axial y válvula de alivio",
+      "El aire que entra choca con el aire que sale"
+    ],
+    "description": "Explicación del ruido del turbo: el choque entre el aire que entra y el que sale produce estrés axial, y se muestra una válvula de alivio como forma de mitigarlo.\n\nCitas literales de la transcripción: \"A todos nos encanta ese sonido\" , \"Es un estrés axial\" y \"Es utilizar una válvula de alivio\".\n\nTexto extraído del video original. Sin promesas de resultados. Pendiente de revisión humana.",
+    "hashtags": [
+      "#Shorts",
+      "#Turbo",
+      "#Motor"
+    ],
+    "tags": [
+      "turbo",
+      "válvula de alivio",
+      "sonido",
+      "motor",
+      "automóvil"
+    ],
+    "pinned_comment": "¿Te gusta el sonido del turbo? Dinóslo en los comentarios.",
+    "thumbnail_text": "EL SONIDO DEL TURBO",
+    "language": "es",
+    "audience": "not_made_for_kids",
+    "facts": [
+      {
+        "claim": "Choca con el aire que está saliendo",
+        "segment_id": "seg_0784"
+      },
+      {
+        "claim": "A todos nos encanta ese sonido",
+        "segment_id": "seg_0785"
+      },
+      {
+        "claim": "Es un estrés axial",
+        "segment_id": "seg_0789"
+      },
+      {
+        "claim": "Es utilizar una válvula de alivio",
+        "segment_id": "seg_0798"
+      }
+    ],
+    "sources": [
+      {
+        "classification": "official_requirement",
+        "url": "https://support.google.com/youtube/answer/10059070",
+        "checked_on": "2026-11-15",
+        "claim": "Shorts can be up to 3 minutes long."
+      },
+      {
+        "classification": "official_requirement",
+        "url": "https://support.google.com/youtube/answer/57407",
+        "checked_on": "2026-11-15",
+        "claim": "The title allows up to 100 characters and the description up to 5,000."
+      },
+      {
+        "classification": "official_requirement",
+        "url": "https://support.google.com/youtube/answer/6390658",
+        "checked_on": "2026-11-15",
+        "claim": "Up to three hashtags from the description can appear next to the title; they cannot contain spaces and more than 60 are ignored."
+      },
+      {
+        "classification": "editorial_recommendation",
+        "url": "https://support.google.com/youtube/answer/57407",
+        "checked_on": "2026-11-15",
+        "claim": "YouTube states that tags play a minimal role in discovery; they are used only as descriptors."
+      },
+      {
+        "classification": "hypothesis",
+        "url": "https://support.google.com/youtube/answer/6390658",
+        "checked_on": "2026-11-15",
+        "claim": "Hipotesis propia, no verificada: #Shorts mas dos etiquetas tematicas puede ayudar a clasificar el contenido; no garantiza resultados."
+      }
+    ],
+    "notes": "SEO generado exclusivamente con citas y datos de la transcripción real del proyecto a7ace6f1-43b8-4769-9b67-58693575c499. Sin publicación automática. Pendiente de revisión humana."
+  },
+  "negative_fixtures": [],
+  "source_audio_language": "es",
+  "source_audio_language_source": "job",
+  "transcript_is_translation": false
+}

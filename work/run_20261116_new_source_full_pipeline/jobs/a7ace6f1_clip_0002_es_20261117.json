@@ -1,0 +1,148 @@
+{
+  "job_id": "a7ace6f1_clip_0002_es_20261117_delivery",
+  "project_id": "a7ace6f1-43b8-4769-9b67-58693575c499",
+  "source_asset_id": "sha256-75ddae1b7b1830fc96491d97b066e02150c51cd4420e5e535730df6023edb50c",
+  "output_stem": "a7ace6f1_clip_0002_es_20261117",
+  "source": {
+    "path": "C:/Users/SPARTAN PC/Documents/new_life/clipping/input/¿2 TURBOS SON MEJORES QUE 1¿ (2160p_30fps_AV1-128kbit_AAC-español).mp4",
+    "bytes": 954138171,
+    "sha256": "75DDAE1B7B1830FC96491D97B066E02150C51CD4420E5E535730DF6023EDB50C"
+  },
+  "transcription_path": "C:/Users/SPARTAN PC/Documents/new_life/clipping/projects/a7ace6f1-43b8-4769-9b67-58693575c499/transcription/transcription.json",
+  "click_sound": {
+    "path": "C:/Users/SPARTAN PC/Documents/new_life/clipping/work/mvp_short_clip5_20261028_200526/audio/click_hf_v1_stereo.wav",
+    "source": "synthetic_hf_v1",
+    "gain_db": -2.0,
+    "delay_s": 0.012,
+    "duration_s": 0.045
+  },
+  "candidate": {
+    "clip_id": "clip_0002",
+    "title": "Evaluación del motor después de 33 años",
+    "origin": "stage_b_editorial_20261117",
+    "requested_start_seconds": 59.82,
+    "requested_end_seconds": 92.75999999999999,
+    "start_seconds": 59.82,
+    "end_seconds": 92.75999999999999,
+    "evidence_refs": [
+      "seg_0014",
+      "seg_0015",
+      "seg_0016"
+    ],
+    "evidence_text": "Vamos a ver qué tal se desempeña un motor después de 33 años de ese formado original.",
+    "ad_classification": "none",
+    "ad_evidence": "",
+    "editorial_decision": "accept",
+    "reason": "Este clip presenta un problema inicial (6.000 revoluciones), su resolución (290 caballos) y la acción que se toma para solucionar el problema (desmontar el sistema Twin Turbo).",
+    "boundary_evaluation": {
+      "end": "descripcion",
+      "end_ok": true,
+      "notes": "",
+      "start": "descripcion",
+      "start_ok": true
+    },
+    "confidence": 0.8,
+    "human_review": {
+      "approved": false,
+      "status": "pending_user_review",
+      "trim_applied": false,
+      "trim_reason": ""
+    }
+  },
+  "notifications": [
+    {
+      "action": "comment",
+      "subtitle_text": "¿QUÉ TE PARECE LA MEDICIÓN?",
+      "enter_start_seconds": 4.941,
+      "hold_start_seconds": 5.461,
+      "hold_end_seconds": 8.941,
+      "exit_end_seconds": 9.361,
+      "evidence_refs": [
+        "seg_0014"
+      ],
+      "reason": "CTA en español, sin afirmaciones nuevas; idioma del audio original.",
+      "click": {
+        "enabled_in_mix": true,
+        "gain_db": -2.0,
+        "delay_s": 0.012,
+        "duration_s": 0.045
+      }
+    }
+  ],
+  "emphasis": [],
+  "seo": {
+    "title": "Motor del Supra: 290 caballos después de 33 años",
+    "alt_titles": [
+      "Así responde el motor original del Supra",
+      "La medición del motor después de 33 años"
+    ],
+    "description": "El fragmento muestra la evaluación del motor original del Toyota Supra y una medición en el dinamómetro.\n\nCitas literales de la transcripción: \"Vamos a ver qué tal se desempeña un motor después de 33 años de ese formado original.\" y \"290 caballos, nada mal.\"\n\nTexto extraído del video original. Sin promesas de resultados. Pendiente de revisión humana.",
+    "hashtags": [
+      "#Shorts",
+      "#Supra",
+      "#Motor"
+    ],
+    "tags": [
+      "supra",
+      "motor",
+      "dinamómetro",
+      "caballos",
+      "automóvil"
+    ],
+    "pinned_comment": "¿Qué te parece la medición del motor original? Opina en los comentarios.",
+    "thumbnail_text": "290 CABALLOS",
+    "language": "es",
+    "audience": "not_made_for_kids",
+    "facts": [
+      {
+        "claim": "Vamos a ver qué tal se desempeña un motor después de 33 años de ese formado original.",
+        "segment_id": "seg_0014"
+      },
+      {
+        "claim": "Bueno, aquí al parecer tuvimos un problema.",
+        "segment_id": "seg_0015"
+      },
+      {
+        "claim": "290 caballos, nada mal.",
+        "segment_id": "seg_0016"
+      }
+    ],
+    "sources": [
+      {
+        "classification": "official_requirement",
+        "url": "https://support.google.com/youtube/answer/10059070",
+        "checked_on": "2026-11-15",
+        "claim": "Shorts can be up to 3 minutes long."
+      },
+      {
+        "classification": "official_requirement",
+        "url": "https://support.google.com/youtube/answer/57407",
+        "checked_on": "2026-11-15",
+        "claim": "The title allows up to 100 characters and the description up to 5,000."
+      },
+      {
+        "classification": "official_requirement",
+        "url": "https://support.google.com/youtube/answer/6390658",
+        "checked_on": "2026-11-15",
+        "claim": "Up to three hashtags from the description can appear next to the title; they cannot contain spaces and more than 60 are ignored."
+      },
+      {
+        "classification": "editorial_recommendation",
+        "url": "https://support.google.com/youtube/answer/57407",
+        "checked_on": "2026-11-15",
+        "claim": "YouTube states that tags play a minimal role in discovery; they are used only as descriptors."
+      },
+      {
+        "classification": "hypothesis",
+        "url": "https://support.google.com/youtube/answer/6390658",
+        "checked_on": "2026-11-15",
+        "claim": "Hipotesis propia, no verificada: #Shorts mas dos etiquetas tematicas puede ayudar a clasificar el contenido; no garantiza resultados."
+      }
+    ],
+    "notes": "SEO generado exclusivamente con citas y datos de la transcripción real del proyecto a7ace6f1-43b8-4769-9b67-58693575c499. Sin publicación automática. Pendiente de revisión humana."
+  },
+  "negative_fixtures": [],
+  "source_audio_language": "es",
+  "source_audio_language_source": "job",
+  "transcript_is_translation": false
+}

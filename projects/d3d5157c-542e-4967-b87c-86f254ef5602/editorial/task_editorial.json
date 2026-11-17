@@ -1,0 +1,15 @@
+{
+  "artifact_paths": [
+    "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\projects\\d3d5157c-542e-4967-b87c-86f254ef5602\\editorial\\candidates.json",
+    "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\projects\\d3d5157c-542e-4967-b87c-86f254ef5602\\editorial\\task_editorial.json"
+  ],
+  "attempt_count": 3,
+  "error_code": null,
+  "error_message": null,
+  "finished_at": "2026-10-19T22:30:21+00:00",
+  "project_id": "d3d5157c-542e-4967-b87c-86f254ef5602",
+  "stage": "editorial",
+  "started_at": "2026-10-19T22:29:42+00:00",
+  "status": "succeeded",
+  "task_id": "0df1c998-9851-4382-8024-71a9436bd083"
+}

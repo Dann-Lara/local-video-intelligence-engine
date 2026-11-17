@@ -1,0 +1,249 @@
+{
+  "schema": "local_video_studio.mvp_deliverable.v1",
+  "created_at": "2026-10-28T21:27:51+00:00",
+  "status": "mvp_candidate_pending_human_review",
+  "review_status": "pending_user_review",
+  "note": "Candidato MVP corregido. NO es una publicacion aprobada: la propuesta editorial clip_0002 sigue en review_status=pending en fase4d.",
+  "deliverable": {
+    "file": "clip_0002_shorts_mvp_20261028.mp4",
+    "bytes": 19794327,
+    "sha256": "8A45FFA4983E0705F2BDC9D761A35CE7339FFCBF8CF83CE58E0A20C85B09B311",
+    "video": "H.264 High, 1080x1920, 30000/1001 fps, 955 frames, yuv420p",
+    "audio": "AAC-LC 44100 Hz estéreo, 320 kb/s",
+    "duration_seconds": 31.865167
+  },
+  "provenance": {
+    "source_asset": {
+      "path": "input/Escape 100 Cops, Win $500,000 (2160p_30fps_AV1-128kbit_AAC-inglés).mp4",
+      "bytes": 1627212173,
+      "sha256": "281A885B92A667AD0CF706B4B7218A9227FAFE4CEC94757047C4354C86B6FA13"
+    },
+    "source_asset_media": "3840x2160 AV1, 29.97 fps, AAC 44.1 kHz estéreo, 1228.382041 s",
+    "vertical_source_clip": {
+      "path": "work/mvp_short_20261028_150035/corrected/input_raw.mp4",
+      "bytes": 18683135,
+      "sha256": "311FCA5E0D7A0DCBEA20F19B7AD2FB9609D1D0E57910BC0432891DFA3BE68197"
+    },
+    "vertical_source_note": "1080x1920 con fondo desenfocado y banda central nitida; SHA256 identico a work/fase5b_20261020_082146/clips/clip_0002_shorts.mp4 (verificado previamente).",
+    "composed_before_notification": {
+      "path": "work/mvp_short_20261028_150035/corrected/input_composed.mp4",
+      "bytes": 20450975,
+      "sha256": "C0581758D3B5A3E772A5F5C8AF8BD9C2BAB8D8F2629673476091581F30F85F6A"
+    },
+    "editorial_proposal": {
+      "clip_id": "clip_0002",
+      "project_id": "d3d5157c-542e-4967-b87c-86f254ef5602",
+      "candidates_json": "work/fase4d_20261019_222144/projects/d3d5157c-542e-4967-b87c-86f254ef5602/editorial/candidates.json",
+      "rank": 1,
+      "title": "La persecución se intensifica",
+      "refs": [
+        "seg_0307",
+        "seg_0308",
+        "seg_0309",
+        "seg_0310"
+      ],
+      "review_status": "pending"
+    },
+    "reference_candidate3": {
+      "path": "work/fase5f_final_fix2_20261022_110101/final/render/final_candidate3.mp4",
+      "sha256": "D6E1420BCEF9B314D1AE9778DCF373B79718EB2177E9E08785EB03F80E766E8B",
+      "role": "referencia visual; no se sobrescribe"
+    }
+  },
+  "timing_alignment": {
+    "clip_zero_maps_to_source_seconds": 1099.488073,
+    "method": "correlacion cruzada normalizada del audio del clip contra el audio del video fuente (NCC 0.99999)",
+    "planned_start_seconds": 1101.26,
+    "explanation": "El corte real empieza 1.772 s antes del inicio planificado (redondeo/ajuste de extraccion). subtitulos, rotulos y clic usan el tiempo local real del clip.",
+    "subtitles_file": "corrected/subs.ass",
+    "subtitles_source": "transcripcion.json (325 segmentos, sin word_timestamps)"
+  },
+  "overlays": {
+    "subtitles": {
+      "file": "corrected/subs.ass",
+      "style": "Arial Black 96, blanco con contorno negro, dos lineas, margen inferior 340"
+    },
+    "emphasis": {
+      "file": {
+        "path": "work/mvp_short_20261028_150035/corrected/motion.ass",
+        "bytes": 1574,
+        "sha256": "F319C6C5105646CC85CF6B8DA2E51833CD92304EFBCE1C70905F5E696CA8346E"
+      },
+      "events": [
+        {
+          "text": "RIGHT THERE",
+          "start": 3.1,
+          "end": 5.1,
+          "evidence_segment": "seg_0307",
+          "segment_local_range": [
+            1.77,
+            8.49
+          ],
+          "transcript": "they're right there they're right there ..."
+        },
+        {
+          "text": "KEEP GOING",
+          "start": 16.8,
+          "end": 19.2,
+          "evidence_segment": "seg_0309",
+          "segment_local_range": [
+            12.81,
+            20.41
+          ],
+          "transcript": "... go go hurry keep going ..."
+        },
+        {
+          "text": "DEAD END",
+          "start": 29.6,
+          "end": 31.8,
+          "evidence_segment": "seg_0310",
+          "segment_local_range": [
+            20.41,
+            31.85
+          ],
+          "transcript": "... oh no it's a dead end it's a dead end"
+        }
+      ],
+      "removed_from_candidate3": [
+        "FREE COP POINTS (no aparece en la transcripcion del clip)",
+        "DOWNLOAD NOW (no aparece en la transcripcion del clip)",
+        "trap doors (solo aparece en seg_0217, fuera del clip)"
+      ]
+    },
+    "neon_frame": {
+      "file": "corrected/neon_frame.ass",
+      "inherited": true,
+      "measured_cyan_pixels_frame_3_6s": 39809,
+      "candidate3_cyan_pixels": 40541
+    },
+    "notification": {
+      "file": "corrected/plans/plan_mvp.json",
+      "action": "share",
+      "title": "COMPARTE",
+      "subtitle_text": "El momento en que quedaron acorralados",
+      "enter_start": 6.5,
+      "hold_end": 10.62,
+      "exit_end": 11.04,
+      "card_size": [
+        932,
+        312
+      ],
+      "card_x": 74,
+      "card_center_x": 540,
+      "centered": true,
+      "evidence": [
+        "seg_0307",
+        "seg_0308",
+        "seg_0309",
+        "seg_0310"
+      ],
+      "evidence_note": "parafrasis editorial de 'we're surrounded' / 'dead end' (seg_0310); no es cita literal",
+      "placement_note": "el plan evita el tramo 13.804-31.852 s para no tapar el climax"
+    },
+    "click": {
+      "file": {
+        "path": "work/mvp_short_20261028_150035/corrected/audio/click_hf_v1_stereo.wav",
+        "bytes": 7980,
+        "sha256": "CE60E1062DBD849EA0B22043B89AA2329EAA2C4855E74D8890C095101CF52C83"
+      },
+      "sound_id": "ui_click_hf_v1",
+      "generated_by": "corrected/audio/synth_click_hf.py (semilla 20261028, sintesis local)",
+      "time_seconds": 6.5,
+      "gain_db": -6.0,
+      "duration_seconds": 0.045,
+      "peak_dbfs_in_final": -16.46,
+      "measured_hf_transient": {
+        "window_seconds": [
+          6.515,
+          6.535
+        ],
+        "boost_db_7_16k": 12.0
+      }
+    }
+  },
+  "audio_mix": {
+    "filter": "amix=inputs=2:duration=first:normalize=0 (+ volume -6 dB y adelay solo en el clic)",
+    "original_audio_outside_click": "bit-exacto en el WAV mezclado (delta 0.000000000)",
+    "no_limiter": true,
+    "no_ducking": true,
+    "aac_bitrate": "320k",
+    "measured_level_vs_source_redecode_db": -0.5,
+    "level_note": "Diferencia uniforme de ~-0.5 dB atribuida a la re-codificacion AAC (no hay atenuacion por tramos). El defecto de -6 dB en 0-6.5 s del candidato 3 no existe.",
+    "true_peak_final_dbfs": 0.64,
+    "source_true_peak_dbfs": 1.4,
+    "clipping": "0 muestras recortadas por el mezclador; el AAC final tiene menos picos >1.0 que la fuente"
+  },
+  "verification": {
+    "ffprobe": {
+      "duration_seconds": 31.865167,
+      "video": "h264 1080x1920 30000/1001 955 frames",
+      "audio": "aac 44100 Hz 2 ch 31.857007 s",
+      "size_bytes": 19794327
+    },
+    "ocr_frames": {
+      "3.6s": {
+        "mid": "RIGHT THERE",
+        "bottom": "they're right there / they're right"
+      },
+      "5.6s": {
+        "mid": "<no text>",
+        "bottom": "there they're / right there i think"
+      },
+      "7.6s": {
+        "top": "COMPARTE / El momento en que quedaron acorralados"
+      },
+      "10.5s": {
+        "top": "COMPARTE / El momento en que quedaron acorralados"
+      },
+      "11.2s": {
+        "top": "<no text>"
+      },
+      "17.6s": {
+        "mid": "KEEP GOING",
+        "bottom": "reset and walk / go go hurry keep"
+      },
+      "30.0s": {
+        "mid": "DEAD END",
+        "bottom": "oh no it's a dead end / end it's a dead end"
+      }
+    },
+    "card_visibility": {
+      "6.40": "no card (mean diff 0.36)",
+      "6.55": "first visible pixels (mean diff 1.08)",
+      "6.70": "clearly visible (mean diff 6.48)",
+      "6.80": "full opacity (mean diff 14.22)"
+    },
+    "click_sync": "clic 6.500-6.545 s; primer pixel de tarjeta 6.55 s (~1 frame)",
+    "layers": {
+      "blurred_background_vs_sharp_center_laplacian": {
+        "top_150_450": 1.21,
+        "center_700_950": 6.59,
+        "bottom_1650_1850": 0.77
+      },
+      "frame_size": [
+        1080,
+        1920
+      ]
+    },
+    "limitations": [
+      "no hay word_timestamps: los rotulos se justifican por segmento, no por palabra",
+      "la tarjeta es una parafrasis editorial, no una cita textual",
+      "no se verifico percepcion humana del clic; la evidencia es espectral (+12 dB en 7-16 kHz)",
+      "el audio original ya estaba a 0 dBFS; la re-codificacion AAC deja picos >1.0 en 80 muestras (float)"
+    ]
+  },
+  "deviation_from_plan": {
+    "path": "work/mvp_short_20261028_150035/corrected/plans/plan_mvp.json",
+    "bytes": 10239,
+    "sha256": "D316D0855ECA1729F28C143B37E2835254B0502CB42B1DC144CECA6AC9FC9FF6"
+  },
+  "reproduction": [
+    "cd work/mvp_short_20261028_150035/corrected",
+    "python audio/synth_click_hf.py",
+    "python make_plan_mvp.py",
+    "ffmpeg -y -i input_raw.mp4 -vf \"subtitles=subs.ass,ass=motion.ass,ass=neon_frame.ass\" -c:v libx264 -preset veryfast -crf 18 -pix_fmt yuv420p -c:a copy input_composed.mp4",
+    "python render_timing.py --plan plans/plan_mvp.json --out render/mvp_corrected.mp4 --with-click",
+    "python verify_final_audio_320.py",
+    "python click_onset.py"
+  ]
+}

@@ -1,0 +1,26 @@
+REFERENCIA HISTÓRICA — NO ES UNA TRANSCRIPCIÓN VÁLIDA DEL ESQUEMA ACTUAL
+======================================================================
+
+Proyecto: d3d5157c-542e-4967-b87c-86f254ef5602
+
+Estos archivos son una copia intacta de la transcripción previa, generada
+con el esquema anterior de la Fase 2 (schema-pre-1.1). Se conservan
+únicamente como referencia histórica, fuera de la ruta activa de resultados
+(projects/<id>/transcription/).
+
+Datos verificados del artefacto copiado:
+- transcription.schema-pre-1.1.json
+  * segmentos: 328
+  * model_size: large-v3-turbo
+  * device: cuda
+  * language: en
+  * created_at: 2026-10-17T04:39:23+00:00
+  * SHA-256: DD372E36D81FEA5478A3907E683C9127364B36F8F91649BE40D97E11A99EDD25
+  * Carece de "fingerprint" y de "inference_completed", por lo que NO es
+    reutilizable bajo el esquema vigente (RESULT_SCHEMA_VERSION 1.1).
+- task_transcribe.schema-pre-1.1.json
+  * status: succeeded, attempt_count: 5
+  * SHA-256: 08FC015C1798871E035526EAAC9C62FAD86921359A1D26524823E18B11415F12
+
+No se atribuyen a esta copia la huella ni los metadatos del esquema nuevo.
+No debe tratarse como una transcripción válida ni migrarse automáticamente.

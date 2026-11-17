@@ -1,0 +1,101 @@
+{
+  "candidate": "rec_0006",
+  "rec_range_seconds": [
+    1097.26,
+    1175.82
+  ],
+  "rec_duration_seconds": 78.56,
+  "rec_title_en": "The Final Minutes: All Five Caught",
+  "protected_ranges": {
+    "clip_0002": [
+      1099.488073,
+      1131.35324
+    ],
+    "clip_0004": [
+      1131.48517,
+      1176.206168
+    ]
+  },
+  "overlaps": {
+    "clip_0002": {
+      "protected_range": [
+        1099.488073,
+        1131.35324
+      ],
+      "protected_duration": 31.865167,
+      "overlap_seconds": 31.865167,
+      "overlap_fraction_of_protected": 1.0,
+      "overlap_fraction_of_rec_0006": 0.405616
+    },
+    "clip_0004": {
+      "protected_range": [
+        1131.48517,
+        1176.206168
+      ],
+      "protected_duration": 44.720998,
+      "overlap_seconds": 44.33483,
+      "overlap_fraction_of_protected": 0.991365,
+      "overlap_fraction_of_rec_0006": 0.564344
+    }
+  },
+  "protected_union_range": [
+    1099.488073,
+    1176.206168
+  ],
+  "covered_by_protected_union_seconds": 76.331927,
+  "covered_fraction_of_rec_0006": 0.971639,
+  "text_similarity": {
+    "sequence_matcher_ratio": 0.725399,
+    "jaccard_words": 1.0
+  },
+  "segments": {
+    "clip_0002_protected_range": [
+      "seg_0306",
+      "seg_0307",
+      "seg_0308",
+      "seg_0309",
+      "seg_0310",
+      "seg_0311"
+    ],
+    "clip_0004_protected_range": [
+      "seg_0311",
+      "seg_0312",
+      "seg_0313",
+      "seg_0314",
+      "seg_0315",
+      "seg_0316"
+    ],
+    "rec_0006": [
+      "seg_0306",
+      "seg_0307",
+      "seg_0308",
+      "seg_0309",
+      "seg_0310",
+      "seg_0311",
+      "seg_0312",
+      "seg_0313",
+      "seg_0314",
+      "seg_0315",
+      "seg_0316"
+    ],
+    "rec_0006_transcript_refs": [
+      "seg_0306",
+      "seg_0307",
+      "seg_0308",
+      "seg_0309",
+      "seg_0310",
+      "seg_0311",
+      "seg_0312",
+      "seg_0313",
+      "seg_0314",
+      "seg_0315",
+      "seg_0316"
+    ]
+  },
+  "text": {
+    "clip_0002_protected_range": "the search area that we're going to be hitting is right here target area they're right there they're right there they're right there i think we should go left no they're that way they're that way 360 scan right now in case they're moving while we're there taking urban come over here follow me reset and walk go go hurry keep going she's gotta be in a container here dude jimmy okay we're surrounded come on let's go deeper oh no it's a dead end it's a dead end i made a mistake hey center perimeter let's go south we are surrounded by the top north side of the road",
+    "clip_0004_protected_range": "i made a mistake hey center perimeter let's go south we are surrounded by the top north side of the road set up the perimeter they're right there they're right there spread out spread out let's go let's go let's go let's go let's go get out no put them in handcuffs we are so close you got me oh my gosh there are so many cops with that hour and a half remaining they have officially caught all five of us and won the half a million dollars congratulations",
+    "rec_0006_clip_text": "the search area that we're going to be hitting is right here target area they're right there they're right there they're right there i think we should go left no they're that way they're that way 360 scan right now in case they're moving while we're there taking urban come over here follow me reset and walk go go hurry keep going she's gotta be in a container here dude jimmy okay we're surrounded come on let's go deeper oh no it's a dead end it's a dead end i made a mistake hey center perimeter let's go south we are surrounded by the top north side of the road set up the perimeter they're right there they're right there spread out spread out let's go let's go let's go let's go let's go get out no put them in handcuffs we are so close you got me oh my gosh there are so many cops with that hour and a half remaining they have officially caught all five of us and won the half a million dollars congratulations"
+  },
+  "conclusion": "rec_0006 reutiliza el contenido fuente de los dos Shorts protegidos: casi todo su rango queda cubierto por la union de clip_0002 y clip_0004 y el texto coincide en su mayoria."
+}

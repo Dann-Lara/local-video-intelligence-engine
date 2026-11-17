@@ -1,0 +1,106 @@
+{
+  "source_project": "a7ace6f1-43b8-4769-9b67-58693575c499",
+  "candidates_generated": 9,
+  "selected": [
+    {
+      "clip_id": "clip_0001",
+      "job": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\jobs\\a7ace6f1_clip_0001_es_20261117.json",
+      "stem": "a7ace6f1_clip_0001_es_20261117",
+      "start_seconds": 0.0,
+      "end_seconds": 16.42,
+      "duration_seconds": 16.42,
+      "refs": 5,
+      "trim": ""
+    },
+    {
+      "clip_id": "clip_0002",
+      "job": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\jobs\\a7ace6f1_clip_0002_es_20261117.json",
+      "stem": "a7ace6f1_clip_0002_es_20261117",
+      "start_seconds": 59.82,
+      "end_seconds": 92.75999999999999,
+      "duration_seconds": 32.94,
+      "refs": 3,
+      "trim": ""
+    },
+    {
+      "clip_id": "clip_0003",
+      "job": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\jobs\\a7ace6f1_clip_0003_es_20261117.json",
+      "stem": "a7ace6f1_clip_0003_es_20261117",
+      "start_seconds": 221.44,
+      "end_seconds": 250.92000000000002,
+      "duration_seconds": 29.48,
+      "refs": 5,
+      "trim": ""
+    },
+    {
+      "clip_id": "clip_0004",
+      "job": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\jobs\\a7ace6f1_clip_0004_es_20261117.json",
+      "stem": "a7ace6f1_clip_0004_es_20261117",
+      "start_seconds": 720.78,
+      "end_seconds": 743.78,
+      "duration_seconds": 23.0,
+      "refs": 22,
+      "trim": "Se elimina el segmento final colgante seg_0335 ('Únicamente'); el nuevo fin es el limite real de seg_0334."
+    },
+    {
+      "clip_id": "clip_0008",
+      "job": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\jobs\\a7ace6f1_clip_0008_es_20261117.json",
+      "stem": "a7ace6f1_clip_0008_es_20261117",
+      "start_seconds": 1278.78,
+      "end_seconds": 1312.78,
+      "duration_seconds": 34.0,
+      "refs": 23,
+      "trim": "Se elimina el final colgante seg_0806-0811 (inicio de enumeracion); el nuevo fin es el limite real de seg_0805."
+    },
+    {
+      "clip_id": "clip_0009",
+      "job": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\jobs\\a7ace6f1_clip_0009_es_20261117.json",
+      "stem": "a7ace6f1_clip_0009_es_20261117",
+      "start_seconds": 1488.32,
+      "end_seconds": 1531.52,
+      "duration_seconds": 43.2,
+      "refs": 10,
+      "trim": ""
+    }
+  ],
+  "excluded": [
+    {
+      "clip_id": "clip_0005",
+      "reason": "Solape de 16.009 s con PROTECTED_RANGES['clip_0003'] de la fuente inglesa anterior; no se modifica baselines.py."
+    },
+    {
+      "clip_id": "clip_0006",
+      "reason": "Solape de 30.573 s y 5.295 s con PROTECTED_RANGES de la fuente inglesa anterior."
+    },
+    {
+      "clip_id": "clip_0007",
+      "reason": "Solape de 38.602 s con PROTECTED_RANGES['clip_0005'] de la fuente inglesa anterior."
+    }
+  ],
+  "human_trims": {
+    "clip_0004": [
+      743.78,
+      "Se elimina el segmento final colgante seg_0335 ('Únicamente'); el nuevo fin es el limite real de seg_0334."
+    ],
+    "clip_0008": [
+      1312.78,
+      "Se elimina el final colgante seg_0806-0811 (inicio de enumeracion); el nuevo fin es el limite real de seg_0805."
+    ]
+  },
+  "note": "Los rangos protegidos pertenecen a otra fuente; se evita cualquier solape sin relajar la validación.",
+  "human_extension": {
+    "clip_id": "clip_0009",
+    "from_end_seconds": 1518.7,
+    "to_end_seconds": 1531.52,
+    "added_refs": [
+      "seg_0928",
+      "seg_0929",
+      "seg_0930",
+      "seg_0931",
+      "seg_0932",
+      "seg_0933",
+      "seg_0934"
+    ],
+    "reason": "Extension editorial humana: se anaden seg_0928 a seg_0934 hasta el limite real de Whisper 1531.52 s para dar un cierre natural ('Muy muy bien para un carro de calle') y reunir evidencia suficiente de idioma (6 palabras funcionales era insuficiente para el Detector; 20 con la extension). No se relaja ningun umbral."
+  }
+}

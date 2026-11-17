@@ -1,0 +1,80 @@
+[
+  {
+    "clip_id": "0001",
+    "seconds": 16.44,
+    "rms": 0.20167,
+    "peak": 0.89221,
+    "silent_fraction": 0.0043,
+    "click_time_seconds": 2.475,
+    "click_rms": 0.05123,
+    "pre_click_rms": 0.14842,
+    "decode_ok": true,
+    "ncc": 1.0,
+    "pass": true
+  },
+  {
+    "clip_id": "0002",
+    "seconds": 32.943,
+    "rms": 0.17321,
+    "peak": 0.95547,
+    "silent_fraction": 0.002,
+    "click_time_seconds": 4.953,
+    "click_rms": 0.29142,
+    "pre_click_rms": 0.22776,
+    "decode_ok": true,
+    "ncc": 0.999994,
+    "pass": true
+  },
+  {
+    "clip_id": "0003",
+    "seconds": 29.489,
+    "rms": 0.21024,
+    "peak": 0.89343,
+    "silent_fraction": 0.001,
+    "click_time_seconds": 4.434,
+    "click_rms": 0.04341,
+    "pre_click_rms": 0.23859,
+    "decode_ok": true,
+    "ncc": 0.999432,
+    "pass": true
+  },
+  {
+    "clip_id": "0004",
+    "seconds": 22.988,
+    "rms": 0.23267,
+    "peak": 0.89444,
+    "silent_fraction": 0.0015,
+    "click_time_seconds": 3.462,
+    "click_rms": 0.11528,
+    "pre_click_rms": 0.21489,
+    "decode_ok": true,
+    "ncc": 0.999998,
+    "pass": true
+  },
+  {
+    "clip_id": "0008",
+    "seconds": 33.994,
+    "rms": 0.23527,
+    "peak": 0.89441,
+    "silent_fraction": 0.001,
+    "click_time_seconds": 5.112,
+    "click_rms": 0.19235,
+    "pre_click_rms": 0.22136,
+    "decode_ok": true,
+    "ncc": 0.999506,
+    "pass": true
+  },
+  {
+    "clip_id": "0009",
+    "seconds": 43.221,
+    "rms": 0.24947,
+    "peak": 0.91638,
+    "silent_fraction": 0.0004,
+    "click_time_seconds": 4.569,
+    "click_rms": 0.26077,
+    "pre_click_rms": 0.26241,
+    "decode_ok": true,
+    "ncc": 0.999808,
+    "pass": true
+  }
+]

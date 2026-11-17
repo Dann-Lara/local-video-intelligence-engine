@@ -1,0 +1,50 @@
+# Archivos locales y secretos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+
+# Caches y artefactos de Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Multimedia generado o fuente (local-first: no subir video/audio)
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.ass
+
+# Logs y temporales
+*.log
+*.tmp
+*.partial
+Thumbs.db
+desktop.ini
+
+# Entradas y registros locales
+input/
+logs/
+
+# work/: solo se versionan los run de reproduccion y auditoria seleccionados.
+work/*
+!work/run_20261116_new_source_full_pipeline/
+!work/run_20261116_timing_recovery/
+!work/run_20261117_git_audio_audit/
+
+# Inventario generado con rutas locales completas (auditoria, no reproduccion)
+work/run_20261117_git_audio_audit/inventory.json

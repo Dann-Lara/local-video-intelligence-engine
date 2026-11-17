@@ -1,0 +1,150 @@
+{
+  "job_id": "a7ace6f1_clip_0003_es_20261117_delivery",
+  "project_id": "a7ace6f1-43b8-4769-9b67-58693575c499",
+  "source_asset_id": "sha256-75ddae1b7b1830fc96491d97b066e02150c51cd4420e5e535730df6023edb50c",
+  "output_stem": "a7ace6f1_clip_0003_es_20261117",
+  "source": {
+    "path": "C:/Users/SPARTAN PC/Documents/new_life/clipping/input/¿2 TURBOS SON MEJORES QUE 1¿ (2160p_30fps_AV1-128kbit_AAC-español).mp4",
+    "bytes": 954138171,
+    "sha256": "75DDAE1B7B1830FC96491D97B066E02150C51CD4420E5E535730DF6023EDB50C"
+  },
+  "transcription_path": "C:/Users/SPARTAN PC/Documents/new_life/clipping/projects/a7ace6f1-43b8-4769-9b67-58693575c499/transcription/transcription.json",
+  "click_sound": {
+    "path": "C:/Users/SPARTAN PC/Documents/new_life/clipping/work/mvp_short_clip5_20261028_200526/audio/click_hf_v1_stereo.wav",
+    "source": "synthetic_hf_v1",
+    "gain_db": -2.0,
+    "delay_s": 0.012,
+    "duration_s": 0.045
+  },
+  "candidate": {
+    "clip_id": "clip_0003",
+    "title": "Sistema Twin Turbo Secuencial",
+    "origin": "stage_b_editorial_20261117",
+    "requested_start_seconds": 221.44,
+    "requested_end_seconds": 250.92000000000002,
+    "start_seconds": 221.44,
+    "end_seconds": 250.92000000000002,
+    "evidence_refs": [
+      "seg_0045",
+      "seg_0046",
+      "seg_0047",
+      "seg_0048",
+      "seg_0049"
+    ],
+    "evidence_text": "Este de aquí precisamente es un sistema Twin Turbo secuencial, lo que significa que primero funciona uno y luego funciona el otro.",
+    "ad_classification": "none",
+    "ad_evidence": "",
+    "editorial_decision": "accept",
+    "reason": "Este segmento explica claramente el funcionamiento del sistema Twin Turbo secuencial, presentando una descripción técnica concisa y comprensible. La secuencia de segmentos proporciona un flujo lógico para explicar el proceso.",
+    "boundary_evaluation": {
+      "end": "El cierre del segmento proporciona una conclusión clara sobre el funcionamiento del sistema.",
+      "end_ok": true,
+      "notes": "",
+      "start": "La explicación del sistema Twin Turbo secuencial comienza de forma natural con la descripción del sistema.",
+      "start_ok": true
+    },
+    "confidence": 0.95,
+    "human_review": {
+      "approved": false,
+      "status": "pending_user_review",
+      "trim_applied": false,
+      "trim_reason": ""
+    }
+  },
+  "notifications": [
+    {
+      "action": "comment",
+      "subtitle_text": "¿CONOCÍAS ESTE SISTEMA?",
+      "enter_start_seconds": 4.422,
+      "hold_start_seconds": 4.942,
+      "hold_end_seconds": 8.422,
+      "exit_end_seconds": 8.842,
+      "evidence_refs": [
+        "seg_0045"
+      ],
+      "reason": "CTA en español, sin afirmaciones nuevas; idioma del audio original.",
+      "click": {
+        "enabled_in_mix": true,
+        "gain_db": -2.0,
+        "delay_s": 0.012,
+        "duration_s": 0.045
+      }
+    }
+  ],
+  "emphasis": [],
+  "seo": {
+    "title": "Así funciona el twin turbo secuencial",
+    "alt_titles": [
+      "Primero un turbo y luego los dos",
+      "La válvula que controla el flujo del twin turbo"
+    ],
+    "description": "Explicación literal del funcionamiento de un sistema Twin Turbo secuencial y de la válvula que reparte el flujo.\n\nCitas de la transcripción: \"Este de aquí precisamente es un sistema Twin Turbo secuencial, lo que significa que primero funciona uno y luego funciona el otro.\" y \"Llegando así a tener los dos turbos funcionando, pero primero uno y luego los dos.\"\n\nTexto extraído del video original. Sin promesas de resultados. Pendiente de revisión humana.",
+    "hashtags": [
+      "#Shorts",
+      "#Turbo",
+      "#Supra"
+    ],
+    "tags": [
+      "twin turbo",
+      "supra",
+      "motor",
+      "válvula",
+      "automóvil"
+    ],
+    "pinned_comment": "¿Conocías este sistema de turbos? Déjalo en los comentarios.",
+    "thumbnail_text": "TWIN TURBO",
+    "language": "es",
+    "audience": "not_made_for_kids",
+    "facts": [
+      {
+        "claim": "Este de aquí precisamente es un sistema Twin Turbo secuencial, lo que significa que primero funciona uno y luego funciona el otro.",
+        "segment_id": "seg_0045"
+      },
+      {
+        "claim": "esa es una válvula, aquí adentro tiene una mariposa que restringe el flujo y no deja que este funcione.",
+        "segment_id": "seg_0047"
+      },
+      {
+        "claim": "Llegando así a tener los dos turbos funcionando, pero primero uno y luego los dos.",
+        "segment_id": "seg_0049"
+      }
+    ],
+    "sources": [
+      {
+        "classification": "official_requirement",
+        "url": "https://support.google.com/youtube/answer/10059070",
+        "checked_on": "2026-11-15",
+        "claim": "Shorts can be up to 3 minutes long."
+      },
+      {
+        "classification": "official_requirement",
+        "url": "https://support.google.com/youtube/answer/57407",
+        "checked_on": "2026-11-15",
+        "claim": "The title allows up to 100 characters and the description up to 5,000."
+      },
+      {
+        "classification": "official_requirement",
+        "url": "https://support.google.com/youtube/answer/6390658",
+        "checked_on": "2026-11-15",
+        "claim": "Up to three hashtags from the description can appear next to the title; they cannot contain spaces and more than 60 are ignored."
+      },
+      {
+        "classification": "editorial_recommendation",
+        "url": "https://support.google.com/youtube/answer/57407",
+        "checked_on": "2026-11-15",
+        "claim": "YouTube states that tags play a minimal role in discovery; they are used only as descriptors."
+      },
+      {
+        "classification": "hypothesis",
+        "url": "https://support.google.com/youtube/answer/6390658",
+        "checked_on": "2026-11-15",
+        "claim": "Hipotesis propia, no verificada: #Shorts mas dos etiquetas tematicas puede ayudar a clasificar el contenido; no garantiza resultados."
+      }
+    ],
+    "notes": "SEO generado exclusivamente con citas y datos de la transcripción real del proyecto a7ace6f1-43b8-4769-9b67-58693575c499. Sin publicación automática. Pendiente de revisión humana."
+  },
+  "negative_fixtures": [],
+  "source_audio_language": "es",
+  "source_audio_language_source": "job",
+  "transcript_is_translation": false
+}

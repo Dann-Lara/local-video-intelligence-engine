@@ -1,0 +1,14 @@
+{
+  "clip": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\clip_0002_recovered_20261115_delivery\\clips\\clip_0002_recovered_20261115_source.mp4",
+  "source": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\input\\Escape 100 Cops, Win $500,000 (2160p_30fps_AV1-128kbit_AAC-inglés).mp4",
+  "evidence": {
+    "cut_frame0_vs_source_keyframe_72.439033": {
+      "ssim": 1.0,
+      "psnr_db": NaN
+    },
+    "cut_frame0_vs_source_requested_73.000000": {
+      "ssim": 0.300472,
+      "psnr_db": 16.081934
+    }
+  }
+}

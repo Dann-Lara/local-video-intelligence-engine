@@ -1,0 +1,903 @@
+{
+  "clips": [
+    {
+      "stem": "a7ace6f1_clip_0001_es_20261117",
+      "clip_id": "clip_0001",
+      "files": {
+        "mp4": {
+          "bytes": 11419808,
+          "sha256": "554146E67189666BDEECA32CBF1E9C8DFA808E3E9C66F9C850933B033DB00843"
+        },
+        "seo": {
+          "bytes": 3447,
+          "sha256": "E6C32E7B7A4C90FA66107B5796DD6D6D8B496B57B362E74D8FC5BE28587EDF9B"
+        },
+        "manifest": {
+          "bytes": 36011,
+          "sha256": "71CDE1B8925156C0EB7D8FFAAF54F2E97F76AB54EDB981EC9BCF470EB4FB1ACD"
+        }
+      },
+      "range_source_seconds": [
+        0.0,
+        16.42
+      ],
+      "actual_start_seconds": 0.0,
+      "start_delta_seconds": 0.0,
+      "alignment_ncc": 1.0,
+      "final_alignment_ncc": 0.99993825,
+      "overlap_seconds": {
+        "clip_0001": 0.0,
+        "clip_0002": 0.0,
+        "clip_0003": 0.0,
+        "clip_0004": 0.0,
+        "clip_0005": 0.0
+      },
+      "container": {
+        "video_codec": "h264",
+        "video_profile": "High",
+        "pix_fmt": "yuv420p",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30000/1001",
+        "nb_frames": "494",
+        "duration_seconds": 16.483,
+        "audio_codec": "aac",
+        "audio_profile": "LC",
+        "sample_rate": "44100",
+        "channels": 2
+      },
+      "checks_total": 22,
+      "checks_passed": 22,
+      "checks_all_ok": true,
+      "decode_integrity": {
+        "returncode": 0,
+        "error_lines": [],
+        "ok": true
+      },
+      "fps_normalization": {
+        "reason": "La fuente nueva es 30/1; el contrato de entrega exige 30000/1001.",
+        "original_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\render\\a7ace6f1_clip_0001_es_20261117.mp4",
+        "original_fps": "30/1",
+        "normalized_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0001_es_20261117\\render\\a7ace6f1_clip_0001_es_20261117_fps2997.mp4",
+        "normalized_fps": "30000/1001",
+        "normalized_duration_seconds": 16.483,
+        "expected_duration_seconds": 16.433333,
+        "method": "ffmpeg -vf fps=30000/1001 -c:v libx264 -crf 18 -preset veryfast -pix_fmt yuv420p -c:a copy",
+        "contract_relaxed": false,
+        "audio_reencoded": false,
+        "shared_code_modified": false
+      },
+      "cut_method": "FFmpeg seek a keyframe previo + -ss de salida (video recodificado en frame exacto, audio copiado)",
+      "cut_method_evidence": "frame_accurate_hybrid_decode_trim_reencode_video_audio_copy",
+      "click": {
+        "mode": "mix_clicks",
+        "clicks": 1,
+        "delay_s": 0.012,
+        "gain_db": -2.0,
+        "no_limiter": true,
+        "no_ducking": true,
+        "no_global_gain": true,
+        "measurements": {
+          "mean_volume_dB": -13.9,
+          "max_volume_dB": -1.0
+        }
+      },
+      "seo": {
+        "language": "es",
+        "valid": true,
+        "checks_total": 41,
+        "checks_passed": 41,
+        "facts": 3,
+        "sources": 5,
+        "output": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0001_es_20261117.seo.md"
+      },
+      "manifest": {
+        "status": "delivered_pending_human_review",
+        "review_status": "pending_user_review",
+        "human_review": {
+          "approved": false,
+          "note": "Ningun filtro automatico sustituye la aprobacion humana. Este entregable no debe publicarse sin revision."
+        },
+        "protected_ok": true,
+        "output": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0001_es_20261117.manifest.json"
+      },
+      "stages": {
+        "render": "succeeded",
+        "validate_mp4": "succeeded",
+        "seo": "succeeded",
+        "manifest": "succeeded",
+        "validate_seo": "succeeded"
+      },
+      "failures": []
+    },
+    {
+      "stem": "a7ace6f1_clip_0002_es_20261117",
+      "clip_id": "clip_0002",
+      "files": {
+        "mp4": {
+          "bytes": 17732124,
+          "sha256": "9B580C5258C1789AD150B434D06770859144FAD1462A6DAA29D29AAE37159C32"
+        },
+        "seo": {
+          "bytes": 3346,
+          "sha256": "FD73B0CAF950C0E8159370D88CF2BD83B65CA4F55505C459EFB7A5305B3B376E"
+        },
+        "manifest": {
+          "bytes": 36565,
+          "sha256": "0C811BCC59D55E3645B60084E32EF336196947635E72D839ADE440E00ED43E9C"
+        }
+      },
+      "range_source_seconds": [
+        59.82,
+        92.75999999999999
+      ],
+      "actual_start_seconds": 59.837823,
+      "start_delta_seconds": 0.017823,
+      "alignment_ncc": 0.99999393,
+      "final_alignment_ncc": 0.99992975,
+      "overlap_seconds": {
+        "clip_0001": 0.0,
+        "clip_0002": 0.0,
+        "clip_0003": 0.0,
+        "clip_0004": 0.0,
+        "clip_0005": 0.0
+      },
+      "container": {
+        "video_codec": "h264",
+        "video_profile": "High",
+        "pix_fmt": "yuv420p",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30000/1001",
+        "nb_frames": "988",
+        "duration_seconds": 32.966267,
+        "audio_codec": "aac",
+        "audio_profile": "LC",
+        "sample_rate": "44100",
+        "channels": 2
+      },
+      "checks_total": 22,
+      "checks_passed": 22,
+      "checks_all_ok": true,
+      "decode_integrity": {
+        "returncode": 0,
+        "error_lines": [],
+        "ok": true
+      },
+      "fps_normalization": {
+        "reason": "La fuente nueva es 30/1; el contrato de entrega exige 30000/1001.",
+        "original_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0002_es_20261117\\render\\a7ace6f1_clip_0002_es_20261117.mp4",
+        "original_fps": "30/1",
+        "normalized_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0002_es_20261117\\render\\a7ace6f1_clip_0002_es_20261117_fps2997.mp4",
+        "normalized_fps": "30000/1001",
+        "normalized_duration_seconds": 32.966267,
+        "expected_duration_seconds": 32.966667,
+        "method": "ffmpeg -vf fps=30000/1001 -c:v libx264 -crf 18 -preset veryfast -pix_fmt yuv420p -c:a copy",
+        "contract_relaxed": false,
+        "audio_reencoded": false,
+        "shared_code_modified": false
+      },
+      "cut_method": "FFmpeg seek a keyframe previo + -ss de salida (video recodificado en frame exacto, audio copiado)",
+      "cut_method_evidence": "frame_accurate_hybrid_decode_trim_reencode_video_audio_copy",
+      "click": {
+        "mode": "mix_clicks",
+        "clicks": 1,
+        "delay_s": 0.012,
+        "gain_db": -2.0,
+        "no_limiter": true,
+        "no_ducking": true,
+        "no_global_gain": true,
+        "measurements": {
+          "mean_volume_dB": -15.2,
+          "max_volume_dB": -0.4
+        }
+      },
+      "seo": {
+        "language": "es",
+        "valid": true,
+        "checks_total": 41,
+        "checks_passed": 41,
+        "facts": 3,
+        "sources": 5,
+        "output": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0002_es_20261117.seo.md"
+      },
+      "manifest": {
+        "status": "delivered_pending_human_review",
+        "review_status": "pending_user_review",
+        "human_review": {
+          "approved": false,
+          "note": "Ningun filtro automatico sustituye la aprobacion humana. Este entregable no debe publicarse sin revision."
+        },
+        "protected_ok": true,
+        "output": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0002_es_20261117.manifest.json"
+      },
+      "stages": {
+        "render": "succeeded",
+        "validate_mp4": "succeeded",
+        "seo": "succeeded",
+        "validate_seo": "succeeded",
+        "manifest": "succeeded"
+      },
+      "failures": []
+    },
+    {
+      "stem": "a7ace6f1_clip_0003_es_20261117",
+      "clip_id": "clip_0003",
+      "files": {
+        "mp4": {
+          "bytes": 11719802,
+          "sha256": "A8B9F2CD6EDD0819035EB45BFCA90C33070E3F0B62992681AA3ADDA6E97F5A68"
+        },
+        "seo": {
+          "bytes": 3576,
+          "sha256": "798CB8E86655FDCA0987E3A3BCFCD26AC45E340088337163E0CCAC3102C067C6"
+        },
+        "manifest": {
+          "bytes": 36958,
+          "sha256": "AAF9A6DE5FC7AB4F818100318468D34F85365200237B79855153AAE30C003138"
+        }
+      },
+      "range_source_seconds": [
+        221.44,
+        250.92000000000002
+      ],
+      "actual_start_seconds": 221.448707,
+      "start_delta_seconds": 0.008707,
+      "alignment_ncc": 0.99943171,
+      "final_alignment_ncc": 0.99939397,
+      "overlap_seconds": {
+        "clip_0001": 0.0,
+        "clip_0002": 0.0,
+        "clip_0003": 0.0,
+        "clip_0004": 0.0,
+        "clip_0005": 0.0
+      },
+      "container": {
+        "video_codec": "h264",
+        "video_profile": "High",
+        "pix_fmt": "yuv420p",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30000/1001",
+        "nb_frames": "883",
+        "duration_seconds": 29.489002,
+        "audio_codec": "aac",
+        "audio_profile": "LC",
+        "sample_rate": "44100",
+        "channels": 2
+      },
+      "checks_total": 22,
+      "checks_passed": 22,
+      "checks_all_ok": true,
+      "decode_integrity": {
+        "returncode": 0,
+        "error_lines": [],
+        "ok": true
+      },
+      "fps_normalization": {
+        "reason": "La fuente nueva es 30/1; el contrato de entrega exige 30000/1001.",
+        "original_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0003_es_20261117\\render\\a7ace6f1_clip_0003_es_20261117.mp4",
+        "original_fps": "30/1",
+        "normalized_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0003_es_20261117\\render\\a7ace6f1_clip_0003_es_20261117_fps2997.mp4",
+        "normalized_fps": "30000/1001",
+        "normalized_duration_seconds": 29.489002,
+        "expected_duration_seconds": 29.466667,
+        "method": "ffmpeg -vf fps=30000/1001 -c:v libx264 -crf 18 -preset veryfast -pix_fmt yuv420p -c:a copy",
+        "contract_relaxed": false,
+        "audio_reencoded": false,
+        "shared_code_modified": false
+      },
+      "cut_method": "FFmpeg seek a keyframe previo + -ss de salida (video recodificado en frame exacto, audio copiado)",
+      "cut_method_evidence": "frame_accurate_hybrid_decode_trim_reencode_video_audio_copy",
+      "click": {
+        "mode": "mix_clicks",
+        "clicks": 1,
+        "delay_s": 0.012,
+        "gain_db": -2.0,
+        "no_limiter": true,
+        "no_ducking": true,
+        "no_global_gain": true,
+        "measurements": {
+          "mean_volume_dB": -13.5,
+          "max_volume_dB": -0.9
+        }
+      },
+      "seo": {
+        "language": "es",
+        "valid": true,
+        "checks_total": 41,
+        "checks_passed": 41,
+        "facts": 3,
+        "sources": 5,
+        "output": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0003_es_20261117.seo.md"
+      },
+      "manifest": {
+        "status": "delivered_pending_human_review",
+        "review_status": "pending_user_review",
+        "human_review": {
+          "approved": false,
+          "note": "Ningun filtro automatico sustituye la aprobacion humana. Este entregable no debe publicarse sin revision."
+        },
+        "protected_ok": true,
+        "output": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0003_es_20261117.manifest.json"
+      },
+      "stages": {
+        "render": "succeeded",
+        "validate_mp4": "succeeded",
+        "seo": "succeeded",
+        "validate_seo": "succeeded",
+        "manifest": "succeeded"
+      },
+      "failures": []
+    },
+    {
+      "stem": "a7ace6f1_clip_0004_es_20261117",
+      "clip_id": "clip_0004",
+      "files": {
+        "mp4": {
+          "bytes": 11923048,
+          "sha256": "21F86DF46EC2BD1B5643EABD4434E1389404402B700A9403903D4325E6B8A44B"
+        },
+        "seo": {
+          "bytes": 3308,
+          "sha256": "93B474CC725AA51684EE6E70B57491134E82F4A7A857DED4129FE4515352B95D"
+        },
+        "manifest": {
+          "bytes": 39280,
+          "sha256": "2CD57A8A05620E25E75E589DAB12A0F32EB9714CA655073BA82869514D4EBB7A"
+        }
+      },
+      "range_source_seconds": [
+        720.78,
+        743.78
+      ],
+      "actual_start_seconds": 720.793832,
+      "start_delta_seconds": 0.013832,
+      "alignment_ncc": 0.99999753,
+      "final_alignment_ncc": 0.99995875,
+      "overlap_seconds": {
+        "clip_0001": 0.0,
+        "clip_0002": 0.0,
+        "clip_0003": 0.0,
+        "clip_0004": 0.0,
+        "clip_0005": 0.0
+      },
+      "container": {
+        "video_codec": "h264",
+        "video_profile": "High",
+        "pix_fmt": "yuv420p",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30000/1001",
+        "nb_frames": "688",
+        "duration_seconds": 22.987007,
+        "audio_codec": "aac",
+        "audio_profile": "LC",
+        "sample_rate": "44100",
+        "channels": 2
+      },
+      "checks_total": 22,
+      "checks_passed": 22,
+      "checks_all_ok": true,
+      "decode_integrity": {
+        "returncode": 0,
+        "error_lines": [],
+        "ok": true
+      },
+      "fps_normalization": {
+        "reason": "La fuente nueva es 30/1; el contrato de entrega exige 30000/1001.",
+        "original_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0004_es_20261117\\render\\a7ace6f1_clip_0004_es_20261117.mp4",
+        "original_fps": "30/1",
+        "normalized_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0004_es_20261117\\render\\a7ace6f1_clip_0004_es_20261117_fps2997.mp4",
+        "normalized_fps": "30000/1001",
+        "normalized_duration_seconds": 22.987007,
+        "expected_duration_seconds": 22.966667,
+        "method": "ffmpeg -vf fps=30000/1001 -c:v libx264 -crf 18 -preset veryfast -pix_fmt yuv420p -c:a copy",
+        "contract_relaxed": false,
+        "audio_reencoded": false,
+        "shared_code_modified": false
+      },
+      "cut_method": "FFmpeg seek a keyframe previo + -ss de salida (video recodificado en frame exacto, audio copiado)",
+      "cut_method_evidence": "frame_accurate_hybrid_decode_trim_reencode_video_audio_copy",
+      "click": {
+        "mode": "mix_clicks",
+        "clicks": 1,
+        "delay_s": 0.012,
+        "gain_db": -2.0,
+        "no_limiter": true,
+        "no_ducking": true,
+        "no_global_gain": true,
+        "measurements": {
+          "mean_volume_dB": -12.7,
+          "max_volume_dB": -0.9
+        }
+      },
+      "seo": {
+        "language": "es",
+        "valid": true,
+        "checks_total": 41,
+        "checks_passed": 41,
+        "facts": 3,
+        "sources": 5,
+        "output": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0004_es_20261117.seo.md"
+      },
+      "manifest": {
+        "status": "delivered_pending_human_review",
+        "review_status": "pending_user_review",
+        "human_review": {
+          "approved": false,
+          "note": "Ningun filtro automatico sustituye la aprobacion humana. Este entregable no debe publicarse sin revision."
+        },
+        "protected_ok": true,
+        "output": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0004_es_20261117.manifest.json"
+      },
+      "stages": {
+        "render": "succeeded",
+        "validate_mp4": "succeeded",
+        "seo": "succeeded",
+        "validate_seo": "succeeded",
+        "manifest": "succeeded"
+      },
+      "failures": []
+    },
+    {
+      "stem": "a7ace6f1_clip_0008_es_20261117",
+      "clip_id": "clip_0008",
+      "files": {
+        "mp4": {
+          "bytes": 16336546,
+          "sha256": "ADF2A10807DEEDB9F2B964FD1F1DAFB2C8E7CEB435C8A6E176741F802E482D20"
+        },
+        "seo": {
+          "bytes": 3351,
+          "sha256": "70D3C1FF84CA8002BFB1C16A7648922C2F14B4B799A6A11953669B9C986CCB0C"
+        },
+        "manifest": {
+          "bytes": 39692,
+          "sha256": "5391BFBC6A1F2A52C533F2EBF70868E19A96E2915566BB56697CB0A860CA47C7"
+        }
+      },
+      "range_source_seconds": [
+        1278.78,
+        1312.78
+      ],
+      "actual_start_seconds": 1278.792562,
+      "start_delta_seconds": 0.012562,
+      "alignment_ncc": 0.99950567,
+      "final_alignment_ncc": 0.99948221,
+      "overlap_seconds": {
+        "clip_0001": 0.0,
+        "clip_0002": 0.0,
+        "clip_0003": 0.0,
+        "clip_0004": 0.0,
+        "clip_0005": 0.0
+      },
+      "container": {
+        "video_codec": "h264",
+        "video_profile": "High",
+        "pix_fmt": "yuv420p",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30000/1001",
+        "nb_frames": "1018",
+        "duration_seconds": 33.993991,
+        "audio_codec": "aac",
+        "audio_profile": "LC",
+        "sample_rate": "44100",
+        "channels": 2
+      },
+      "checks_total": 22,
+      "checks_passed": 22,
+      "checks_all_ok": true,
+      "decode_integrity": {
+        "returncode": 0,
+        "error_lines": [],
+        "ok": true
+      },
+      "fps_normalization": {
+        "reason": "La fuente nueva es 30/1; el contrato de entrega exige 30000/1001.",
+        "original_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0008_es_20261117\\render\\a7ace6f1_clip_0008_es_20261117.mp4",
+        "original_fps": "30/1",
+        "normalized_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0008_es_20261117\\render\\a7ace6f1_clip_0008_es_20261117_fps2997.mp4",
+        "normalized_fps": "30000/1001",
+        "normalized_duration_seconds": 33.993991,
+        "expected_duration_seconds": 33.966667,
+        "method": "ffmpeg -vf fps=30000/1001 -c:v libx264 -crf 18 -preset veryfast -pix_fmt yuv420p -c:a copy",
+        "contract_relaxed": false,
+        "audio_reencoded": false,
+        "shared_code_modified": false
+      },
+      "cut_method": "FFmpeg seek a keyframe previo + -ss de salida (video recodificado en frame exacto, audio copiado)",
+      "cut_method_evidence": "frame_accurate_hybrid_decode_trim_reencode_video_audio_copy",
+      "click": {
+        "mode": "mix_clicks",
+        "clicks": 1,
+        "delay_s": 0.012,
+        "gain_db": -2.0,
+        "no_limiter": true,
+        "no_ducking": true,
+        "no_global_gain": true,
+        "measurements": {
+          "mean_volume_dB": -12.5,
+          "max_volume_dB": -0.5
+        }
+      },
+      "seo": {
+        "language": "es",
+        "valid": true,
+        "checks_total": 41,
+        "checks_passed": 41,
+        "facts": 4,
+        "sources": 5,
+        "output": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0008_es_20261117.seo.md"
+      },
+      "manifest": {
+        "status": "delivered_pending_human_review",
+        "review_status": "pending_user_review",
+        "human_review": {
+          "approved": false,
+          "note": "Ningun filtro automatico sustituye la aprobacion humana. Este entregable no debe publicarse sin revision."
+        },
+        "protected_ok": true,
+        "output": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0008_es_20261117.manifest.json"
+      },
+      "stages": {
+        "render": "succeeded",
+        "validate_mp4": "succeeded",
+        "seo": "succeeded",
+        "validate_seo": "succeeded",
+        "manifest": "succeeded"
+      },
+      "failures": []
+    },
+    {
+      "stem": "a7ace6f1_clip_0009_es_20261117",
+      "clip_id": "clip_0009",
+      "files": {
+        "mp4": {
+          "bytes": 26785527,
+          "sha256": "5FB683C716D04ABA0E524F638A055B93B6EB150E2D8DF8744C03B283AD3D3654"
+        },
+        "seo": {
+          "bytes": 3605,
+          "sha256": "25F5A44A9CC7BA1FC2F818BBE394BB0C8EADFEA249B7973839AA9C3BE5E7BCF8"
+        },
+        "manifest": {
+          "bytes": 38401,
+          "sha256": "14F03D50B64D327491DB0E5421BDD33223B96CDE77C46F0EBA635CBE58C91533"
+        }
+      },
+      "range_source_seconds": [
+        1488.32,
+        1531.52
+      ],
+      "actual_start_seconds": 1488.329433,
+      "start_delta_seconds": 0.009433,
+      "alignment_ncc": 0.9998084,
+      "final_alignment_ncc": 0.99961111,
+      "overlap_seconds": {
+        "clip_0001": 0.0,
+        "clip_0002": 0.0,
+        "clip_0003": 0.0,
+        "clip_0004": 0.0,
+        "clip_0005": 0.0
+      },
+      "container": {
+        "video_codec": "h264",
+        "video_profile": "High",
+        "pix_fmt": "yuv420p",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30000/1001",
+        "nb_frames": "1296",
+        "duration_seconds": 43.243,
+        "audio_codec": "aac",
+        "audio_profile": "LC",
+        "sample_rate": "44100",
+        "channels": 2
+      },
+      "checks_total": 22,
+      "checks_passed": 22,
+      "checks_all_ok": true,
+      "decode_integrity": {
+        "returncode": 0,
+        "error_lines": [],
+        "ok": true
+      },
+      "fps_normalization": {
+        "reason": "La fuente nueva es 30/1; el contrato de entrega exige 30000/1001.",
+        "original_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0009_es_20261117\\render\\a7ace6f1_clip_0009_es_20261117.mp4",
+        "original_fps": "30/1",
+        "normalized_path": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\work\\run_20261116_new_source_full_pipeline\\delivery\\a7ace6f1_clip_0009_es_20261117\\render\\a7ace6f1_clip_0009_es_20261117_fps2997.mp4",
+        "normalized_fps": "30000/1001",
+        "normalized_duration_seconds": 43.243,
+        "expected_duration_seconds": 43.2,
+        "method": "ffmpeg -vf fps=30000/1001 -c:v libx264 -crf 18 -preset veryfast -pix_fmt yuv420p -c:a copy",
+        "contract_relaxed": false,
+        "audio_reencoded": false,
+        "shared_code_modified": false
+      },
+      "cut_method": "FFmpeg seek a keyframe previo + -ss de salida (video recodificado en frame exacto, audio copiado)",
+      "cut_method_evidence": "frame_accurate_hybrid_decode_trim_reencode_video_audio_copy",
+      "click": {
+        "mode": "mix_clicks",
+        "clicks": 1,
+        "delay_s": 0.012,
+        "gain_db": -2.0,
+        "no_limiter": true,
+        "no_ducking": true,
+        "no_global_gain": true,
+        "measurements": {
+          "mean_volume_dB": -12.0,
+          "max_volume_dB": -0.5
+        }
+      },
+      "seo": {
+        "language": "es",
+        "valid": true,
+        "checks_total": 41,
+        "checks_passed": 41,
+        "facts": 5,
+        "sources": 5,
+        "output": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0009_es_20261117.seo.md"
+      },
+      "manifest": {
+        "status": "delivered_pending_human_review",
+        "review_status": "pending_user_review",
+        "human_review": {
+          "approved": false,
+          "note": "Ningun filtro automatico sustituye la aprobacion humana. Este entregable no debe publicarse sin revision."
+        },
+        "protected_ok": true,
+        "output": "C:\\Users\\SPARTAN PC\\Documents\\new_life\\clipping\\output\\a7ace6f1_clip_0009_es_20261117.manifest.json"
+      },
+      "stages": {
+        "render": "succeeded",
+        "validate_mp4": "succeeded",
+        "seo": "succeeded",
+        "validate_seo": "succeeded",
+        "manifest": "succeeded"
+      },
+      "failures": []
+    }
+  ],
+  "protected": {
+    "all_ok": true,
+    "files": {
+      "clip_0001_shorts_mvp_20261028.mp4": {
+        "exists": true,
+        "bytes": 42790148,
+        "sha256": "EBBD2270DAC8A1D06FF82AB16F35F8E42E58BB9A1EEA14B32FFB05F2191D95DC",
+        "expected": "EBBD2270DAC8A1D06FF82AB16F35F8E42E58BB9A1EEA14B32FFB05F2191D95DC",
+        "ok": true
+      },
+      "clip_0001_shorts_mvp_20261028.manifest.json": {
+        "exists": true,
+        "bytes": 18386,
+        "sha256": "330D9A7C86E17304FB10ED64E151D2A360C01306A8545FFD7D3209E71B4226CE",
+        "expected": "330D9A7C86E17304FB10ED64E151D2A360C01306A8545FFD7D3209E71B4226CE",
+        "ok": true
+      },
+      "clip_0002_shorts_mvp_20261028.mp4": {
+        "exists": true,
+        "bytes": 19794327,
+        "sha256": "8A45FFA4983E0705F2BDC9D761A35CE7339FFCBF8CF83CE58E0A20C85B09B311",
+        "expected": "8A45FFA4983E0705F2BDC9D761A35CE7339FFCBF8CF83CE58E0A20C85B09B311",
+        "ok": true
+      },
+      "clip_0002_shorts_mvp_20261028.manifest.json": {
+        "exists": true,
+        "bytes": 9490,
+        "sha256": "D0F916FEC66D207E86E8B9E5903E4B56017BCE89B3C1D972959357D01B8AED98",
+        "expected": "D0F916FEC66D207E86E8B9E5903E4B56017BCE89B3C1D972959357D01B8AED98",
+        "ok": true
+      },
+      "clip_0003_shorts_mvp_20261028.mp4": {
+        "exists": true,
+        "bytes": 32355578,
+        "sha256": "089A99DEFE7CB2777FF470EFDD8FE15A68B8E5BC90B1874AD0D33547E4D8B723",
+        "expected": "089A99DEFE7CB2777FF470EFDD8FE15A68B8E5BC90B1874AD0D33547E4D8B723",
+        "ok": true
+      },
+      "clip_0003_shorts_mvp_20261028.manifest.json": {
+        "exists": true,
+        "bytes": 24974,
+        "sha256": "46E11B876D4BA4B6BB6F7901417394A886FBD92034484BA32DC17EF5EB058F96",
+        "expected": "46E11B876D4BA4B6BB6F7901417394A886FBD92034484BA32DC17EF5EB058F96",
+        "ok": true
+      },
+      "clip_0004_shorts_mvp_20261028.mp4": {
+        "exists": true,
+        "bytes": 31754469,
+        "sha256": "1362571FB103895D5548177B0429896CB5CC7A1AF3EC6F37AD0093C1458C2E22",
+        "expected": "1362571FB103895D5548177B0429896CB5CC7A1AF3EC6F37AD0093C1458C2E22",
+        "ok": true
+      },
+      "clip_0004_shorts_mvp_20261028.manifest.json": {
+        "exists": true,
+        "bytes": 25416,
+        "sha256": "545CA9EA76B50996B0B8FAA23E7E06796FE2DBC9332C56B7219F57012BE49029",
+        "expected": "545CA9EA76B50996B0B8FAA23E7E06796FE2DBC9332C56B7219F57012BE49029",
+        "ok": true
+      },
+      "clip_0005_shorts_mvp_20261028.mp4": {
+        "exists": true,
+        "bytes": 22565975,
+        "sha256": "183C6CFBAA4ED52993042BA8C3EA28A9142582F645CEB32E529A9362E5A0EF10",
+        "expected": "183C6CFBAA4ED52993042BA8C3EA28A9142582F645CEB32E529A9362E5A0EF10",
+        "ok": true
+      },
+      "clip_0005_shorts_mvp_20261028.manifest.json": {
+        "exists": true,
+        "bytes": 34758,
+        "sha256": "EB76D10C55D20D82C0B372E351A92E02EB1DBDB2D66B9DBC2FB088F335636AB9",
+        "expected": "EB76D10C55D20D82C0B372E351A92E02EB1DBDB2D66B9DBC2FB088F335636AB9",
+        "ok": true
+      }
+    }
+  },
+  "inventory": [
+    {
+      "name": "a7ace6f1_clip_0001_es_20261117.manifest.json",
+      "bytes": 36011,
+      "sha256": "71CDE1B8925156C0EB7D8FFAAF54F2E97F76AB54EDB981EC9BCF470EB4FB1ACD"
+    },
+    {
+      "name": "a7ace6f1_clip_0001_es_20261117.mp4",
+      "bytes": 11419808,
+      "sha256": "554146E67189666BDEECA32CBF1E9C8DFA808E3E9C66F9C850933B033DB00843"
+    },
+    {
+      "name": "a7ace6f1_clip_0001_es_20261117.seo.md",
+      "bytes": 3447,
+      "sha256": "E6C32E7B7A4C90FA66107B5796DD6D6D8B496B57B362E74D8FC5BE28587EDF9B"
+    },
+    {
+      "name": "a7ace6f1_clip_0002_es_20261117.manifest.json",
+      "bytes": 36565,
+      "sha256": "0C811BCC59D55E3645B60084E32EF336196947635E72D839ADE440E00ED43E9C"
+    },
+    {
+      "name": "a7ace6f1_clip_0002_es_20261117.mp4",
+      "bytes": 17732124,
+      "sha256": "9B580C5258C1789AD150B434D06770859144FAD1462A6DAA29D29AAE37159C32"
+    },
+    {
+      "name": "a7ace6f1_clip_0002_es_20261117.seo.md",
+      "bytes": 3346,
+      "sha256": "FD73B0CAF950C0E8159370D88CF2BD83B65CA4F55505C459EFB7A5305B3B376E"
+    },
+    {
+      "name": "a7ace6f1_clip_0003_es_20261117.manifest.json",
+      "bytes": 36958,
+      "sha256": "AAF9A6DE5FC7AB4F818100318468D34F85365200237B79855153AAE30C003138"
+    },
+    {
+      "name": "a7ace6f1_clip_0003_es_20261117.mp4",
+      "bytes": 11719802,
+      "sha256": "A8B9F2CD6EDD0819035EB45BFCA90C33070E3F0B62992681AA3ADDA6E97F5A68"
+    },
+    {
+      "name": "a7ace6f1_clip_0003_es_20261117.seo.md",
+      "bytes": 3576,
+      "sha256": "798CB8E86655FDCA0987E3A3BCFCD26AC45E340088337163E0CCAC3102C067C6"
+    },
+    {
+      "name": "a7ace6f1_clip_0004_es_20261117.manifest.json",
+      "bytes": 39280,
+      "sha256": "2CD57A8A05620E25E75E589DAB12A0F32EB9714CA655073BA82869514D4EBB7A"
+    },
+    {
+      "name": "a7ace6f1_clip_0004_es_20261117.mp4",
+      "bytes": 11923048,
+      "sha256": "21F86DF46EC2BD1B5643EABD4434E1389404402B700A9403903D4325E6B8A44B"
+    },
+    {
+      "name": "a7ace6f1_clip_0004_es_20261117.seo.md",
+      "bytes": 3308,
+      "sha256": "93B474CC725AA51684EE6E70B57491134E82F4A7A857DED4129FE4515352B95D"
+    },
+    {
+      "name": "a7ace6f1_clip_0008_es_20261117.manifest.json",
+      "bytes": 39692,
+      "sha256": "5391BFBC6A1F2A52C533F2EBF70868E19A96E2915566BB56697CB0A860CA47C7"
+    },
+    {
+      "name": "a7ace6f1_clip_0008_es_20261117.mp4",
+      "bytes": 16336546,
+      "sha256": "ADF2A10807DEEDB9F2B964FD1F1DAFB2C8E7CEB435C8A6E176741F802E482D20"
+    },
+    {
+      "name": "a7ace6f1_clip_0008_es_20261117.seo.md",
+      "bytes": 3351,
+      "sha256": "70D3C1FF84CA8002BFB1C16A7648922C2F14B4B799A6A11953669B9C986CCB0C"
+    },
+    {
+      "name": "a7ace6f1_clip_0009_es_20261117.manifest.json",
+      "bytes": 38401,
+      "sha256": "14F03D50B64D327491DB0E5421BDD33223B96CDE77C46F0EBA635CBE58C91533"
+    },
+    {
+      "name": "a7ace6f1_clip_0009_es_20261117.mp4",
+      "bytes": 26785527,
+      "sha256": "5FB683C716D04ABA0E524F638A055B93B6EB150E2D8DF8744C03B283AD3D3654"
+    },
+    {
+      "name": "a7ace6f1_clip_0009_es_20261117.seo.md",
+      "bytes": 3605,
+      "sha256": "25F5A44A9CC7BA1FC2F818BBE394BB0C8EADFEA249B7973839AA9C3BE5E7BCF8"
+    },
+    {
+      "name": "clip_0001_recovered_20261115.manifest.json",
+      "bytes": 38804,
+      "sha256": "7CF408C467BFF044AD0332DD09AAAF80402D3D450B0951943525E4663E8B9B3B"
+    },
+    {
+      "name": "clip_0001_recovered_20261115.mp4",
+      "bytes": 39653669,
+      "sha256": "B4D9F45BE9C0B96A91D6A27E730D7A8D77C8DFE777EC9F7703FBC295E9055361"
+    },
+    {
+      "name": "clip_0001_recovered_20261115.seo.md",
+      "bytes": 3552,
+      "sha256": "15E05BBF6DF5EFD7348F705FD7CD0BB9F6C6E6980E4204F326AF0686A8630EFE"
+    },
+    {
+      "name": "clip_0001_shorts_mvp_20261028.manifest.json",
+      "bytes": 18386,
+      "sha256": "330D9A7C86E17304FB10ED64E151D2A360C01306A8545FFD7D3209E71B4226CE"
+    },
+    {
+      "name": "clip_0001_shorts_mvp_20261028.mp4",
+      "bytes": 42790148,
+      "sha256": "EBBD2270DAC8A1D06FF82AB16F35F8E42E58BB9A1EEA14B32FFB05F2191D95DC"
+    },
+    {
+      "name": "clip_0002_shorts_mvp_20261028.manifest.json",
+      "bytes": 9490,
+      "sha256": "D0F916FEC66D207E86E8B9E5903E4B56017BCE89B3C1D972959357D01B8AED98"
+    },
+    {
+      "name": "clip_0002_shorts_mvp_20261028.mp4",
+      "bytes": 19794327,
+      "sha256": "8A45FFA4983E0705F2BDC9D761A35CE7339FFCBF8CF83CE58E0A20C85B09B311"
+    },
+    {
+      "name": "clip_0003_shorts_mvp_20261028.manifest.json",
+      "bytes": 24974,
+      "sha256": "46E11B876D4BA4B6BB6F7901417394A886FBD92034484BA32DC17EF5EB058F96"
+    },
+    {
+      "name": "clip_0003_shorts_mvp_20261028.mp4",
+      "bytes": 32355578,
+      "sha256": "089A99DEFE7CB2777FF470EFDD8FE15A68B8E5BC90B1874AD0D33547E4D8B723"
+    },
+    {
+      "name": "clip_0004_shorts_mvp_20261028.manifest.json",
+      "bytes": 25416,
+      "sha256": "545CA9EA76B50996B0B8FAA23E7E06796FE2DBC9332C56B7219F57012BE49029"
+    },
+    {
+      "name": "clip_0004_shorts_mvp_20261028.mp4",
+      "bytes": 31754469,
+      "sha256": "1362571FB103895D5548177B0429896CB5CC7A1AF3EC6F37AD0093C1458C2E22"
+    },
+    {
+      "name": "clip_0005_shorts_mvp_20261028.manifest.json",
+      "bytes": 34758,
+      "sha256": "EB76D10C55D20D82C0B372E351A92E02EB1DBDB2D66B9DBC2FB088F335636AB9"
+    },
+    {
+      "name": "clip_0005_shorts_mvp_20261028.mp4",
+      "bytes": 22565975,
+      "sha256": "183C6CFBAA4ED52993042BA8C3EA28A9142582F645CEB32E529A9362E5A0EF10"
+    }
+  ],
+  "errors": [],
+  "source": {
+    "name": "¿2 TURBOS SON MEJORES QUE 1¿ (2160p_30fps_AV1-128kbit_AAC-español).mp4",
+    "bytes": 954138171,
+    "sha256": "75DDAE1B7B1830FC96491D97B066E02150C51CD4420E5E535730DF6023EDB50C"
+  },
+  "ok": true
+}

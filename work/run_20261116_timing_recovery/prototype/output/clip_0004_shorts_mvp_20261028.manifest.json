@@ -1,0 +1,637 @@
+{
+  "schema": "local_video_studio.mvp_deliverable.v1",
+  "created_at": "2026-10-29T01:37:27+00:00",
+  "status": "mvp_candidate_pending_human_review",
+  "review_status": "pending_user_review",
+  "note": "Candidato MVP del cuarto Short (clip_0004). La seleccion editorial es NUEVA: se derivo de la transcripcion propia del fragmento (seg_0311..seg_0316), no de una propuesta de LM Studio ni de una aprobacion humana previa. No se publica.",
+  "deliverable": {
+    "file": "clip_0004_shorts_mvp_20261028.mp4",
+    "bytes": 31754469,
+    "sha256": "1362571FB103895D5548177B0429896CB5CC7A1AF3EC6F37AD0093C1458C2E22",
+    "video": "H.264 High, 1080x1920, 30000/1001 fps, 1340 frames, yuv420p",
+    "audio": "AAC-LC 44100 Hz estereo, 320 kb/s (324378 b/s medidos)",
+    "duration_seconds": 44.720998,
+    "video_duration_seconds": 44.711333,
+    "audio_duration_seconds": 44.720998,
+    "container": "MP4 (mov,mp4,m4a,3gp,3g2,mj2)"
+  },
+  "provenance": {
+    "source_asset": {
+      "path": "input/Escape 100 Cops, Win $500,000 (2160p_30fps_AV1-128kbit_AAC-inglés).mp4",
+      "bytes": 1627212173,
+      "sha256": "281A885B92A667AD0CF706B4B7218A9227FAFE4CEC94757047C4354C86B6FA13"
+    },
+    "source_asset_media": "3840x2160 AV1, 29.97 fps, AAC 44.1 kHz estereo, 1228.382041 s",
+    "source_cut": {
+      "path": "work/mvp_short_clip4_20261028_192559/clips/clip_0004_sourcecut.mp4",
+      "bytes": 67924570,
+      "sha256": "C1616C696015254CE7FDCECDAF07944700FF59E5420A0CC6063BB600C417E1A6",
+      "requested_range_seconds": [
+        1131.5,
+        1176.2
+      ],
+      "requested_duration_seconds": 44.7,
+      "actual_duration_seconds": 44.722333,
+      "method": "ffmpeg -ss 1131.50 -t 44.70 -c copy (corte en keyframe, sin recodificar)",
+      "start_adjustment_note": "el intervalo editorial solicitado empieza en 1131.3 s, pero clip_0002 llega hasta 1131.353240 s. Para garantizar cero solapamiento se usa el primer keyframe estrictamente posterior: 1131.497033 s (corte -ss 1131.50)."
+    },
+    "vertical_source_clip": {
+      "path": "work/mvp_short_clip4_20261028_192559/clips/clip_0004_shorts.mp4",
+      "bytes": 27446046,
+      "sha256": "8BC8EE47A3F04F827B11E531A52DFA62801650911E521269D0840706CFD0B768",
+      "note": "Generado en esta misma ejecucion con services.rendering.renderer.render_vertical sobre el corte propio: 1080x1920, fondo desenfocado y banda central nitida. No es un activo heredado de clip_0001/0002/0003."
+    },
+    "composed_before_notification": {
+      "path": "work/mvp_short_clip4_20261028_192559/input_composed.mp4",
+      "bytes": 32360555,
+      "sha256": "226279AB1F3CBA3E73ACAC0F7EF74D4EC575D5687CD246CFA3312219E1F76A8B"
+    },
+    "editorial_selection": {
+      "clip_id": "clip_0004",
+      "project_id": "d3d5157c-542e-4967-b87c-86f254ef5602",
+      "title": "La captura de los cinco",
+      "origin": "autoria basada en la transcripcion del fragmento; no existia propuesta previa de clip_0004 y no se uso LM Studio para este paso",
+      "source_range_seconds": [
+        1131.3,
+        1175.8
+      ],
+      "cut_range_seconds": [
+        1131.5,
+        1176.2
+      ],
+      "real_start_seconds": 1131.48517,
+      "refs": [
+        "seg_0311",
+        "seg_0312",
+        "seg_0313",
+        "seg_0314",
+        "seg_0315",
+        "seg_0316"
+      ],
+      "review_status": "pending_user_review",
+      "confidence": "media",
+      "reason": "el tramo contiene el cierre de la persecucion: cerco, huida, captura de los cinco participantes y desenlace con el premio, con un final natural",
+      "independence": {
+        "no_overlap": true,
+        "overlap_seconds": {
+          "clip_0001": 0.0,
+          "clip_0002": 0.0,
+          "clip_0003": 0.0
+        },
+        "margins_seconds": {
+          "vs_clip_0002_end": 0.13193,
+          "vs_clip_0003_end": 302.132328,
+          "vs_clip_0001_end": 546.535959
+        },
+        "note": "verificado antes y despues del render contra los rangos medidos de clip_0001, clip_0002 y clip_0003"
+      }
+    }
+  },
+  "timing_alignment": {
+    "clip_zero_maps_to_source_seconds": 1131.48517,
+    "method": "correlacion cruzada normalizada del audio del clip vertical contra 1100-1220 s del audio fuente (NCC global 0.9999096)",
+    "planned_start_seconds": 1131.5,
+    "explanation": "El corte real empieza 14.8 ms antes del valor solicitado (1131.50 - 1131.485170). El drift maximo por tramos de 9.7 s es 0.0 s. Subtitulos, rotulos y clics usan el tiempo local real del clip.",
+    "drift_max_seconds": 0.0,
+    "chunks_checked": 5,
+    "subtitles_file": "subs.ass",
+    "subtitles_source": "transcription.json (sin word_timestamps)",
+    "alignment_evidence": {
+      "path": "work/mvp_short_clip4_20261028_192559/alignment_clip4.json",
+      "bytes": 1422,
+      "sha256": "F4D8A5FC612220F279726D4D577A70CAB208A42908CBB2133448C01874DC28C8"
+    }
+  },
+  "overlays": {
+    "subtitles": {
+      "file": {
+        "path": "work/mvp_short_clip4_20261028_192559/subs.ass",
+        "bytes": 1624,
+        "sha256": "E11CB60BD229D1BF010A51A7D514554455CA1C177A35EED8ED27526E51A1F40A"
+      },
+      "style": "Arial Black 96, blanco con contorno negro, hasta 2 lineas, margen inferior 340",
+      "cues": 11,
+      "first_cue": {
+        "start": 0.0,
+        "end": 2.5382766666667367
+      },
+      "last_cue": {
+        "start": 42.50149666666687,
+        "end": 44.33483000000024
+      },
+      "source": "services.rendering.subtitles.build_cues/write_ass sobre la transcripcion propia",
+      "limitation": "el primer cue incluye palabras de seg_0311 anteriores al corte (el segmento empieza en 1131.34 s y el corte real en 1131.485170 s); sin word_timestamps no se puede recortar por palabra sin inventar tiempos"
+    },
+    "emphasis": {
+      "file": {
+        "path": "work/mvp_short_clip4_20261028_192559/motion.ass",
+        "bytes": 1655,
+        "sha256": "DBBBEDAE0ED01A3C8FDB9E5B5E051EE3E68A202ECDFD7616B575BEFED59356F4"
+      },
+      "style": "Arial Black 84, pos (540,1010), pop de escala 45%->100%->103%",
+      "events": [
+        {
+          "text": "SURROUNDED",
+          "start": 4.9,
+          "end": 6.9,
+          "evidence_segment": "seg_0311",
+          "segment_local_range": [
+            -0.145,
+            7.615
+          ],
+          "transcript": "... we are surrounded by the top north side of the road",
+          "position_note": "frase localizada al 65-78% del segmento; ventana de 2.0 s centrada"
+        },
+        {
+          "text": "GET OUT",
+          "start": 20.2,
+          "end": 22.2,
+          "evidence_segment": "seg_0313",
+          "segment_local_range": [
+            11.535,
+            22.415
+          ],
+          "transcript": "let's go let's go let's go let's go let's go get out",
+          "position_note": "frase final del segmento; ventana de 2.0 s antes del fin"
+        },
+        {
+          "text": "HANDCUFFS",
+          "start": 25.4,
+          "end": 27.4,
+          "evidence_segment": "seg_0314",
+          "segment_local_range": [
+            25.055,
+            28.415
+          ],
+          "transcript": "no put them in handcuffs we are so close",
+          "position_note": "primera frase del segmento; ventana de 2.0 s desde el inicio"
+        },
+        {
+          "text": "OH MY GOSH",
+          "start": 35.1,
+          "end": 37.1,
+          "evidence_segment": "seg_0315",
+          "segment_local_range": [
+            34.975,
+            39.935
+          ],
+          "transcript": "you got me oh my gosh there are so many cops with that hour and a half remaining they have",
+          "position_note": "frase localizada al 8-20% del segmento; ventana de 2.0 s centrada"
+        }
+      ],
+      "positioning_note": "sin word_timestamps la posicion dentro del segmento es proporcional; las ventanas de 2.0 s se eligieron alrededor de la frase y no solapan tarjetas",
+      "grounding_note": "los cuatro textos son palabras literales de la transcripcion del clip; no se anaden cifras, nombres ni conclusiones ajenas al material",
+      "measured": {
+        "surrounded": {
+          "bbox": [
+            297,
+            984,
+            485,
+            60
+          ],
+          "center_x": 539.5,
+          "center_y": 1014.0,
+          "ocr": "SURROUNDED",
+          "iou_final_vs_reference": 0.9656
+        },
+        "get_out": {
+          "bbox": [
+            381,
+            984,
+            322,
+            61
+          ],
+          "center_x": 542.0,
+          "center_y": 1014.5,
+          "ocr": "OUT",
+          "iou_final_vs_reference": 0.9239
+        },
+        "handcuffs": {
+          "bbox": [
+            324,
+            984,
+            427,
+            56
+          ],
+          "center_x": 537.5,
+          "center_y": 1012.0,
+          "ocr": "HANDCUFFS",
+          "iou_final_vs_reference": 0.946
+        },
+        "oh_my_gosh": {
+          "bbox": [
+            316,
+            984,
+            453,
+            60
+          ],
+          "center_x": 542.5,
+          "center_y": 1014.0,
+          "ocr": "OH MY GOSH",
+          "iou_final_vs_reference": 0.9546
+        }
+      }
+    },
+    "neon_frame": {
+      "file": {
+        "path": "work/mvp_short_clip4_20261028_192559/neon_frame.ass",
+        "bytes": 101310,
+        "sha256": "8D074A16E349AABE81D94F3A863D780475C1D3568ABA69DC61D7E9589A8B10D3"
+      },
+      "generated_by": "make_neon_frame_adj.py (copia aislada en esta carpeta; semilla 20261020)",
+      "duration_seconds": 44.721633,
+      "measured_cyan_pixels": {
+        "5.906s": 19871,
+        "44.611s": 32489
+      },
+      "note": "geometria y colores heredados del generador del MVP; solo cambia la duracion para este clip. El generador global no se modifico"
+    },
+    "notifications": [
+      {
+        "action": "comment",
+        "title": "COMENTA",
+        "subtitle_text": "¿Escaparán del cerco?",
+        "file": "plans/plan_clip4.json",
+        "subtitle_is_contextual": true,
+        "enter_start": 7.62,
+        "hold_start": 8.14,
+        "hold_end": 11.74,
+        "exit_end": 12.16,
+        "card_size": [
+          932,
+          312
+        ],
+        "card_alpha_bbox_hold": [
+          76,
+          126,
+          929,
+          309
+        ],
+        "card_x": 76,
+        "card_center_x": 540,
+        "centered": true,
+        "evidence": [
+          "seg_0312"
+        ],
+        "evidence_note": "seg_0312: 'set up the perimeter they're right there they're right there spread out spread out'. La tarjeta pregunta por el cerco que se esta montando; es una parafrasis editorial en espanol, no una cita literal.",
+        "reason": "invita a comentar si los participantes lograran salir del cerco",
+        "click_seconds": 7.632
+      },
+      {
+        "action": "share",
+        "title": "COMPARTE",
+        "subtitle_text": "La captura de los cinco",
+        "file": "plans/plan_clip4.json",
+        "subtitle_is_contextual": true,
+        "enter_start": 39.92,
+        "hold_start": 40.44,
+        "hold_end": 44.04,
+        "exit_end": 44.46,
+        "card_size": [
+          932,
+          312
+        ],
+        "card_alpha_bbox_hold": [
+          76,
+          126,
+          929,
+          309
+        ],
+        "card_x": 76,
+        "card_center_x": 540,
+        "centered": true,
+        "evidence": [
+          "seg_0316"
+        ],
+        "evidence_note": "seg_0316: 'officially caught all five of us and won the half a million dollars congratulations'. La tarjeta resume el desenlace con una frase nominal; no anade datos ajenos al material.",
+        "reason": "compartir el desenlace que cierra el fragmento",
+        "click_seconds": 39.932
+      }
+    ],
+    "click": {
+      "file": {
+        "path": "work/mvp_short_clip4_20261028_192559/audio/click_hf_v1_stereo.wav",
+        "bytes": 7980,
+        "sha256": "CE60E1062DBD849EA0B22043B89AA2329EAA2C4855E74D8890C095101CF52C83"
+      },
+      "sound_id": "ui_click_hf_v1",
+      "generated_by": "audio/synth_click_hf.py (semilla 20261028, sintesis local)",
+      "times_seconds": [
+        7.632,
+        39.932
+      ],
+      "gain_db": -2.0,
+      "gain_change_vs_clip_0001": "+4.0 dB",
+      "duration_seconds": 0.045,
+      "onset_offset_ms": 12.0,
+      "onset_offset_frames": 0.36,
+      "isolated_peak_dbfs_after_gain": -12.4579,
+      "isolated_peak_dbfs_old_gain": -16.4579,
+      "measured_gain_db": [
+        4.0,
+        4.0
+      ],
+      "measured_gain_hf_7_15k_db": [
+        4.0,
+        4.0
+      ],
+      "measured_hf_transients": [
+        {
+          "time_seconds": 7.6327,
+          "window_seconds": [
+            7.6327,
+            7.6526
+          ],
+          "boost_db_7_16k": 28.2,
+          "offset_ms": 0.7,
+          "offset_frames": 0.02
+        },
+        {
+          "time_seconds": 39.9293,
+          "window_seconds": [
+            39.9293,
+            39.9542
+          ],
+          "boost_db_7_16k": 22.74,
+          "offset_ms": -2.7,
+          "offset_frames": -0.08
+        }
+      ],
+      "rationale": "+4 dB sobre el clic del MVP (-6 -> -2 dB). El inicio se retrasa 12 ms (0.36 frame) dentro del primer frame visible para no elevar el pico global del programa. Medido sobre este mismo audio: el pico de la mezcla queda igual al del audio base (1.180142) y no aparecen muestras nuevas >1.0 en las ventanas de clic. No se aplico atenuacion global, ducking ni limiter",
+      "comparison_evidence": {
+        "file": "click_level_comparison.json",
+        "path": "work/mvp_short_clip4_20261028_192559/click_level_comparison.json",
+        "bytes": 5386,
+        "sha256": "522A1D20908301B82186FD657D58983096D3AF9005C081400D178432479516A6",
+        "listening_samples": "audio/compare/ (AB_old_new_float32.wav, AB_old_new_16bit_minus2dB.wav y 4 ventanas por clic)",
+        "measured_gain_per_click_db": [
+          4.0,
+          4.0
+        ]
+      },
+      "perception_note": "no se verifico percepcion humana; la evidencia es espectral/de nivel y se incluye una muestra A/B para escucha"
+    }
+  },
+  "audio_mix": {
+    "filter": "2 clics (atrim 0.045 s, adelay 7632/39932 ms, volume 0.794328 = -2.0 dB) + audio base, amix=inputs=3:duration=first:dropout_transition=0:normalize=0",
+    "original_audio_outside_clicks": "bit-exacto en el PCM mezclado (delta maximo 0.0)",
+    "deliverable_is_aac_of_reference_mix": true,
+    "no_limiter": true,
+    "no_ducking": true,
+    "no_global_gain": true,
+    "aac_bitrate": "320k",
+    "measured_level_vs_source_redecode_db": [
+      -0.558,
+      -0.371,
+      -0.396,
+      -0.423
+    ],
+    "level_note": "diferencias de -0.558/-0.371/-0.396 dB por tramo (-0.423 dB global) atribuidas a la re-codificacion AAC; no hay atenuacion por tramos ni ducking",
+    "source_true_peak_dbfs": 1.439,
+    "true_peak_final_dbfs": 1.117,
+    "program_peak_linear": {
+      "base": 1.180142,
+      "final": 1.137215,
+      "delta_db": -0.322
+    },
+    "clipping": "27 muestras float > 1.0 en el entregable frente a 1891 en el audio base heredado; el mezclador no recorta (PCM float) y el clic nuevo no eleva el pico del programa"
+  },
+  "verification": {
+    "ffprobe": {
+      "duration_seconds": 44.720998,
+      "video": "h264 High 1080x1920 30000/1001 1340 frames yuv420p",
+      "audio": "aac LC 44100 Hz 2 ch 44.720998 s 324378 b/s",
+      "size_bytes": 31754469
+    },
+    "container_checks": {
+      "n_frames_is_1340": true,
+      "n_frames_matches_duration": true,
+      "video_duration_is_44_711333": true,
+      "format_duration_within_20ms": true,
+      "video_1080x1920": true,
+      "video_fps": true,
+      "video_codec_h264_high": true,
+      "video_pix_fmt_yuv420p": true,
+      "audio_aac_lc_44100_stereo": true
+    },
+    "all_container_checks_ok": true,
+    "video_stream_identical_to_tmp_video": true,
+    "video_stream_md5": {
+      "final": "d2e6fe126c7080d546903469fe87af48",
+      "tmp_video_noaudio": "d2e6fe126c7080d546903469fe87af48"
+    },
+    "ocr_frames": {
+      "0.5s": {
+        "bottom": "i made a mistake hey center perimeter"
+      },
+      "5.9s": {
+        "mid": "SURROUNDED",
+        "bottom": "the top north side of the road"
+      },
+      "9.5s": {
+        "top": "COMENTA �Escapar�n del cerco?"
+      },
+      "21.2s": {
+        "mid": "OUT"
+      },
+      "26.4s": {
+        "mid": "HANDCUFFS"
+      },
+      "36.1s": {
+        "mid": "OH MY GOSH"
+      },
+      "42.0s": {
+        "top": "COMPARTE La captura de los cinco"
+      },
+      "44.6s": {
+        "mid": "<no text>",
+        "bottom": "<no text>"
+      }
+    },
+    "card_geometry": {
+      "alpha_bbox_hold": [
+        76,
+        126,
+        929,
+        309
+      ],
+      "alpha_center_x_hold": [
+        540.0,
+        540.0
+      ],
+      "card1_first_visible_seconds": 7.641,
+      "card1_last_visible_seconds": 12.1455,
+      "card2_first_visible_seconds": 39.9399,
+      "card2_last_visible_seconds": 44.4444,
+      "method": "canal alfa de render/overlay_timing.mov (RGBA) + diferencia por region"
+    },
+    "click_sync": {
+      "click1": {
+        "measured_seconds": 7.6327,
+        "card_first_visible_seconds": 7.641,
+        "delta_ms": -8.27,
+        "delta_frames": -0.25
+      },
+      "click2": {
+        "measured_seconds": 39.9293,
+        "card_first_visible_seconds": 39.9399,
+        "delta_ms": -10.6,
+        "delta_frames": -0.32
+      },
+      "note": "ambos clics empiezan antes del primer frame con alfa >0 porque el inicio de la animacion (7.632 s / 39.932 s) cae dentro de un frame; la diferencia queda muy por debajo de 1 frame (0.25 y 0.32)"
+    },
+    "overlay_checks": {
+      "four_emphasis_present": true,
+      "emphasis_centered_x540": true,
+      "emphasis_in_band_y950_1070": true,
+      "no_emphasis_at_controls": true,
+      "emphasis_matches_final_iou": true,
+      "neon_only_on_border": true,
+      "neon_covers_full_height": true,
+      "neon_matches_final_iou": true,
+      "subtitles_bottom_centered": true,
+      "subtitles_match_final_iou": true
+    },
+    "all_overlay_checks_ok": true,
+    "audio_checks": {
+      "two_clicks_detected": true,
+      "click_offset_within_1_frame": true,
+      "no_unexpected_transients": true,
+      "pcm_mix_preserved_outside_clicks": true,
+      "deliverable_is_aac_of_reference_mix": true,
+      "no_ducking_or_segment_attenuation": true,
+      "alignment_matches_1131_485170": true,
+      "peak_not_above_base": true
+    },
+    "all_audio_checks_ok": true,
+    "layers": {
+      "blurred_background_vs_sharp_center_laplacian_5_906s": {
+        "top_150_450": 0.99,
+        "center_700_950": 1.53,
+        "lower_center_1000_1250": 4.36,
+        "bottom_1650_1850": 0.34
+      },
+      "frame_size": [
+        1080,
+        1920
+      ]
+    },
+    "evidence_files": [
+      {
+        "path": "work/mvp_short_clip4_20261028_192559/verification_video.json",
+        "bytes": 14748,
+        "sha256": "8B9E1F2B914F091877486E90E3240F62A1DC65DE1984E1A09D28229F6F9278CB"
+      },
+      {
+        "path": "work/mvp_short_clip4_20261028_192559/verification_overlays.json",
+        "bytes": 3832,
+        "sha256": "15F5114D401A5558CB45C5EFEC6998BFE85FF737C7E2BA3A2A5951ED34B50923"
+      },
+      {
+        "path": "work/mvp_short_clip4_20261028_192559/verification_audio.json",
+        "bytes": 4515,
+        "sha256": "C54B81E8A6F48F96C582516A7547913527A4FD0EF5E1C7F5723AA5FAC60C0AE0"
+      },
+      {
+        "path": "work/mvp_short_clip4_20261028_192559/click_level_comparison.json",
+        "bytes": 5386,
+        "sha256": "522A1D20908301B82186FD657D58983096D3AF9005C081400D178432479516A6"
+      },
+      {
+        "path": "work/mvp_short_clip4_20261028_192559/alignment_clip4.json",
+        "bytes": 1422,
+        "sha256": "F4D8A5FC612220F279726D4D577A70CAB208A42908CBB2133448C01874DC28C8"
+      },
+      {
+        "path": "work/mvp_short_clip4_20261028_192559/assets_manifest.json",
+        "bytes": 2664,
+        "sha256": "EFC00955699795551E2AC8335C8C254DC75B58235B10FCED762818353956DB76"
+      },
+      {
+        "path": "work/mvp_short_clip4_20261028_192559/clip4_render_manifest.json",
+        "bytes": 11315,
+        "sha256": "438723B1C7D102452CC58BE143B385A7E2B0ED22C943D41102A7E3EE26F4DC11"
+      },
+      {
+        "path": "work/mvp_short_clip4_20261028_192559/independence_check.json",
+        "bytes": 1041,
+        "sha256": "F1D699AD6E9D83C8F255D0AB542D607F45E3A7D3886F45612328CF2F9E20C17E"
+      },
+      {
+        "path": "work/mvp_short_clip4_20261028_192559/independence_check_measured.json",
+        "bytes": 1127,
+        "sha256": "BC58DD970A3A64B61C1BEA0811DD5352130C266FF1E4746934FA03DF6A0F6C86"
+      }
+    ],
+    "limitations": [
+      "el intervalo pedido empieza en 1131.3 s, dentro de clip_0002 (hasta 1131.353240 s); el corte arranca en 1131.485170 s (keyframe 1131.497033), 0.131930 s despues del final de clip_0002, para garantizar cero solapamiento",
+      "no hay word_timestamps: los rotulos se ubican por proporcion dentro del segmento, no por palabra",
+      "el corte empieza a mitad de frase (no hay pausa >= 50 ms entre 1130.6 y 1133.6 s); se conserva la continuidad del audio y se acepta el mismo patron que en clip_0003",
+      "el primer subtitulo incluye palabras de seg_0311 anteriores al corte; no se recorto por palabra para no inventar tiempos",
+      "la seleccion editorial es nueva y esta pendiente de revision humana; no es una salida de LM Studio",
+      "las tarjetas usan parafrasis editoriales en espanol, no citas literales",
+      "no se verifico percepcion humana del clic; hay muestra A/B y evidencia espectral",
+      "el audio base heredado ya pico por encima de 0 dBFS: el entregable conserva 27 muestras float >1.0 (frente a 1891 del base) y un pico 0.322 dB menor; no se aplico limiter por diseno",
+      "el audio dura 9.665 ms mas que el video (44.720998 vs 44.711333 s), igual que el activo vertical heredado",
+      "el diseno visual (marco neon, tarjetas, banda desenfocada) es herencia del MVP; no se re-disena en este paso"
+    ]
+  },
+  "protected_baselines": {
+    "checked_at": "2026-10-29T01:37:32+00:00",
+    "unchanged": true,
+    "files": {
+      "clip_0001": {
+        "path": "output/clip_0001_shorts_mvp_20261028.mp4",
+        "bytes": 42790148,
+        "sha256": "EBBD2270DAC8A1D06FF82AB16F35F8E42E58BB9A1EEA14B32FFB05F2191D95DC",
+        "expected_sha256": "EBBD2270DAC8A1D06FF82AB16F35F8E42E58BB9A1EEA14B32FFB05F2191D95DC"
+      },
+      "clip_0001_manifest": {
+        "path": "output/clip_0001_shorts_mvp_20261028.manifest.json",
+        "bytes": 18386,
+        "sha256": "330D9A7C86E17304FB10ED64E151D2A360C01306A8545FFD7D3209E71B4226CE",
+        "expected_sha256": "330D9A7C86E17304FB10ED64E151D2A360C01306A8545FFD7D3209E71B4226CE"
+      },
+      "clip_0002": {
+        "path": "output/clip_0002_shorts_mvp_20261028.mp4",
+        "bytes": 19794327,
+        "sha256": "8A45FFA4983E0705F2BDC9D761A35CE7339FFCBF8CF83CE58E0A20C85B09B311",
+        "expected_sha256": "8A45FFA4983E0705F2BDC9D761A35CE7339FFCBF8CF83CE58E0A20C85B09B311"
+      },
+      "clip_0002_manifest": {
+        "path": "output/clip_0002_shorts_mvp_20261028.manifest.json",
+        "bytes": 9490,
+        "sha256": "D0F916FEC66D207E86E8B9E5903E4B56017BCE89B3C1D972959357D01B8AED98",
+        "expected_sha256": "D0F916FEC66D207E86E8B9E5903E4B56017BCE89B3C1D972959357D01B8AED98"
+      },
+      "clip_0003": {
+        "path": "output/clip_0003_shorts_mvp_20261028.mp4",
+        "bytes": 32355578,
+        "sha256": "089A99DEFE7CB2777FF470EFDD8FE15A68B8E5BC90B1874AD0D33547E4D8B723",
+        "expected_sha256": "089A99DEFE7CB2777FF470EFDD8FE15A68B8E5BC90B1874AD0D33547E4D8B723"
+      },
+      "clip_0003_manifest": {
+        "path": "output/clip_0003_shorts_mvp_20261028.manifest.json",
+        "bytes": 24974,
+        "sha256": "46E11B876D4BA4B6BB6F7901417394A886FBD92034484BA32DC17EF5EB058F96",
+        "expected_sha256": "46E11B876D4BA4B6BB6F7901417394A886FBD92034484BA32DC17EF5EB058F96"
+      }
+    },
+    "note": "los tres MVP previos (clip_0001..clip_0003) y sus manifiestos conservan su SHA-256"
+  },
+  "reproduction": [
+    "cd work/mvp_short_clip4_20261028_192559",
+    "python cut_and_vertical_clip4.py   # corte en 1131.50 s + vertical 1080x1920",
+    "python align_clip4.py              # start 1131.485170 s, NCC 0.99990960",
+    "python independence_check.py && python independence_check_measured.py",
+    "python build_assets_clip4.py       # subs.ass, motion.ass, neon_frame.ass, plan_clip4.json",
+    "python preview_cards_clip4.py",
+    "python compose_base_clip4.py",
+    "python render_timing.py --plan plans/plan_clip4.json --out render/clip_0004_mvp.mp4 --with-click",
+    "python verify_video_clip4.py",
+    "python verify_overlays_clip4.py",
+    "python verify_audio_clip4.py",
+    "python compare_click_levels.py",
+    "python make_manifest_clip4.py      # copia a output/ sin sobrescribir"
+  ]
+}

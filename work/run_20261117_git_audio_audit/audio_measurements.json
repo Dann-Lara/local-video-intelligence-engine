@@ -1,0 +1,626 @@
+{
+  "click_file": "work/mvp_short_clip5_20261028_200526/audio/click_hf_v1_stereo.wav",
+  "click_props": {
+    "file": {
+      "rms": 0.052774,
+      "peak": 0.299988,
+      "rms_dbfs": -25.55,
+      "peak_dbfs": -10.46
+    },
+    "loudness": {
+      "integrated_lufs": -70.0,
+      "true_peak_dbtp": -10.2,
+      "lra_lu": 0.0
+    },
+    "configured_gain_db": -2.0,
+    "with_gain_minus_2db": {
+      "rms": 0.04192,
+      "peak": 0.238289,
+      "rms_dbfs": -27.55,
+      "peak_dbfs": -12.46
+    },
+    "gain_linear": 0.794328
+  },
+  "clips": [
+    {
+      "stem": "a7ace6f1_clip_0001_es_20261117",
+      "original": {
+        "rms": 0.202153,
+        "peak": 0.897949,
+        "rms_dbfs": -13.89,
+        "peak_dbfs": -0.93
+      },
+      "final": {
+        "rms": 0.202102,
+        "peak": 0.895996,
+        "rms_dbfs": -13.89,
+        "peak_dbfs": -0.95
+      },
+      "final_loudness": {
+        "integrated_lufs": -10.9,
+        "true_peak_dbtp": -0.9,
+        "lra_lu": 2.1
+      },
+      "alignment_lag_samples": 0,
+      "alignment_lag_ms": 0.0,
+      "enabled_clicks": 1,
+      "click_events": [
+        {
+          "index": 1,
+          "action": "comment",
+          "notification_enter_seconds": 2.463,
+          "configured_delay_s": 0.012,
+          "gain_db": -2.0,
+          "expected_onset_seconds": 2.475011,
+          "measured_onset_seconds": 2.474989,
+          "onset_delta_ms": -0.023,
+          "residual_click": {
+            "rms": 0.04149,
+            "peak": 0.238251,
+            "rms_dbfs": -27.64,
+            "peak_dbfs": -12.46
+          },
+          "residual_before": {
+            "rms": 0.002505,
+            "peak": 0.071899,
+            "rms_dbfs": -52.02,
+            "peak_dbfs": -22.87
+          },
+          "residual_after": {
+            "rms": 0.000531,
+            "peak": 0.003174,
+            "rms_dbfs": -65.5,
+            "peak_dbfs": -49.97
+          },
+          "background_original": {
+            "rms": 0.125605,
+            "peak": 0.86441,
+            "rms_dbfs": -18.02,
+            "peak_dbfs": -1.27
+          },
+          "expected_click_with_gain": {
+            "rms": 0.04192,
+            "peak": 0.238289,
+            "rms_dbfs": -27.55,
+            "peak_dbfs": -12.46
+          },
+          "band_7000_15000": {
+            "click_residual": {
+              "rms": 0.032343,
+              "peak": 0.226585,
+              "rms_dbfs": -29.8,
+              "peak_dbfs": -12.9
+            },
+            "background_before_same_length": {
+              "rms": 0.016102,
+              "peak": 0.123938,
+              "rms_dbfs": -35.86,
+              "peak_dbfs": -18.14
+            },
+            "original_same_window": {
+              "rms": 0.002991,
+              "peak": 0.014337,
+              "rms_dbfs": -50.48,
+              "peak_dbfs": -36.87
+            },
+            "final_same_window": {
+              "rms": 0.032595,
+              "peak": 0.229509,
+              "rms_dbfs": -29.74,
+              "peak_dbfs": -12.78
+            },
+            "click_minus_background_db": 6.06
+          },
+          "correlation_residual_vs_expected_click": 0.9886,
+          "best_fit_mse": 4e-05
+        }
+      ],
+      "overall_residual": {
+        "rms": 0.002273,
+        "peak": 0.238251,
+        "rms_dbfs": -52.87,
+        "peak_dbfs": -12.46
+      }
+    },
+    {
+      "stem": "a7ace6f1_clip_0002_es_20261117",
+      "original": {
+        "rms": 0.174525,
+        "peak": 0.930695,
+        "rms_dbfs": -15.16,
+        "peak_dbfs": -0.62
+      },
+      "final": {
+        "rms": 0.174406,
+        "peak": 0.95813,
+        "rms_dbfs": -15.17,
+        "peak_dbfs": -0.37
+      },
+      "final_loudness": {
+        "integrated_lufs": -11.4,
+        "true_peak_dbtp": -0.2,
+        "lra_lu": 18.5
+      },
+      "alignment_lag_samples": 750,
+      "alignment_lag_ms": 17.007,
+      "enabled_clicks": 1,
+      "click_events": [
+        {
+          "index": 1,
+          "action": "comment",
+          "notification_enter_seconds": 4.941,
+          "configured_delay_s": 0.012,
+          "gain_db": -2.0,
+          "expected_onset_seconds": 4.952993,
+          "measured_onset_seconds": 4.952993,
+          "onset_delta_ms": 0.0,
+          "residual_click": {
+            "rms": 0.042341,
+            "peak": 0.235413,
+            "rms_dbfs": -27.46,
+            "peak_dbfs": -12.56
+          },
+          "residual_before": {
+            "rms": 0.002086,
+            "peak": 0.039795,
+            "rms_dbfs": -53.61,
+            "peak_dbfs": -28.0
+          },
+          "residual_after": {
+            "rms": 0.000714,
+            "peak": 0.004913,
+            "rms_dbfs": -62.92,
+            "peak_dbfs": -46.17
+          },
+          "background_original": {
+            "rms": 0.286767,
+            "peak": 0.883514,
+            "rms_dbfs": -10.85,
+            "peak_dbfs": -1.08
+          },
+          "expected_click_with_gain": {
+            "rms": 0.04192,
+            "peak": 0.238289,
+            "rms_dbfs": -27.55,
+            "peak_dbfs": -12.46
+          },
+          "band_7000_15000": {
+            "click_residual": {
+              "rms": 0.032597,
+              "peak": 0.223079,
+              "rms_dbfs": -29.74,
+              "peak_dbfs": -13.03
+            },
+            "background_before_same_length": {
+              "rms": 0.01182,
+              "peak": 0.141889,
+              "rms_dbfs": -38.55,
+              "peak_dbfs": -16.96
+            },
+            "original_same_window": {
+              "rms": 0.011418,
+              "peak": 0.13784,
+              "rms_dbfs": -38.85,
+              "peak_dbfs": -17.21
+            },
+            "final_same_window": {
+              "rms": 0.034475,
+              "peak": 0.223256,
+              "rms_dbfs": -29.25,
+              "peak_dbfs": -13.02
+            },
+            "click_minus_background_db": 8.81
+          },
+          "correlation_residual_vs_expected_click": 0.9719,
+          "best_fit_mse": 0.00010057
+        }
+      ],
+      "overall_residual": {
+        "rms": 0.001697,
+        "peak": 0.235413,
+        "rms_dbfs": -55.41,
+        "peak_dbfs": -12.56
+      }
+    },
+    {
+      "stem": "a7ace6f1_clip_0003_es_20261117",
+      "original": {
+        "rms": 0.211602,
+        "peak": 0.899689,
+        "rms_dbfs": -13.49,
+        "peak_dbfs": -0.92
+      },
+      "final": {
+        "rms": 0.21152,
+        "peak": 0.898468,
+        "rms_dbfs": -13.49,
+        "peak_dbfs": -0.93
+      },
+      "final_loudness": {
+        "integrated_lufs": -10.7,
+        "true_peak_dbtp": -0.9,
+        "lra_lu": 2.0
+      },
+      "alignment_lag_samples": 0,
+      "alignment_lag_ms": 0.0,
+      "enabled_clicks": 1,
+      "click_events": [
+        {
+          "index": 1,
+          "action": "comment",
+          "notification_enter_seconds": 4.422,
+          "configured_delay_s": 0.012,
+          "gain_db": -2.0,
+          "expected_onset_seconds": 4.433991,
+          "measured_onset_seconds": 4.433991,
+          "onset_delta_ms": 0.0,
+          "residual_click": {
+            "rms": 0.041808,
+            "peak": 0.238068,
+            "rms_dbfs": -27.57,
+            "peak_dbfs": -12.47
+          },
+          "residual_before": {
+            "rms": 0.000438,
+            "peak": 0.003204,
+            "rms_dbfs": -67.17,
+            "peak_dbfs": -49.89
+          },
+          "residual_after": {
+            "rms": 0.000439,
+            "peak": 0.002014,
+            "rms_dbfs": -67.15,
+            "peak_dbfs": -53.92
+          },
+          "background_original": {
+            "rms": 0.170767,
+            "peak": 0.781647,
+            "rms_dbfs": -15.35,
+            "peak_dbfs": -2.14
+          },
+          "expected_click_with_gain": {
+            "rms": 0.04192,
+            "peak": 0.238289,
+            "rms_dbfs": -27.55,
+            "peak_dbfs": -12.46
+          },
+          "band_7000_15000": {
+            "click_residual": {
+              "rms": 0.032769,
+              "peak": 0.22779,
+              "rms_dbfs": -29.69,
+              "peak_dbfs": -12.85
+            },
+            "background_before_same_length": {
+              "rms": 0.000753,
+              "peak": 0.012365,
+              "rms_dbfs": -62.46,
+              "peak_dbfs": -38.16
+            },
+            "original_same_window": {
+              "rms": 0.000817,
+              "peak": 0.010196,
+              "rms_dbfs": -61.76,
+              "peak_dbfs": -39.83
+            },
+            "final_same_window": {
+              "rms": 0.032776,
+              "peak": 0.227445,
+              "rms_dbfs": -29.69,
+              "peak_dbfs": -12.86
+            },
+            "click_minus_background_db": 32.77
+          },
+          "correlation_residual_vs_expected_click": 0.9999,
+          "best_fit_mse": 4.1e-07
+        }
+      ],
+      "overall_residual": {
+        "rms": 0.001877,
+        "peak": 0.238068,
+        "rms_dbfs": -54.53,
+        "peak_dbfs": -12.47
+      }
+    },
+    {
+      "stem": "a7ace6f1_clip_0004_es_20261117",
+      "original": {
+        "rms": 0.23279,
+        "peak": 0.896912,
+        "rms_dbfs": -12.66,
+        "peak_dbfs": -0.95
+      },
+      "final": {
+        "rms": 0.232706,
+        "peak": 0.896729,
+        "rms_dbfs": -12.66,
+        "peak_dbfs": -0.95
+      },
+      "final_loudness": {
+        "integrated_lufs": -10.0,
+        "true_peak_dbtp": -0.9,
+        "lra_lu": 2.1
+      },
+      "alignment_lag_samples": 0,
+      "alignment_lag_ms": 0.0,
+      "enabled_clicks": 1,
+      "click_events": [
+        {
+          "index": 1,
+          "action": "comment",
+          "notification_enter_seconds": 3.45,
+          "configured_delay_s": 0.012,
+          "gain_db": -2.0,
+          "expected_onset_seconds": 3.461995,
+          "measured_onset_seconds": 3.461995,
+          "onset_delta_ms": 0.0,
+          "residual_click": {
+            "rms": 0.041767,
+            "peak": 0.238647,
+            "rms_dbfs": -27.58,
+            "peak_dbfs": -12.44
+          },
+          "residual_before": {
+            "rms": 0.000993,
+            "peak": 0.013489,
+            "rms_dbfs": -60.06,
+            "peak_dbfs": -37.4
+          },
+          "residual_after": {
+            "rms": 0.000563,
+            "peak": 0.003418,
+            "rms_dbfs": -65.0,
+            "peak_dbfs": -49.32
+          },
+          "background_original": {
+            "rms": 0.158318,
+            "peak": 0.798279,
+            "rms_dbfs": -16.01,
+            "peak_dbfs": -1.96
+          },
+          "expected_click_with_gain": {
+            "rms": 0.04192,
+            "peak": 0.238289,
+            "rms_dbfs": -27.55,
+            "peak_dbfs": -12.46
+          },
+          "band_7000_15000": {
+            "click_residual": {
+              "rms": 0.032632,
+              "peak": 0.228243,
+              "rms_dbfs": -29.73,
+              "peak_dbfs": -12.83
+            },
+            "background_before_same_length": {
+              "rms": 0.001879,
+              "peak": 0.008654,
+              "rms_dbfs": -54.52,
+              "peak_dbfs": -41.26
+            },
+            "original_same_window": {
+              "rms": 0.012569,
+              "peak": 0.128366,
+              "rms_dbfs": -38.01,
+              "peak_dbfs": -17.83
+            },
+            "final_same_window": {
+              "rms": 0.034539,
+              "peak": 0.227674,
+              "rms_dbfs": -29.23,
+              "peak_dbfs": -12.85
+            },
+            "click_minus_background_db": 24.79
+          },
+          "correlation_residual_vs_expected_click": 0.9967,
+          "best_fit_mse": 1.162e-05
+        }
+      ],
+      "overall_residual": {
+        "rms": 0.002076,
+        "peak": 0.238647,
+        "rms_dbfs": -53.66,
+        "peak_dbfs": -12.44
+      }
+    },
+    {
+      "stem": "a7ace6f1_clip_0008_es_20261117",
+      "original": {
+        "rms": 0.236028,
+        "peak": 0.979553,
+        "rms_dbfs": -12.54,
+        "peak_dbfs": -0.18
+      },
+      "final": {
+        "rms": 0.235939,
+        "peak": 0.942596,
+        "rms_dbfs": -12.54,
+        "peak_dbfs": -0.51
+      },
+      "final_loudness": {
+        "integrated_lufs": -9.6,
+        "true_peak_dbtp": -0.4,
+        "lra_lu": 1.5
+      },
+      "alignment_lag_samples": 0,
+      "alignment_lag_ms": 0.0,
+      "enabled_clicks": 1,
+      "click_events": [
+        {
+          "index": 1,
+          "action": "comment",
+          "notification_enter_seconds": 5.1,
+          "configured_delay_s": 0.012,
+          "gain_db": -2.0,
+          "expected_onset_seconds": 5.111995,
+          "measured_onset_seconds": 5.111995,
+          "onset_delta_ms": 0.0,
+          "residual_click": {
+            "rms": 0.042236,
+            "peak": 0.240448,
+            "rms_dbfs": -27.49,
+            "peak_dbfs": -12.38
+          },
+          "residual_before": {
+            "rms": 0.002341,
+            "peak": 0.031067,
+            "rms_dbfs": -52.61,
+            "peak_dbfs": -30.15
+          },
+          "residual_after": {
+            "rms": 0.000854,
+            "peak": 0.007629,
+            "rms_dbfs": -61.37,
+            "peak_dbfs": -42.35
+          },
+          "background_original": {
+            "rms": 0.176637,
+            "peak": 0.730743,
+            "rms_dbfs": -15.06,
+            "peak_dbfs": -2.72
+          },
+          "expected_click_with_gain": {
+            "rms": 0.04192,
+            "peak": 0.238289,
+            "rms_dbfs": -27.55,
+            "peak_dbfs": -12.46
+          },
+          "band_7000_15000": {
+            "click_residual": {
+              "rms": 0.032652,
+              "peak": 0.227442,
+              "rms_dbfs": -29.72,
+              "peak_dbfs": -12.86
+            },
+            "background_before_same_length": {
+              "rms": 0.012073,
+              "peak": 0.17156,
+              "rms_dbfs": -38.36,
+              "peak_dbfs": -15.31
+            },
+            "original_same_window": {
+              "rms": 0.016984,
+              "peak": 0.179409,
+              "rms_dbfs": -35.4,
+              "peak_dbfs": -14.92
+            },
+            "final_same_window": {
+              "rms": 0.036761,
+              "peak": 0.234117,
+              "rms_dbfs": -28.69,
+              "peak_dbfs": -12.61
+            },
+            "click_minus_background_db": 8.64
+          },
+          "correlation_residual_vs_expected_click": 0.9853,
+          "best_fit_mse": 5.232e-05
+        }
+      ],
+      "overall_residual": {
+        "rms": 0.001755,
+        "peak": 0.240448,
+        "rms_dbfs": -55.11,
+        "peak_dbfs": -12.38
+      }
+    },
+    {
+      "stem": "a7ace6f1_clip_0009_es_20261117",
+      "original": {
+        "rms": 0.251669,
+        "peak": 0.949158,
+        "rms_dbfs": -11.98,
+        "peak_dbfs": -0.45
+      },
+      "final": {
+        "rms": 0.251509,
+        "peak": 0.946655,
+        "rms_dbfs": -11.99,
+        "peak_dbfs": -0.48
+      },
+      "final_loudness": {
+        "integrated_lufs": -9.6,
+        "true_peak_dbtp": -0.5,
+        "lra_lu": 5.8
+      },
+      "alignment_lag_samples": 397,
+      "alignment_lag_ms": 9.002,
+      "enabled_clicks": 1,
+      "click_events": [
+        {
+          "index": 1,
+          "action": "comment",
+          "notification_enter_seconds": 4.557,
+          "configured_delay_s": 0.012,
+          "gain_db": -2.0,
+          "expected_onset_seconds": 4.569002,
+          "measured_onset_seconds": 4.56898,
+          "onset_delta_ms": -0.023,
+          "residual_click": {
+            "rms": 0.042478,
+            "peak": 0.25354,
+            "rms_dbfs": -27.44,
+            "peak_dbfs": -11.92
+          },
+          "residual_before": {
+            "rms": 0.004943,
+            "peak": 0.041992,
+            "rms_dbfs": -46.12,
+            "peak_dbfs": -27.54
+          },
+          "residual_after": {
+            "rms": 0.002885,
+            "peak": 0.01413,
+            "rms_dbfs": -50.8,
+            "peak_dbfs": -37.0
+          },
+          "background_original": {
+            "rms": 0.254777,
+            "peak": 0.883514,
+            "rms_dbfs": -11.88,
+            "peak_dbfs": -1.08
+          },
+          "expected_click_with_gain": {
+            "rms": 0.04192,
+            "peak": 0.238289,
+            "rms_dbfs": -27.55,
+            "peak_dbfs": -12.46
+          },
+          "band_7000_15000": {
+            "click_residual": {
+              "rms": 0.032332,
+              "peak": 0.226061,
+              "rms_dbfs": -29.81,
+              "peak_dbfs": -12.92
+            },
+            "background_before_same_length": {
+              "rms": 0.069536,
+              "peak": 0.301787,
+              "rms_dbfs": -23.16,
+              "peak_dbfs": -10.41
+            },
+            "original_same_window": {
+              "rms": 0.074485,
+              "peak": 0.330891,
+              "rms_dbfs": -22.56,
+              "peak_dbfs": -9.61
+            },
+            "final_same_window": {
+              "rms": 0.081163,
+              "peak": 0.326539,
+              "rms_dbfs": -21.81,
+              "peak_dbfs": -9.72
+            },
+            "click_minus_background_db": -6.65
+          },
+          "correlation_residual_vs_expected_click": 0.9598,
+          "best_fit_mse": 0.00014339
+        }
+      ],
+      "overall_residual": {
+        "rms": 0.001754,
+        "peak": 0.25354,
+        "rms_dbfs": -55.12,
+        "peak_dbfs": -11.92
+      }
+    }
+  ]
+}

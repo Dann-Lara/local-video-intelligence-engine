@@ -48,3 +48,7 @@ work/*
 
 # Inventario generado con rutas locales completas (auditoria, no reproduccion)
 work/run_20261117_git_audio_audit/inventory.json
+
+# Generated local artifacts — never version
+/output/
+/work/
